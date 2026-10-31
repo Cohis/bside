@@ -1,0 +1,522 @@
+{
+  "direcao": "leste",
+  "sistema": "pixels da célula384x512; direita anatômica próxima; esquerda distante",
+  "metodo": "Leitura visual sobre prancha quadriculada, estimativas arredondadas. Não são medidas de captura de movimento. Atualizado em 23/10/2026 após comparar quadros corrigidos e prévia com chão marcado; coordenadas de joelho/tornozelo seguem estimativas sob a calça.",
+  "quadros": [
+    {
+      "fase": 1,
+      "centro_quadril": [
+        192,
+        299
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            299
+          ],
+          "joelho": [
+            226,
+            377
+          ],
+          "tornozelo": [
+            263,
+            449
+          ],
+          "ponta_pe": [
+            305,
+            470
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            299
+          ],
+          "joelho": [
+            157,
+            384
+          ],
+          "tornozelo": [
+            124,
+            436
+          ],
+          "ponta_pe": [
+            147,
+            475
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 2,
+      "centro_quadril": [
+        192,
+        301
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            301
+          ],
+          "joelho": [
+            225,
+            374
+          ],
+          "tornozelo": [
+            234,
+            448
+          ],
+          "ponta_pe": [
+            265,
+            474
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual após edição controlada",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            301
+          ],
+          "joelho": [
+            154,
+            387
+          ],
+          "tornozelo": [
+            119,
+            426
+          ],
+          "ponta_pe": [
+            152,
+            465
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 3,
+      "centro_quadril": [
+        192,
+        283
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            283
+          ],
+          "joelho": [
+            178,
+            386
+          ],
+          "tornozelo": [
+            178,
+            451
+          ],
+          "ponta_pe": [
+            218,
+            475
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            283
+          ],
+          "joelho": [
+            231,
+            354
+          ],
+          "tornozelo": [
+            236,
+            413
+          ],
+          "ponta_pe": [
+            280,
+            423
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 4,
+      "centro_quadril": [
+        192,
+        292
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            292
+          ],
+          "joelho": [
+            155,
+            380
+          ],
+          "tornozelo": [
+            145,
+            444
+          ],
+          "ponta_pe": [
+            178,
+            476
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual após edição controlada",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            292
+          ],
+          "joelho": [
+            239,
+            374
+          ],
+          "tornozelo": [
+            276,
+            430
+          ],
+          "ponta_pe": [
+            319,
+            432
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 5,
+      "centro_quadril": [
+        192,
+        289
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            289
+          ],
+          "joelho": [
+            154,
+            377
+          ],
+          "tornozelo": [
+            120,
+            430
+          ],
+          "ponta_pe": [
+            148,
+            473
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            289
+          ],
+          "joelho": [
+            224,
+            379
+          ],
+          "tornozelo": [
+            235,
+            445
+          ],
+          "ponta_pe": [
+            289,
+            474
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 6,
+      "centro_quadril": [
+        192,
+        299
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            299
+          ],
+          "joelho": [
+            153,
+            385
+          ],
+          "tornozelo": [
+            115,
+            418
+          ],
+          "ponta_pe": [
+            133,
+            473
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            299
+          ],
+          "joelho": [
+            231,
+            381
+          ],
+          "tornozelo": [
+            197,
+            445
+          ],
+          "ponta_pe": [
+            252,
+            475
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual após edição controlada",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    },
+    {
+      "fase": 7,
+      "centro_quadril": [
+        192,
+        293
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            293
+          ],
+          "joelho": [
+            234,
+            347
+          ],
+          "tornozelo": [
+            228,
+            403
+          ],
+          "ponta_pe": [
+            272,
+            430
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Joelho e tornozelo parcialmente ocultos pela perna de apoio; coordenadas estimadas na composicao controlada.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            293
+          ],
+          "joelho": [
+            194,
+            390
+          ],
+          "tornozelo": [
+            170,
+            447
+          ],
+          "ponta_pe": [
+            207,
+            477
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual após edição controlada",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "passagem corrigida por composicao; inspecao estatica feita, recuo do apoio pendente"
+    },
+    {
+      "fase": 8,
+      "centro_quadril": [
+        192,
+        292
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            192,
+            292
+          ],
+          "joelho": [
+            246,
+            378
+          ],
+          "tornozelo": [
+            280,
+            426
+          ],
+          "ponta_pe": [
+            318,
+            431
+          ],
+          "contato_chao": false,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        },
+        "direita": {
+          "quadril": [
+            192,
+            292
+          ],
+          "joelho": [
+            165,
+            386
+          ],
+          "tornozelo": [
+            143,
+            435
+          ],
+          "ponta_pe": [
+            166,
+            476
+          ],
+          "contato_chao": true,
+          "confianca": "estimativa visual",
+          "oclusao": "Quadril e joelho inferidos sob calça; tornozelo sob barra. Ponta do tênis visível.",
+          "incerteza_px": {
+            "quadril": 8,
+            "joelho": 12,
+            "tornozelo": 8,
+            "ponta_pe": 5
+          }
+        }
+      },
+      "status": "inspecionado estaticamente"
+    }
+  ],
+  "recuo_apoio_px_por_quadro": {
+    "observacao": "Estimativas de ponta do calçado revisadas após correção local; considerar rotação/rolagem da sola e incerteza descrita por articulação. Chão marcado revisado visualmente; sem alegação de mocap."
+  }
+}

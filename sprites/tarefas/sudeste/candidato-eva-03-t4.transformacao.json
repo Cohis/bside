@@ -1,0 +1,19 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/eva-03-t4.png",
+  "caixa_original": [
+    196,
+    158,
+    851,
+    1367
+  ],
+  "escala_uniforme": 0.3507030603804797,
+  "posicao": [
+    77,
+    56
+  ],
+  "saida": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/candidato-eva-03-t4.png",
+  "sha256_raw": "57de4c865ac92704f5cbfd90eced1c3912acf451aae570c09a382519981041af",
+  "sha256_pixels": "e86e184d58513485c606a2e942c309a12dcae807dc29a45e5a4661006c293073",
+  "status": "candidato; ainda nao promovido",
+  "prompt": "Eva sudeste fase03 passagem direita; base fixa, guia 03, fases02/03/04; perna esquerda apoia, direita suspensa perto do eixo, sem alterar identidade/estilo; fundo alpha."
+}

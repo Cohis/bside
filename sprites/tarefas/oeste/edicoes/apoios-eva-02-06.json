@@ -1,0 +1,24 @@
+[
+  {
+    "personagem": "eva",
+    "quadro": 2,
+    "antes": "edicoes/pre-apoiar-eva/02.png",
+    "sha256_antes": "0c85bf510ecd17d109f73f163de4d50ab616faae3d96eb2455946e0f2d124b47",
+    "depois": "eva/02.png",
+    "sha256_depois": "d2c21d674f041001fc6e81f638da99b30dd8817992c2b6f788b45eee7c4e859c",
+    "metodo": "deslocamento horizontal progressivo de faixas da perna de apoio; 0px no quadril e +20px no calçado; vizinho mais próximo, RGBA sem interpolação",
+    "script": "edicoes/apoiar_eva.py",
+    "estado": "aplicado apos inspecao estatica, ciclo completo ainda nao aprovado"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 6,
+    "antes": "edicoes/pre-apoiar-eva/06.png",
+    "sha256_antes": "226bfcbe467b556222d9c87d632083197f9e73e59f17e695a0cb9942b1535630",
+    "depois": "eva/06.png",
+    "sha256_depois": "dea426cb4061be4fec23dcd2752324b80775210bc137ee6313ebd61b1c0e4c18",
+    "metodo": "deslocamento horizontal progressivo de faixas da perna de apoio; 0px no quadril e +20px no calçado; vizinho mais próximo, RGBA sem interpolação",
+    "script": "edicoes/apoiar_eva.py",
+    "estado": "aplicado apos inspecao estatica, ciclo completo ainda nao aprovado"
+  }
+]

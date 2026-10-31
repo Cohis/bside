@@ -1,0 +1,198 @@
+{
+  "icaro": [
+    {
+      "fase": 1,
+      "caixa": [
+        111,
+        56,
+        273,
+        480
+      ],
+      "sha256": "4325c36ee096bf42c3d89bf929a1b9942bc49a79e9df573b0f107b9491d6ce97",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 2,
+      "caixa": [
+        113,
+        60,
+        273,
+        473
+      ],
+      "sha256": "540f8c39a09b3cc66d6481ed4e79d42331ec547d7a67196df27a2cef00149d17",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 3,
+      "caixa": [
+        114,
+        56,
+        271,
+        467
+      ],
+      "sha256": "f2db8effaf9811e3ce98adadcb444154589287cee060ed22fa5d0cb5ba207e74",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 4,
+      "caixa": [
+        112,
+        54,
+        272,
+        475
+      ],
+      "sha256": "54e91489331de3ea1dd90883d541ebef89df11269e0416f37ef0392d2658d25f",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 5,
+      "caixa": [
+        111,
+        56,
+        272,
+        480
+      ],
+      "sha256": "71c59a5f87eca5b8668acccdaef781200e2a343e868e5cbf749a8d6c4f3d767b",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 6,
+      "caixa": [
+        112,
+        60,
+        271,
+        474
+      ],
+      "sha256": "26164a1dd112a444af55b11e39aa19d65c83d6adc230be0159f28555378c6c1a",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 7,
+      "caixa": [
+        112,
+        56,
+        272,
+        467
+      ],
+      "sha256": "0aaa44c185489e1e8aed60c7a01a738f3a40147ee612eae5dcde197a52236e77",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 8,
+      "caixa": [
+        111,
+        54,
+        273,
+        475
+      ],
+      "sha256": "9a073d9ffbe681f36486dfc2690f61f59b36dfb988ba9a5d89098fce97377518",
+      "transparencia_real": true,
+      "margens_seguras": true
+    }
+  ],
+  "eva": [
+    {
+      "fase": 1,
+      "caixa": [
+        107,
+        56,
+        277,
+        480
+      ],
+      "sha256": "820c8027ac85703dc7d5308b6dc18342e97b324753ea7345e502e59ea8ac28c0",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 2,
+      "caixa": [
+        108,
+        60,
+        276,
+        473
+      ],
+      "sha256": "5b7aaf34d2c623a16f6c872d2cc80c814506e7a92b8de3b94d7f67176ab2bf60",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 3,
+      "caixa": [
+        110,
+        56,
+        276,
+        467
+      ],
+      "sha256": "f79db7410958c4d40eb9e1bdcf5fd07e99e4e363b0c0a5e90cca2a2a2a338f4d",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 4,
+      "caixa": [
+        106,
+        54,
+        278,
+        475
+      ],
+      "sha256": "1c410fa359472c67d554818c8560eaa4db562b7e914cf43615a8c3046b9014c1",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 5,
+      "caixa": [
+        109,
+        56,
+        277,
+        480
+      ],
+      "sha256": "5fad24d3282d0c78d482a6133784fe0dd0d18b3cff331b6fde61bcd42314b0f3",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 6,
+      "caixa": [
+        109,
+        60,
+        274,
+        474
+      ],
+      "sha256": "7343daad4c311c3fa9ddfc338bf68dcd38b496ac0c8c2d51a5160e2f1169e0da",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 7,
+      "caixa": [
+        109,
+        56,
+        275,
+        467
+      ],
+      "sha256": "716c1467396f1128e5a70462314e4ce141a899edcb6b5a216576b072d8bc8f30",
+      "transparencia_real": true,
+      "margens_seguras": true
+    },
+    {
+      "fase": 8,
+      "caixa": [
+        108,
+        54,
+        276,
+        475
+      ],
+      "sha256": "13f4259afa409a63d477c2ca17fc659e1a5fa78661e6b85646e93de8a40e9396",
+      "transparencia_real": true,
+      "margens_seguras": true
+    }
+  ]
+}

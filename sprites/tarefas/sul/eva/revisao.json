@@ -1,0 +1,46 @@
+{
+  "aprovado": true,
+  "estado": "aprovado após correção local e revisão do coordenador em 2026-10-23",
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "passada_teste_px_por_quadro": 20.714,
+  "passada_teste_projetada_px_por_quadro": 7.25,
+  "perfil_recuo_projetado_por_intervalo": [
+    7,
+    6,
+    8,
+    8,
+    6,
+    7,
+    8,
+    8
+  ],
+  "observacoes": [
+    "Oito fases distintas, pose parada fora do ciclo; identidade, câmera, pulseira/brinco, contorno e pixel art conferidos na prancha.",
+    "Edição controlada dos apoios em 01/04/05/08: remapeamento local em pixels inteiros, sem suavização; originais e hashes preservados em historico/pre-edicao-apoio-2026-10-23.",
+    "Recuo projetado do apoio por transição: 7, 6, 8, 8, 6, 7, 8, 8 px; os dois passos mantêm o mesmo perfil.",
+    "Revisadas no navegador as velocidades 100/400 ms, o chão marcado e as transições 04→05 e 08→01; há pé de apoio em todas as fases e não foi observada patinação brusca.",
+    "Joelhos parcialmente ocultos pelas calças largas; contato e passagem legíveis pelo calçado e pela sobreposição. A medição de juntas ocultas permanece estimada."
+  ],
+  "pendencias": [],
+  "evidencias": [
+    "../eva-ciclo.png",
+    "../eva-normal.gif",
+    "../eva-lento.gif",
+    "../rastreamento.json",
+    "../tecnica.json",
+    "../historico/pre-edicao-apoio-2026-10-23/manifesto.json"
+  ]
+}

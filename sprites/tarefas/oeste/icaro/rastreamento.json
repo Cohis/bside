@@ -1,0 +1,337 @@
+{
+  "metodo": "Estimativas manuais sobre as células finais. Joelhos inferidos sob calça larga; não são medição anatômica precisa. Coordenadas y transferidas pela correção local registrada; estimativas, não novas medições. Pontos 03/07 atualizados por inspeção das variantes t1 na prancha; margens de erro explícitas. Joelho de 03/07 atualizado como estimativa após remapeamento vertical local.",
+  "quadros": [
+    {
+      "quadro": 1,
+      "quadril_estimado": [
+        186,
+        311
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          147,
+          395
+        ],
+        "tornozelo_estimado": [
+          143,
+          450
+        ],
+        "ponta_pe_observada_aproximada": [
+          91,
+          475
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          238,
+          397
+        ],
+        "tornozelo_estimado": [
+          278,
+          436
+        ],
+        "ponta_pe_observada_aproximada": [
+          249,
+          474
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    },
+    {
+      "quadro": 2,
+      "quadril_estimado": [
+        191,
+        315
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          164,
+          391
+        ],
+        "tornozelo_estimado": [
+          161,
+          449
+        ],
+        "ponta_pe_observada_aproximada": [
+          121,
+          474
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          244,
+          392
+        ],
+        "tornozelo_estimado": [
+          287,
+          429
+        ],
+        "ponta_pe_observada_aproximada": [
+          265,
+          454
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    },
+    {
+      "quadro": 3,
+      "quadril_estimado": [
+        190,
+        309
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          212,
+          399
+        ],
+        "tornozelo_estimado": [
+          205,
+          452
+        ],
+        "ponta_pe_observada_aproximada": [
+          167,
+          474
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          151,
+          375
+        ],
+        "tornozelo_estimado": [
+          159,
+          430
+        ],
+        "ponta_pe_observada_aproximada": [
+          132,
+          451
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 12,
+        "joelhos": 20,
+        "tornozelos": 12,
+        "pontas": 12
+      }
+    },
+    {
+      "quadro": 4,
+      "quadril_estimado": [
+        190,
+        301
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          221,
+          387
+        ],
+        "tornozelo_estimado": [
+          251,
+          443
+        ],
+        "ponta_pe_observada_aproximada": [
+          222,
+          471
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          159,
+          382
+        ],
+        "tornozelo_estimado": [
+          139,
+          431
+        ],
+        "ponta_pe_observada_aproximada": [
+          91,
+          446
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    },
+    {
+      "quadro": 5,
+      "quadril_estimado": [
+        191,
+        309
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          224,
+          395
+        ],
+        "tornozelo_estimado": [
+          267,
+          442
+        ],
+        "ponta_pe_observada_aproximada": [
+          235,
+          470
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          154,
+          392
+        ],
+        "tornozelo_estimado": [
+          145,
+          449
+        ],
+        "ponta_pe_observada_aproximada": [
+          91,
+          469
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    },
+    {
+      "quadro": 6,
+      "quadril_estimado": [
+        191,
+        312
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          243,
+          401
+        ],
+        "tornozelo_estimado": [
+          288,
+          444
+        ],
+        "ponta_pe_observada_aproximada": [
+          259,
+          475
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          160,
+          394
+        ],
+        "tornozelo_estimado": [
+          163,
+          456
+        ],
+        "ponta_pe_observada_aproximada": [
+          118,
+          476
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    },
+    {
+      "quadro": 7,
+      "quadril_estimado": [
+        190,
+        314
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          152,
+          376
+        ],
+        "tornozelo_estimado": [
+          165,
+          431
+        ],
+        "ponta_pe_observada_aproximada": [
+          138,
+          457
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          213,
+          402
+        ],
+        "tornozelo_estimado": [
+          195,
+          452
+        ],
+        "ponta_pe_observada_aproximada": [
+          159,
+          474
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 12,
+        "joelhos": 20,
+        "tornozelos": 12,
+        "pontas": 12
+      }
+    },
+    {
+      "quadro": 8,
+      "quadril_estimado": [
+        192,
+        310
+      ],
+      "esquerda": {
+        "joelho_estimado_oculto": [
+          157,
+          392
+        ],
+        "tornozelo_estimado": [
+          145,
+          437
+        ],
+        "ponta_pe_observada_aproximada": [
+          95,
+          462
+        ]
+      },
+      "direita": {
+        "joelho_estimado_oculto": [
+          229,
+          395
+        ],
+        "tornozelo_estimado": [
+          252,
+          443
+        ],
+        "ponta_pe_observada_aproximada": [
+          220,
+          466
+        ]
+      },
+      "incerteza_px": {
+        "quadril": 10,
+        "joelhos": 18,
+        "tornozelos": 8,
+        "pontas": 6
+      }
+    }
+  ],
+  "passada_teste_px_por_quadro": 43,
+  "formula": "Velocidade visual calibrada pela média de deslocamento x dos dois apoios em 3 intervalos; marcas do chão à direita. Não certifica contato sem imagem temporal.",
+  "advertencia": "Pontos estimados com incerteza ≈10–12 px. Resíduo de patinação calculado em x; projeção vertical da sola/oclusão exige revisão visual.",
+  "correcao_sola_baixa_aplicada": true
+}

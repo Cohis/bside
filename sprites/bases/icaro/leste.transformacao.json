@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-icaro-leste-selecionada.png",
+  "caixa_original": [
+    340,
+    188,
+    756,
+    1391
+  ],
+  "escala_uniforme": 0.35245220282626766,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    109,
+    56
+  ],
+  "eixo_original": 576.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

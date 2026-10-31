@@ -1,0 +1,406 @@
+{
+  "tipo": "estimativa visual manual, não medição validada",
+  "incerteza_px": {
+    "ponta_pe": 5,
+    "tornozelo": 8,
+    "quadril": 10,
+    "joelho": 20
+  },
+  "quadros": [
+    {
+      "fase": 1,
+      "apoio_principal": "esquerda",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            310
+          ],
+          "joelho": [
+            172,
+            390
+          ],
+          "tornozelo": [
+            155,
+            471
+          ],
+          "ponta_pe": [
+            139,
+            488
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            310
+          ],
+          "joelho": [
+            214,
+            382
+          ],
+          "tornozelo": [
+            265,
+            453
+          ],
+          "ponta_pe": [
+            249,
+            470
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 2,
+      "apoio_principal": "esquerda",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            314
+          ],
+          "joelho": [
+            169,
+            396
+          ],
+          "tornozelo": [
+            180,
+            462
+          ],
+          "ponta_pe": [
+            164,
+            479
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "Estimativa visual após correção local; junta sob calça é oclusa e não foi medida automaticamente."
+        },
+        "direita": {
+          "quadril": [
+            179,
+            314
+          ],
+          "joelho": [
+            220,
+            370
+          ],
+          "tornozelo": [
+            278,
+            426
+          ],
+          "ponta_pe": [
+            262,
+            443
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 3,
+      "apoio_principal": "esquerda",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            310
+          ],
+          "joelho": [
+            213,
+            388
+          ],
+          "tornozelo": [
+            237,
+            467
+          ],
+          "ponta_pe": [
+            221,
+            484
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            310
+          ],
+          "joelho": [
+            180,
+            372
+          ],
+          "tornozelo": [
+            196,
+            434
+          ],
+          "ponta_pe": [
+            180,
+            451
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 4,
+      "apoio_principal": "esquerda",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            308
+          ],
+          "joelho": [
+            232,
+            383
+          ],
+          "tornozelo": [
+            275,
+            458
+          ],
+          "ponta_pe": [
+            259,
+            475
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            308
+          ],
+          "joelho": [
+            159,
+            381
+          ],
+          "tornozelo": [
+            155,
+            454
+          ],
+          "ponta_pe": [
+            139,
+            471
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 5,
+      "apoio_principal": "direita",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            310
+          ],
+          "joelho": [
+            230,
+            380
+          ],
+          "tornozelo": [
+            270,
+            450
+          ],
+          "ponta_pe": [
+            254,
+            467
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            310
+          ],
+          "joelho": [
+            150,
+            387
+          ],
+          "tornozelo": [
+            136,
+            464
+          ],
+          "ponta_pe": [
+            120,
+            481
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 6,
+      "apoio_principal": "direita",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            314
+          ],
+          "joelho": [
+            242,
+            386
+          ],
+          "tornozelo": [
+            295,
+            457
+          ],
+          "ponta_pe": [
+            279,
+            474
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            314
+          ],
+          "joelho": [
+            158,
+            388
+          ],
+          "tornozelo": [
+            153,
+            463
+          ],
+          "ponta_pe": [
+            137,
+            480
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 7,
+      "apoio_principal": "direita",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            310
+          ],
+          "joelho": [
+            211,
+            371
+          ],
+          "tornozelo": [
+            237,
+            416
+          ],
+          "ponta_pe": [
+            222,
+            433
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "Estimativa visual após correção local; junta sob calça é oclusa e não foi medida automaticamente."
+        },
+        "direita": {
+          "quadril": [
+            179,
+            310
+          ],
+          "joelho": [
+            166,
+            389
+          ],
+          "tornozelo": [
+            169,
+            468
+          ],
+          "ponta_pe": [
+            153,
+            485
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    },
+    {
+      "fase": 8,
+      "apoio_principal": "direita",
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            205,
+            308
+          ],
+          "joelho": [
+            172,
+            384
+          ],
+          "tornozelo": [
+            155,
+            461
+          ],
+          "ponta_pe": [
+            139,
+            478
+          ],
+          "contato_chao": false,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        },
+        "direita": {
+          "quadril": [
+            179,
+            308
+          ],
+          "joelho": [
+            214,
+            378
+          ],
+          "tornozelo": [
+            265,
+            449
+          ],
+          "ponta_pe": [
+            249,
+            466
+          ],
+          "contato_chao": true,
+          "confianca": "baixa nas juntas ocultas; média na ponta visível",
+          "observacao": "quadril e joelho inferidos sob a roupa; tornozelo inferido dentro do calçado; ponta estimada visualmente, não ponto rastreado automaticamente"
+        }
+      }
+    }
+  ],
+  "recuo_apoio_x_por_transicao": [
+    25,
+    57,
+    38,
+    17,
+    16,
+    96
+  ],
+  "passada_teste_px_por_quadro": 58.69,
+  "calibracao_aprovada": false,
+  "observacao": "Pontos de apoio estimados visualmente; correções selecionadas reduzem elevação das passagens e flexionam recepção02. Teste de chão em teste-chao.json; patinação persistente, sem calibração aprovada."
+}

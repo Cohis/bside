@@ -1,0 +1,4 @@
+/bside
+*.o
+core
+core.*

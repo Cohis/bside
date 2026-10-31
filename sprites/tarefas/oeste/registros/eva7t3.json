@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Gere SOMENTE EVA da imagem1 em perfil OESTE olhando esquerda, passagem fase 7. A imagem3 é apenas exemplo de anatomia de passagem baixa, não copiar personagem/roupa. Imagem2 guia. Perna direita DISTANTE apoiada sob quadril; perna esquerda PRÓXIMA COM BOLSO flexiona joelho à esquerda e pé elevado 20px ligeiramente à esquerda do apoio. Não deixar pé elevado atrás à direita. Não levantar joelho exageradamente; pose de passada curta casual. Sobreposição natural identifica camada próxima e distante. Preserve cabeça, rosto, câmera, roupa branca/cinza e rabo de cavalo da base. Braços quase verticais. Alpha transparente sem sombra nem texto, corpo inteiro pixel art.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/07.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/icaro/07-raw.png"
+  ]
+}

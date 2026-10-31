@@ -1,0 +1,72 @@
+{
+  "metodo": "image_gen incorporando base congelada e guia correspondente; quadro único por pedido; os artefatos brutos ficam nesta pasta",
+  "referencias": {
+    "icaro-01": [
+      "sprites/bases/icaro/nordeste.png",
+      "sprites/guias/nordeste/01.png"
+    ],
+    "icaro-08": [
+      "sprites/bases/icaro/nordeste.png",
+      "sprites/guias/nordeste/08.png"
+    ],
+    "eva-01": [
+      "sprites/bases/eva/nordeste.png",
+      "sprites/guias/nordeste/01.png"
+    ],
+    "eva-08": [
+      "sprites/bases/eva/nordeste.png",
+      "sprites/guias/nordeste/08.png"
+    ]
+  },
+  "candidatos": {
+    "icaro-01": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/icaro-01-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "não obedeceu lado anatômico do apoio nem localização dos pés do guia"
+    },
+    "icaro-08": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/icaro-08-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "não obedeceu lado anatômico do apoio nem localização dos pés do guia"
+    },
+    "eva-01": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/eva-01-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "pose e contato incompatíveis com 08→01; pé de apoio/swing não distinguíveis como requerido"
+    },
+    "eva-08": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/eva-08-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "pose e contato incompatíveis com 08→01; pé de apoio/swing não distinguíveis como requerido"
+    }
+  },
+  "composicao_manual_rejeitada": [
+    "icaro-01-pernas-ensaio.png",
+    "icaro-08-pernas-ensaio.png"
+  ],
+  "motivo_composicao": "corte de cintura, pixels residuais e pose 01 ainda sem dois contatos coerentes; PNGs ativos não alterados",
+  "prompts": "correcoes/prompts-reautoria.md",
+  "ensaios_controlados_2026_10_24": {
+    "icaro-01": {
+      "arquivo": "correcoes/icaro-01-contato-duplo-ensaio.png",
+      "sha256": "a76c9916d512d25dbdeaba830565974e85892d3dc301e18ac5f24d72eddf1db7",
+      "motivo": "A rearticulação afina/rompe a perna e cria fragmento de tênis; Ícaro ultrapassa margem inferior da célula."
+    },
+    "icaro-08": {
+      "arquivo": "correcoes/icaro-08-transplante-v3.png",
+      "sha256": "0f5172f3ed7280c4f14c50c2e9cbf17954d169adcc31435ec8630cb5d5d197f6",
+      "motivo": "O transplante aproxima os pés, mas repete a postura de 07, congela o apoio e não resolve 08→01; costura/resíduo no contorno da cintura."
+    },
+    "eva-01": {
+      "arquivo": "correcoes/eva-01-contato-duplo-ensaio.png",
+      "sha256": "e0c76675d0ca776bbe51c3dd3e3e2eb1785648c3711e1917ee0677c66ecf846d",
+      "motivo": "A rearticulação afina/rompe a perna e cria fragmento de tênis; Ícaro ultrapassa margem inferior da célula."
+    },
+    "eva-08": {
+      "arquivo": "correcoes/eva-08-transplante-v3.png",
+      "sha256": "9495336b3412acab3935fd3e3b97049d7c71ec61941027c3408c4fa1a7239ebd",
+      "motivo": "O transplante aproxima os pés, mas repete a postura de 07, congela o apoio e não resolve 08→01; costura/resíduo no contorno da cintura."
+    }
+  },
+  "preservacao_2026_10_24": "correcoes/originais-01-08-2026-10-24/manifesto.json"
+}

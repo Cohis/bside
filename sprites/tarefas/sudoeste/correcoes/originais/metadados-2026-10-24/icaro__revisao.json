@@ -1,0 +1,35 @@
+{
+  "aprovado": false,
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "16 PNGs RGBA384×512 verificados: alpha real, margens válidas e oito fases distintas por personagem.",
+    "Pranchas clara/escura e GIFs100/400ms atualizados após seleção de quatro correções locais; GIFs têm oito quadros e durações corretas.",
+    "Originais dos quatro quadros substituídos preservados em correcoes/originais, com transformações anteriores.",
+    "Pulseira de Ícaro permanece no pulso esquerdo; Eva sem pulseira. Imagens não foram espelhadas.",
+    "Reprodução contínua dos GIFs em navegador não verificada; abertura local bloqueada por política de URL.",
+    "Teste estático de chão projetado em teste-chao.json; o rastreamento de juntas ocultas é visual e aproximado."
+  ],
+  "pendencias": [
+    "Ícaro07: composição baixou o pé de balanço cerca de19px e eliminou a marcha mais exagerada, mas a continuidade06→07→08 ainda exige revisão temporal independente.",
+    "Recepção02 tem joelho de apoio mais flexo;06 permaneceu original porque candidato encurtou a figura cerca de23px.",
+    "Pé de apoio deriva cerca de81,82px e90,81px em x nas duas metades em coordenadas de mundo com passo do guia; patinação não resolvida.",
+    "Contato/avanço08 mantém recuo projetado desproporcional, exigindo redesenho anatômico do apoio antes de aprovar."
+  ],
+  "passada_teste_px_por_quadro": 58.69,
+  "calibracao_aprovada": false,
+  "validacao_temporal_realizada": false,
+  "teste_chao": "teste-chao.json"
+}

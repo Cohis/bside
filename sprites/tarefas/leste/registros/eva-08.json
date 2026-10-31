@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: identity-preserve. Uma única pose de sprite pixel art para jogo. A imagem 1 é a BASE FIXA: preserve exatamente identidade, perfil olhando à direita, câmera, escala relativa de cabeça/tronco/membros, paleta, contorno e iluminação. A imagem 2 é somente guia da pose: laranja=esquerda anatômica DISTANTE, azul=direita anatômica PRÓXIMA; não desenhar guia nem adotar seus tamanhos de cabeça. Demais imagens são fases aprovadas, se presentes. Corpo inteiro, caminhada no lugar com passada moderada. Sempre pelo menos um pé no chão, sem fase de corrida. Modifique só os membros e a mínima flexão de tronco exigida pela fase. Fundo realmente transparente alpha, sem sombra de chão, halo, texto, chão, cenário, quadriculado, objetos adicionais, suavização ou mudança de perspectiva. Uma única imagem, um único personagem, sem grade. Eva: cabelo escuro em rabo de cavalo longo, olho azul, brinco vermelho, moletom branco curto com capuz, mangas longas, barriga levemente exposta, calça cinza cargo larga, tênis escuros com sola clara. Direção LESTE.  A perna próxima direita possui bolso cargo visível; a distante esquerda não mostra bolso. Fase 08, AVANÇO ESQUERDO: pé DIREITO PRÓXIMO atrás (esquerda da tela), ponta apoiada terminando impulso; perna ESQUERDA DISTANTE avança à frente (direita da tela), pé levemente elevado e calcanhar se prepara para tocar. Braço DIREITO PRÓXIMO avança, ESQUERDO DISTANTE recua. Quadril elevado moderadamente. Somente pé direito em contato, sem salto. Perna distante sem bolso avançando deve estar quase estendida, pé ainda sem tocar chão.",
+  "referencias": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/leste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/leste/08.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/eva-07-tentativa2-rejeitada.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/eva-01.png"
+  ],
+  "raw": "sprites/tarefas/leste/raws/eva-08.png",
+  "origem": "/home/icaro/.codex/generated_images/01a15bca-e531-7cf1-82c6-8e2e72208ca2/exec-e0e56988-1eeb-403a-a01d-05c7b7de02ef.png"
+}

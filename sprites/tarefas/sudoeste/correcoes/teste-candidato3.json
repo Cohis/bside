@@ -1,0 +1,243 @@
+{
+  "metodo": "inspeção estática 07→08→01 com piso y=480, GIFs gerados e verificados estruturalmente; reprodução temporal real não realizada",
+  "personagens": {
+    "icaro": {
+      "original_sha256": "bf5e51fd342367f1a323de4d2fd85106c414e3476ee710563f9aba40793ef944",
+      "candidato_sha256": "14a62a0147a39e42c3d8faaec7fece2558d1f8fedafa7e16d477c3ccbe08e927",
+      "tecnica": {
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          97,
+          54,
+          293,
+          486
+        ],
+        "margens_ok": true
+      },
+      "loops": [
+        "icaro-08-candidato3-loop-100ms.gif",
+        "icaro-08-candidato3-loop-400ms.gif"
+      ],
+      "chao": "icaro-08-candidato3-transicao-chao.png",
+      "decisao": "rejeitado: duas solas continuam baixas/separadas; 07→08 não mantém apoio nem cria balanço esquerdo inequívoco.",
+      "faixas_opacas_piso_px": {
+        "07": {
+          "470": [
+            [
+              119,
+              191
+            ]
+          ],
+          "475": [
+            [
+              119,
+              191
+            ]
+          ],
+          "480": [
+            [
+              119,
+              186
+            ]
+          ],
+          "485": [
+            [
+              123,
+              169
+            ]
+          ]
+        },
+        "08_candidato": {
+          "470": [
+            [
+              123,
+              179
+            ],
+            [
+              207,
+              244
+            ]
+          ],
+          "475": [
+            [
+              131,
+              179
+            ]
+          ],
+          "480": [
+            [
+              146,
+              176
+            ]
+          ],
+          "485": [
+            [
+              156,
+              172
+            ]
+          ]
+        },
+        "01": {
+          "470": [
+            [
+              114,
+              189
+            ],
+            [
+              218,
+              264
+            ]
+          ],
+          "475": [
+            [
+              114,
+              189
+            ],
+            [
+              221,
+              256
+            ]
+          ],
+          "480": [
+            [
+              114,
+              189
+            ]
+          ],
+          "485": [
+            [
+              117,
+              189
+            ]
+          ]
+        }
+      },
+      "observacao_piso": "Na linha y=480 o candidato só conserva a sola esquerda da tela em x146–176; a outra está suspensa em y≈470, sem recuo esperado do apoio."
+    },
+    "eva": {
+      "original_sha256": "0da620b811e2fd30487bba53c5e4a9acd1e5376c9dee12c8b59f65ea512cb06d",
+      "candidato_sha256": "4bf4829545ce2ae93059079eb475d93a7c69781de6430f93b0580dd063d72e72",
+      "tecnica": {
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          88,
+          53,
+          338,
+          506
+        ],
+        "margens_ok": true
+      },
+      "loops": [
+        "eva-08-candidato3-loop-100ms.gif",
+        "eva-08-candidato3-loop-400ms.gif"
+      ],
+      "chao": "eva-08-candidato3-transicao-chao.png",
+      "decisao": "rejeitado: duas solas continuam baixas/separadas; 07→08 não mantém apoio nem cria balanço esquerdo inequívoco.",
+      "faixas_opacas_piso_px": {
+        "07": {
+          "470": [
+            [
+              136,
+              187
+            ]
+          ],
+          "475": [
+            [
+              133,
+              188
+            ]
+          ],
+          "480": [
+            [
+              131,
+              188
+            ]
+          ],
+          "485": [
+            [
+              131,
+              185
+            ]
+          ]
+        },
+        "08_candidato": {
+          "470": [
+            [
+              115,
+              200
+            ],
+            [
+              226,
+              278
+            ]
+          ],
+          "475": [
+            [
+              110,
+              196
+            ],
+            [
+              222,
+              274
+            ]
+          ],
+          "480": [
+            [
+              108,
+              186
+            ],
+            [
+              220,
+              271
+            ]
+          ],
+          "485": [
+            [
+              108,
+              177
+            ],
+            [
+              220,
+              267
+            ]
+          ]
+        },
+        "01": {
+          "470": [
+            [
+              122,
+              185
+            ]
+          ],
+          "475": [
+            [
+              124,
+              185
+            ]
+          ],
+          "480": [
+            [
+              130,
+              183
+            ]
+          ],
+          "485": [
+            [
+              154,
+              171
+            ]
+          ]
+        }
+      },
+      "observacao_piso": "Na linha y=480 o candidato tem duas solas, x108–186 e x220–271, reproduzindo duplo contato aberto em vez de passagem."
+    }
+  }
+}

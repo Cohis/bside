@@ -1,0 +1,9 @@
+{
+  "prompt": "Precise identity-preserving correction, one ICARO sprite NORTH phase05. Image1 fixed neutral base identity; image2 guide05; image3 is the current phase05 to correct. Keep pose, body, hair, colors and shoes of image3 unchanged. ONLY CORRECT THE WRIST ACCESSORY: REMOVE entirely the yellow bracelet and its black strap from the wrist on SCREEN RIGHT. That right wrist must be bare skin. Put the yellow bracelet with black strap on SCREEN LEFT wrist, at the bent arm close to torso (screen left near waist). In back view anatomical LEFT = SCREEN LEFT, always, even when arm bends. DO NOT mirror image. This is right foot contact with screen right foot forward/grounded and left foot behind raised heel. Keep exact fixed-base proportions and sharp pixel art. Single full body on alpha TRANSPARENT background, no shadow/text/halo.",
+  "refs": [
+    "sprites/bases/icaro/norte.png",
+    "sprites/guias/norte/05.png",
+    "sprites/tarefas/norte/raws/icaro-05-tentativa1.png"
+  ],
+  "resultado": "sprites/tarefas/norte/raws/icaro-05-selecionada.png"
+}

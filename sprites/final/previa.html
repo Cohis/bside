@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ícaro e Eva — revisão de caminhada</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f0ea;color:#202421;font:16px system-ui,sans-serif}main{max-width:1140px;margin:auto;padding:28px}h1{font-size:27px;margin:0 0 8px}p{line-height:1.5}fieldset{border:1px solid #b5bbb0;margin:20px 0;padding:15px;display:flex;gap:15px;flex-wrap:wrap}label{display:flex;flex-direction:column;gap:5px}select,button,input{font:inherit}select,button{padding:9px 12px;background:white;border:1px solid #8c9688;border-radius:5px}button{cursor:pointer}button:focus-visible,select:focus-visible{outline:3px solid #3c7257;outline-offset:3px}.opcao{flex-direction:row;align-items:center}canvas{width:100%;height:auto;image-rendering:pixelated;display:block;border:1px solid #b5bbb0;background:#e5e7e1}output{display:block;padding:12px 0;font-variant-numeric:tabular-nums}.aviso{border-left:4px solid #a15b0c;padding-left:12px}small{color:#536050}a{color:#245a3c}
+</style>
+<main><h1>Ícaro e Eva · Caminhada</h1><p id="estado" class="aviso"></p>
+<fieldset><legend>Reprodução</legend>
+<label>Personagem<select id="personagem"><option value="icaro">Ícaro</option><option value="eva">Eva</option></select></label>
+<label>Direção<select id="direcao"></select></label>
+<label>Pose<select id="modo"><option value="parado">Parado</option><option value="andar">Caminhando</option></select></label>
+<label>Velocidade<select id="velocidade"><option value="1">Normal · 100 ms</option><option value="0.25">Lenta · 400 ms</option></select></label>
+<label>Fundo<select id="fundo"><option value="grade">Quadriculado</option><option value="claro">Claro</option><option value="escuro">Escuro</option></select></label>
+<button id="pausa" type="button">Pausar</button><button id="anterior" type="button">← Quadro</button><button id="proximo" type="button">Quadro →</button>
+<label class="opcao"><input type="checkbox" id="deslocar">Deslocamento no chão</label>
+<label class="opcao"><input type="checkbox" id="guias">Rastreamento estimado das articulações</label>
+<label>Passada de teste (px/quadro)<input id="passada" type="number" value="18" min="0" max="60" step="1"></label>
+</fieldset>
+<canvas id="tela" width="1080" height="620" aria-label="Prévia do personagem sobre chão marcado"></canvas><output id="quadro" aria-live="off"></output><p id="revisao" class="aviso"></p>
+<p><small>A coluna 0 é a pose parada e fica fora do ciclo. As linhas seguem N, NE, E, SE, S, SO, O, NO. A grade em deslocamento representa uma câmera que acompanha o personagem; ajuste a passada para comparar o recuo do pé de apoio com o chão. O deslocamento de teste não altera os PNGs.</small></p>
+<p><a href="validacao.md">Registro de validação</a></p></main>
+<script src="dados-previa.js"></script><script>
+'use strict';
+const $=id=>document.getElementById(id),D=window.ANIMACOES,canvas=$('tela'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
+let fase=0,pausado=false,tempo=0,anterior=null,distancia=0;
+const imagens=new Map();
+D.direcoes.forEach((dir,i)=>{const o=document.createElement('option');o.value=dir;o.textContent=['Norte','Nordeste','Leste','Sudeste','Sul','Sudoeste','Oeste','Noroeste'][i];$('direcao').append(o)});$('direcao').value='sul';
+const ciclos=Object.values(D.personagens).flatMap(p=>Object.values(p));
+const prontos=ciclos.reduce((n,c)=>n+c.quadros.filter(q=>q.disponivel).length,0),aprovados=ciclos.filter(c=>c.revisao?.aprovado).length;
+$('estado').textContent=D.estado==='concluido'?'Spritesheets e ciclos revisados.':`Em produção · ${prontos}/144 quadros disponíveis (${(prontos/144*100).toFixed(1).replace('.',',')}%) · ${aprovados}/16 ciclos com revisão aprovada. Quadros ausentes aparecem como pendentes.`;
+for(const personagem of Object.keys(D.personagens))for(const direcao of D.direcoes)for(const f of D.personagens[personagem][direcao].quadros){if(f.disponivel){const im=new Image();im.src=f.arquivo;imagens.set(`${personagem}/${direcao}/${f.indice}`,im)}}
+
+function sincronizar(){tempo=0;fase=$('modo').value==='parado'?0:1;distancia=0;$('passada').value=D.personagens[$('personagem').value][$('direcao').value].passada_teste_px_por_quadro??18}
+function desenharRastreamento(ciclo,fase,x,y){
+ const quadro=ciclo.rastreamento?.quadros?.find(q=>(q.fase??q.quadro)===fase);
+ if(!quadro?.juntas)return false;
+ for(const [lado,cor] of [['esquerda','#dc6500'],['direita','#0876c7']]){
+  const junta=quadro.juntas[lado];if(!junta)continue;
+  const pontos=['quadril','joelho','tornozelo','ponta_pe'].map(k=>junta[k]).filter(p=>Array.isArray(p)&&p.length===2);
+  ctx.strokeStyle=cor;ctx.fillStyle=cor;ctx.lineWidth=2;ctx.beginPath();pontos.forEach((p,i)=>i?ctx.lineTo(x+p[0],y+p[1]):ctx.moveTo(x+p[0],y+p[1]));ctx.stroke();
+  for(const p of pontos){ctx.beginPath();ctx.arc(x+p[0],y+p[1],4,0,Math.PI*2);ctx.fill()}
+ }
+ return true;
+}
+for(const id of ['personagem','direcao','modo'])$(id).addEventListener('change',sincronizar);
+function pausa(v){pausado=v;$('pausa').textContent=v?'Reproduzir':'Pausar'}
+$('pausa').onclick=()=>pausa(!pausado);
+function passo(delta){$('modo').value='andar';pausa(true);fase=fase===0?(delta>0?1:8):((fase-1+delta+8)%8)+1;tempo=0;distancia+=delta*Number($('passada').value)}
+$('anterior').onclick=()=>passo(-1);$('proximo').onclick=()=>passo(1);
+function render(t){
+ const dt=anterior===null?0:Math.min(100,t-anterior);anterior=t;const dir=$('direcao').value,personagem=$('personagem').value;
+ if(!pausado&&$('modo').value==='andar'){const rate=Number($('velocidade').value);tempo+=dt*rate;distancia+=Number($('passada').value)*dt*rate/100;while(tempo>=100){tempo-=100;fase=fase%8+1}}
+ const escuro=$('fundo').value==='escuro';ctx.fillStyle=escuro?'#252a30':'#f5f5ee';ctx.fillRect(0,0,1080,620);
+ if($('fundo').value==='grade'){ctx.fillStyle='#d8ded4';for(let y=0;y<620;y+=24)for(let x=0;x<1080;x+=24)if((x/24+y/24)%2===0)ctx.fillRect(x,y,24,24)}
+ const ang=D.direcoes.indexOf(dir)*Math.PI/4,mover=$('deslocar').checked&&$('modo').value==='andar',dx=mover?-distancia*Math.sin(ang):0,dy=mover?distancia*.35*Math.cos(ang):0;
+ ctx.strokeStyle=escuro?'#4a575f':'#aebaaa';ctx.lineWidth=1;ctx.beginPath();for(let x=((dx%48)+48)%48;x<1080;x+=48){ctx.moveTo(x,390);ctx.lineTo(x,620)}for(let y=390+((dy%24)+24)%24;y<620;y+=24){ctx.moveTo(0,y);ctx.lineTo(1080,y)}ctx.stroke();
+ const img=imagens.get(`${personagem}/${dir}/${fase}`),x=348,y=35;
+ if(img?.complete&&img.naturalWidth)ctx.drawImage(img,x,y);else{ctx.fillStyle=escuro?'white':'#252a30';ctx.font='22px system-ui';ctx.textAlign='center';ctx.fillText('Quadro pendente de produção',540,280)}
+ ctx.strokeStyle='#b6501c';ctx.beginPath();ctx.moveTo(532,515);ctx.lineTo(548,515);ctx.moveTo(540,507);ctx.lineTo(540,523);ctx.stroke();
+ const ciclo=D.personagens[personagem][dir];
+ if($('guias').checked&&fase>0)desenharRastreamento(ciclo,fase,x,y);
+ const pendencias=ciclo.revisao?.pendencias??[];
+ $('revisao').textContent=(ciclo.revisao?.aprovado?'Ciclo aprovado.':'Ciclo ainda não aprovado. ')+pendencias.join(' ') + ($('guias').checked?' Articulações laranja: esquerda; azuis: direita. Juntas sob a roupa são estimativas; consulte o registro de rastreamento.':'');
+ const info=D.personagens[personagem][dir].quadros[fase];$('quadro').textContent=`Quadro ${String(fase).padStart(2,'0')} · ${info.fase} · ${info.disponivel?'disponível':'pendente'} · ${pausado?'pausado':$('modo').value==='parado'?'pose parada':'em reprodução'}`;
+ requestAnimationFrame(render)
+}requestAnimationFrame(render);
+</script></html>

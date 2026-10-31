@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente Eva, sprite pixel art corpo inteiro, direção SUL, câmera rigorosamente FRONTAL olhando ao observador, fase 02. Imagem1 BASE FIXA define identidade, proporções, cabeça, escala, câmera, paleta e acabamento. Imagem2 GUIA ESQUEMÁTICO define pose: laranja esquerda anatômica, azul direita; não desenhe guia ou texto. FASE: Recepção esquerda. Pé ESQUERDO (DIREITA DA TELA) à frente totalmente apoiado recebendo peso com joelho flexionado. Pé DIREITO (ESQUERDA DA TELA) atrás começa balanço, calcanhar alto e ponta deixando chão, perna dobrada. Quadril desce4px. Braço DIREITO à frente, ESQUERDO atrás.. Preserve membros, roupas, acessórios, dimensões da cabeça e posição corporal. Caminhada lenta no lugar com contato sempre, sem correr ou pular. Frente exige sobreposição e flexão em profundidade, nunca abrir as pernas para os lados. Braços opostos às pernas. Corpo inteiro com margem ampla, pixels duros sem suavização, fundo alpha verdadeiramente transparente sem cenário, sombra ou brilho externo. Uma pose apenas, nenhuma grade. Rabo de cavalo longo preto, olhos azuis, brinco vermelho, blusa branca curta com capuz, calça cinza, tênis escuro sola clara. Imagens adicionais: fases aprovadas para continuidade, NÃO copiar pose; a fase pedida e guia mandam no movimento.",
+  "referenced_image_paths": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/sul.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/sul/02.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/sul/eva/01.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/sul/eva/03.png"
+  ],
+  "transparent_background": true
+}

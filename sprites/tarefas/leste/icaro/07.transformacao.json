@@ -1,0 +1,26 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/icaro-07.png",
+  "caixa_original": [
+    320,
+    142,
+    782,
+    1350
+  ],
+  "escala_uniforme": 0.3526490066225166,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    107,
+    54
+  ],
+  "eixo_original": 560.0,
+  "ancora": [
+    192,
+    480
+  ],
+  "edicao_controlada": {
+    "script": "sprites/tarefas/leste/candidatos/ajustar_07.py",
+    "registro": "sprites/tarefas/leste/registros/edicoes/icaro-07-edicao.json",
+    "origem_normalizada_preservada": "sprites/tarefas/leste/registros/edicoes/icaro-07-antes.png"
+  }
+}

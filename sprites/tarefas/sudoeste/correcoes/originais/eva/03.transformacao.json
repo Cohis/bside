@@ -1,0 +1,26 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-03-v2.png",
+  "caixa_original": [
+    304,
+    147,
+    886,
+    1351
+  ],
+  "escala_uniforme": 0.36363636363636365,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    103,
+    56
+  ],
+  "eixo_original": 550,
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "topo e queixo manuais, escala da cabeça; eixo pelo tronco; bob de recepção +4 e avanço -2; NÃO alinhamento pela sola",
+  "marcos_cabeca_raw": [
+    147,
+    532
+  ],
+  "incerteza_marcos_raw_px": 5
+}

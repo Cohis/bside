@@ -1,0 +1,89 @@
+{
+  "estado": "publicada, aguardando coordenador",
+  "quadros": {
+    "icaro": [
+      {
+        "quadro": 1,
+        "sha256": "36e72f00bd10618eecd8d14d0ea3b63d7026ec2d2ba94ef6d76c61878bfe5a0d",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 2,
+        "sha256": "1c22cd99115d540d54cee2f5171cd5d1958201b8e6329847b34b180b933ed6a2",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 3,
+        "sha256": "546b6501b64decf6118e72d2a78b349d25de88d71ac64c05f04c554fc123d806",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 4,
+        "sha256": "66b53861ee7c27d3ff1b19d06f9d047c8ca44f5e7c751a200b846fbb871b10b1",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 5,
+        "sha256": "57b2924f3e37622e5a68241fc3620bebb5d7ebf8bd56055218e359378b68647d",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 6,
+        "sha256": "75950da559a16d33e5a62a81991e1501518ee0b70021e7141d4008bac60189bf",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 7,
+        "sha256": "4b913d772c8182488016b5210a9914bc2ce07f8cba0d57a8499b5a401df0d9c6",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 8,
+        "sha256": "1092240481afee5db86a2549684a9db9bd56fe50ebe3de9bd2f02427b01ef5e1",
+        "parte_superior_idêntica": true
+      }
+    ],
+    "eva": [
+      {
+        "quadro": 1,
+        "sha256": "e0c13b57919fd6f94349ce827d125c3b29604b2f42d02a9486618aa487cb393f",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 2,
+        "sha256": "fb87c9509004a87c4af1392673d13ed67aa58f465512d200210ea14ba0fbcded",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 3,
+        "sha256": "698c75d04bc0655890971bdb9a49c995ad246db3d3a9498665d5110bd7748875",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 4,
+        "sha256": "50cc748f9b3af66d5d4675b4fd0d978bf264778e58a638427cb759ffa16619a0",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 5,
+        "sha256": "c13cf00acbcb63c2b4110fd2614fb3b9ed38086ff3734b031e87ab3325f680c2",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 6,
+        "sha256": "96b918f12bdd82c0e05676b0074ce545b6907223bafa3a715c280a80dfddcdfd",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 7,
+        "sha256": "cac1e09c9708f15c853e061d7b90d77a7e75de3e30fbe5fcd96beba0c7ba1dc0",
+        "parte_superior_idêntica": true
+      },
+      {
+        "quadro": 8,
+        "sha256": "d450c1324838d0a15ed01d4a3a0eef5a64f0c0b16591f4a1c487f0eb95943379",
+        "parte_superior_idêntica": true
+      }
+    ]
+  }
+}

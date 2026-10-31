@@ -1,0 +1,16 @@
+{
+  "personagem": "eva",
+  "direcao": "leste",
+  "fase": 7,
+  "metodo": "edicao_controlada_composicao_sem_espelhar",
+  "origem": [
+    "sprites/tarefas/leste/registros/edicoes/eva-07-antes.png",
+    "sprites/tarefas/leste/eva/03.png"
+  ],
+  "descricao": "Perna em balanco gerada atras do apoio foi retirada; perna flexionada do quadro 03 do mesmo personagem transplantada rigidamente atras da perna de apoio, sem escala nem interpolacao. Ilhas soltas ate 100 pixels eliminadas.",
+  "script": "sprites/tarefas/leste/candidatos/ajustar_07.py",
+  "sha256_antes": "9b2303a62d35c4c2b5b6530250e17f65bde8b7d1406821cf83f6f0a08dd2b4d1",
+  "sha256_depois": "2a08d1f09386f853114677c64efbd95473822b171dd3edfe2ea122690c45c4ff",
+  "alfa_real": true,
+  "estado": "substituido_apos_inspecao_060708; ciclo_inteiro_ainda_em_revisao"
+}

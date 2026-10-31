@@ -1,0 +1,61 @@
+{
+  "aprovado": true,
+  "estado": "aprovado pelo coordenador após correção local em 2026-10-23",
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "Oito imagens distintas produzidas com image_gen, uma por chamada.",
+    "Identidade e câmera norte preservadas; sem espelhamento.",
+    "Transparência real e margens verificadas em prancha clara.",
+    "Escala uniforme fixa; somente recorte/enquadramento, sem deformação de membros.",
+    "Revisão quadro a quadro realizada. Reprodução temporal e chão marcado devem ser revisados pelo coordenador; não registrados como aprovados.",
+    "Coordenador conferiu as oito fases em prancha com chão, continuidade04→05/08→01, alternância anatômica, escala, roupa/acessórios e recuo regular do apoio; GIFs100/400ms disponíveis e sem fase aérea observada."
+  ],
+  "validacao_tecnica_aprovada": true,
+  "passada_teste_px_por_quadro": 17.14,
+  "passada_teste_origem": "Apoio observado recua 6px verticais por quadro; projeção norte no plano -0,35; velocidade local estimada 6/0,35=17,14px/quadro.",
+  "apoio_observado_px": {
+    "esquerda_01_04": [
+      467,
+      473,
+      479,
+      485
+    ],
+    "direita_05_08": [
+      467,
+      473,
+      479,
+      485
+    ]
+  },
+  "pendencias": [],
+  "rastreamento": "rastreamento.json",
+  "tentativas": {
+    "contato01": 2,
+    "contato05": 2,
+    "demais": 1
+  },
+  "pendencias_anteriores": [
+    "A velocidade aparente de recuo do pé de apoio é irregular; não certificada ausência de patinação.",
+    "Recepções02/06 visualmente próximas das passagens03/07; flexão/queda de quadril insuficientemente distintas.",
+    "Contato esquerdo01 e direito05 diferem na projeção do apoio (458 versus473px); diferença de15px precisa de revisão artística.",
+    "Apoio05→08 avança somente8px, enquanto01→04 recua29px; caminhada ainda assimétrica."
+  ],
+  "edicao_controlada": "../registro-edicao.json",
+  "previas_chao": [
+    "../candidatos_v2/icaro-chao-100ms.gif",
+    "../candidatos_v2/icaro-chao-400ms.gif"
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "metodo": "estimativa visual nas células, não medição anatômica exata",
+  "quadros": [
+    {
+      "fase": 1,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            311
+          ],
+          "joelho": [
+            231,
+            386
+          ],
+          "tornozelo": [
+            244,
+            450
+          ],
+          "ponta_pe": [
+            269,
+            463
+          ],
+          "contato_chao": true
+        },
+        "direita": {
+          "quadril": [
+            180,
+            311
+          ],
+          "joelho": [
+            149,
+            367
+          ],
+          "tornozelo": [
+            115,
+            421
+          ],
+          "ponta_pe": [
+            144,
+            441
+          ],
+          "contato_chao": true
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato."
+    },
+    {
+      "fase": 2,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            310
+          ],
+          "joelho": [
+            214,
+            378
+          ],
+          "tornozelo": [
+            207,
+            449
+          ],
+          "ponta_pe": [
+            235,
+            468
+          ],
+          "contato_chao": true
+        },
+        "direita": {
+          "quadril": [
+            180,
+            310
+          ],
+          "joelho": [
+            151,
+            373
+          ],
+          "tornozelo": [
+            105,
+            419
+          ],
+          "ponta_pe": [
+            130,
+            442
+          ],
+          "contato_chao": false
+        }
+      },
+      "natureza": "estimativa visual revista após troca da imagem; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato. Apoio esquerdo deslocado progressivamente; x agora estimado após edição."
+    },
+    {
+      "fase": 3,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            313
+          ],
+          "joelho": [
+            185,
+            388
+          ],
+          "tornozelo": [
+            158,
+            451
+          ],
+          "ponta_pe": [
+            187,
+            467
+          ],
+          "contato_chao": true
+        },
+        "direita": {
+          "quadril": [
+            180,
+            313
+          ],
+          "joelho": [
+            210,
+            372
+          ],
+          "tornozelo": [
+            208,
+            429
+          ],
+          "ponta_pe": [
+            228,
+            445
+          ],
+          "contato_chao": false
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato."
+    },
+    {
+      "fase": 4,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            313
+          ],
+          "joelho": [
+            167,
+            392
+          ],
+          "tornozelo": [
+            117,
+            447
+          ],
+          "ponta_pe": [
+            140,
+            467
+          ],
+          "contato_chao": true
+        },
+        "direita": {
+          "quadril": [
+            180,
+            313
+          ],
+          "joelho": [
+            214,
+            384
+          ],
+          "tornozelo": [
+            249,
+            434
+          ],
+          "ponta_pe": [
+            272,
+            445
+          ],
+          "contato_chao": false
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato."
+    },
+    {
+      "fase": 5,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            311
+          ],
+          "joelho": [
+            161,
+            380
+          ],
+          "tornozelo": [
+            114,
+            424
+          ],
+          "ponta_pe": [
+            144,
+            441
+          ],
+          "contato_chao": true
+        },
+        "direita": {
+          "quadril": [
+            180,
+            312
+          ],
+          "joelho": [
+            208,
+            383
+          ],
+          "tornozelo": [
+            235,
+            451
+          ],
+          "ponta_pe": [
+            265,
+            466
+          ],
+          "contato_chao": true
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato."
+    },
+    {
+      "fase": 6,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            308
+          ],
+          "joelho": [
+            154,
+            380
+          ],
+          "tornozelo": [
+            106,
+            436
+          ],
+          "ponta_pe": [
+            132,
+            458
+          ],
+          "contato_chao": false
+        },
+        "direita": {
+          "quadril": [
+            180,
+            309
+          ],
+          "joelho": [
+            200,
+            379
+          ],
+          "tornozelo": [
+            196,
+            453
+          ],
+          "ponta_pe": [
+            222,
+            471
+          ],
+          "contato_chao": true
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato. Recuo 24/out: x dos pontos afetados atualizado pela função de remapeamento; permanece estimativa."
+    },
+    {
+      "fase": 7,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            311
+          ],
+          "joelho": [
+            216,
+            376
+          ],
+          "tornozelo": [
+            213,
+            411
+          ],
+          "ponta_pe": [
+            233,
+            430
+          ],
+          "contato_chao": false
+        },
+        "direita": {
+          "quadril": [
+            180,
+            311
+          ],
+          "joelho": [
+            171,
+            388
+          ],
+          "tornozelo": [
+            155,
+            451
+          ],
+          "ponta_pe": [
+            179,
+            469
+          ],
+          "contato_chao": true
+        }
+      },
+      "natureza": "estimativa visual revista após troca da imagem; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato. Recuo 24/out: x dos pontos afetados atualizado pela função de remapeamento; permanece estimativa."
+    },
+    {
+      "fase": 8,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            204,
+            311
+          ],
+          "joelho": [
+            235,
+            376
+          ],
+          "tornozelo": [
+            264,
+            426
+          ],
+          "ponta_pe": [
+            286,
+            443
+          ],
+          "contato_chao": false
+        },
+        "direita": {
+          "quadril": [
+            180,
+            313
+          ],
+          "joelho": [
+            144,
+            395
+          ],
+          "tornozelo": [
+            116,
+            451
+          ],
+          "ponta_pe": [
+            137,
+            470
+          ],
+          "contato_chao": true
+        }
+      },
+      "natureza": "estimativa visual; quadril/joelho oclusos pela roupa; erro ~5-10px, ponta ~3px Coordenada y transferida pelo remapeamento de solo; estimativa, não landmark exato."
+    }
+  ],
+  "recuo_local_estimado_transicoes_apoio": null,
+  "calibracao_aprovada": false,
+  "motivo": "Recuo horizontal estimado atualizado; contato e naturalidade do loop ainda precisam de revisão temporal.",
+  "recuo_horizontal_estimado_transicoes_apoio": [
+    34,
+    48,
+    47,
+    43,
+    43,
+    42
+  ]
+}

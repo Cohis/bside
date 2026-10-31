@@ -1,0 +1,453 @@
+{
+  "metodo": "Inspeção das pranchas e extremos alfa dos calçados; juntas internas são estimadas e marcadas.",
+  "quadros": [
+    {
+      "quadro": 1,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            315
+          ],
+          "joelho": [
+            171,
+            374
+          ],
+          "tornozelo": [
+            171,
+            434
+          ],
+          "ponta_pe": [
+            171,
+            458
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            315
+          ],
+          "joelho": [
+            216,
+            378
+          ],
+          "tornozelo": [
+            216,
+            440
+          ],
+          "ponta_pe": [
+            216,
+            496
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 2,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            320
+          ],
+          "joelho": [
+            171,
+            386
+          ],
+          "tornozelo": [
+            171,
+            451
+          ],
+          "ponta_pe": [
+            171,
+            482
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            320
+          ],
+          "joelho": [
+            216,
+            362
+          ],
+          "tornozelo": [
+            216,
+            403
+          ],
+          "ponta_pe": [
+            216,
+            459
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 3,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            315
+          ],
+          "joelho": [
+            171,
+            382
+          ],
+          "tornozelo": [
+            171,
+            450
+          ],
+          "ponta_pe": [
+            171,
+            481
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            315
+          ],
+          "joelho": [
+            216,
+            354
+          ],
+          "tornozelo": [
+            216,
+            393
+          ],
+          "ponta_pe": [
+            216,
+            450
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 4,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            311
+          ],
+          "joelho": [
+            171,
+            365
+          ],
+          "tornozelo": [
+            171,
+            419
+          ],
+          "ponta_pe": [
+            171,
+            487
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            311
+          ],
+          "joelho": [
+            216,
+            362
+          ],
+          "tornozelo": [
+            216,
+            412
+          ],
+          "ponta_pe": [
+            216,
+            440
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 5,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            315
+          ],
+          "joelho": [
+            171,
+            374
+          ],
+          "tornozelo": [
+            171,
+            432
+          ],
+          "ponta_pe": [
+            171,
+            500
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            315
+          ],
+          "joelho": [
+            216,
+            381
+          ],
+          "tornozelo": [
+            216,
+            447
+          ],
+          "ponta_pe": [
+            216,
+            473
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 6,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            320
+          ],
+          "joelho": [
+            171,
+            360
+          ],
+          "tornozelo": [
+            171,
+            399
+          ],
+          "ponta_pe": [
+            171,
+            456
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            320
+          ],
+          "joelho": [
+            216,
+            388
+          ],
+          "tornozelo": [
+            216,
+            455
+          ],
+          "ponta_pe": [
+            216,
+            483
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 7,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            315
+          ],
+          "joelho": [
+            171,
+            352
+          ],
+          "tornozelo": [
+            171,
+            390
+          ],
+          "ponta_pe": [
+            171,
+            445
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            315
+          ],
+          "joelho": [
+            216,
+            385
+          ],
+          "tornozelo": [
+            216,
+            455
+          ],
+          "ponta_pe": [
+            216,
+            482
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    },
+    {
+      "quadro": 8,
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            171,
+            311
+          ],
+          "joelho": [
+            171,
+            356
+          ],
+          "tornozelo": [
+            171,
+            401
+          ],
+          "ponta_pe": [
+            171,
+            427
+          ],
+          "contato_chao_planejado": false,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        },
+        "direita": {
+          "quadril": [
+            216,
+            311
+          ],
+          "joelho": [
+            216,
+            368
+          ],
+          "tornozelo": [
+            216,
+            425
+          ],
+          "ponta_pe": [
+            216,
+            481
+          ],
+          "contato_chao_planejado": true,
+          "confianca": {
+            "quadril": "estimativa visual, oculto pela roupa",
+            "joelho": "estimativa sob calça larga; não medição anatômica",
+            "tornozelo": "estimativa visual da entrada do calçado",
+            "ponta_pe": "extremo inferior alfa observado no corredor do calçado; contato exato pode estar ocluído"
+          }
+        }
+      },
+      "limite": "Projeção 2D não certifica comprimento real do membro."
+    }
+  ]
+}

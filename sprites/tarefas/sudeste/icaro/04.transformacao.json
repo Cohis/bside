@@ -1,0 +1,23 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/icaro-04.png",
+  "caixa_original": [
+    289,
+    187,
+    838,
+    1311
+  ],
+  "escala_uniforme": 0.3681592039800995,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    87,
+    54
+  ],
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "tamanho da cabeça até queixo estimado visualmente; chão não forçado",
+  "queixo_raw_estimado": 589,
+  "eixo_cabeca_raw_estimado": 595,
+  "ruido_alfa_removido": "somente <8/255"
+}

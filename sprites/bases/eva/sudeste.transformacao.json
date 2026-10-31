@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-eva-sudeste-selecionada.png",
+  "caixa_original": [
+    230,
+    182,
+    766,
+    1383
+  ],
+  "escala_uniforme": 0.3530391340549542,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    70,
+    56
+  ],
+  "eixo_original": 575.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

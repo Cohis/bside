@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/noroeste/raw/icaro-05-t1.png",
+  "caixa_original": [
+    255,
+    175,
+    793,
+    1307
+  ],
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    89,
+    56
+  ],
+  "eixo_original": 550.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

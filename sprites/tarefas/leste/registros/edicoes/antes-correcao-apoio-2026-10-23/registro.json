@@ -1,0 +1,74 @@
+{
+  "data_utc": "2026-10-23T15:22:46.951025+00:00",
+  "metodo": "Edição controlada de pixels: translação horizontal progressiva da região inferior para uniformizar o recuo do pé de apoio, com amostragem nearest e sem alteração acima da cintura.",
+  "quadros": [
+    {
+      "personagem": "icaro",
+      "fase": 2,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/icaro-02.png",
+      "candidato": "candidato-icaro-02-apoio-x.png",
+      "sha_antes": "3a36ab88882166c2c920b04de80edcd2e7fec44fc3ca3439dde6b67c8621c63e",
+      "sha_depois": "1e28604f095371b666cf0c4c8a7256f89aa8b311a320f2f11a9d2f5d7b2fa3f7"
+    },
+    {
+      "personagem": "icaro",
+      "fase": 6,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/icaro-06.png",
+      "candidato": "candidato-icaro-06-apoio-x.png",
+      "sha_antes": "1a24cef768b40e6bce779c3d049141c4363c62cfcd1cd84cc428346cce062ddb",
+      "sha_depois": "bbe390dccf1805d107e6bc2acaa47a687dbbffeaf86dd93243eb67dbcbad0cb7"
+    },
+    {
+      "personagem": "icaro",
+      "fase": 7,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/icaro-07.png",
+      "candidato": "candidato-icaro-07-cintura-x.png",
+      "sha_antes": "8495c114ee13aa60599013a08ba8d416bd4670a648210b8692b5fbe379d2cdf2",
+      "sha_depois": "6d9c5eb9748c6ae7e84eef000f2e1714f3ff53e15f355b4c1b7b8b658f9f41e1"
+    },
+    {
+      "personagem": "eva",
+      "fase": 2,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/eva-02.png",
+      "candidato": "candidato-eva-02-apoio-x.png",
+      "sha_antes": "d7c4904724b1ebc146d7a1d1fbb1e7c07eb5d69438dcfd7905d144ca950a2fed",
+      "sha_depois": "f6b785fce16e02b16a6fc7b903027763e0e44b83891d19c7671fc7b340241315"
+    },
+    {
+      "personagem": "eva",
+      "fase": 6,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/eva-06.png",
+      "candidato": "candidato-eva-06-apoio-x.png",
+      "sha_antes": "75668d2eb7ce529ee749b33d1de62f23839c185bdf80d1fc25af5711427c5e95",
+      "sha_depois": "497ac025e5d04ac669abad40ca48c8d990f3f4e5e7847b0fc3ad84f631b6f2e5"
+    },
+    {
+      "personagem": "eva",
+      "fase": 7,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/eva-07.png",
+      "candidato": "candidato-eva-07-cintura-x.png",
+      "sha_antes": "2a08d1f09386f853114677c64efbd95473822b171dd3edfe2ea122690c45c4ff",
+      "sha_depois": "6b51dac6e3fb8836a5479d2c16bbd3b7e337e24e97b98fcc26ed304e8a1ef223"
+    },
+    {
+      "personagem": "icaro",
+      "fase": 4,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/icaro-04.png",
+      "candidato": "candidato-icaro-04-apoio-x.png",
+      "sha_antes": "e6e55193ee2a755431693b18829d05fb4633edf3683029a6d62dc5e7dc9c1ee8",
+      "sha_depois": "f5ebb1fe629893db831645c73ad06e52d93c5ddac80851cd1c2a7075ac282f4a"
+    },
+    {
+      "personagem": "eva",
+      "fase": 4,
+      "antes": "registros/edicoes/antes-correcao-apoio-2026-10-23/eva-04.png",
+      "candidato": "candidato-eva-04-apoio-x.png",
+      "sha_antes": "192a21bb4ed55b127ef1756e22a081a59e0b6c488fb21f970ffe9d40267e9595",
+      "sha_depois": "91950b401d551f3f9c3b7e42772056fe91a6720d4a0c1691e805c3c2e19d57a3"
+    }
+  ],
+  "decisoes_adicionais": {
+    "fase03": "Candidato revertido: chão marcado revelou piora do deslizamento.",
+    "fase04": "Selecionada edição localizada do pé de apoio posterior para reduzir salto de posição no chão."
+  }
+}

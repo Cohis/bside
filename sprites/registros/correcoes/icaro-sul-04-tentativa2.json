@@ -1,0 +1,17 @@
+{
+  "data": "2026-10-23",
+  "personagem": "icaro",
+  "direcao": "sul",
+  "fase": "04 — avanço direito",
+  "metodo": "image_gen, uma imagem nesta solicitação",
+  "referencias": [
+    "tarefas/sul/icaro/04.png",
+    "bases/icaro/sul.png",
+    "guias/sul/04.png"
+  ],
+  "prompt": "Produza SOMENTE Ícaro, visto de frente (direção SUL), fase 04 AVANÇO DIREITO da caminhada no lugar. Edite a imagem do quadro 04 anexada: mantenha rigorosamente identidade, rosto, cabelo branco, regata violeta com símbolo dourado, calça escura larga, tênis de detalhes amarelos, pulseira dourada no pulso anatômico esquerdo (lado direito da tela), escala, câmera, estilo de pixel art e transparência. A base neutra anexada fixa a aparência e as proporções. O guia esquemático anexado fixa a anatomia, mas não deve aparecer na arte. Perna anatômica ESQUERDA (lado direito da tela): pé de apoio no chão sob o quadril, terminando o impulso, ligeiramente recuado em profundidade, sem ficar projetado à frente. Perna anatômica DIREITA (lado esquerdo da tela): pé em balanço BAIXO, já avançado à frente do quadril e preparando o contato do quadro05, com sola ainda a poucos pixels acima do chão; NÃO deixe esse pé atrás como na fase03. O apoio deve recuar pouco e regularmente, sem salto de posição; nunca deixe ambos os pés no ar. Braços contralaterais discretos, sem gesto exagerado. Modifique só a pose necessária. Um único personagem de corpo inteiro, sem texto, sem cenário, sem sombra, fundo transparente real, sem suavização, sem mudança de perspectiva. O quadro03 NÃO é referência para esta imagem.",
+  "arquivo_candidato": "icaro-sul-04-tentativa2.png",
+  "aprovado": false,
+  "diagnostico": "Os dois pés ficaram quase plantados. O resultado aproxima uma pose neutra ou duplo apoio, não o avanço direito da fase04; o recuo irregular03→04 não foi corrigido.",
+  "acao": "Candidato separado; quadro04 selecionado e rascunhos existentes mantidos."
+}

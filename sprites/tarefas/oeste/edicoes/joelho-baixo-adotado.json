@@ -1,0 +1,38 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "fonte_t1": "edicoes/pre-baixar-joelho/icaro/03.png",
+    "candidato": "edicoes/novos-candidatos/icaro-03-joelho-baixo.png",
+    "sha_antes": "bd2422edabace1a74a45ffcdd00f36e12e7e57e6f05f0c3d3837413797587fd1",
+    "sha_depois": "fc8c189eaa321ed5f3cecf200b3c780c9df6a9668e14cbfbbca01820c99471a8",
+    "metodo": "Remapeamento espacial local por vizinho mais próximo; y 0 no quadril/solo, máximo 20–22 px no joelho, 8–9 px no calçado em balanço; x amortecido até zero na perna de apoio. Tronco/escala/câmera preservados."
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "fonte_t1": "edicoes/pre-baixar-joelho/icaro/07.png",
+    "candidato": "edicoes/novos-candidatos/icaro-07-joelho-baixo.png",
+    "sha_antes": "fdf03a21b0f8126c6b1bbfd3bf551f025ee3b92a4186455bfde363ba4cc6e45a",
+    "sha_depois": "3647b382b19444ef899026cda24fd66cb7225f99dce5e33aae62156f94841ee0",
+    "metodo": "Remapeamento espacial local por vizinho mais próximo; y 0 no quadril/solo, máximo 20–22 px no joelho, 8–9 px no calçado em balanço; x amortecido até zero na perna de apoio. Tronco/escala/câmera preservados."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "fonte_t1": "edicoes/pre-baixar-joelho/eva/03.png",
+    "candidato": "edicoes/novos-candidatos/eva-03-joelho-baixo.png",
+    "sha_antes": "e6eab293b60bad953ab3346bd06f97db7511de02cdce59d3e97f50886dbcd517",
+    "sha_depois": "6bd50d978d96d95abf347b62de6e79900ce211ec0e8fd8df124198688201e543",
+    "metodo": "Remapeamento espacial local por vizinho mais próximo; y 0 no quadril/solo, máximo 20–22 px no joelho, 8–9 px no calçado em balanço; x amortecido até zero na perna de apoio. Tronco/escala/câmera preservados."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 7,
+    "fonte_t1": "edicoes/pre-baixar-joelho/eva/07.png",
+    "candidato": "edicoes/novos-candidatos/eva-07-joelho-baixo.png",
+    "sha_antes": "328f83e2a6eef29c22e095fc987b1c67490386fcb2b7b7d6edb85dc960aeda26",
+    "sha_depois": "7cf4d5aeaab5f726f1e9a0e3959768c79c65ac5c5b2f625819618357b7171da6",
+    "metodo": "Remapeamento espacial local por vizinho mais próximo; y 0 no quadril/solo, máximo 20–22 px no joelho, 8–9 px no calçado em balanço; x amortecido até zero na perna de apoio. Tronco/escala/câmera preservados."
+  }
+]

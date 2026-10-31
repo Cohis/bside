@@ -1,0 +1,11 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/eva-03-composicao-v2.png",
+  "original_preservado": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/originais/eva/03.png",
+  "interpolacao": "vizinho mais próximo",
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "composição localizada de pixels do próprio personagem",
+  "estado": "candidato selecionado para revisão; ciclo não aprovado"
+}

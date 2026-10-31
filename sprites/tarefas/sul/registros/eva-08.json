@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case identity-preserve. Produza somente eva, direção SUL frontal, fase 08 AVANÇO. Imagem1 base fixa define identidade, proporções, câmera, paleta e acabamento; imagem2 guia da fase; imagem3 contato seguinte aprovado para continuidade. Modifique apenas a pose necessária: perna ESQUERDA anatômica (DIREITA DA TELA) em balanço ESTENDE à frente em direção ao observador, calcanhar ainda no ar e ponta ligeiramente elevada, a um instante do contato. Esse calçado dianteiro é MAIS BAIXO NA IMAGEM do que o calçado traseiro. Perna DIREITA anatômica (ESQUERDA DA TELA) apoiada ATRÁS termina impulso com ponta no chão e calcanhar levantado. Corpo sobe modestos2px. Braço do lado da perna apoiada recuada avança; outro braço recua. Não copiar contato da imagem3 exatamente: fase4/8 tem calcanhar dianteiro NO AR e joelho ainda levemente flexionado. Caminhada calma sem fase aérea, nunca corrida. Pés estreitos sob quadril, não abrir lateralmente. Preserve cabelo, rosto, cabeça, tronco, roupa e acessórios de imagem1. Rabo de cavalo preto longo, olhos azuis, brinco vermelho, blusa branca curta com capuz, calça cinza e tênis escuro sola clara. Corpo inteiro, pixels duros, sem suavização, sem perspectiva nova, fundo alpha transparente real, sem sombra de chão, texto, cenário ou guia. Uma pose apenas.",
+  "referenced_image_paths": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/sul.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/sul/08.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/sul/eva/01.png"
+  ],
+  "transparent_background": true
+}

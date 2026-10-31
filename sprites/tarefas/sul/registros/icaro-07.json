@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente Ícaro, sprite pixel art corpo inteiro, direção SUL, câmera rigorosamente FRONTAL olhando ao observador, fase 07. Imagem1 BASE FIXA define identidade, proporções, cabeça, escala, câmera, paleta e acabamento. Imagem2 GUIA ESQUEMÁTICO define pose: laranja esquerda anatômica, azul direita; não desenhe guia ou texto. FASE: Passagem esquerda. Peso totalmente no pé DIREITO (ESQUERDA DA TELA) apoiado plano no chão sob corpo, perna quase reta. Perna ESQUERDA (DIREITA DA TELA) em balanço com joelho flexionado: pé levanta e passa ao lado do tornozelo de apoio, sola 24px acima do chão proporcionalmente na célula384x512. Braços perto do repouso, sem cruzar pernas.. Preserve membros, roupas, acessórios, dimensões da cabeça e posição corporal. Caminhada lenta no lugar com contato sempre, sem correr ou pular. Frente exige sobreposição e flexão em profundidade, nunca abrir as pernas para os lados. Braços opostos às pernas. Corpo inteiro com margem ampla, pixels duros sem suavização, fundo alpha verdadeiramente transparente sem cenário, sombra ou brilho externo. Uma pose apenas, nenhuma grade. Pulseira dourada SEMPRE no ESQUERDO anatômico, DIREITA DA TELA. Regata violeta e símbolo dourado intactos. Imagens adicionais: fases aprovadas para continuidade, NÃO copiar pose; a fase pedida e guia mandam no movimento.",
+  "referenced_image_paths": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/sul.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/sul/07.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/sul/icaro/05.png"
+  ],
+  "transparent_background": true
+}

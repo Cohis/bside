@@ -1,0 +1,56 @@
+{
+  "aprovado": true,
+  "observacoes": [
+    "Oito PNGsRGBA384x512 entregues, sem células vazias/duplicatas ou cortes.",
+    "Pulseira de Ícaro no braço esquerdo distante; pernas reconhecidas por bolso próximo.",
+    "Ícaro02 corrigiu lateral; Eva06 corrigiu contrabalanço e anatomia das mangas.",
+    "Não se declara aprovação temporal por existência doGIF.",
+    "Enquadramento uniforme da figura inteira, eixo manual do tronco, sem espelhamento nem deformação; alturas420–428px preservam oscilação discreta.",
+    "Paleta/material e contorno preservados visualmente; a geração possui variações finas de tons e desenho de pixels, sem quantização forçada.",
+    "Quadro07 corrigido por composição rígida controlada usando partes do quadro03 do mesmo personagem; quadro anterior preservado em registros/edicoes/.",
+    "Nova prancha clara/escura e GIFs100ms/400ms exportados após a correção; técnica e rastreamento atualizados."
+  ],
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "01→02",
+    "02→03",
+    "03→04",
+    "04→05",
+    "05→06",
+    "06→07",
+    "07→08",
+    "08→01"
+  ],
+  "passada_teste_px_por_quadro": 34.7,
+  "passada_teste_status": "provisória, usar para diagnóstico; não certifica ausência de patinação",
+  "pendencias": [],
+  "evidencias": {
+    "prancha_clara": "../icaro-inspecao-claro.png",
+    "prancha_escura": "../icaro-inspecao-escuro.png",
+    "loop_100ms": "../icaro-loop.gif",
+    "loop_400ms": "../icaro-lento.gif",
+    "chao_marcado_100ms": "../icaro-chao-teste.gif",
+    "chao_marcado_400ms": "../icaro-chao-teste-lento.gif",
+    "rastreamento": "rastreamento.json",
+    "tecnica": "tecnica.json",
+    "registro_edicoes": "../registros/edicoes/antes-correcao-apoio-2026-10-23/registro.json"
+  },
+  "revisao_coordenador_2026_10_23": {
+    "resultado": "aprovado após edição controlada e conferência visual em reprodução normal/lenta com chão marcado",
+    "correcoes": [
+      "Ajuste local de recuo do pé de apoio nas fases 02/04/06/07; originais mantidos no histórico.",
+      "Candidato da fase03 foi revertido após o chão marcado mostrar piora do deslizamento.",
+      "Verificados orientação de perfil, contato com o chão e continuidade cíclica nas oito transições."
+    ],
+    "limite": "Rastreamento de juntas sob a calça é estimado visualmente; não é captura de movimento."
+  }
+}

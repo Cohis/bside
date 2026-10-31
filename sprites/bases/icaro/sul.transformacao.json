@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-icaro-sul-selecionada.png",
+  "caixa_original": [
+    314,
+    112,
+    782,
+    1336
+  ],
+  "escala_uniforme": 0.3464052287581699,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    112,
+    56
+  ],
+  "eixo_original": 544.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

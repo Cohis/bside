@@ -1,0 +1,118 @@
+{
+  "icaro": [
+    {
+      "fases": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "perna_apoio": "esquerda",
+      "pontas_x_estimadas": [
+        91,
+        121,
+        167,
+        222
+      ],
+      "recuo_por_intervalo": [
+        30,
+        46,
+        55
+      ],
+      "velocidade_teste_px_quadro": 43,
+      "residuo_mundo_x": [
+        91,
+        78,
+        81,
+        93
+      ],
+      "amplitude_residuo_px": 15
+    },
+    {
+      "fases": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "perna_apoio": "direita",
+      "pontas_x_estimadas": [
+        91,
+        118,
+        159,
+        220
+      ],
+      "recuo_por_intervalo": [
+        27,
+        41,
+        61
+      ],
+      "velocidade_teste_px_quadro": 43,
+      "residuo_mundo_x": [
+        91,
+        75,
+        73,
+        91
+      ],
+      "amplitude_residuo_px": 18
+    }
+  ],
+  "eva": [
+    {
+      "fases": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "perna_apoio": "esquerda",
+      "pontas_x_estimadas": [
+        106,
+        139,
+        166,
+        222
+      ],
+      "recuo_por_intervalo": [
+        33,
+        27,
+        56
+      ],
+      "velocidade_teste_px_quadro": 39,
+      "residuo_mundo_x": [
+        106,
+        100,
+        88,
+        105
+      ],
+      "amplitude_residuo_px": 18
+    },
+    {
+      "fases": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "perna_apoio": "direita",
+      "pontas_x_estimadas": [
+        100,
+        132,
+        173,
+        219
+      ],
+      "recuo_por_intervalo": [
+        32,
+        41,
+        46
+      ],
+      "velocidade_teste_px_quadro": 39,
+      "residuo_mundo_x": [
+        100,
+        93,
+        95,
+        102
+      ],
+      "amplitude_residuo_px": 9
+    }
+  ]
+}

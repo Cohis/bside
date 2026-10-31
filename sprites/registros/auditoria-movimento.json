@@ -1,0 +1,1045 @@
+{
+  "metodo": "Projeção do deslocamento das pontas dos pés no eixo oposto ao avanço. Compara apenas intervalos 01→04 e 05→08, sem trocar a perna de apoio.",
+  "ciclos": [
+    {
+      "personagem": "icaro",
+      "direcao": "norte",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              171,
+              467
+            ],
+            [
+              171,
+              473
+            ],
+            [
+              171,
+              479
+            ],
+            [
+              171,
+              485
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            17.14,
+            17.14,
+            17.14
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              216,
+              467
+            ],
+            [
+              216,
+              473
+            ],
+            [
+              216,
+              479
+            ],
+            [
+              216,
+              485
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            17.14,
+            17.14,
+            17.14
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "norte",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              171,
+              475
+            ],
+            [
+              171,
+              480
+            ],
+            [
+              171,
+              486
+            ],
+            [
+              171,
+              492
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            14.29,
+            17.14,
+            17.14
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              216,
+              474
+            ],
+            [
+              216,
+              480
+            ],
+            [
+              216,
+              486
+            ],
+            [
+              216,
+              492
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            17.14,
+            17.14,
+            17.14
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "nordeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              245,
+              415
+            ],
+            [
+              166,
+              469
+            ],
+            [
+              180,
+              474
+            ],
+            [
+              135,
+              466
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            123.34,
+            -15.43,
+            53.17
+          ],
+          "intervalos_com_recuo_negativo": [
+            "02→03"
+          ]
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              270,
+              447
+            ],
+            [
+              222,
+              464
+            ],
+            [
+              246,
+              476
+            ],
+            [
+              170,
+              455
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            67.97,
+            -24.95,
+            86.49
+          ],
+          "intervalos_com_recuo_negativo": [
+            "06→07"
+          ]
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "nordeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              245,
+              414
+            ],
+            [
+              245,
+              440
+            ],
+            [
+              180,
+              460
+            ],
+            [
+              155,
+              450
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            11.46,
+            90.71,
+            27.09
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              250,
+              447
+            ],
+            [
+              225,
+              449
+            ],
+            [
+              245,
+              465
+            ],
+            [
+              190,
+              451
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            32.38,
+            -18.14,
+            63.12
+          ],
+          "intervalos_com_recuo_negativo": [
+            "06→07"
+          ]
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "leste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              282,
+              464
+            ],
+            [
+              240,
+              475
+            ],
+            [
+              211,
+              476
+            ],
+            [
+              164,
+              477
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            42.0,
+            29.0,
+            47.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              278,
+              475
+            ],
+            [
+              241,
+              475
+            ],
+            [
+              205,
+              474
+            ],
+            [
+              169,
+              477
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            37.0,
+            36.0,
+            36.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "leste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              305,
+              470
+            ],
+            [
+              265,
+              474
+            ],
+            [
+              218,
+              475
+            ],
+            [
+              178,
+              476
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            40.0,
+            47.0,
+            40.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              289,
+              474
+            ],
+            [
+              252,
+              475
+            ],
+            [
+              207,
+              477
+            ],
+            [
+              166,
+              476
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            37.0,
+            45.0,
+            41.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "sudeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              269,
+              463
+            ],
+            [
+              235,
+              468
+            ],
+            [
+              187,
+              467
+            ],
+            [
+              140,
+              467
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            40.63,
+            60.92,
+            59.21
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              265,
+              466
+            ],
+            [
+              222,
+              471
+            ],
+            [
+              179,
+              469
+            ],
+            [
+              137,
+              470
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            51.97,
+            55.06,
+            52.47
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "sudeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              275,
+              468
+            ],
+            [
+              234,
+              466
+            ],
+            [
+              190,
+              470
+            ],
+            [
+              133,
+              467
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            52.54,
+            53.67,
+            73.14
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              260,
+              470
+            ],
+            [
+              220,
+              471
+            ],
+            [
+              180,
+              469
+            ],
+            [
+              141,
+              470
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            49.95,
+            51.28,
+            48.69
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "sul",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              213,
+              479
+            ],
+            [
+              213,
+              472
+            ],
+            [
+              213,
+              466
+            ],
+            [
+              213,
+              458
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            20.0,
+            17.14,
+            22.86
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              165,
+              479
+            ],
+            [
+              165,
+              473
+            ],
+            [
+              165,
+              466
+            ],
+            [
+              165,
+              458
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            17.14,
+            20.0,
+            22.86
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "sul",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              213,
+              479
+            ],
+            [
+              213,
+              472
+            ],
+            [
+              213,
+              466
+            ],
+            [
+              213,
+              458
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            20.0,
+            17.14,
+            22.86
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              165,
+              479
+            ],
+            [
+              165,
+              473
+            ],
+            [
+              165,
+              466
+            ],
+            [
+              165,
+              458
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            17.14,
+            20.0,
+            22.86
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "sudoeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              139,
+              488
+            ],
+            [
+              164,
+              479
+            ],
+            [
+              221,
+              484
+            ],
+            [
+              259,
+              475
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            35.47,
+            69.61,
+            51.84
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              120,
+              481
+            ],
+            [
+              137,
+              480
+            ],
+            [
+              153,
+              485
+            ],
+            [
+              249,
+              466
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            21.86,
+            17.95,
+            129.33
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "sudoeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              140,
+              480
+            ],
+            [
+              155,
+              494
+            ],
+            [
+              224,
+              488
+            ],
+            [
+              263,
+              489
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            12.72,
+            89.58,
+            48.69
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              125,
+              490
+            ],
+            [
+              140,
+              490
+            ],
+            [
+              164,
+              489
+            ],
+            [
+              247,
+              476
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            18.9,
+            30.68,
+            110.3
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "oeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              91,
+              475
+            ],
+            [
+              121,
+              474
+            ],
+            [
+              167,
+              474
+            ],
+            [
+              222,
+              471
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            30.0,
+            46.0,
+            55.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              91,
+              469
+            ],
+            [
+              118,
+              476
+            ],
+            [
+              159,
+              474
+            ],
+            [
+              220,
+              466
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            27.0,
+            41.0,
+            61.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "oeste",
+      "passos": [
+        {
+          "apoio": "esquerda",
+          "fases": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "pontos_px": [
+            [
+              106,
+              473
+            ],
+            [
+              139,
+              471
+            ],
+            [
+              166,
+              474
+            ],
+            [
+              222,
+              475
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            33.0,
+            27.0,
+            56.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        },
+        {
+          "apoio": "direita",
+          "fases": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "pontos_px": [
+            [
+              100,
+              463
+            ],
+            [
+              132,
+              477
+            ],
+            [
+              173,
+              475
+            ],
+            [
+              219,
+              473
+            ]
+          ],
+          "recuo_local_estimado_por_intervalo": [
+            32.0,
+            41.0,
+            46.0
+          ],
+          "intervalos_com_recuo_negativo": []
+        }
+      ],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "icaro",
+      "direcao": "noroeste",
+      "passos": [],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    },
+    {
+      "personagem": "eva",
+      "direcao": "noroeste",
+      "passos": [],
+      "limite": "Ponta/borda do calçado pode variar por rotação e oclusão. Não certifica contato, comprimento ou patinação. Consulte incertezas do rastreamento original."
+    }
+  ]
+}

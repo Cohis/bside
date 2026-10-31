@@ -1,0 +1,17 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/icaro/05-raw.png",
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "posicao_imagem_inteira": [
+    -8,
+    3
+  ],
+  "eixo_torso_original_estimado": 570,
+  "topo_cabeca_destino": 56,
+  "ancora": [
+    192,
+    480
+  ],
+  "criterio": "Escala comum por comparação visual da cabeça e torso; bob nominal preservado. Não alinhado pelo pé mais baixo.",
+  "ruido_alfa_removido": "somente alfa <8"
+}

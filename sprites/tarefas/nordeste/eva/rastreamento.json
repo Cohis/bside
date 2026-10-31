@@ -1,0 +1,400 @@
+{
+  "direcao": "nordeste",
+  "personagem": "eva",
+  "metodo": "Anotação visual aproximada da prancha após edição localizada; quadril/joelho ocultos inferidos; nenhuma detecção automática",
+  "quadros": [
+    {
+      "quadro": 1,
+      "centro_quadril": [
+        192,
+        285
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            285
+          ],
+          "joelho": [
+            230.5,
+            349.5
+          ],
+          "tornozelo": [
+            240,
+            400
+          ],
+          "ponta_pe": [
+            245,
+            414
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            285
+          ],
+          "joelho": [
+            185.5,
+            369.0
+          ],
+          "tornozelo": [
+            150,
+            439
+          ],
+          "ponta_pe": [
+            155,
+            453
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "esquerda",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 2,
+      "centro_quadril": [
+        192,
+        289
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            289
+          ],
+          "joelho": [
+            230.5,
+            364.5
+          ],
+          "tornozelo": [
+            240,
+            426
+          ],
+          "ponta_pe": [
+            245,
+            440
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            289
+          ],
+          "joelho": [
+            190.5,
+            377.0
+          ],
+          "tornozelo": [
+            160,
+            451
+          ],
+          "ponta_pe": [
+            165,
+            465
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "esquerda",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 3,
+      "centro_quadril": [
+        192,
+        285
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            285
+          ],
+          "joelho": [
+            198.0,
+            372.5
+          ],
+          "tornozelo": [
+            175,
+            446
+          ],
+          "ponta_pe": [
+            180,
+            460
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            285
+          ],
+          "joelho": [
+            220.5,
+            350.5
+          ],
+          "tornozelo": [
+            220,
+            402
+          ],
+          "ponta_pe": [
+            225,
+            416
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "esquerda",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 4,
+      "centro_quadril": [
+        192,
+        283
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            283
+          ],
+          "joelho": [
+            185.5,
+            366.5
+          ],
+          "tornozelo": [
+            150,
+            436
+          ],
+          "ponta_pe": [
+            155,
+            450
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            283
+          ],
+          "joelho": [
+            233.0,
+            349.5
+          ],
+          "tornozelo": [
+            245,
+            402
+          ],
+          "ponta_pe": [
+            250,
+            416
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "esquerda",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 5,
+      "centro_quadril": [
+        192,
+        285
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            285
+          ],
+          "joelho": [
+            185.5,
+            373.5
+          ],
+          "tornozelo": [
+            150,
+            448
+          ],
+          "ponta_pe": [
+            155,
+            462
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            285
+          ],
+          "joelho": [
+            233.0,
+            366.0
+          ],
+          "tornozelo": [
+            245,
+            433
+          ],
+          "ponta_pe": [
+            250,
+            447
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "direita",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 6,
+      "centro_quadril": [
+        192,
+        289
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            289
+          ],
+          "joelho": [
+            180.5,
+            355.5
+          ],
+          "tornozelo": [
+            140,
+            408
+          ],
+          "ponta_pe": [
+            145,
+            422
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            289
+          ],
+          "joelho": [
+            220.5,
+            369.0
+          ],
+          "tornozelo": [
+            220,
+            435
+          ],
+          "ponta_pe": [
+            225,
+            449
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "direita",
+      "apoio_observado_confiavel": false
+    },
+    {
+      "quadro": 7,
+      "centro_quadril": [
+        192,
+        285
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            285
+          ],
+          "joelho": [
+            181,
+            350
+          ],
+          "tornozelo": [
+            182,
+            421
+          ],
+          "ponta_pe": [
+            213,
+            444
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            285
+          ],
+          "joelho": [
+            226,
+            379
+          ],
+          "tornozelo": [
+            218,
+            443
+          ],
+          "ponta_pe": [
+            245,
+            465
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "direita",
+      "apoio_observado_confiavel": false,
+      "observacao_correcao": "Posições estimadas após recomposição. Identidade anatômica e deslizamento no ciclo completo não validados."
+    },
+    {
+      "quadro": 8,
+      "centro_quadril": [
+        192,
+        283
+      ],
+      "juntas": {
+        "esquerda": {
+          "quadril": [
+            180,
+            283
+          ],
+          "joelho": [
+            240.5,
+            339.5
+          ],
+          "tornozelo": [
+            260,
+            382
+          ],
+          "ponta_pe": [
+            265,
+            396
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        },
+        "direita": {
+          "quadril": [
+            204,
+            283
+          ],
+          "joelho": [
+            203.0,
+            367.0
+          ],
+          "tornozelo": [
+            185,
+            437
+          ],
+          "ponta_pe": [
+            190,
+            451
+          ],
+          "natureza": "Estimativa visual aproximada. Joelho e quadril ocultos pela calça; ponto do pé estimado na prancha, incerteza ±8px. Não detecção automática."
+        }
+      },
+      "apoio_previsto": "direita",
+      "apoio_observado_confiavel": false
+    }
+  ]
+}

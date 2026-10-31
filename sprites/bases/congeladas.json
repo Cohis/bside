@@ -1,0 +1,263 @@
+{
+  "icaro": {
+    "norte": {
+      "arquivo": "sprites/bases/icaro/norte.png",
+      "sha256": "ea88bfb3a2bffa0cc33cc3afb5e003e69abe8edd1fe0277f3252863164115888",
+      "caixa": [
+        113,
+        56,
+        270,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "nordeste": {
+      "arquivo": "sprites/bases/icaro/nordeste.png",
+      "sha256": "232ef8c3731f7b1fd2f18e6e52e870619c9be707a26a5048f9e59d0c926e1392",
+      "caixa": [
+        116,
+        56,
+        265,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "leste": {
+      "arquivo": "sprites/bases/icaro/leste.png",
+      "sha256": "ab166404b379d4e0f50d3a4a2ed69e2542b25d302312cd9ba37e94f30a1bd25f",
+      "caixa": [
+        109,
+        56,
+        256,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sudeste": {
+      "arquivo": "sprites/bases/icaro/sudeste.png",
+      "sha256": "5e835b1080ad459e60a9c570d1c368b55b24bdbd69098eca9633a6586f6db85b",
+      "caixa": [
+        113,
+        56,
+        269,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sul": {
+      "arquivo": "sprites/bases/icaro/sul.png",
+      "sha256": "d7d5b3eba720412cf4f9c61ad54759eb2f371784adb24c58b9d1a39c4fec88b5",
+      "caixa": [
+        112,
+        56,
+        274,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sudoeste": {
+      "arquivo": "sprites/bases/icaro/sudoeste.png",
+      "sha256": "8d60bffe56ad1c6470704866a5114f305a7697abf1a762fc86bef4be63ee0348",
+      "caixa": [
+        120,
+        56,
+        276,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "oeste": {
+      "arquivo": "sprites/bases/icaro/oeste.png",
+      "sha256": "ecccdcd03258ca0dd80dc4d558fc9032e48509483d47f9619f56405449071132",
+      "caixa": [
+        113,
+        56,
+        272,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "noroeste": {
+      "arquivo": "sprites/bases/icaro/noroeste.png",
+      "sha256": "7c310f4b33831ad21add5a47ed4bb03e1f3ca29ad0cb1ee6dd7a1d1c6198f292",
+      "caixa": [
+        109,
+        56,
+        275,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true,
+      "correcao": "Pulseira esquerda anatômica no braço próximo à esquerda da tela; base anterior preservada em registros/geracoes/base-icaro-noroeste-pulseira-anterior.png"
+    }
+  },
+  "eva": {
+    "norte": {
+      "arquivo": "sprites/bases/eva/norte.png",
+      "sha256": "eda3ef376249df910dad68d3a5e84fd461a6e9e99a9785c68cc947145026202e",
+      "caixa": [
+        110,
+        56,
+        274,
+        479
+      ],
+      "altura": 423,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "nordeste": {
+      "arquivo": "sprites/bases/eva/nordeste.png",
+      "sha256": "8ac590c8f93c4cc6f633ddb7af9c454f8cf3f822e2c0c50f74fa29b9dad696a0",
+      "caixa": [
+        87,
+        56,
+        268,
+        479
+      ],
+      "altura": 423,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "leste": {
+      "arquivo": "sprites/bases/eva/leste.png",
+      "sha256": "51d75653b02aec315e6b7d55d3399684db0befaec47b3fb847521f758cd25609",
+      "caixa": [
+        79,
+        56,
+        258,
+        479
+      ],
+      "altura": 423,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sudeste": {
+      "arquivo": "sprites/bases/eva/sudeste.png",
+      "sha256": "0be31354e662867b3f6f3030704d47218523c4e6d029ab2d5d32e8d7d4602195",
+      "caixa": [
+        70,
+        56,
+        259,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sul": {
+      "arquivo": "sprites/bases/eva/sul.png",
+      "sha256": "97b48f9dc58d127c7db317223ae189b7799c8dcc110f2aaefec5b021757acd29",
+      "caixa": [
+        112,
+        56,
+        285,
+        480
+      ],
+      "altura": 424,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "sudoeste": {
+      "arquivo": "sprites/bases/eva/sudoeste.png",
+      "sha256": "5d27bcf15e33562417c68df56707b3f1cdaae50136202f74a46272aa71468a56",
+      "caixa": [
+        114,
+        56,
+        303,
+        479
+      ],
+      "altura": 423,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "oeste": {
+      "arquivo": "sprites/bases/eva/oeste.png",
+      "sha256": "dd4da9d62b695ae3130db47a472a38b1310d250c1f237c9938ed03991f191a94",
+      "caixa": [
+        128,
+        57,
+        312,
+        480
+      ],
+      "altura": 423,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    },
+    "noroeste": {
+      "arquivo": "sprites/bases/eva/noroeste.png",
+      "sha256": "951ca86523ba91114b3b67f69e1c31d50f1bd699096ae01522cbae5e3b1ec244",
+      "caixa": [
+        118,
+        57,
+        304,
+        479
+      ],
+      "altura": 422,
+      "ancora": [
+        192,
+        480
+      ],
+      "revisada": true
+    }
+  }
+}

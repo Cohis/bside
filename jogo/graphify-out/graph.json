@@ -1,0 +1,219 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "analise_cenario",
+      "label": "ANALISE-CENARIO.md",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "analise-cenario.md",
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "analise_cenario_movimento_e_confer\u00eancia",
+      "label": "Movimento e confer\u00eancia",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "movimento e conferencia",
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "analise_cenario_planta_da_loja_c\u00e2mera_e_colis\u00f5es",
+      "label": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "planta da loja, camera e colisoes",
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "analise_cenario_planta_e_c\u00e2mera",
+      "label": "Planta e c\u00e2mera",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "planta e camera",
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "analise_cenario_tipos_da_matriz",
+      "label": "Tipos da matriz",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Planta da loja, c\u00e2mera e colis\u00f5es",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tipos da matriz",
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "B-Side \u2014 loja isom\u00e9trica",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_arquivos",
+      "label": "Arquivos",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "B-Side \u2014 loja isom\u00e9trica",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "arquivos",
+      "source_file": "README.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "readme_b_side_loja_isom\u00e9trica",
+      "label": "B-Side \u2014 loja isom\u00e9trica",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "B-Side \u2014 loja isom\u00e9trica",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b-side \u2014 loja isometrica",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_compilar_e_executar",
+      "label": "Compilar e executar",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "B-Side \u2014 loja isom\u00e9trica",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "compilar e executar",
+      "source_file": "README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "readme_controles",
+      "label": "Controles",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "B-Side \u2014 loja isom\u00e9trica",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "controles",
+      "source_file": "README.md",
+      "source_location": "L14"
+    }
+  ],
+  "links": [
+    {
+      "source": "analise_cenario",
+      "target": "analise_cenario_planta_da_loja_c\u00e2mera_e_colis\u00f5es",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "analise_cenario_planta_da_loja_c\u00e2mera_e_colis\u00f5es",
+      "target": "analise_cenario_tipos_da_matriz",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "analise_cenario_planta_da_loja_c\u00e2mera_e_colis\u00f5es",
+      "target": "analise_cenario_planta_e_c\u00e2mera",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "analise_cenario_planta_da_loja_c\u00e2mera_e_colis\u00f5es",
+      "target": "analise_cenario_movimento_e_confer\u00eancia",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ANALISE-CENARIO.md",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_b_side_loja_isom\u00e9trica",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_b_side_loja_isom\u00e9trica",
+      "target": "readme_controles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_b_side_loja_isom\u00e9trica",
+      "target": "readme_arquivos",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_b_side_loja_isom\u00e9trica",
+      "target": "readme_compilar_e_executar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a8d5d25aeaf6b887946ffbf5d7b8b1d259b2093f"
+}

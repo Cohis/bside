@@ -1,0 +1,43 @@
+{
+  "base": "candidatos_v1",
+  "mudancas": [
+    {
+      "personagem": "eva",
+      "quadro": 1,
+      "acao": "pé direito anatômico de trás +17px para distinguir profundidade no contato esquerdo"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 4,
+      "fonte_perna": 3,
+      "lado": "direita",
+      "deslocamento_pe_px": 5,
+      "acao": "substituir apenas perna em balanço após y=320, abaixo da cintura"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 8,
+      "fonte_perna": 7,
+      "lado": "esquerda",
+      "deslocamento_pe_px": 10,
+      "acao": "substituir apenas perna em balanço após y=320, abaixo da cintura"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 4,
+      "fonte_perna": 3,
+      "lado": "direita",
+      "deslocamento_pe_px": 17,
+      "acao": "substituir apenas perna em balanço após y=320, abaixo da cintura"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 8,
+      "fonte_perna": 7,
+      "lado": "esquerda",
+      "deslocamento_pe_px": 10,
+      "acao": "substituir apenas perna em balanço após y=320, abaixo da cintura"
+    }
+  ],
+  "estado": "candidato não publicado; inspeção visual pendente"
+}

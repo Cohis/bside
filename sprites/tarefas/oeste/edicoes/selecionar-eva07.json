@@ -1,0 +1,19 @@
+{
+  "personagem": "eva",
+  "quadro": 7,
+  "raw_escolhido": "eva/07-raw-t2.png",
+  "motivo": "pé em balanço mais próximo do eixo do quadril e claramente elevado; mantém o mesmo rosto, roupa e direção",
+  "anterior": "edicoes/selecoes-anteriores/eva-07.png",
+  "sha256_anterior": "a6b00feda5dbe6ae66c809133405a187b9dd2749f65a916bb3646f6c909ed348",
+  "escala_uniforme": 0.35,
+  "eixo_raw": 540,
+  "posicao": [
+    3,
+    1
+  ],
+  "topo_cabeca_destino": 54,
+  "contato_inferior_antes_correcao": 479,
+  "contato_inferior_depois": 480,
+  "sha256_resultado": "8c06cb5677c44cfd42a921d56f17c9d8dfe4f90eec13afeffc28b1330ea9c42c",
+  "interpolacao": "vizinho mais próximo"
+}

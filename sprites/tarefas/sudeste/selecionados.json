@@ -1,0 +1,101 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 1,
+    "raw": "icaro-01-t2.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "icaro",
+    "fase": 2,
+    "raw": "icaro-02-t2.png",
+    "reclassificacao": "correcao parcial apos revisao visual",
+    "raw_anterior": "icaro-02.png"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 3,
+    "raw": "icaro-03.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "icaro",
+    "fase": 4,
+    "raw": "icaro-04.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "icaro",
+    "fase": 5,
+    "raw": "icaro-01-t1.png",
+    "reclassificacao": "gerado como01 mas observado contato direito05"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 6,
+    "raw": "icaro-06.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "icaro",
+    "fase": 7,
+    "raw": "icaro-07-t2.png",
+    "reclassificacao": "correcao parcial apos revisao visual",
+    "raw_anterior": "icaro-07.png"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 8,
+    "raw": "icaro-08-t2.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 1,
+    "raw": "eva-01-t3.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 2,
+    "raw": "eva-02.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 3,
+    "raw": "eva-03-t3.png",
+    "reclassificacao": "correcao parcial apos revisao visual",
+    "raw_anterior": "eva-03.png"
+  },
+  {
+    "personagem": "eva",
+    "fase": 4,
+    "raw": "eva-04.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 5,
+    "raw": "eva-01-t1.png",
+    "reclassificacao": "gerado como01 mas observado contato direito05"
+  },
+  {
+    "personagem": "eva",
+    "fase": 6,
+    "raw": "eva-06.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 7,
+    "raw": "eva-07-t3.png",
+    "reclassificacao": null
+  },
+  {
+    "personagem": "eva",
+    "fase": 8,
+    "raw": "eva-08-t2.png",
+    "reclassificacao": null
+  }
+]

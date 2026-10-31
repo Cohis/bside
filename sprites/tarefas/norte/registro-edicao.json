@@ -1,0 +1,168 @@
+{
+  "metodo": "Edição controlada RGBA por amostragem de vizinho mais próximo; apoio remapeado abaixo da cintura; dois avanços recompostos da perna de passagem original do mesmo personagem e direção.",
+  "autorizacao": "Usuário autorizou edição controlada quadro a quadro nesta conversa.",
+  "originais": "originais_edicao/",
+  "candidatos": "candidatos_v2/",
+  "quadros": [
+    {
+      "personagem": "icaro",
+      "quadro": 1,
+      "sha256_original": "aa2956f79cf8786fb58287bed9f601a226e84db8363feb020fee93eb2f4a5db9",
+      "sha256_final": "36e72f00bd10618eecd8d14d0ea3b63d7026ec2d2ba94ef6d76c61878bfe5a0d",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": 9,
+      "fonte_balanco": 1,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 2,
+      "sha256_original": "70e43c37c07ede0d70db2bdb99489c0a363f417c14690fc20e40682fbd29ecac",
+      "sha256_final": "1c22cd99115d540d54cee2f5171cd5d1958201b8e6329847b34b180b933ed6a2",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": -9,
+      "fonte_balanco": 2,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 3,
+      "sha256_original": "014938be7ce1ee41bf3fb9601a2a9cc9077ca2c4580bd7efbe26a7184db2ca6f",
+      "sha256_final": "546b6501b64decf6118e72d2a78b349d25de88d71ac64c05f04c554fc123d806",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": -2,
+      "fonte_balanco": 3,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 4,
+      "sha256_original": "8af5668fb7e6288441e9bd20b06b6cf717deebf1387f60971e9bf20d6a7dc61e",
+      "sha256_final": "66b53861ee7c27d3ff1b19d06f9d047c8ca44f5e7c751a200b846fbb871b10b1",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": -2,
+      "fonte_balanco": 3,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 5,
+      "sha256_original": "92685321c49bcf8a568cd464f56eee7ae533db79ee297354caaed9d15a153f56",
+      "sha256_final": "57b2924f3e37622e5a68241fc3620bebb5d7ebf8bd56055218e359378b68647d",
+      "apoio": "direita",
+      "ajuste_apoio_px": -6,
+      "fonte_balanco": 5,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 6,
+      "sha256_original": "6d3f0a76b316dea004cb8276255948302ca000f5a4e35ce0362497de9b2863e7",
+      "sha256_final": "75950da559a16d33e5a62a81991e1501518ee0b70021e7141d4008bac60189bf",
+      "apoio": "direita",
+      "ajuste_apoio_px": -10,
+      "fonte_balanco": 6,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 7,
+      "sha256_original": "f2aeccc241c63318d35a7e0684e9383c106349d63846c57379d067f889c3003a",
+      "sha256_final": "4b913d772c8182488016b5210a9914bc2ce07f8cba0d57a8499b5a401df0d9c6",
+      "apoio": "direita",
+      "ajuste_apoio_px": -3,
+      "fonte_balanco": 7,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 8,
+      "sha256_original": "9ef71a96fb913acbfc30de70e1959aa532b2e003bb53822e874698de3a5020a4",
+      "sha256_final": "1092240481afee5db86a2549684a9db9bd56fe50ebe3de9bd2f02427b01ef5e1",
+      "apoio": "direita",
+      "ajuste_apoio_px": 4,
+      "fonte_balanco": 7,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 1,
+      "sha256_original": "d35262a092b4a31b51ca2fec6940425f3f4582c6ff393436b7aa1a97e6180204",
+      "sha256_final": "e0c13b57919fd6f94349ce827d125c3b29604b2f42d02a9486618aa487cb393f",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": 3,
+      "fonte_balanco": 1,
+      "ajuste_traseiro_extra_px": 17
+    },
+    {
+      "personagem": "eva",
+      "quadro": 2,
+      "sha256_original": "b2d2babd34e0154560cf05f8869a4d778b8d40acf91588c2484a07d3e8636853",
+      "sha256_final": "fb87c9509004a87c4af1392673d13ed67aa58f465512d200210ea14ba0fbcded",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": -6,
+      "fonte_balanco": 2,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 3,
+      "sha256_original": "85d8843f346fb1a13f718d31c7b480f184ef908c5fd8c7cb5cd11fea71ee274b",
+      "sha256_final": "698c75d04bc0655890971bdb9a49c995ad246db3d3a9498665d5110bd7748875",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": 7,
+      "fonte_balanco": 3,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 4,
+      "sha256_original": "b73c5301aaf4521e350c0925a89e1650f6b69526518f815c3aba4a5ecec020f4",
+      "sha256_final": "50cc748f9b3af66d5d4675b4fd0d978bf264778e58a638427cb759ffa16619a0",
+      "apoio": "esquerda",
+      "ajuste_apoio_px": 16,
+      "fonte_balanco": 3,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 5,
+      "sha256_original": "888f85e82d13d9a89f0c44d4bb79418dcc8682301bf115ad24013ed402a2a6fb",
+      "sha256_final": "c13cf00acbcb63c2b4110fd2614fb3b9ed38086ff3734b031e87ab3325f680c2",
+      "apoio": "direita",
+      "ajuste_apoio_px": -6,
+      "fonte_balanco": 5,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 6,
+      "sha256_original": "35aa68f086f47a43da7631ef3e2ae9998ce339e21335231449f87a0e668d0427",
+      "sha256_final": "96b918f12bdd82c0e05676b0074ce545b6907223bafa3a715c280a80dfddcdfd",
+      "apoio": "direita",
+      "ajuste_apoio_px": -22,
+      "fonte_balanco": 6,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 7,
+      "sha256_original": "342a4f81d4eb8bf4fd9a30d32436e751d36119cd5cb695b5ea03774d2953607c",
+      "sha256_final": "cac1e09c9708f15c853e061d7b90d77a7e75de3e30fbe5fcd96beba0c7ba1dc0",
+      "apoio": "direita",
+      "ajuste_apoio_px": -8,
+      "fonte_balanco": 7,
+      "ajuste_traseiro_extra_px": 0
+    },
+    {
+      "personagem": "eva",
+      "quadro": 8,
+      "sha256_original": "d3659e6b6cdc9141ad6481c41076dd7ea0cc75a7ea99a8454ebb7e812ae218c4",
+      "sha256_final": "d450c1324838d0a15ed01d4a3a0eef5a64f0c0b16591f4a1c487f0eb95943379",
+      "apoio": "direita",
+      "ajuste_apoio_px": 16,
+      "fonte_balanco": 7,
+      "ajuste_traseiro_extra_px": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: identity-preserve. Single pixel-art frame EVA walking due NORTH away from viewer, phase 01 left heel contact. Reference1 immutable base: preserve exact proportions, black long ponytail, white cropped hoodie, gray baggy cargo pants, dark shoes with light soles. Reference2 guide specifies leg projection. Make clearly readable WALK AWAY: LEFT leg SCREEN LEFT advanced away from viewer (shoe heel grounded y465); RIGHT leg SCREEN RIGHT trailing toward viewer (toe at y495, heel visibly lifted). Legs stay hip-width, depth from knee flexion and foot position, no sideways spreading. CRITICAL opposite arms: screen LEFT hand swings BACK TOWARD VIEWER, left sleeve extended and left hand fully VISIBLE LOW at y350; screen RIGHT hand swings FORWARD AWAY from viewer, right sleeve bent and right hand HIDDEN HIGH behind right torso edge at y295. Do NOT do screen-left hand hidden and screen-right hand low! Crown y56, pelvis y310, centered x192 in384x512. Keep base proportions/pixel edges/palette/camera exactly. Alpha transparent, full body, no shadow/halo/scenery/text/guides, no smoothing or added accessories.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/norte.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/norte/01.png"
+  ]
+}

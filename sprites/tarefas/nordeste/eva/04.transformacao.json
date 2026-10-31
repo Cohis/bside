@@ -1,0 +1,34 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/eva-04.png",
+  "caixa_original": [
+    241,
+    155,
+    777,
+    1367
+  ],
+  "escala_uniforme": 0.34210526315789475,
+  "posicao": [
+    83,
+    52
+  ],
+  "eixo_original": 560,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    160,
+    540,
+    560
+  ],
+  "topo_alvo": 54,
+  "edicao_controlada": {
+    "tipo": "correcao_local_da_manga_e_mao_direitas",
+    "fonte_original": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/correcoes/eva-04-antes.png",
+    "fonte_dos_pixels": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/eva/07.png",
+    "rotacao_nearest_graus": 0,
+    "observacao": "manga contínua do ombro à mão visível; restante do ciclo ainda pendente"
+  }
+}

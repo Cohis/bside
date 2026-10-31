@@ -1,0 +1,164 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 1,
+    "raw": "sprites/tarefas/leste/raws/icaro-01.png",
+    "sha256_raw": "beeed90dd94c6ab4c601aa0de0c3e60a6b3ee555186389ae46e66bf45f4570a3",
+    "quadro": "sprites/tarefas/leste/icaro/01.png",
+    "sha256_quadro": "ce13ca835d6029ce2253fab1d27830d48e94f233d4eeb386cd8ae30ff302d3e6",
+    "registro_selecionado": "registros/icaro-01.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 2,
+    "raw": "sprites/tarefas/leste/raws/icaro-02.png",
+    "sha256_raw": "6a482aa9746cbe67d3975079b34bf90df8069346fdddac9fbd8df61dcb030c0a",
+    "quadro": "sprites/tarefas/leste/icaro/02.png",
+    "sha256_quadro": "3a36ab88882166c2c920b04de80edcd2e7fec44fc3ca3439dde6b67c8621c63e",
+    "registro_selecionado": "registros/icaro-02-tentativa2.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 3,
+    "raw": "sprites/tarefas/leste/raws/icaro-03.png",
+    "sha256_raw": "295a4bf2e166e82e9259dba30a4e3c69621dd97c472bcc797ad5ebd4f4237dc2",
+    "quadro": "sprites/tarefas/leste/icaro/03.png",
+    "sha256_quadro": "e361ab9ce9fa80d5f265f45ed694953580792122650b5722b09ddccceb31da06",
+    "registro_selecionado": "registros/icaro-03.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 4,
+    "raw": "sprites/tarefas/leste/raws/icaro-04.png",
+    "sha256_raw": "cbf7a3da9c3ba0aaa8d10370d716bd018982e40199b679fdbb9deafde0ab5c04",
+    "quadro": "sprites/tarefas/leste/icaro/04.png",
+    "sha256_quadro": "e6e55193ee2a755431693b18829d05fb4633edf3683029a6d62dc5e7dc9c1ee8",
+    "registro_selecionado": "registros/icaro-04.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 5,
+    "raw": "sprites/tarefas/leste/raws/icaro-05.png",
+    "sha256_raw": "a790d98979070ef4d58d9fdd0fc5d67045cabf1552739d240500463c57abef31",
+    "quadro": "sprites/tarefas/leste/icaro/05.png",
+    "sha256_quadro": "f03a934b561d5b78d7783e79e2478dd9983bf2a3aac3215b725eeae0b5430ec5",
+    "registro_selecionado": "registros/icaro-05.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 6,
+    "raw": "sprites/tarefas/leste/raws/icaro-06.png",
+    "sha256_raw": "edaefa02a38532431c8d2759b79b043feee91a6962ef71bbf5cf2030e4254bfb",
+    "quadro": "sprites/tarefas/leste/icaro/06.png",
+    "sha256_quadro": "1a24cef768b40e6bce779c3d049141c4363c62cfcd1cd84cc428346cce062ddb",
+    "registro_selecionado": "registros/icaro-06.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 7,
+    "raw": "sprites/tarefas/leste/raws/icaro-07.png",
+    "sha256_raw": "f5e12de036dd6b21f842319f89301e70b5c084e0fa9f75c4c6c2943ad9ed9455",
+    "quadro": "sprites/tarefas/leste/icaro/07.png",
+    "sha256_quadro": "8495c114ee13aa60599013a08ba8d416bd4670a648210b8692b5fbe379d2cdf2",
+    "registro_selecionado": "registros/icaro-07-tentativa2.json",
+    "status": "editado_controladamente_07_revisao_ciclo_pendente",
+    "registro_edicao": "registros/edicoes/icaro-07-edicao.json"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 8,
+    "raw": "sprites/tarefas/leste/raws/icaro-08.png",
+    "sha256_raw": "f9d0cbe2f53f878509b36af694b164cbc181e78d2f44438bc75152f1b1e1d431",
+    "quadro": "sprites/tarefas/leste/icaro/08.png",
+    "sha256_quadro": "b89a51b186caaf95905a3fcdc03d871584c9ab1ca54a01db6682c943c37228c6",
+    "registro_selecionado": "registros/icaro-08.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 1,
+    "raw": "sprites/tarefas/leste/raws/eva-01.png",
+    "sha256_raw": "4df5a5f6de311e31f9dbadf15acc3894d76e3d284a3fe529dc2e461e3396e1d1",
+    "quadro": "sprites/tarefas/leste/eva/01.png",
+    "sha256_quadro": "780ee479c7c89eaccc5460c6da686c968323abefd69db336e6efb9b1b4b9342b",
+    "registro_selecionado": "registros/eva-01.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 2,
+    "raw": "sprites/tarefas/leste/raws/eva-02.png",
+    "sha256_raw": "d055edcb74d450cdfe8e2ee2278f7a279742efecff6648764330ce7aee0dc71e",
+    "quadro": "sprites/tarefas/leste/eva/02.png",
+    "sha256_quadro": "d7c4904724b1ebc146d7a1d1fbb1e7c07eb5d69438dcfd7905d144ca950a2fed",
+    "registro_selecionado": "registros/eva-02.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 3,
+    "raw": "sprites/tarefas/leste/raws/eva-03.png",
+    "sha256_raw": "10cc13430cd0f4bc6ab4a89ca1c7ebb5b76b42a1058fd0fa61c6e595b1559082",
+    "quadro": "sprites/tarefas/leste/eva/03.png",
+    "sha256_quadro": "75b4df3bc75a0986455b7c2af4c1c1fa8d1f7c0a98a9bf3144c5313eb4f3b94b",
+    "registro_selecionado": "registros/eva-03.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 4,
+    "raw": "sprites/tarefas/leste/raws/eva-04.png",
+    "sha256_raw": "e6f736e55f98563a818691612ccf5b44060372b7f93237eb2240276e1605885b",
+    "quadro": "sprites/tarefas/leste/eva/04.png",
+    "sha256_quadro": "192a21bb4ed55b127ef1756e22a081a59e0b6c488fb21f970ffe9d40267e9595",
+    "registro_selecionado": "registros/eva-04.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 5,
+    "raw": "sprites/tarefas/leste/raws/eva-05.png",
+    "sha256_raw": "5d315d4487c2ee645a445ed3cdc830671493bd0df4337c4202c4819aee51c55f",
+    "quadro": "sprites/tarefas/leste/eva/05.png",
+    "sha256_quadro": "01f06e21da92a78a13ab7316ec5e22157e55adb86b692271ea8bf037cdd09326",
+    "registro_selecionado": "registros/eva-05.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 6,
+    "raw": "sprites/tarefas/leste/raws/eva-06.png",
+    "sha256_raw": "59fa93cad09870f13707c0d07d34163052004cb284f519009a091d4278195779",
+    "quadro": "sprites/tarefas/leste/eva/06.png",
+    "sha256_quadro": "75668d2eb7ce529ee749b33d1de62f23839c185bdf80d1fc25af5711427c5e95",
+    "registro_selecionado": "registros/eva-06-tentativa3.json",
+    "status": "revisao_estatica_feita"
+  },
+  {
+    "personagem": "eva",
+    "fase": 7,
+    "raw": "sprites/tarefas/leste/raws/eva-07.png",
+    "sha256_raw": "a060589e6a7801a47b9c4235aa4ca01ac84b2c42cf7d7aa5ab6c1f7311844fe6",
+    "quadro": "sprites/tarefas/leste/eva/07.png",
+    "sha256_quadro": "2a08d1f09386f853114677c64efbd95473822b171dd3edfe2ea122690c45c4ff",
+    "registro_selecionado": "registros/eva-07-tentativa3.json",
+    "status": "editado_controladamente_07_revisao_ciclo_pendente",
+    "registro_edicao": "registros/edicoes/eva-07-edicao.json"
+  },
+  {
+    "personagem": "eva",
+    "fase": 8,
+    "raw": "sprites/tarefas/leste/raws/eva-08.png",
+    "sha256_raw": "7766712e0545b684d8423a7e109f376726a57b1a998006ffcee8c94693922ede",
+    "quadro": "sprites/tarefas/leste/eva/08.png",
+    "sha256_quadro": "8bc8b2d99dbcb4d42ea2dfa3cbc8ef45fd6df88efc1bb498d924b9c8b1e205b3",
+    "registro_selecionado": "registros/eva-08.json",
+    "status": "revisao_estatica_feita"
+  }
+]

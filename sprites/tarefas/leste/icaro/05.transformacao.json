@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/icaro-05.png",
+  "caixa_original": [
+    270,
+    162,
+    814,
+    1353
+  ],
+  "escala_uniforme": 0.35600335852225024,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    91,
+    56
+  ],
+  "eixo_original": 555.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

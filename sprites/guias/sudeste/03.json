@@ -1,0 +1,71 @@
+{
+  "direcao": "sudeste",
+  "fase": 3,
+  "descricao": "passagem direita",
+  "ancora": [
+    192,
+    480
+  ],
+  "centro_quadril": [
+    192.0,
+    315.0
+  ],
+  "juntas": {
+    "esquerda": {
+      "quadril": [
+        204.73,
+        310.55
+      ],
+      "joelho": [
+        238.25,
+        398.78
+      ],
+      "tornozelo": [
+        204.73,
+        463.55
+      ],
+      "ponta_pe": [
+        213.92,
+        478.76
+      ],
+      "calcanhar": [
+        199.07,
+        473.57
+      ],
+      "contato_chao": true,
+      "avanco_local": 0,
+      "elevacao_local": 0
+    },
+    "direita": {
+      "quadril": [
+        179.27,
+        319.45
+      ],
+      "joelho": [
+        223.66,
+        399.49
+      ],
+      "tornozelo": [
+        179.27,
+        448.45
+      ],
+      "ponta_pe": [
+        188.46,
+        463.67
+      ],
+      "calcanhar": [
+        173.62,
+        458.47
+      ],
+      "contato_chao": false,
+      "avanco_local": 0,
+      "elevacao_local": 24
+    }
+  },
+  "apoio_principal": "esquerda",
+  "observacao": "Guia esquemático de fase; preservar proporções da base. Não copiar desenho ou cores do guia para o personagem.",
+  "deslocamento_por_quadro_projetado": [
+    12.728,
+    4.455
+  ]
+}

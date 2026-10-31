@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente icaro, direção OESTE perfil exato olhando esquerda, fase 07 PASSAGEM ESQUERDA: perna DIREITA distante sustenta, pé apoiado embaixo do quadril; perna ESQUERDA próxima em balanço, joelho flexionado à frente à esquerda, TORNOZELO ELEVADO EXATAMENTE SOB O QUADRIL, nunca atrás e nunca estendido à frente. Braço esquerdo próximo quase vertical.. Imagem 1 base fixa define identidade, escala, câmera, paleta e acabamento pixel-art. Imagem 2 apenas identidade, NÃO copiar pose de passada longa. Imagem 3 define pose de passagem compacta. Preserve proporções da cabeça e membros e roupa ampla. Pulseira somente pulso esquerdo próximo da câmera. Corpo inteiro, alpha transparente, sem sombra, halo, texto ou suavização. Apenas um pé elevado, outro no chão. Cabeça mesma escala e posição horizontal da base, quadril elevado só discretamente. Joelho do balanço avança, tornozelo fica sob cintura.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/07.png"
+  ]
+}

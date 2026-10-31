@@ -1,0 +1,63 @@
+{
+  "metodo": "Remapeamento vertical progressivo nearest apenas na regiao da perna em balanco, pico +30 px no joelho do Icaro e +27 px na Eva; decai a zero no quadril, x>=205 e y>=460.",
+  "inspecao": "Comparacao ampliada 3x e pranchas de vizinhanca 02-03-04/06-07-08. GIFs com duracoes 100/400 ms e chao marcado gerados como evidencia; leitura temporal ao vivo ainda nao certificada.",
+  "quadros": [
+    {
+      "personagem": "icaro",
+      "quadro": 3,
+      "anterior": "edicoes/pre-rearticular-passagens/icaro/03.png",
+      "candidato": "edicoes/novos-candidatos/icaro-03-rearticulado.png",
+      "sha256_anterior": "758723f589d0585e65af10e0fb680b7c25489055440371e85c9d4215422b633f",
+      "sha256_adotado": "bbd18930531c486715b5313104ffa626bd80c8de45858031f01a6732d802e1c8",
+      "area_modificada": [
+        112,
+        323,
+        205,
+        459
+      ]
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 7,
+      "anterior": "edicoes/pre-rearticular-passagens/icaro/07.png",
+      "candidato": "edicoes/novos-candidatos/icaro-07-rearticulado.png",
+      "sha256_anterior": "ed2a22e8e591dc5093d4a71638c839440e66f47e9a50db33a9f62bb4362c155a",
+      "sha256_adotado": "75a3ef30619a6405e26b0d10be273f6c028aeeb75055ed475c2cf36a9bb38c8f",
+      "area_modificada": [
+        110,
+        323,
+        204,
+        459
+      ]
+    },
+    {
+      "personagem": "eva",
+      "quadro": 3,
+      "anterior": "edicoes/pre-rearticular-passagens/eva/03.png",
+      "candidato": "edicoes/novos-candidatos/eva-03-rearticulado.png",
+      "sha256_anterior": "b2ceda0802fc554df19b1a7371b5b230cfbb1035447a66b169ce9aa077fa9958",
+      "sha256_adotado": "b78ec2c5ed69d00a80d2e3416c67abbd71892cee533784a10be4c49f3a3b33d2",
+      "area_modificada": [
+        112,
+        315,
+        204,
+        459
+      ]
+    },
+    {
+      "personagem": "eva",
+      "quadro": 7,
+      "anterior": "edicoes/pre-rearticular-passagens/eva/07.png",
+      "candidato": "edicoes/novos-candidatos/eva-07-rearticulado.png",
+      "sha256_anterior": "d8028d07d825325a7771022474f89018aaf7c994f262f0d3bf35253065cd35a9",
+      "sha256_adotado": "3766731131fe28eb046ae56faa1bc9b952202bdf101d5284f36b4b4d6a3c6e37",
+      "area_modificada": [
+        108,
+        315,
+        204,
+        459
+      ]
+    }
+  ],
+  "aprovacao_visual": false
+}

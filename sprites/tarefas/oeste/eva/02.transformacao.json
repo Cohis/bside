@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/eva/02-raw.png",
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "posicao_imagem_inteira": [
+    24,
+    22
+  ],
+  "eixo_torso_original_estimado": 480,
+  "topo_cabeca_destino": 61,
+  "ancora": [
+    192,
+    480
+  ],
+  "criterio": "Escala comum por comparação visual da cabeça e torso; bob nominal preservado. Não alinhado pelo pé mais baixo.",
+  "ruido_alfa_removido": "somente alfa <8",
+  "edicao_controlada": {
+    "registro": "sprites/tarefas/oeste/edicoes/apoios-eva-02-06.json",
+    "origem_preservada": "sprites/tarefas/oeste/edicoes/pre-apoiar-eva/02.png"
+  }
+}

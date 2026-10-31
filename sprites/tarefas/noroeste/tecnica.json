@@ -1,0 +1,312 @@
+{
+  "icaro": [
+    {
+      "quadro": 1,
+      "raw": "icaro-01-t3.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        100,
+        56,
+        306,
+        483
+      ],
+      "sha256": "304f83ce0ee898d5c56b1145ae7ca6bc1bc9c77c2f7a1f0b948eeefe5f3bd419",
+      "topo_planejado": 56,
+      "eixo_raw": 550,
+      "escala": 0.35,
+      "pos_processamento": "pulseira recomposta no pulso esquerdo anatômico, sem espelhamento"
+    },
+    {
+      "quadro": 2,
+      "raw": "icaro-02-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        89,
+        60,
+        292,
+        492
+      ],
+      "sha256": "9d5cc5be304a69a5e73d31103634e42eb1f455b4d145f08339642f1929e21503",
+      "topo_planejado": 60,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 3,
+      "raw": "icaro-03-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        110,
+        56,
+        269,
+        476
+      ],
+      "sha256": "c7a48c8b81c9ededed28807509dd41f820269696fa01eadb807c5def73b87d20",
+      "topo_planejado": 56,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 4,
+      "raw": "icaro-04-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        90,
+        54,
+        293,
+        467
+      ],
+      "sha256": "002a1cda16ab4a21bff08e885ef9b251aef023f488f081964180b50edfe65020",
+      "topo_planejado": 54,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 5,
+      "raw": "icaro-05-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        89,
+        56,
+        277,
+        452
+      ],
+      "sha256": "e900965331c0aea2f98b70e5bbd82688859d23153c5b938f8d376fdb3a8bf3dd",
+      "topo_planejado": 56,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 6,
+      "raw": "icaro-06-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        98,
+        60,
+        284,
+        473
+      ],
+      "sha256": "526ae37de7528e278c62941ff7905aa57e4efaac3470c35c0137bcd5873d8c63",
+      "topo_planejado": 60,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 7,
+      "raw": "icaro-07-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        110,
+        56,
+        269,
+        494
+      ],
+      "sha256": "cd4f6c40a159e6208e090e32c8488a5e8f14fa2b2f20c9bf8039fec4f73a2835",
+      "topo_planejado": 56,
+      "eixo_raw": 550,
+      "escala": 0.35
+    },
+    {
+      "quadro": 8,
+      "raw": "icaro-08-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        74,
+        54,
+        299,
+        490
+      ],
+      "sha256": "4d6d7c7e0dfdc53c209b757ab6d697ef0f32fafe4a905d40f8136946830f9bd9",
+      "topo_planejado": 54,
+      "eixo_raw": 550,
+      "escala": 0.35,
+      "pos_processamento": "pulseira recomposta no pulso esquerdo anatômico, sem espelhamento"
+    }
+  ],
+  "eva": [
+    {
+      "quadro": 1,
+      "raw": "eva-01-t3.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        97,
+        56,
+        311,
+        473
+      ],
+      "sha256": "523605c8dc4334d4dbf5c7cd035536e5d8932908dba3cce7554071dfaa7eb7dd",
+      "topo_planejado": 56,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 2,
+      "raw": "eva-02-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        92,
+        60,
+        312,
+        485
+      ],
+      "sha256": "ce1367c6c55bc2de6c32f7cfe963a771b5cc09c196767ac381be088e31e04bd0",
+      "topo_planejado": 60,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 3,
+      "raw": "eva-03-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        117,
+        56,
+        305,
+        475
+      ],
+      "sha256": "d0d6d3dfebd3a3ebef9a4806adc327987edfe61a6b78c5d1d0e7729e7666d582",
+      "topo_planejado": 56,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 4,
+      "raw": "eva-04-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        84,
+        54,
+        317,
+        481
+      ],
+      "sha256": "e124d6228d01fe162e3ef94e282039ab04dbdc47657f4922de28318606915c37",
+      "topo_planejado": 54,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 5,
+      "raw": "eva-05-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        93,
+        56,
+        308,
+        474
+      ],
+      "sha256": "5f919368c6aecf719d525e1ed7e9a202865050ff018365a3a6909383bd10cf36",
+      "topo_planejado": 56,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 6,
+      "raw": "eva-06-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        95,
+        60,
+        311,
+        475
+      ],
+      "sha256": "9140544a3a3246762df34f09e060c9d6e8fda70d013920cb8ba43efedb87385c",
+      "topo_planejado": 60,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 7,
+      "raw": "eva-07-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        108,
+        56,
+        312,
+        492
+      ],
+      "sha256": "8a7b536f9bbc0d9861315fab8a57217a53dc815cf19a291463b41d076045df41",
+      "topo_planejado": 56,
+      "eixo_raw": 545,
+      "escala": 0.35
+    },
+    {
+      "quadro": 8,
+      "raw": "eva-08-t1.png",
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        80,
+        54,
+        308,
+        454
+      ],
+      "sha256": "e87e6b104f33dd863eefc34a67af1744b4d31075fb04f73e2f0cd83041e5d0b0",
+      "topo_planejado": 54,
+      "eixo_raw": 545,
+      "escala": 0.35
+    }
+  ]
+}

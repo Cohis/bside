@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente eva, direção OESTE perfil exato voltado para esquerda da tela, fase 5 contato direito: perna DIREITA distante à frente (esquerda da tela), calcanhar tocando chão; esquerda próxima atrás à direita, ponta impulsionando. Braço esquerdo com pulseira avança à esquerda; direito recua.. Imagem 1 base fixa define identidade, escala, câmera, paleta e acabamento pixel-art; imagem 2 referência de identidade; imagem 3 guia esquemático. Preserve proporções, cabeça, roupa e acessórios. Eva tem manga longa branca e rabo de cavalo longo escuro. Passada moderada, ambos pés tocando chão. Corpo inteiro, fundo transparente alpha real, sem sombra, halo, texto ou suavização. Enquadramento e escala iguais à base, topo de cabeça estável. Modifique apenas pose.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/eva/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/05.png"
+  ]
+}

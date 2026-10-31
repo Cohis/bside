@@ -1,0 +1,20 @@
+{
+  "icaro": {
+    "original": "Ícaro.png",
+    "sha256": "17780af0fcb1217321f6e353fe070aaf813e6f4fc72b305a9dd872e288fb00e2",
+    "dimensoes": [
+      1536,
+      1024
+    ],
+    "modo": "RGBA"
+  },
+  "eva": {
+    "original": "eva.png",
+    "sha256": "803f212cf461ed7c672d118ab72e271f6312c70553cc860cb570a2d3fb593e09",
+    "dimensoes": [
+      1536,
+      1024
+    ],
+    "modo": "RGBA"
+  }
+}

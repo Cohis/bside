@@ -1,0 +1,284 @@
+{
+  "icaro": {
+    "quadros": [
+      {
+        "fase": 1,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          99,
+          56,
+          290,
+          495
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "8dd5792b073800ed860cee393a767e68bea9d7de0a65ed7c2b5525241bfccfa8"
+      },
+      {
+        "fase": 2,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          91,
+          63,
+          289,
+          484
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "b4d085a301e7f72c050e2ce92e62e71ef5808be2470f006c01d053009c8b9e8e"
+      },
+      {
+        "fase": 3,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          113,
+          56,
+          275,
+          489
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "1d6e65ec54b6d859ee158312484b4df75d5e5e0aed8115aa97d360e04aadc282"
+      },
+      {
+        "fase": 4,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          103,
+          54,
+          285,
+          482
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "9e5b58b2d07d12f34a1bfb425ac12e67bc1c6d233e76a1ff18298509262afb39"
+      },
+      {
+        "fase": 5,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          90,
+          56,
+          282,
+          488
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "5c41528dce2c77cbc487b3d41802cfa9d0985a35bbd02c112ae43dab29121475"
+      },
+      {
+        "fase": 6,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          99,
+          60,
+          294,
+          487
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "be55b4fc94e006b19af6bd6df2b302cf9ea49a191a450095c1986e615ca6ab1d"
+      },
+      {
+        "fase": 7,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          118,
+          57,
+          273,
+          489
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "a11a1173c61a91924b6fb7a2c0265325e4334c3efe67cb4b2fed484cbd013a8c"
+      },
+      {
+        "fase": 8,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          97,
+          54,
+          293,
+          486
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "27beedf1b1291e0918b198997dadb4b2d5932180e617e00a09af41dc799f9065"
+      }
+    ],
+    "duplicatas": false
+  },
+  "eva": {
+    "quadros": [
+      {
+        "fase": 1,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          89,
+          56,
+          317,
+          486
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "416c7a92e377ea6d9560375e030825305e6c3256e1ecd6b20954d51d5a9bc911"
+      },
+      {
+        "fase": 2,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          93,
+          62,
+          317,
+          495
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "eb9f49960ad27be0c0ff46e6d56f74eff17269464f74f0349e0a43c026c6339b"
+      },
+      {
+        "fase": 3,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          104,
+          59,
+          316,
+          494
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "38a4d9f1eadcc32c01e42076bf0e61e6e047680294163c3f09869121d30fcd4d"
+      },
+      {
+        "fase": 4,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          104,
+          53,
+          326,
+          496
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "ea22fd4cb9fb9e4d5e72ca3bb1703c72a53c8da69da640623591e34d458d52ca"
+      },
+      {
+        "fase": 5,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          91,
+          56,
+          317,
+          496
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "37b1dc59504d53db776495908e1a87a549bfdde06e2362f025388a23231f9289"
+      },
+      {
+        "fase": 6,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          105,
+          60,
+          315,
+          496
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "bed0d1939fbc2cea51eaeea6ed4dfd1210e890046b3c137481e7a975f5c35b63"
+      },
+      {
+        "fase": 7,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          110,
+          56,
+          308,
+          494
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "61f5ee631d07b00d6a1d71351dece07093007ed78931e4cfa3a75a1b09edc242"
+      },
+      {
+        "fase": 8,
+        "tamanho": [
+          384,
+          512
+        ],
+        "modo": "RGBA",
+        "bbox": [
+          88,
+          53,
+          338,
+          507
+        ],
+        "margens_ok": true,
+        "transparencia": true,
+        "hash_pixels": "70308a1e4ff968b7aa7094f8222803aedf1f25b61dc35db104087e55f9eb241c"
+      }
+    ],
+    "duplicatas": false
+  }
+}

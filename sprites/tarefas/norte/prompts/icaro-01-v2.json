@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: identity-preserve. Single pixel-art frame ICARO walking due NORTH away from viewer, phase 01 left heel contact. Reference1 fixed base: preserve exactly character proportions, hair pixels, purple tank without back symbol, black baggy pants, shoes, LEFT WRIST yellow bracelet. Reference2 guide specifies lower limb projection. Make a CLEAR walking-away pose: LEFT leg on SCREEN LEFT advanced away from camera (shoe bottom at 465), RIGHT leg on SCREEN RIGHT trailing toward camera (shoe toe bottom at495, heel visibly lifted and sole angle visible). Left knee slightly bent, right leg stretches back; legs remain same narrow hip width with depth, not lateral split. Arms MUST counterbalance: screen LEFT hand and yellow bracelet swing BACK TOWARD VIEWER, hand fully visible at y350; screen RIGHT hand swings FORWARD AWAY from viewer, partly hidden behind right torso edge at y315. No running, at least left heel and right toe touch the perspective ground. Head/torso remain centered at x192 and crown y56 as base. Full body on a real transparent alpha canvas, no shadow/halo/text/scenery, sharp original pixel art, do not smooth, do not make standing pose.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/norte.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/norte/01.png"
+  ]
+}

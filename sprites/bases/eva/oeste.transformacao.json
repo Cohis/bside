@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-eva-oeste-selecionada.png",
+  "caixa_original": [
+    342,
+    196,
+    857,
+    1377
+  ],
+  "escala_uniforme": 0.3590177815410669,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    127,
+    56
+  ],
+  "eixo_original": 522.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

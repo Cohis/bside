@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/norte/raws/icaro-01-selecionada.png",
+  "caixa_original": [
+    319,
+    147,
+    752,
+    1372
+  ],
+  "escala_uniforme": 0.36,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    109,
+    56
+  ],
+  "eixo_original": 550,
+  "ancora": [
+    192,
+    480
+  ],
+  "criterio_alinhamento": "Topo da cabeça e eixo corporal; sola não alinhada automaticamente. Bob 0,+5,0,-4. Escala fixa no ciclo."
+}

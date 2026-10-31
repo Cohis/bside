@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: identity-preserve. Create ONLY EVA in one full-body pixel-art WALKING animation frame, due NORTH / straight back view. First image is immutable character identity/style/scale base; second is only anatomical guide. Phase 01: LEFT FOOT CONTACT, a clearly readable WALK AWAY, not standing. Character's LEFT leg (screen LEFT) reaches forward away from viewer, heel down at a visibly higher ground-depth point; RIGHT leg behind toward viewer completing push off with heel lifted and only toe touching ground. Left heel at y462, right toe at y493 on 384x512 cell; pelvis y310, crown y56. Keep legs hip-width, nearly parallel on screen, use depth and knee bending, never widen stance. RIGHT arm swings forward away from camera, partly occluded by torso; LEFT arm swings backward towards viewer. Full two-step walking cycle starts with this left contact. Long dark ponytail, cropped white long-sleeve hoodie and gray baggy cargo trousers, dark shoes with light soles exactly from base. Keep lengths, pixel edges, palette and camera unchanged. No face visible, no added accessories. TRANSPARENT alpha background, no ground shadow, no text or guide markings, no extra objects, no smoothing. Single sprite only; preserve the exact base proportions.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/norte.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/norte/01.png"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/eva-04.png",
+  "caixa_original": [
+    208,
+    124,
+    869,
+    1336
+  ],
+  "escala_uniforme": 0.3629242819843342,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    56,
+    54
+  ],
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "tamanho da cabeça até queixo estimado visualmente; chão não forçado",
+  "queixo_raw_estimado": 507,
+  "eixo_cabeca_raw_estimado": 605,
+  "ruido_alfa_removido": "somente <8/255"
+}

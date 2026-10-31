@@ -1,0 +1,244 @@
+{
+  "direcao": "noroeste",
+  "data": "2026-10-24",
+  "personagens": {
+    "icaro": {
+      "quadros": [
+        {
+          "fase": 1,
+          "sha256_arquivo": "5522a04e1cea930fbba810d34330d1f360c76f6ec953de818469379695a9dabe",
+          "bbox": [
+            100,
+            56,
+            306,
+            483
+          ]
+        },
+        {
+          "fase": 2,
+          "sha256_arquivo": "1390e2dcd10aa6bf50b9415c8b2414b11ab4f25381066f1054487d0a5ca53ec9",
+          "bbox": [
+            89,
+            60,
+            292,
+            492
+          ]
+        },
+        {
+          "fase": 3,
+          "sha256_arquivo": "12f8d121cfb86646cc755b6fd4820038dc2d67a9b027a4dd11258c7cfd065f82",
+          "bbox": [
+            110,
+            56,
+            269,
+            476
+          ]
+        },
+        {
+          "fase": 4,
+          "sha256_arquivo": "a9f0c9222888fa0ed8aff120359ccd90eb38d52598247d330a0bd4307942e444",
+          "bbox": [
+            90,
+            54,
+            293,
+            467
+          ]
+        },
+        {
+          "fase": 5,
+          "sha256_arquivo": "72bcc3707cc3d15d4681946ecf0e5015c811b9344c5e2060cea744e57de8de4c",
+          "bbox": [
+            89,
+            56,
+            277,
+            452
+          ]
+        },
+        {
+          "fase": 6,
+          "sha256_arquivo": "6af33f968d1ecedc87cc58ae898351394c5c3b22157646cc50b4bdc771f97ba4",
+          "bbox": [
+            98,
+            60,
+            284,
+            473
+          ]
+        },
+        {
+          "fase": 7,
+          "sha256_arquivo": "28ace0142aa0010bd78c7b66692e3b565cd8289e667f352f208b4194086f7c7a",
+          "bbox": [
+            110,
+            56,
+            269,
+            494
+          ]
+        },
+        {
+          "fase": 8,
+          "sha256_arquivo": "00abfe557b7e6838d87f0e591d1f12c757b91801018c2513bf2346eaf2916366",
+          "bbox": [
+            74,
+            54,
+            299,
+            490
+          ]
+        }
+      ],
+      "previa_chao": {
+        "100": {
+          "quadros": 8,
+          "duracoes_ms": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ]
+        },
+        "400": {
+          "quadros": 8,
+          "duracoes_ms": [
+            400,
+            400,
+            400,
+            400,
+            400,
+            400,
+            400,
+            400
+          ]
+        }
+      },
+      "veredito_visual": "reprovado",
+      "defeitos": [
+        "01/08: contrabalanço de braços incorreto",
+        "03/07: pé suspenso permanece atrás da linha de passagem",
+        "06: identidade da perna de apoio diverge do guia",
+        "04→05 e 08→01: transições abruptas; patinação visível sobre chão marcado"
+      ]
+    },
+    "eva": {
+      "quadros": [
+        {
+          "fase": 1,
+          "sha256_arquivo": "ecabedd086068cbed1eafba218c24e6dad6b953701dafcc11b89db41daea16e7",
+          "bbox": [
+            97,
+            56,
+            311,
+            473
+          ]
+        },
+        {
+          "fase": 2,
+          "sha256_arquivo": "3bc6310b6a3fcc69b0203d7b38fd53f123311b85f0a74984adf91529f6c1d793",
+          "bbox": [
+            92,
+            60,
+            312,
+            485
+          ]
+        },
+        {
+          "fase": 3,
+          "sha256_arquivo": "72325b719c1cc5ad74489013fb9c83c220d3b215bb7f19238a4d4d294d29bffd",
+          "bbox": [
+            117,
+            56,
+            305,
+            475
+          ]
+        },
+        {
+          "fase": 4,
+          "sha256_arquivo": "f4ed8eb35814ef2a7985fbd0a0a3a31811a97e78ec5dc4010746705d872b41ba",
+          "bbox": [
+            84,
+            54,
+            317,
+            481
+          ]
+        },
+        {
+          "fase": 5,
+          "sha256_arquivo": "bbd23bc32751140a014598d754c9fab8732acbde166d5320178cca38d9ffe911",
+          "bbox": [
+            93,
+            56,
+            308,
+            474
+          ]
+        },
+        {
+          "fase": 6,
+          "sha256_arquivo": "5116451e37dc253ffd13785d05406de709d6a2a648ca7e613cf3a69c6b661b39",
+          "bbox": [
+            95,
+            60,
+            311,
+            475
+          ]
+        },
+        {
+          "fase": 7,
+          "sha256_arquivo": "dd0fa9026c7dfac2a63adc74fcc0248799c236d19e22acb58813d978374df1f4",
+          "bbox": [
+            108,
+            56,
+            312,
+            492
+          ]
+        },
+        {
+          "fase": 8,
+          "sha256_arquivo": "7d7a1ae543e77f778944624d7475ce080f84f81b546b0f78bfd3f4e118228be8",
+          "bbox": [
+            80,
+            54,
+            308,
+            454
+          ]
+        }
+      ],
+      "previa_chao": {
+        "100": {
+          "quadros": 8,
+          "duracoes_ms": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ]
+        },
+        "400": {
+          "quadros": 8,
+          "duracoes_ms": [
+            400,
+            400,
+            400,
+            400,
+            400,
+            400,
+            400,
+            400
+          ]
+        }
+      },
+      "veredito_visual": "reprovado",
+      "defeitos": [
+        "01/08: contrabalanço de braços incorreto",
+        "03/07: pé suspenso permanece atrás da linha de passagem",
+        "06: identidade da perna de apoio diverge do guia",
+        "04→05 e 08→01: transições abruptas; patinação visível sobre chão marcado"
+      ]
+    }
+  }
+}

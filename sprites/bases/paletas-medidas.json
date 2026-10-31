@@ -1,0 +1,268 @@
+{
+  "icaro": {
+    "metodo": "Amostragem dos pixels opacos das bases; agrupamento analítico de 8 unidades por canal. Não altera imagens.",
+    "cores_dominantes": [
+      {
+        "hex": "#282028",
+        "pixels": 25650
+      },
+      {
+        "hex": "#383038",
+        "pixels": 19805
+      },
+      {
+        "hex": "#080010",
+        "pixels": 18090
+      },
+      {
+        "hex": "#080008",
+        "pixels": 15915
+      },
+      {
+        "hex": "#202028",
+        "pixels": 14185
+      },
+      {
+        "hex": "#303038",
+        "pixels": 13248
+      },
+      {
+        "hex": "#f0e0d0",
+        "pixels": 13186
+      },
+      {
+        "hex": "#000008",
+        "pixels": 12998
+      },
+      {
+        "hex": "#e8d8d0",
+        "pixels": 12096
+      },
+      {
+        "hex": "#c8b8b8",
+        "pixels": 11340
+      },
+      {
+        "hex": "#302040",
+        "pixels": 10707
+      },
+      {
+        "hex": "#d09070",
+        "pixels": 9137
+      },
+      {
+        "hex": "#080810",
+        "pixels": 9133
+      },
+      {
+        "hex": "#d89878",
+        "pixels": 7535
+      },
+      {
+        "hex": "#281838",
+        "pixels": 6802
+      },
+      {
+        "hex": "#382048",
+        "pixels": 6495
+      },
+      {
+        "hex": "#d09878",
+        "pixels": 6460
+      },
+      {
+        "hex": "#e8d8c8",
+        "pixels": 6095
+      },
+      {
+        "hex": "#181820",
+        "pixels": 5371
+      },
+      {
+        "hex": "#302830",
+        "pixels": 4980
+      },
+      {
+        "hex": "#201820",
+        "pixels": 4785
+      },
+      {
+        "hex": "#f0e0d8",
+        "pixels": 4218
+      },
+      {
+        "hex": "#d8a078",
+        "pixels": 4185
+      },
+      {
+        "hex": "#f0d8d0",
+        "pixels": 3146
+      },
+      {
+        "hex": "#282830",
+        "pixels": 2886
+      },
+      {
+        "hex": "#c0b0b0",
+        "pixels": 2653
+      },
+      {
+        "hex": "#000000",
+        "pixels": 2541
+      },
+      {
+        "hex": "#d0c0c0",
+        "pixels": 2529
+      },
+      {
+        "hex": "#201828",
+        "pixels": 2236
+      },
+      {
+        "hex": "#301840",
+        "pixels": 2148
+      },
+      {
+        "hex": "#302048",
+        "pixels": 1914
+      },
+      {
+        "hex": "#e8e0d0",
+        "pixels": 1912
+      }
+    ]
+  },
+  "eva": {
+    "metodo": "Amostragem dos pixels opacos das bases; agrupamento analítico de 8 unidades por canal. Não altera imagens.",
+    "cores_dominantes": [
+      {
+        "hex": "#282028",
+        "pixels": 38042
+      },
+      {
+        "hex": "#000008",
+        "pixels": 26098
+      },
+      {
+        "hex": "#e8e0d8",
+        "pixels": 24992
+      },
+      {
+        "hex": "#000010",
+        "pixels": 22791
+      },
+      {
+        "hex": "#a09898",
+        "pixels": 20407
+      },
+      {
+        "hex": "#201820",
+        "pixels": 15930
+      },
+      {
+        "hex": "#a09098",
+        "pixels": 11133
+      },
+      {
+        "hex": "#201828",
+        "pixels": 11071
+      },
+      {
+        "hex": "#181820",
+        "pixels": 10961
+      },
+      {
+        "hex": "#888080",
+        "pixels": 9559
+      },
+      {
+        "hex": "#181020",
+        "pixels": 9503
+      },
+      {
+        "hex": "#202028",
+        "pixels": 9202
+      },
+      {
+        "hex": "#302830",
+        "pixels": 7705
+      },
+      {
+        "hex": "#989090",
+        "pixels": 6780
+      },
+      {
+        "hex": "#f8b898",
+        "pixels": 6672
+      },
+      {
+        "hex": "#a89898",
+        "pixels": 5973
+      },
+      {
+        "hex": "#908088",
+        "pixels": 5529
+      },
+      {
+        "hex": "#282030",
+        "pixels": 5366
+      },
+      {
+        "hex": "#706870",
+        "pixels": 4940
+      },
+      {
+        "hex": "#908888",
+        "pixels": 4718
+      },
+      {
+        "hex": "#101018",
+        "pixels": 4460
+      },
+      {
+        "hex": "#e8d8d8",
+        "pixels": 4449
+      },
+      {
+        "hex": "#d0c8c8",
+        "pixels": 4125
+      },
+      {
+        "hex": "#000000",
+        "pixels": 4070
+      },
+      {
+        "hex": "#383038",
+        "pixels": 4063
+      },
+      {
+        "hex": "#d0c0c8",
+        "pixels": 3802
+      },
+      {
+        "hex": "#a898a0",
+        "pixels": 3556
+      },
+      {
+        "hex": "#080810",
+        "pixels": 3533
+      },
+      {
+        "hex": "#887880",
+        "pixels": 3258
+      },
+      {
+        "hex": "#787078",
+        "pixels": 3015
+      },
+      {
+        "hex": "#787070",
+        "pixels": 3013
+      },
+      {
+        "hex": "#181018",
+        "pixels": 2984
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/eva-07.png",
+  "caixa_original": [
+    243,
+    159,
+    763,
+    1352
+  ],
+  "escala_uniforme": 0.3466666666666667,
+  "posicao": [
+    86,
+    56
+  ],
+  "eixo_original": 550,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    160,
+    535,
+    550
+  ],
+  "topo_alvo": 56,
+  "edicao_controlada": {
+    "tipo": "recomposicao_local_da_perna_em_passagem",
+    "fonte_original": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/correcoes/eva-07-antes.png",
+    "fonte_dos_pixels": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/eva/03.png",
+    "interpolacao": "vizinho mais próximo; sem espelho",
+    "resultado": "pé de balanço próximo à perna de apoio e suspenso; aprovação do ciclo depende de continuidade 06→07→08"
+  }
+}

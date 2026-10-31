@@ -1,0 +1,164 @@
+{
+  "quadros": [
+    {
+      "fase": 1,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        104,
+        56,
+        292,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "5b409296109fab7d73c1da125e87b9247eaae1df6f454d6ff5ce4e101aa44512"
+    },
+    {
+      "fase": 2,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        98,
+        60,
+        261,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "d5b29f37c80218e2332feeb91c9739c42f120f787fd169fdf12a504874ee575e"
+    },
+    {
+      "fase": 3,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        107,
+        54,
+        273,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "dc2adefbaf6bceeab2e5b35765aeda736f8775cf30b48f6d0df3a33473335050"
+    },
+    {
+      "fase": 4,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        96,
+        52,
+        321,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "704751d3fed5e9894883455ca7f14cab3eac210d6df8a07f401c1c98bda045be"
+    },
+    {
+      "fase": 5,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        92,
+        56,
+        285,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "f8203b9ae301ee0c860183f6904ff3f877e29159afc150ad0a0871df9c768a62"
+    },
+    {
+      "fase": 6,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        96,
+        60,
+        282,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "e24f0aee84b06a305b6d26fb55771e39159a0e230d2f8aba56d89fea3611be87"
+    },
+    {
+      "fase": 7,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        107,
+        54,
+        275,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "eaf904613188120bf390cd0f44343ba7281d39290e3eee9c6e390b78b3b7361c"
+    },
+    {
+      "fase": 8,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "caixa": [
+        99,
+        52,
+        321,
+        480
+      ],
+      "alfa": [
+        0,
+        255
+      ],
+      "sha256": "144d9386f4d7d73edf58a7c6c129cd39fff8f7cbd229dc518008322c9b5d2716"
+    }
+  ],
+  "duplicatas": false,
+  "criterio_enquadramento": "Eixo do tronco manual; escala uniforme por altura de fase, vizinho mais próximo, alfa menor que8 removido. Sem deformar partes.",
+  "edicao_controlada": [
+    2,
+    4,
+    6,
+    7
+  ]
+}

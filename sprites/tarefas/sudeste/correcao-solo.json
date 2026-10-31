@@ -1,0 +1,145 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 1,
+    "bbox_inferior_antes": 471,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/01.png",
+    "candidato": "candidatos-solo/icaro-01-solo.png",
+    "sha_antes": "8fce6d2c4df1322d9262d1b12d43ac73448a18d69cfb9ed24450654408ce6b1b",
+    "sha_depois": "b64122a975198adbf25661ad0b566c5afaecac4e198d9a7546849dcc81f8e6a9",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 3,
+    "bbox_inferior_antes": 484,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/03.png",
+    "candidato": "candidatos-solo/icaro-03-solo.png",
+    "sha_antes": "8fc1dd4508fe58f2947882eb97c854d12ddb663aa1b5995e635e2cae78b66be5",
+    "sha_depois": "4c11fe453387c8137f2389c4db4790ae1e4b20bcfc747259490cd2eca361e2ef",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 4,
+    "bbox_inferior_antes": 468,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/04.png",
+    "candidato": "candidatos-solo/icaro-04-solo.png",
+    "sha_antes": "a4a3f327b0af5cfea60667bd6684a552c05cf71feae2fc759617437df465d2c3",
+    "sha_depois": "0d11f838f03d272e161af08254bc7781a960d3190b10822ad57012cc7c6b38fc",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 5,
+    "bbox_inferior_antes": 483,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/05.png",
+    "candidato": "candidatos-solo/icaro-05-solo.png",
+    "sha_antes": "d7a7d07b486fdb2e9dce7393cbd8adfc7f269d1a0a6a91899de8f104136b30cc",
+    "sha_depois": "1484b3d555112a6190734c5014bdf22321c464ff185406702d4bc98694825c0d",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 6,
+    "bbox_inferior_antes": 478,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/06.png",
+    "candidato": "candidatos-solo/icaro-06-solo.png",
+    "sha_antes": "5165460a13274839c9b1905cc1749ebc45d7cc7b59c8c9bde8a5925a434e3609",
+    "sha_depois": "f6a2727c5d119057f6b93f1cbf65d1ca192e8841650dcb4ce8f861b1f1944d5a",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 8,
+    "bbox_inferior_antes": 463,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/icaro/08.png",
+    "candidato": "candidatos-solo/icaro-08-solo.png",
+    "sha_antes": "95b7eda221c035cb6cdbc57a235289f54156c8ec6f444cc322f47be21aba8b91",
+    "sha_depois": "d49eb8043f6ec59e0de818ba53d35383a82265544f9ed39a761c2d6e81aaa170",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 1,
+    "bbox_inferior_antes": 489,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/01.png",
+    "candidato": "candidatos-solo/eva-01-solo.png",
+    "sha_antes": "9fb020fe96ceaa4a0ab5762c15809c52bed9b1b20334d03764650f44c662e365",
+    "sha_depois": "d336a496d07e3fe0f84ff5276a044b3dd3f80a45c778b32b9f8ad7f7adfb7883",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 2,
+    "bbox_inferior_antes": 477,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/02.png",
+    "candidato": "candidatos-solo/eva-02-solo.png",
+    "sha_antes": "570774011aa0ba214361132a4395677c17e21b0e3de3bd1e60d6c3de33ee0506",
+    "sha_depois": "5354561771b9ef21d9d7af2a3c50ab2f26e410edebb2d9ab9ab7f13fa2ea6386",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 4,
+    "bbox_inferior_antes": 494,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/04.png",
+    "candidato": "candidatos-solo/eva-04-solo.png",
+    "sha_antes": "8b084f2469e0b368b2c31786142c0fc9be6748aa8adac08568aafe296de8e97f",
+    "sha_depois": "53bcabe983984a1179380610ba88e5ef156e3b68da77981d7652b06e01810e2e",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 5,
+    "bbox_inferior_antes": 476,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/05.png",
+    "candidato": "candidatos-solo/eva-05-solo.png",
+    "sha_antes": "67aaa9fae8ccaa3f833c0cad33a36eb9553ce8830917616861ee4799e1b6f703",
+    "sha_depois": "6dbfea4c6214e2926029ead6fac3317e94d203b04e6ce6cd18476c63924d0d71",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 6,
+    "bbox_inferior_antes": 486,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/06.png",
+    "candidato": "candidatos-solo/eva-06-solo.png",
+    "sha_antes": "36f102a19ee18de0bcbb72539d730d1d61db3d635e3f4d6e6d4889600cdb6630",
+    "sha_depois": "04b413f64041dc2cb50c3ef7322fcc47fc16dfb9bc9b3c34f1224bf76d5cd76b",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 7,
+    "bbox_inferior_antes": 502,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/07.png",
+    "candidato": "candidatos-solo/eva-07-solo.png",
+    "sha_antes": "f842301bab243ac6c81f7b6da9085d8384cba1e31f8470fd9da3a3b6db9fc19e",
+    "sha_depois": "09e1309897b19d6b4de43fa12e88ba915cdc38daf9648f7f36437fa5410e73bb",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  },
+  {
+    "personagem": "eva",
+    "fase": 8,
+    "bbox_inferior_antes": 476,
+    "bbox_inferior_depois": 480,
+    "anterior": "originais-pre-solo/eva/08.png",
+    "candidato": "candidatos-solo/eva-08-solo.png",
+    "sha_antes": "1675cbfdbf83244dcbee571b8838ec07169becc7d6e87f0dee628a63b6131272",
+    "sha_depois": "c33c5d49bfb48e3ac4c77ed072ccaa466f02265ddd7ac2969be354dc9880c002",
+    "metodo": "Remapeamento vertical por vizinho mais próximo abaixo de y330 Ícaro/y324 Eva; cabeça/tronco inalterados, apoio levado a y480."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/eva-03-t5.png",
+  "caixa_original": [
+    218,
+    150,
+    867,
+    1353
+  ],
+  "escala_uniforme": 0.35245220282626766,
+  "posicao": [
+    77,
+    56
+  ],
+  "saida": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/candidato-eva-03-t5.png",
+  "sha256_pixels": "6f52bd12ec73a98eb6a52583edd647d28c806b9c0e717f1d2d2e8dd9ede6b53f",
+  "status": "candidato; ainda nao promovido",
+  "prompt": "Editar apenas perna direita em balanco da candidata t4, trazendo joelho/calcado 20-25px para perto do apoio, sem alterar demais."
+}

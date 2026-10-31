@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/icaro-07-t2.png",
+  "caixa_original": [
+    302,
+    189,
+    766,
+    1350
+  ],
+  "escala_uniforme": 0.3652024117140396,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    107,
+    56
+  ],
+  "eixo_original": 534.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

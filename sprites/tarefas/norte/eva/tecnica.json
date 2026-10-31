@@ -1,0 +1,154 @@
+[
+  {
+    "quadro": 1,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      109,
+      56,
+      256,
+      490
+    ],
+    "sha256": "e0c13b57919fd6f94349ce827d125c3b29604b2f42d02a9486618aa487cb393f",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/01.png"
+  },
+  {
+    "quadro": 2,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      109,
+      61,
+      265,
+      483
+    ],
+    "sha256": "fb87c9509004a87c4af1392673d13ed67aa58f465512d200210ea14ba0fbcded",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/02.png"
+  },
+  {
+    "quadro": 3,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      108,
+      56,
+      266,
+      487
+    ],
+    "sha256": "698c75d04bc0655890971bdb9a49c995ad246db3d3a9498665d5110bd7748875",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/03.png"
+  },
+  {
+    "quadro": 4,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      123,
+      52,
+      275,
+      493
+    ],
+    "sha256": "50cc748f9b3af66d5d4675b4fd0d978bf264778e58a638427cb759ffa16619a0",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/04.png"
+  },
+  {
+    "quadro": 5,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      118,
+      56,
+      277,
+      490
+    ],
+    "sha256": "c13cf00acbcb63c2b4110fd2614fb3b9ed38086ff3734b031e87ab3325f680c2",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/05.png"
+  },
+  {
+    "quadro": 6,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      117,
+      61,
+      283,
+      484
+    ],
+    "sha256": "96b918f12bdd82c0e05676b0074ce545b6907223bafa3a715c280a80dfddcdfd",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/06.png"
+  },
+  {
+    "quadro": 7,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      117,
+      56,
+      280,
+      489
+    ],
+    "sha256": "cac1e09c9708f15c853e061d7b90d77a7e75de3e30fbe5fcd96beba0c7ba1dc0",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/07.png"
+  },
+  {
+    "quadro": 8,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      110,
+      52,
+      256,
+      493
+    ],
+    "sha256": "d450c1324838d0a15ed01d4a3a0eef5a64f0c0b16591f4a1c487f0eb95943379",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/eva/08.png"
+  }
+]

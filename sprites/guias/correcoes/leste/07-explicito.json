@@ -1,0 +1,41 @@
+{
+  "fase": 7,
+  "diagnostico": "A correção anterior recolheu o pé para trás do corpo. O tornozelo em balanço precisa ficar sob quadril, com joelho à frente, sem mudar o apoio.",
+  "esquerda_balanco": [
+    [
+      186,
+      315
+    ],
+    [
+      240,
+      382
+    ],
+    [
+      192,
+      438
+    ],
+    [
+      218,
+      450
+    ]
+  ],
+  "direita_apoio": [
+    [
+      198,
+      315
+    ],
+    [
+      205,
+      393
+    ],
+    [
+      186,
+      468
+    ],
+    [
+      218,
+      480
+    ]
+  ],
+  "notas": "Coordenadas em célula384x512 antes do deslocamento visual(30,20). Guia esquemático; não é sprite."
+}

@@ -1,0 +1,26 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-02.png",
+  "caixa_original": [
+    290,
+    193,
+    797,
+    1316
+  ],
+  "escala_uniforme": 0.3788300835654596,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    94,
+    60
+  ],
+  "eixo_original": 550,
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "topo e queixo manuais, escala da cabeça; eixo pelo tronco; bob de recepção +4 e avanço -2; NÃO alinhamento pela sola",
+  "marcos_cabeca_raw": [
+    193,
+    552
+  ],
+  "incerteza_marcos_raw_px": 5
+}

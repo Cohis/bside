@@ -1,0 +1,49 @@
+{
+  "metodo": "image_gen incorporando base congelada e guia correspondente; quadro único por pedido; os artefatos brutos ficam nesta pasta",
+  "referencias": {
+    "icaro-01": [
+      "sprites/bases/icaro/nordeste.png",
+      "sprites/guias/nordeste/01.png"
+    ],
+    "icaro-08": [
+      "sprites/bases/icaro/nordeste.png",
+      "sprites/guias/nordeste/08.png"
+    ],
+    "eva-01": [
+      "sprites/bases/eva/nordeste.png",
+      "sprites/guias/nordeste/01.png"
+    ],
+    "eva-08": [
+      "sprites/bases/eva/nordeste.png",
+      "sprites/guias/nordeste/08.png"
+    ]
+  },
+  "candidatos": {
+    "icaro-01": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/icaro-01-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "não obedeceu lado anatômico do apoio nem localização dos pés do guia"
+    },
+    "icaro-08": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/icaro-08-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "não obedeceu lado anatômico do apoio nem localização dos pés do guia"
+    },
+    "eva-01": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/eva-01-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "pose e contato incompatíveis com 08→01; pé de apoio/swing não distinguíveis como requerido"
+    },
+    "eva-08": {
+      "arquivo": "sprites/tarefas/nordeste/correcoes/eva-08-imagegen-rejeitado.png",
+      "aprovado": false,
+      "motivo": "pose e contato incompatíveis com 08→01; pé de apoio/swing não distinguíveis como requerido"
+    }
+  },
+  "composicao_manual_rejeitada": [
+    "icaro-01-pernas-ensaio.png",
+    "icaro-08-pernas-ensaio.png"
+  ],
+  "motivo_composicao": "corte de cintura, pixels residuais e pose 01 ainda sem dois contatos coerentes; PNGs ativos não alterados",
+  "prompts": "correcoes/prompts-reautoria.md"
+}

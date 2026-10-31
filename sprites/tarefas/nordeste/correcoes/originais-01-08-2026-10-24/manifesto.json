@@ -1,0 +1,47 @@
+{
+  "data": "2026-10-24",
+  "originais_ativos": {
+    "icaro-01": {
+      "arquivo": "correcoes/originais-01-08-2026-10-24/icaro-01.png",
+      "sha256": "b76f37ff72a3bbf30644de2b59e01367088a788a5f06fe7e534fcc04ff12ae84",
+      "transformacao": "correcoes/originais-01-08-2026-10-24/icaro-01.transformacao.json"
+    },
+    "icaro-08": {
+      "arquivo": "correcoes/originais-01-08-2026-10-24/icaro-08.png",
+      "sha256": "dba94de5589d3179d11a47cf639e9e0e2dc409c91732ef30aa1906349c1f5465",
+      "transformacao": "correcoes/originais-01-08-2026-10-24/icaro-08.transformacao.json"
+    },
+    "eva-01": {
+      "arquivo": "correcoes/originais-01-08-2026-10-24/eva-01.png",
+      "sha256": "1f22116f135770f363ffebefb0d0b22d3ec5ea28464dc0d2be97fe7f85401605",
+      "transformacao": "correcoes/originais-01-08-2026-10-24/eva-01.transformacao.json"
+    },
+    "eva-08": {
+      "arquivo": "correcoes/originais-01-08-2026-10-24/eva-08.png",
+      "sha256": "53e74ab574a528a7029c97c597edf9549b5bf7e6461cd7a43306b2cdb046c374",
+      "transformacao": "correcoes/originais-01-08-2026-10-24/eva-08.transformacao.json"
+    }
+  },
+  "ensaios_rejeitados": {
+    "icaro-01": {
+      "arquivo": "correcoes/icaro-01-contato-duplo-ensaio.png",
+      "sha256": "a76c9916d512d25dbdeaba830565974e85892d3dc301e18ac5f24d72eddf1db7",
+      "motivo": "A rearticulação afina/rompe a perna e cria fragmento de tênis; Ícaro ultrapassa margem inferior da célula."
+    },
+    "icaro-08": {
+      "arquivo": "correcoes/icaro-08-transplante-v3.png",
+      "sha256": "0f5172f3ed7280c4f14c50c2e9cbf17954d169adcc31435ec8630cb5d5d197f6",
+      "motivo": "O transplante aproxima os pés, mas repete a postura de 07, congela o apoio e não resolve 08→01; costura/resíduo no contorno da cintura."
+    },
+    "eva-01": {
+      "arquivo": "correcoes/eva-01-contato-duplo-ensaio.png",
+      "sha256": "e0c76675d0ca776bbe51c3dd3e3e2eb1785648c3711e1917ee0677c66ecf846d",
+      "motivo": "A rearticulação afina/rompe a perna e cria fragmento de tênis; Ícaro ultrapassa margem inferior da célula."
+    },
+    "eva-08": {
+      "arquivo": "correcoes/eva-08-transplante-v3.png",
+      "sha256": "9495336b3412acab3935fd3e3b97049d7c71ec61941027c3408c4fa1a7239ebd",
+      "motivo": "O transplante aproxima os pés, mas repete a postura de 07, congela o apoio e não resolve 08→01; costura/resíduo no contorno da cintura."
+    }
+  }
+}

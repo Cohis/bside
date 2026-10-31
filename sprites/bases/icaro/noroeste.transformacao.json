@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-icaro-noroeste-corrigida.png",
+  "caixa_original": [
+    316,
+    167,
+    793,
+    1381
+  ],
+  "escala_uniforme": 0.34925864909390447,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    103,
+    56
+  ],
+  "eixo_original": 570.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

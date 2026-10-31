@@ -1,0 +1,50 @@
+{
+  "icaro": {
+    "06": {
+      "antes": "originais-pre-recuo-06-07/icaro-06.png",
+      "sha256_antes": "f6a2727c5d119057f6b93f1cbf65d1ca192e8841650dcb4ce8f861b1f1944d5a",
+      "depois": "icaro/06.png",
+      "sha256_depois": "b6d9c243678c00bd34f73441d14a09c06603aba0a1bc1b17285da774240b6a65",
+      "metodo": "06: máscara da perna de apoio; 07: faixa inferior inteira, ambos com translação horizontal progressiva por vizinho mais próximo"
+    },
+    "07": {
+      "antes": "originais-pre-recuo-06-07/icaro-07.png",
+      "sha256_antes": "4fb9e67b2216c7c7c2b7ee427b7e52ee97a64f8a2ab1a7b6614c0333f824a284",
+      "depois": "icaro/07.png",
+      "sha256_depois": "1f5c9a5c5ce24556277ca9e6884840895d5c02b37b3cfd179a345a62e253d753",
+      "metodo": "06: máscara da perna de apoio; 07: faixa inferior inteira, ambos com translação horizontal progressiva por vizinho mais próximo"
+    },
+    "recuo_horizontal_estimado": [
+      34,
+      48,
+      47,
+      43,
+      43,
+      42
+    ]
+  },
+  "eva": {
+    "06": {
+      "antes": "originais-pre-recuo-06-07/eva-06.png",
+      "sha256_antes": "04b413f64041dc2cb50c3ef7322fcc47fc16dfb9bc9b3c34f1224bf76d5cd76b",
+      "depois": "eva/06.png",
+      "sha256_depois": "534c62ed119226574ddb89d0b701f60078898999e9d2fe368edb9b5ecfecd34a",
+      "metodo": "06: máscara da perna de apoio; 07: faixa inferior inteira, ambos com translação horizontal progressiva por vizinho mais próximo"
+    },
+    "07": {
+      "antes": "originais-pre-recuo-06-07/eva-07.png",
+      "sha256_antes": "6b6e291d2f14c97f2ea7b4fd72479afc7395de1fab623ae6fdc907485b57fc4e",
+      "depois": "eva/07.png",
+      "sha256_depois": "730bebdae48c26f38bfa8fa92fdb418bc55dc6d68b543f2e6ccf3c20b1e13bc6",
+      "metodo": "06: máscara da perna de apoio; 07: faixa inferior inteira, ambos com translação horizontal progressiva por vizinho mais próximo"
+    },
+    "recuo_horizontal_estimado": [
+      41,
+      44,
+      57,
+      40,
+      40,
+      39
+    ]
+  }
+}

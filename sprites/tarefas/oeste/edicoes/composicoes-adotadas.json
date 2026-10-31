@@ -1,0 +1,29 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "antes": "edicoes/pre-composicao/icaro/03.png",
+    "sha256_antes": "e5808c8c16b42ad11b4e24c1779ec51a7c5c84af1664003df8ef8cbd3c330fdf",
+    "candidato": "edicoes/candidatos/icaro-03-rotacao.png",
+    "sha256_depois": "6425785344155b41a7525dc1d578b1337ada71c1ebb1dce112f75f3b42737ab3",
+    "resultado": "adotado para revisão do ciclo; paleta original preservada; ciclo ainda não aprovado"
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "antes": "edicoes/pre-composicao/icaro/07.png",
+    "sha256_antes": "53642a02ad3573141eb5b861a533afa8a086215877a914fdcceb026b29dfc4ce",
+    "candidato": "edicoes/candidatos/icaro-07-rotacao.png",
+    "sha256_depois": "6a58546685ed5fcf23256c9ff99a7624cff713fbf701e5f30616f9c9327e6a5c",
+    "resultado": "adotado para revisão do ciclo; paleta original preservada; ciclo ainda não aprovado"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "antes": "edicoes/pre-composicao/eva/03.png",
+    "sha256_antes": "f7e2000f33e53cd8e144c89e6871e35b6984fc706dfd3f3ef4da505dbaa952f0",
+    "candidato": "edicoes/candidatos/eva-03-rotacao.png",
+    "sha256_depois": "6adba5cf07ae7b59e6494a093538f0174b1718f1233003f3673329c1614f4595",
+    "resultado": "adotado para revisão do ciclo; paleta original preservada; ciclo ainda não aprovado"
+  }
+]

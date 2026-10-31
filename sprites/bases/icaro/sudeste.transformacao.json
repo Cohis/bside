@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-icaro-sudeste-selecionada.png",
+  "caixa_original": [
+    333,
+    149,
+    775,
+    1344
+  ],
+  "escala_uniforme": 0.3548117154811716,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    112,
+    56
+  ],
+  "eixo_original": 559.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

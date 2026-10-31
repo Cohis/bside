@@ -1,0 +1,96 @@
+{
+  "icaro": {
+    "pontas_apoio_x": [
+      282,
+      278,
+      211,
+      144,
+      278,
+      278,
+      252,
+      169
+    ],
+    "passos": [
+      {
+        "transicao": "01→02",
+        "recuo_px": 4,
+        "erro_chao_40px": 36
+      },
+      {
+        "transicao": "02→03",
+        "recuo_px": 67,
+        "erro_chao_40px": -27
+      },
+      {
+        "transicao": "03→04",
+        "recuo_px": 67,
+        "erro_chao_40px": -27
+      },
+      {
+        "transicao": "05→06",
+        "recuo_px": 0,
+        "erro_chao_40px": 40
+      },
+      {
+        "transicao": "06→07",
+        "recuo_px": 26,
+        "erro_chao_40px": 14
+      },
+      {
+        "transicao": "07→08",
+        "recuo_px": 83,
+        "erro_chao_40px": -43
+      }
+    ],
+    "quadros_validos": 8,
+    "alfa_real": true,
+    "sha07": "8495c114ee13aa60599013a08ba8d416bd4670a648210b8692b5fbe379d2cdf2"
+  },
+  "eva": {
+    "pontas_apoio_x": [
+      305,
+      309,
+      218,
+      144,
+      289,
+      292,
+      230,
+      166
+    ],
+    "passos": [
+      {
+        "transicao": "01→02",
+        "recuo_px": -4,
+        "erro_chao_40px": 44
+      },
+      {
+        "transicao": "02→03",
+        "recuo_px": 91,
+        "erro_chao_40px": -51
+      },
+      {
+        "transicao": "03→04",
+        "recuo_px": 74,
+        "erro_chao_40px": -34
+      },
+      {
+        "transicao": "05→06",
+        "recuo_px": -3,
+        "erro_chao_40px": 43
+      },
+      {
+        "transicao": "06→07",
+        "recuo_px": 62,
+        "erro_chao_40px": -22
+      },
+      {
+        "transicao": "07→08",
+        "recuo_px": 64,
+        "erro_chao_40px": -24
+      }
+    ],
+    "quadros_validos": 8,
+    "alfa_real": true,
+    "sha07": "2a08d1f09386f853114677c64efbd95473822b171dd3edfe2ea122690c45c4ff"
+  }
+}

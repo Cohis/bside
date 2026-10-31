@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/eva-03.png",
+  "caixa_original": [
+    218,
+    134,
+    842,
+    1372
+  ],
+  "escala_uniforme": 0.3441033925686591,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    69,
+    54
+  ],
+  "eixo_original": 574.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

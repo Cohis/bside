@@ -1,0 +1,146 @@
+[
+  {
+    "quadro": 1,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      109,
+      56,
+      256,
+      473
+    ],
+    "sha256": "9983f571119139a9739de4a81ce84a51d0a9e69a3c4afcd0efaa61250b57c640",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 2,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      109,
+      61,
+      265,
+      487
+    ],
+    "sha256": "6f54f07a343c64e8b064e2fa3ea4f9819b429d55dd4b80fa69288a673d4c9e32",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 3,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      108,
+      56,
+      266,
+      480
+    ],
+    "sha256": "8bf76fa7f3d27f68565052753d3e0535af1d6d9ce5e2f2e8280ab7928f68c5ca",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 4,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      123,
+      52,
+      275,
+      477
+    ],
+    "sha256": "21fc6ef63d416c019ba2db73085ccf2b5e26d20fa458fb36d81b088948211fb9",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 5,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      118,
+      56,
+      277,
+      490
+    ],
+    "sha256": "1b74a4089bf57c084aa3927ea27cfdfe8e5632475b6a443fd5e4e6480046cca8",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 6,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      117,
+      61,
+      283,
+      503
+    ],
+    "sha256": "9e4b0cbfdb44019ea04a978c2564482f919e328804b4f72633f9f9e127022c78",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 7,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      117,
+      56,
+      280,
+      495
+    ],
+    "sha256": "9bba4ce636299eaca93a0287a6fa8f3776962722fbf5745659e0f58aad525d1e",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  },
+  {
+    "quadro": 8,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      110,
+      52,
+      256,
+      477
+    ],
+    "sha256": "dc1162688824ab28ca5751bf92795a7a6d80e2a94ccad6aa321e5f53ad7aa00b",
+    "alfa_extremos": [
+      0,
+      255
+    ]
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "metodo": "Remapeamento vertical local RGBA, amostra mais próxima, sem alterar pixels acima de y=320 nem escala dos calçados.",
+  "fase": "candidato não publicado; conferir anatomia, solo e costuras",
+  "quadros": [
+    {
+      "personagem": "icaro",
+      "quadro": 1,
+      "lado": "esquerda",
+      "apoio_atual_y": 458,
+      "apoio_alvo_y": 467,
+      "delta_px": 9,
+      "candidato": "candidatos_v1/icaro-01.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 2,
+      "lado": "esquerda",
+      "apoio_atual_y": 482,
+      "apoio_alvo_y": 473,
+      "delta_px": -9,
+      "candidato": "candidatos_v1/icaro-02.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 3,
+      "lado": "esquerda",
+      "apoio_atual_y": 481,
+      "apoio_alvo_y": 479,
+      "delta_px": -2,
+      "candidato": "candidatos_v1/icaro-03.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 4,
+      "lado": "esquerda",
+      "apoio_atual_y": 487,
+      "apoio_alvo_y": 485,
+      "delta_px": -2,
+      "candidato": "candidatos_v1/icaro-04.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 5,
+      "lado": "direita",
+      "apoio_atual_y": 473,
+      "apoio_alvo_y": 467,
+      "delta_px": -6,
+      "candidato": "candidatos_v1/icaro-05.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 6,
+      "lado": "direita",
+      "apoio_atual_y": 483,
+      "apoio_alvo_y": 473,
+      "delta_px": -10,
+      "candidato": "candidatos_v1/icaro-06.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 7,
+      "lado": "direita",
+      "apoio_atual_y": 482,
+      "apoio_alvo_y": 479,
+      "delta_px": -3,
+      "candidato": "candidatos_v1/icaro-07.png"
+    },
+    {
+      "personagem": "icaro",
+      "quadro": 8,
+      "lado": "direita",
+      "apoio_atual_y": 481,
+      "apoio_alvo_y": 485,
+      "delta_px": 4,
+      "candidato": "candidatos_v1/icaro-08.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 1,
+      "lado": "esquerda",
+      "apoio_atual_y": 471,
+      "apoio_alvo_y": 474,
+      "delta_px": 3,
+      "candidato": "candidatos_v1/eva-01.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 2,
+      "lado": "esquerda",
+      "apoio_atual_y": 486,
+      "apoio_alvo_y": 480,
+      "delta_px": -6,
+      "candidato": "candidatos_v1/eva-02.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 3,
+      "lado": "esquerda",
+      "apoio_atual_y": 479,
+      "apoio_alvo_y": 486,
+      "delta_px": 7,
+      "candidato": "candidatos_v1/eva-03.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 4,
+      "lado": "esquerda",
+      "apoio_atual_y": 476,
+      "apoio_alvo_y": 492,
+      "delta_px": 16,
+      "candidato": "candidatos_v1/eva-04.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 5,
+      "lado": "direita",
+      "apoio_atual_y": 480,
+      "apoio_alvo_y": 474,
+      "delta_px": -6,
+      "candidato": "candidatos_v1/eva-05.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 6,
+      "lado": "direita",
+      "apoio_atual_y": 502,
+      "apoio_alvo_y": 480,
+      "delta_px": -22,
+      "candidato": "candidatos_v1/eva-06.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 7,
+      "lado": "direita",
+      "apoio_atual_y": 494,
+      "apoio_alvo_y": 486,
+      "delta_px": -8,
+      "candidato": "candidatos_v1/eva-07.png"
+    },
+    {
+      "personagem": "eva",
+      "quadro": 8,
+      "lado": "direita",
+      "apoio_atual_y": 476,
+      "apoio_alvo_y": 492,
+      "delta_px": 16,
+      "candidato": "candidatos_v1/eva-08.png"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "personagem": "eva",
+  "fase": 7,
+  "versao_anterior": "originais-pre-joelho07/eva/07.png",
+  "candidato": "candidatos-apoio/eva-07-joelho-baixo.png",
+  "sha_antes": "09e1309897b19d6b4de43fa12e88ba915cdc38daf9648f7f36437fa5410e73bb",
+  "sha_depois": "6b6e291d2f14c97f2ea7b4fd72479afc7395de1fab623ae6fdc907485b57fc4e",
+  "metodo": "Remapeamento vertical local nearest, máximo 18 px no joelho esquerdo em balanço e 8 px no calçado; x≤170 sem deslocamento, sem mudar cabeça/tronco/apoio."
+}

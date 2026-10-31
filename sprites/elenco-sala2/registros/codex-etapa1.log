@@ -1,0 +1,1568 @@
+Reading additional input from stdin...
+OpenAI Codex v0.157.1
+--------
+workdir: /home/icaro/Documentos/AOC/sprites/elenco-sala2
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 01a18e4a-18d6-7302-8cb5-c0f92310f465
+--------
+user
+Leia BRIEFING.md nesta pasta e execute a Etapa 1 (folhas de identidade do agente carmesim, do anjo e de Hank), seguindo todas as regras e usando as sprites já geradas de Ícaro e Eva como referência de arte em todas as gerações. Ao terminar a Etapa 1, atualize STATUS.md e pare no portão de aprovação.
+warning: Configured service tier `priority` is not advertised as supported for model `gpt-6-luna` and will be omitted from requests.
+warning: Exceeded skills context budget. All skill descriptions were removed and 327 additional skills were not included in the model-visible skills list.
+codex
+Vou ler o briefing, o status e os arquivos do projeto para identificar as regras da Etapa 1 e as sprites de referência. Também vou seguir a skill de geração de imagens disponível nesta sessão.
+exec
+/usr/bin/bash -lc 'cat /home/icaro/.codex/skills/imagegen/SKILL.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ exited 1 in 0ms:
+cat: /home/icaro/.codex/skills/imagegen/SKILL.md: No such file or directory
+
+exec
+/usr/bin/bash -lc "pwd && rg --files -g 'BRIEFING.md' -g 'STATUS.md' -g 'AGENTS.md' -g '*' | sed -n '1,160p'" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+/home/icaro/Documentos/AOC/sprites/elenco-sala2
+registros/codex-etapa1.log
+registros/cena-galpao.png
+registros/cena-doca.png
+BRIEFING.md
+
+exec
+/usr/bin/bash -lc 'cat /home/icaro/.codex/skills/.system/imagegen/SKILL.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+---
+name: "imagegen"
+description: "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+---
+
+# Image Generation Skill
+
+Generates or edits images for the current project (for example website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, or infographics).
+
+## Top-level modes and rules
+
+This skill has exactly two top-level modes:
+
+- **Default built-in tool mode (preferred):** built-in `image_gen` tool for image generation, editing, and transparent-image requests. Does not require `OPENAI_API_KEY`.
+- **Fallback CLI mode:** `scripts/image_gen.py` CLI. Use when the user explicitly asks for or confirms the CLI/API/model path. Requires `OPENAI_API_KEY`.
+
+Within CLI fallback, the CLI exposes three subcommands:
+
+- `generate`
+- `edit`
+- `generate-batch`
+
+Rules:
+- Use the built-in `image_gen` tool by default for normal image generation and editing requests.
+- Do not switch to CLI fallback for ordinary quality, size, or file-path control.
+- For transparent images, ask built-in `image_gen` for a transparent background and preserve the generated alpha.
+- Never silently switch from built-in `image_gen` or CLI `gpt-image-2` to CLI `gpt-image-1.5`; ask the user first unless they explicitly requested `gpt-image-1.5`.
+- The word `batch` by itself does not mean CLI fallback. If the user asks for many assets or says to batch-generate assets without explicitly asking for CLI/API/model controls, stay on the built-in path and issue one built-in call per requested asset or variant.
+- If the built-in tool fails or is unavailable, tell the user the CLI fallback exists and that it requires `OPENAI_API_KEY`. Proceed only if the user explicitly asks for that fallback.
+- If the user explicitly asks for CLI mode, use the bundled `scripts/image_gen.py` workflow. Do not create one-off SDK runners.
+- Never modify `scripts/image_gen.py`. If something is missing, ask the user before doing anything else.
+
+Built-in save-path policy:
+- In built-in tool mode, Codex saves generated images under `$CODEX_HOME/*` by default.
+- Do not describe or rely on OS temp as the default built-in destination.
+- Do not describe or rely on a destination-path argument (if any) on the built-in `image_gen` tool. If a specific location is needed, generate first and then move or copy the selected output from `$CODEX_HOME/generated_images/...`.
+- Save-path precedence in built-in mode:
+  1. If the user names a destination, move or copy the selected output there.
+  2. If the image is meant for the current project, move or copy the final selected image into the workspace before finishing.
+  3. If the image is only for preview or brainstorming, render it inline; the underlying file can remain at the default `$CODEX_HOME/*` path.
+- Never leave a project-referenced asset only at the default `$CODEX_HOME/*` path.
+- Do not overwrite an existing asset unless the user explicitly asked for replacement; otherwise create a sibling versioned filename such as `hero-v2.png` or `item-icon-edited.png`.
+
+Shared prompt guidance for both modes lives in `references/prompting.md` and `references/sample-prompts.md`.
+
+Fallback-only docs/resources for CLI mode:
+- `references/cli.md`
+- `references/image-api.md`
+- `references/codex-network.md`
+- `scripts/image_gen.py`
+
+## When to use
+- Generate a new image (concept art, product shot, cover, website hero)
+- Generate a new image using one or more reference images for style, composition, or mood
+- Edit an existing image (inpainting, lighting or weather transformations, background replacement, object removal, compositing, transparent background)
+- Produce many assets or variants for one task
+
+## When not to use
+- Extending or matching an existing SVG/vector icon set, logo system, or illustration library inside the repo
+- Creating simple shapes, diagrams, wireframes, or icons that are better produced directly in SVG, HTML/CSS, or canvas
+- Making a small project-local asset edit when the source file already exists in an editable native format
+- Any task where the user clearly wants deterministic code-native output instead of a generated bitmap
+
+## Decision tree
+
+Think about two separate questions:
+
+1. **Intent:** is this a new image or an edit of an existing image?
+2. **Execution strategy:** is this one asset or many assets/variants?
+
+Intent:
+- If the user wants to modify an existing image while preserving parts of it, treat the request as **edit**.
+- If the user provides images only as references for style, composition, mood, or subject guidance, treat the request as **generate**.
+- If the user provides no images, treat the request as **generate**.
+
+Built-in edit semantics:
+- Built-in edit mode is for images already visible in the conversation context, such as attached images or images generated earlier in the thread.
+- If the user wants to edit a local image file with the built-in tool, first load it with built-in `view_image` tool so the image is visible in the conversation context, then proceed with the built-in edit flow.
+- Do not promise arbitrary filesystem-path editing through the built-in tool.
+- If a local file still needs direct file-path control, masks, or other explicit CLI-only parameters, use the explicit CLI fallback only when the user asks for it.
+- For edits, preserve invariants aggressively and save non-destructively by default.
+
+Execution strategy:
+- In the built-in default path, produce many assets or variants by issuing one `image_gen` call per requested asset or variant.
+- In the CLI fallback path, use the CLI `generate-batch` subcommand only when the user explicitly chose CLI mode and needs many prompts/assets.
+- For many distinct assets, do not use `n` as a substitute for separate prompts. `n` is for variants of one prompt; distinct assets need distinct built-in calls or distinct CLI `generate-batch` jobs.
+
+Assume the user wants a new image unless they clearly ask to change an existing one.
+
+## Workflow
+1. Decide the top-level mode: built-in by default, including transparent-output requests; fallback CLI only if explicitly requested or confirmed.
+2. Decide the intent: `generate` or `edit`.
+3. Decide whether the output is preview-only or meant to be consumed by the current project.
+4. Decide the execution strategy: single asset vs repeated built-in calls vs CLI `generate-batch`.
+5. Collect inputs up front: prompt(s), exact text (verbatim), constraints/avoid list, and any input images.
+6. For every input image, label its role explicitly:
+   - reference image
+   - edit target
+   - supporting insert/style/compositing input
+7. If the edit target is only on the local filesystem and you are staying on the built-in path, inspect it with `view_image` first so the image is available in conversation context.
+8. If the user asked for a photo, illustration, sprite, product image, banner, or other explicitly raster-style asset, use `image_gen` rather than substituting SVG/HTML/CSS placeholders. If the request is for an icon, logo, or UI graphic that should match existing repo-native SVG/vector/code assets, prefer editing those directly instead.
+9. Augment the prompt based on specificity:
+   - If the user's prompt is already specific and detailed, normalize it into a clear spec without adding creative requirements.
+   - If the user's prompt is generic, add tasteful augmentation only when it materially improves output quality.
+10. Use the built-in `image_gen` tool by default.
+11. For transparent-output requests, ask built-in `image_gen` for a transparent background and preserve the generated alpha channel.
+12. Inspect outputs and validate: subject, style, composition, text accuracy, and invariants/avoid items.
+13. Iterate with a single targeted change, then re-check.
+14. For preview-only work, render the image inline; the underlying file may remain at the default `$CODEX_HOME/generated_images/...` path.
+15. For project-bound work, move or copy the selected artifact into the workspace and update any consuming code or references. Never leave a project-referenced asset only at the default `$CODEX_HOME/generated_images/...` path.
+16. For batches or multi-asset requests, persist every requested deliverable final in the workspace unless the user explicitly asked to keep outputs preview-only. Discarded variants do not need to be kept unless requested.
+17. If the user explicitly chooses or confirms the CLI fallback, then use the fallback-only docs for model, quality, size, `input_fidelity`, masks, output format, output paths, and network setup.
+18. Always report the final saved path(s) for any workspace-bound asset(s), plus the final prompt or prompt set and whether the built-in tool or fallback CLI mode was used.
+
+## Transparent image requests
+
+Ask built-in `image_gen` for a genuinely transparent background and preserve its alpha.
+
+## Prompt augmentation
+
+Reformat user prompts into a structured, production-oriented spec. Make the user's goal clearer and more actionable, but do not blindly add detail.
+
+Treat this as prompt-shaping guidance, not a closed schema. Use only the lines that help, and add a short extra labeled line when it materially improves clarity.
+
+### Specificity policy
+
+Use the user's prompt specificity to decide how much augmentation is appropriate:
+
+- If the prompt is already specific and detailed, preserve that specificity and only normalize/structure it.
+- If the prompt is generic, you may add tasteful augmentation when it will materially improve the result.
+
+Allowed augmentations:
+- composition or framing hints
+- polish level or intended-use hints
+- practical layout guidance
+- reasonable scene concreteness that supports the stated request
+
+Not allowed augmentations:
+- extra characters or objects that are not implied by the request
+- brand names, slogans, palettes, or narrative beats that are not implied
+- arbitrary side-specific placement unless the surrounding layout supports it
+
+## Use-case taxonomy (exact slugs)
+
+Classify each request into one of these buckets and keep the slug consistent across prompts and references.
+
+Generate:
+- photorealistic-natural — candid/editorial lifestyle scenes with real texture and natural lighting.
+- product-mockup — product/packaging shots, catalog imagery, merch concepts.
+- ui-mockup — app/web interface mockups and wireframes; specify the desired fidelity.
+- infographic-diagram — diagrams/infographics with structured layout and text.
+- scientific-educational — classroom explainers, scientific diagrams, and learning visuals with required labels and accuracy constraints.
+- ads-marketing — campaign concepts and ad creatives with audience, brand position, scene, and exact tagline/copy.
+- productivity-visual — slide, chart, workflow, and data-heavy business visuals.
+- logo-brand — logo/mark exploration, vector-friendly.
+- illustration-story — comics, children’s book art, narrative scenes.
+- stylized-concept — style-driven concept art, 3D/stylized renders.
+- historical-scene — period-accurate/world-knowledge scenes.
+
+Edit:
+- text-localization — translate/replace in-image text, preserve layout.
+- identity-preserve — try-on, person-in-scene; lock face/body/pose.
+- precise-object-edit — remove/replace a specific element (including interior swaps).
+- lighting-weather — time-of-day/season/atmosphere changes only.
+- background-extraction — transparent background / clean cutout. Ask built-in `image_gen` for actual transparency.
+- style-transfer — apply reference style while changing subject/scene.
+- compositing — multi-image insert/merge with matched lighting/perspective.
+- sketch-to-render — drawing/line art to photoreal render.
+
+## Shared prompt schema
+
+Use the following labeled spec as shared prompt scaffolding for both top-level modes:
+
+```text
+Use case: <taxonomy slug>
+Asset type: <where the asset will be used>
+Primary request: <user's main prompt>
+Input images: <Image 1: role; Image 2: role> (optional)
+Scene/backdrop: <environment>
+Subject: <main subject>
+Style/medium: <photo/illustration/3D/etc>
+Composition/framing: <wide/close/top-down; placement>
+Lighting/mood: <lighting + mood>
+Color palette: <palette notes>
+Materials/textures: <surface details>
+Text (verbatim): "<exact text>"
+Constraints: <must keep/must avoid>
+Avoid: <negative constraints>
+```
+
+Notes:
+- `Asset type` and `Input images` are prompt scaffolding, not dedicated CLI flags.
+- `Scene/backdrop` refers to the visual setting. It is not the same as the fallback CLI `background` parameter, which controls output transparency behavior.
+- Fallback-only execution notes such as `Quality:`, `Input fidelity:`, masks, output format, and output paths belong in the CLI path only. Do not treat them as built-in `image_gen` tool arguments.
+
+Augmentation rules:
+- Keep it short.
+- Add only the details needed to improve the prompt materially.
+- For edits, explicitly list invariants (`change only X; keep Y unchanged`).
+- If any critical detail is missing and blocks success, ask a question; otherwise proceed.
+
+## Examples
+
+### Generation example (hero image)
+```text
+Use case: product-mockup
+Asset type: landing page hero
+Primary request: a minimal hero image of a ceramic coffee mug
+Style/medium: clean product photography
+Composition/framing: wide composition with usable negative space for page copy if needed
+Lighting/mood: soft studio lighting
+Constraints: no logos, no text, no watermark
+```
+
+### Edit example (invariants)
+```text
+Use case: precise-object-edit
+Asset type: product photo background replacement
+Primary request: replace only the background with a warm sunset gradient
+Constraints: change only the background; keep the product and its edges unchanged; no text; no watermark
+```
+
+## Prompting best practices
+- Structure prompt as scene/backdrop -> subject -> details -> constraints.
+- Include intended use (ad, UI mock, infographic) to set the mode and polish level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+## Guidance by asset type
+Asset-type templates (website assets, game assets, wireframes, logo) are consolidated in `references/sample-prompts.md`.
+
+## gpt-image-2 guidance for CLI fallback
+
+The fallback CLI defaults to `gpt-image-2`.
+
+- Use `gpt-image-2` for new CLI/API workflows unless the user confirms a different model.
+- CLI `gpt-image-2` does not support `background=transparent`; ask before using `gpt-image-1.5` unless the user explicitly requested that model.
+- `gpt-image-2` always uses high fidelity for image inputs; do not set `input_fidelity` with this model.
+- `gpt-image-2` supports `quality` values `low`, `medium`, `high`, and `auto`.
+- Use `quality low` for fast drafts, thumbnails, and quick iterations. Use `medium`, `high`, or `auto` for final assets, dense text, diagrams, identity-sensitive edits, or high-resolution outputs.
+- Square images are typically fastest to generate. Use `1024x1024` for fast square drafts.
+- If the user asks for 4K-style output, use `3840x2160` for landscape or `2160x3840` for portrait.
+- `gpt-image-2` size may be `auto` or `WIDTHxHEIGHT` if all constraints hold: max edge `<= 3840px`, both edges multiples of `16px`, long-to-short ratio `<= 3:1`, total pixels between `655,360` and `8,294,400`.
+
+Popular `gpt-image-2` sizes:
+- `1024x1024` square
+- `1536x1024` landscape
+- `1024x1536` portrait
+- `2048x2048` 2K square
+- `2048x1152` 2K landscape
+- `3840x2160` 4K landscape
+- `2160x3840` 4K portrait
+- `auto`
+
+## Fallback CLI mode only
+
+### Temp and output conventions
+These conventions apply only to the CLI fallback. They do not describe built-in `image_gen` output behavior.
+- Use `tmp/imagegen/` for intermediate files (for example JSONL batches); delete them when done.
+- Write final artifacts under `output/imagegen/`.
+- Use `--out` or `--out-dir` to control output paths; keep filenames stable and descriptive.
+
+### Dependencies
+Prefer `uv` for dependency management in this repo.
+
+Required Python package:
+```bash
+uv pip install openai
+```
+
+Optional for image inspection and downscaling:
+```bash
+uv pip install pillow
+```
+
+Portability note:
+- If you are using the installed skill outside this repo, install dependencies into that environment with its package manager.
+- In uv-managed environments, `uv pip install ...` remains the preferred path.
+
+### Environment
+- `OPENAI_API_KEY` must be set for live API calls.
+- Do not ask the user for `OPENAI_API_KEY` when using the built-in `image_gen` tool.
+- Never ask the user to paste the full key in chat. Ask them to set it locally and confirm when ready.
+
+If the key is missing, give the user these steps:
+1. Create an API key in the OpenAI platform UI: https://platform.openai.com/api-keys
+2. Set `OPENAI_API_KEY` as an environment variable in their system.
+3. Offer to guide them through setting the environment variable for their OS/shell if needed.
+
+If installation is not possible in this environment, tell the user which dependency is missing and how to install it into their active environment.
+
+### Script-mode notes
+- CLI commands + examples: `references/cli.md`
+- API parameter quick reference: `references/image-api.md`
+- Network approvals / sandbox settings for CLI mode: `references/codex-network.md`
+
+## Reference map
+- `references/prompting.md`: shared prompting principles for both modes.
+- `references/sample-prompts.md`: shared copy/paste prompt recipes for both modes.
+- `references/cli.md`: fallback-only CLI usage via `scripts/image_gen.py`.
+- `references/image-api.md`: fallback-only API/CLI parameter reference.
+- `references/codex-network.md`: fallback-only network/sandbox troubleshooting for CLI mode.
+- `scripts/image_gen.py`: fallback-only CLI implementation. Use only when the user explicitly chooses or confirms CLI mode.
+
+exec
+/usr/bin/bash -lc "ls -la && find . -maxdepth 4 -type f -print | sort && cat BRIEFING.md && if [ -f STATUS.md ]; then cat STATUS.md; else echo 'STATUS.md AUSENTE'; fi" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+total 12
+drwxr-xr-x 1 icaro icaro   88 Oct 30 16:29 .
+drwxr-xr-x 1 icaro icaro  304 Oct 30 16:29 ..
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .agents
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .codex
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .git
+-rw-r--r-- 1 icaro icaro 9003 Oct 30 16:29 BRIEFING.md
+drwxr-xr-x 1 icaro icaro   88 Oct 30 16:29 registros
+drwxr-xr-x 1 icaro icaro    0 Oct 30 16:29 revisao
+./BRIEFING.md
+./registros/cena-doca.png
+./registros/cena-galpao.png
+./registros/codex-etapa1.log
+# Briefing de produção — elenco da Sala 2 (B-Side, Fase 1)
+
+Você é o artista técnico responsável pelos sprites novos do jogo *B-Side* (Assembly x86-64 + Raylib, isométrico).
+Leia este briefing inteiro antes de gerar qualquer imagem. Trabalhe **somente** dentro de
+`/home/icaro/Documentos/AOC/sprites/elenco-sala2/`. Não altere nada fora desta pasta.
+
+## 1. Contexto
+
+A Sala 2 se passa num galpão abandonado e numa doca, de noite, com névoa. Os sprites de Ícaro e Eva já
+existem e definem o padrão de arte do jogo. Os personagens novos precisam parecer do mesmo jogo, lado a lado
+com Ícaro, na mesma escala e com o mesmo acabamento. No jogo, cada quadro 384 × 512 é reduzido para cerca de
+36 × 48 px, então **silhueta e manchas de cor legíveis importam mais que detalhe fino**.
+
+## 2. Referência de arte obrigatória
+
+Antes de qualquer geração, abra e estude (view_image) estas imagens:
+
+- `../bases/icaro/sul.png`, `../bases/icaro/leste.png`, `../bases/icaro/norte.png`, `../bases/icaro/sudeste.png`
+- `../bases/eva/sul.png`, `../bases/eva/leste.png`, `../bases/eva/norte.png`, `../bases/eva/sudeste.png`
+- `../tarefas/sul/icaro/01.png` e `../tarefas/leste/eva/03.png` (quadros de caminhada aprovados)
+- `../ficha-visual.md`, `../contrato.json`, `../licoes-da-primeira-onda.md`
+- Para contexto de cena: `registros/cena-galpao.png` e `registros/cena-doca.png` (o jogo rodando, com os sprites provisórios que você vai substituir)
+
+Toda chamada de `image_gen` deve receber **pelo menos uma base de Ícaro ou Eva como imagem de referência de
+estilo**, além das referências do próprio personagem. Copie do padrão existente:
+
+- pixel art com blocos definidos e contorno muito escuro; luz difusa vinda de cima; sem nova fonte de luz;
+- mesma câmera das bases (vista isométrica levemente de cima, a mesma inclinação de Ícaro em cada direção);
+- mesma proporção estilizada de cabeça/corpo de Ícaro e Eva;
+- fundo transparente real (alpha zero), sem quadriculado pintado, sem sombra de chão, sem halo, sem texto.
+
+Não copie a roupa, o rosto nem as cores de Ícaro/Eva para os personagens novos: a referência é **de estilo**.
+
+## 3. Personagens e entregáveis
+
+### 3.1 Agente carmesim (prioridade 1)
+
+Agente de campo da Ordem da Casa Carmesim. Gênero não identificável: o rosto fica inteiro coberto.
+- Veste preta longa até o tornozelo, com capuz, mangas largas e detalhes vermelho-carmesim: barra, faixa da
+  cintura e uma linha vertical no fecho. Luvas claras.
+- Máscara de porcelana branca que cobre o rosto todo, com dois olhos azuis pintados e um risco carmesim vertical.
+- Postura perfeita, ereta, quase militar. Botas pretas.
+- Proporções: **mesma altura e silhueta corporal da base da Eva** (é ela sob a máscara; segredo de roteiro,
+  então nenhum traço dela pode aparecer: nem cabelo, nem olhos, nem pele do rosto).
+
+Entregáveis:
+1. `agente/referencia-8-vistas.png` (1536 × 1024): folha de identidade com 8 vistas em 4 colunas × 2 linhas, no
+   mesmo layout de `/home/icaro/Documentos/AOC/Ícaro.png` e `eva.png` (abra os dois e siga a ordem das vistas).
+2. `agente/bases/<direcao>.png`: 8 bases paradas 384 × 512 (norte, nordeste, leste, sudeste, sul, sudoeste,
+   oeste, noroeste), com âncora (192, 480), eixo x = 192 e altura corporal igual à da base da Eva na mesma direção.
+3. `agente/sentado-ferido/01.png` e `02.png` (384 × 512, vista sul): sentado no chão encostado em caixotes
+   (sem desenhar os caixotes), joelhos dobrados, mão esquerda segurando o ombro direito, mancha de sangue escuro
+   no ombro, cabeça um pouco baixa. O quadro 02 difere só pela respiração (tronco 1 a 2 px mais alto). As solas
+   e o quadril ficam apoiados perto de y = 480.
+
+### 3.2 Anjo (prioridade 1)
+
+Criatura "falsa" e cega: magra demais, humana demais, pele de porcelana pálida e rachada. **Sem olhos**: só
+depressões. A mandíbula é alongada e tem dentes no lugar dos lábios, num sorriso contínuo de orelha a orelha.
+Uma coroa de espinhos metálicos escuros flutua e gira em volta do crânio. Juntas finas, que dobram de jeito
+errado. Não pode parecer robô nem zumbi: é uma estátua de porcelana viva.
+
+Entregáveis (vista sul/frente, 384 × 512, âncora 192,480):
+1. `anjo/referencia.png` (1536 × 1024): frente, três quartos e perfil, mais um detalhe do rosto.
+2. `anjo/pousado/01.png` a `04.png`: agachado como aranha, mãos e pés no chão, cabeça inclinada escutando. Os
+   4 quadros são **iguais**, exceto pelos espinhos da coroa, que giram 1/4 de volta ao longo do ciclo.
+3. `anjo/voo/01.png` e `02.png`: corpo esticado no ar, braços para trás, coroa girando rápido (borrão de pixels
+   permitido só nos espinhos).
+4. `anjo/grito/01.png` e `02.png`: mandíbula escancarada além do humano, coroa em auréola, corpo tenso.
+
+### 3.3 Hank (prioridade 2, só depois de 3.1 e 3.2 aprovados)
+
+Dono da loja B-Side, 63 anos, ex-agente de uma organização paramilitar. Alto, grisalho, barba cheia e branca,
+chapéu de aba larga gasto, casaco verde-oliva por cima de camisa clara, cinto de couro, calça marrom escura,
+botas. Aliança dourada na mão esquerda. Expressão seca. É **mais alto que Ícaro**: topo do chapéu perto de y = 24.
+
+Entregáveis:
+1. `hank/referencia-8-vistas.png` (1536 × 1024, mesmo layout dos originais).
+2. `hank/bases/<direcao>.png`: 8 bases paradas 384 × 512, âncora (192, 480).
+3. `hank/falando/01.png` (vista sul): mão direita erguida na altura do peito, palma aberta.
+
+### Fora de escopo nesta rodada
+
+Ciclos de caminhada de qualquer personagem, Kami, Ford, Eva sem máscara, retratos de diálogo e cutscenes.
+
+## 4. Processo e portões de aprovação
+
+**Etapa 1 — identidade.** Gere `agente/referencia-8-vistas.png`, `anjo/referencia.png` e
+`hank/referencia-8-vistas.png`. Monte `revisao/etapa1-prancha.png`: as três folhas e, ao lado, as bases
+sul de Ícaro e Eva na mesma escala, para comparar estilo e altura. Escreva `STATUS.md` e **pare**. Não avance
+sem aprovação do usuário; ela virá numa retomada desta sessão.
+
+**Etapa 2 — prioridade 1.** Gere as bases e poses do agente e do anjo (3.1 e 3.2). Ordem do agente: sul,
+norte, leste, oeste, depois as diagonais; depois o sentado. Cada chamada recebe a referência aprovada do
+personagem, a base do Ícaro ou da Eva **na mesma direção** como referência de câmera e escala, e, quando
+houver, a base vizinha já aprovada do próprio personagem. Monte `revisao/etapa2-prancha.png` e pare de novo.
+
+**Etapa 3 — Hank.** Só depois de aprovado o que foi feito na etapa 2.
+
+Regras de geração (são as mesmas que funcionaram para Ícaro e Eva):
+- Uma imagem por chamada, um personagem por imagem, uma pose por imagem. Nunca gere grade de poses para
+  recortar depois (a folha de referência da etapa 1 é a única exceção).
+- Prompt no molde: "Produza somente [personagem], direção [direção], [pose]. As imagens de referência de
+  Ícaro/Eva definem estilo de pixel art, câmera, escala e acabamento; a referência do personagem define a
+  identidade. Corpo inteiro, PNG 384 × 512 com transparência real, âncora de chão (192,480), eixo x192, sem
+  texto, sem objetos, sem sombra de chão, sem suavização nova."
+- Nada de espelhar oeste a partir de leste, nem deformar membros por código. A única pós-produção permitida é
+  o enquadramento de `../scripts/normalizar.py` (escala uniforme por vizinho mais próximo e remoção de ruído
+  com alfa < 8). Registre a transformação em JSON ao lado do PNG.
+- Copie cada imagem gerada para esta pasta; não dependa de `~/.codex/generated_images`.
+- Registre em `registros/<arquivo>.prompt.txt` o prompt integral, as referências usadas e o resultado.
+- Depois de 3 tentativas que falharem no mesmo defeito, registre o diagnóstico em `STATUS.md` e siga para o
+  próximo item; não insista na mesma abordagem.
+
+## 5. Critérios de aceite (verifique e registre em `revisao/<personagem>.json`)
+
+- Arquivo RGBA no tamanho pedido, alfa zero fora da figura, sem resíduo de fundo (verifique sobre claro e escuro).
+- Âncora: solas em y ≈ 480, eixo do corpo em x ≈ 192; altura dentro de ±8 px da meta.
+- Mesma câmera da base de Ícaro na mesma direção; não pode ficar mais frontal nem mais de cima.
+- Identidade estável entre direções: cores, acessórios, lado anatômico da aliança de Hank e do ombro ferido do agente.
+- Legibilidade reduzida: gere `revisao/escala-jogo.png` com cada sprite reduzido a 36 × 48 (área) ao lado do
+  Ícaro reduzido igual. Os personagens precisam ser reconhecíveis nessa escala.
+- Estilo: colocados lado a lado com as bases de Ícaro e Eva, os sprites não podem parecer de outro jogo.
+
+Só marque `"aprovado": true` se tudo foi conferido de fato. A aprovação final é do usuário.
+
+## 6. STATUS.md
+
+Mantenha sempre atualizado: etapa atual, o que está pronto, o que foi rejeitado e por quê, pendências e
+o próximo passo. Ao parar num portão, termine a resposta com um resumo curto do que o usuário deve revisar.
+STATUS.md AUSENTE
+
+codex
+A skill `imagegen` se aplica a estes sprites, mas o gerador de imagens padrão não aparece entre as ferramentas desta sessão. A skill proíbe trocar automaticamente para a CLI/API; vou confirmar as referências e o estado do projeto, sem registrar imagens fictícias como concluídas.
+exec
+/usr/bin/bash -lc "cat registros/codex-etapa1.log && find revisao -maxdepth 2 -type f -print -exec sh -c 'echo --- "'$1; sed -n "1,180p" "$1"'"' sh {} \\;" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+Reading additional input from stdin...
+OpenAI Codex v0.157.1
+--------
+workdir: /home/icaro/Documentos/AOC/sprites/elenco-sala2
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 01a18e4a-18d6-7302-8cb5-c0f92310f465
+--------
+user
+Leia BRIEFING.md nesta pasta e execute a Etapa 1 (folhas de identidade do agente carmesim, do anjo e de Hank), seguindo todas as regras e usando as sprites já geradas de Ícaro e Eva como referência de arte em todas as gerações. Ao terminar a Etapa 1, atualize STATUS.md e pare no portão de aprovação.
+warning: Configured service tier `priority` is not advertised as supported for model `gpt-6-luna` and will be omitted from requests.
+warning: Exceeded skills context budget. All skill descriptions were removed and 327 additional skills were not included in the model-visible skills list.
+codex
+Vou ler o briefing, o status e os arquivos do projeto para identificar as regras da Etapa 1 e as sprites de referência. Também vou seguir a skill de geração de imagens disponível nesta sessão.
+exec
+/usr/bin/bash -lc 'cat /home/icaro/.codex/skills/imagegen/SKILL.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ exited 1 in 0ms:
+cat: /home/icaro/.codex/skills/imagegen/SKILL.md: No such file or directory
+
+exec
+/usr/bin/bash -lc "pwd && rg --files -g 'BRIEFING.md' -g 'STATUS.md' -g 'AGENTS.md' -g '*' | sed -n '1,160p'" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+/home/icaro/Documentos/AOC/sprites/elenco-sala2
+registros/codex-etapa1.log
+registros/cena-galpao.png
+registros/cena-doca.png
+BRIEFING.md
+
+exec
+/usr/bin/bash -lc 'cat /home/icaro/.codex/skills/.system/imagegen/SKILL.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+---
+name: "imagegen"
+description: "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+---
+
+# Image Generation Skill
+
+Generates or edits images for the current project (for example website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, or infographics).
+
+## Top-level modes and rules
+
+This skill has exactly two top-level modes:
+
+- **Default built-in tool mode (preferred):** built-in `image_gen` tool for image generation, editing, and transparent-image requests. Does not require `OPENAI_API_KEY`.
+- **Fallback CLI mode:** `scripts/image_gen.py` CLI. Use when the user explicitly asks for or confirms the CLI/API/model path. Requires `OPENAI_API_KEY`.
+
+Within CLI fallback, the CLI exposes three subcommands:
+
+- `generate`
+- `edit`
+- `generate-batch`
+
+Rules:
+- Use the built-in `image_gen` tool by default for normal image generation and editing requests.
+- Do not switch to CLI fallback for ordinary quality, size, or file-path control.
+- For transparent images, ask built-in `image_gen` for a transparent background and preserve the generated alpha.
+- Never silently switch from built-in `image_gen` or CLI `gpt-image-2` to CLI `gpt-image-1.5`; ask the user first unless they explicitly requested `gpt-image-1.5`.
+- The word `batch` by itself does not mean CLI fallback. If the user asks for many assets or says to batch-generate assets without explicitly asking for CLI/API/model controls, stay on the built-in path and issue one built-in call per requested asset or variant.
+- If the built-in tool fails or is unavailable, tell the user the CLI fallback exists and that it requires `OPENAI_API_KEY`. Proceed only if the user explicitly asks for that fallback.
+- If the user explicitly asks for CLI mode, use the bundled `scripts/image_gen.py` workflow. Do not create one-off SDK runners.
+- Never modify `scripts/image_gen.py`. If something is missing, ask the user before doing anything else.
+
+Built-in save-path policy:
+- In built-in tool mode, Codex saves generated images under `$CODEX_HOME/*` by default.
+- Do not describe or rely on OS temp as the default built-in destination.
+- Do not describe or rely on a destination-path argument (if any) on the built-in `image_gen` tool. If a specific location is needed, generate first and then move or copy the selected output from `$CODEX_HOME/generated_images/...`.
+- Save-path precedence in built-in mode:
+  1. If the user names a destination, move or copy the selected output there.
+  2. If the image is meant for the current project, move or copy the final selected image into the workspace before finishing.
+  3. If the image is only for preview or brainstorming, render it inline; the underlying file can remain at the default `$CODEX_HOME/*` path.
+- Never leave a project-referenced asset only at the default `$CODEX_HOME/*` path.
+- Do not overwrite an existing asset unless the user explicitly asked for replacement; otherwise create a sibling versioned filename such as `hero-v2.png` or `item-icon-edited.png`.
+
+Shared prompt guidance for both modes lives in `references/prompting.md` and `references/sample-prompts.md`.
+
+Fallback-only docs/resources for CLI mode:
+- `references/cli.md`
+- `references/image-api.md`
+- `references/codex-network.md`
+- `scripts/image_gen.py`
+
+## When to use
+- Generate a new image (concept art, product shot, cover, website hero)
+- Generate a new image using one or more reference images for style, composition, or mood
+- Edit an existing image (inpainting, lighting or weather transformations, background replacement, object removal, compositing, transparent background)
+- Produce many assets or variants for one task
+
+## When not to use
+- Extending or matching an existing SVG/vector icon set, logo system, or illustration library inside the repo
+- Creating simple shapes, diagrams, wireframes, or icons that are better produced directly in SVG, HTML/CSS, or canvas
+- Making a small project-local asset edit when the source file already exists in an editable native format
+- Any task where the user clearly wants deterministic code-native output instead of a generated bitmap
+
+## Decision tree
+
+Think about two separate questions:
+
+1. **Intent:** is this a new image or an edit of an existing image?
+2. **Execution strategy:** is this one asset or many assets/variants?
+
+Intent:
+- If the user wants to modify an existing image while preserving parts of it, treat the request as **edit**.
+- If the user provides images only as references for style, composition, mood, or subject guidance, treat the request as **generate**.
+- If the user provides no images, treat the request as **generate**.
+
+Built-in edit semantics:
+- Built-in edit mode is for images already visible in the conversation context, such as attached images or images generated earlier in the thread.
+- If the user wants to edit a local image file with the built-in tool, first load it with built-in `view_image` tool so the image is visible in the conversation context, then proceed with the built-in edit flow.
+- Do not promise arbitrary filesystem-path editing through the built-in tool.
+- If a local file still needs direct file-path control, masks, or other explicit CLI-only parameters, use the explicit CLI fallback only when the user asks for it.
+- For edits, preserve invariants aggressively and save non-destructively by default.
+
+Execution strategy:
+- In the built-in default path, produce many assets or variants by issuing one `image_gen` call per requested asset or variant.
+- In the CLI fallback path, use the CLI `generate-batch` subcommand only when the user explicitly chose CLI mode and needs many prompts/assets.
+- For many distinct assets, do not use `n` as a substitute for separate prompts. `n` is for variants of one prompt; distinct assets need distinct built-in calls or distinct CLI `generate-batch` jobs.
+
+Assume the user wants a new image unless they clearly ask to change an existing one.
+
+## Workflow
+1. Decide the top-level mode: built-in by default, including transparent-output requests; fallback CLI only if explicitly requested or confirmed.
+2. Decide the intent: `generate` or `edit`.
+3. Decide whether the output is preview-only or meant to be consumed by the current project.
+4. Decide the execution strategy: single asset vs repeated built-in calls vs CLI `generate-batch`.
+5. Collect inputs up front: prompt(s), exact text (verbatim), constraints/avoid list, and any input images.
+6. For every input image, label its role explicitly:
+   - reference image
+   - edit target
+   - supporting insert/style/compositing input
+7. If the edit target is only on the local filesystem and you are staying on the built-in path, inspect it with `view_image` first so the image is available in conversation context.
+8. If the user asked for a photo, illustration, sprite, product image, banner, or other explicitly raster-style asset, use `image_gen` rather than substituting SVG/HTML/CSS placeholders. If the request is for an icon, logo, or UI graphic that should match existing repo-native SVG/vector/code assets, prefer editing those directly instead.
+9. Augment the prompt based on specificity:
+   - If the user's prompt is already specific and detailed, normalize it into a clear spec without adding creative requirements.
+   - If the user's prompt is generic, add tasteful augmentation only when it materially improves output quality.
+10. Use the built-in `image_gen` tool by default.
+11. For transparent-output requests, ask built-in `image_gen` for a transparent background and preserve the generated alpha channel.
+12. Inspect outputs and validate: subject, style, composition, text accuracy, and invariants/avoid items.
+13. Iterate with a single targeted change, then re-check.
+14. For preview-only work, render the image inline; the underlying file may remain at the default `$CODEX_HOME/generated_images/...` path.
+15. For project-bound work, move or copy the selected artifact into the workspace and update any consuming code or references. Never leave a project-referenced asset only at the default `$CODEX_HOME/generated_images/...` path.
+16. For batches or multi-asset requests, persist every requested deliverable final in the workspace unless the user explicitly asked to keep outputs preview-only. Discarded variants do not need to be kept unless requested.
+17. If the user explicitly chooses or confirms the CLI fallback, then use the fallback-only docs for model, quality, size, `input_fidelity`, masks, output format, output paths, and network setup.
+18. Always report the final saved path(s) for any workspace-bound asset(s), plus the final prompt or prompt set and whether the built-in tool or fallback CLI mode was used.
+
+## Transparent image requests
+
+Ask built-in `image_gen` for a genuinely transparent background and preserve its alpha.
+
+## Prompt augmentation
+
+Reformat user prompts into a structured, production-oriented spec. Make the user's goal clearer and more actionable, but do not blindly add detail.
+
+Treat this as prompt-shaping guidance, not a closed schema. Use only the lines that help, and add a short extra labeled line when it materially improves clarity.
+
+### Specificity policy
+
+Use the user's prompt specificity to decide how much augmentation is appropriate:
+
+- If the prompt is already specific and detailed, preserve that specificity and only normalize/structure it.
+- If the prompt is generic, you may add tasteful augmentation when it will materially improve the result.
+
+Allowed augmentations:
+- composition or framing hints
+- polish level or intended-use hints
+- practical layout guidance
+- reasonable scene concreteness that supports the stated request
+
+Not allowed augmentations:
+- extra characters or objects that are not implied by the request
+- brand names, slogans, palettes, or narrative beats that are not implied
+- arbitrary side-specific placement unless the surrounding layout supports it
+
+## Use-case taxonomy (exact slugs)
+
+Classify each request into one of these buckets and keep the slug consistent across prompts and references.
+
+Generate:
+- photorealistic-natural — candid/editorial lifestyle scenes with real texture and natural lighting.
+- product-mockup — product/packaging shots, catalog imagery, merch concepts.
+- ui-mockup — app/web interface mockups and wireframes; specify the desired fidelity.
+- infographic-diagram — diagrams/infographics with structured layout and text.
+- scientific-educational — classroom explainers, scientific diagrams, and learning visuals with required labels and accuracy constraints.
+- ads-marketing — campaign concepts and ad creatives with audience, brand position, scene, and exact tagline/copy.
+- productivity-visual — slide, chart, workflow, and data-heavy business visuals.
+- logo-brand — logo/mark exploration, vector-friendly.
+- illustration-story — comics, children’s book art, narrative scenes.
+- stylized-concept — style-driven concept art, 3D/stylized renders.
+- historical-scene — period-accurate/world-knowledge scenes.
+
+Edit:
+- text-localization — translate/replace in-image text, preserve layout.
+- identity-preserve — try-on, person-in-scene; lock face/body/pose.
+- precise-object-edit — remove/replace a specific element (including interior swaps).
+- lighting-weather — time-of-day/season/atmosphere changes only.
+- background-extraction — transparent background / clean cutout. Ask built-in `image_gen` for actual transparency.
+- style-transfer — apply reference style while changing subject/scene.
+- compositing — multi-image insert/merge with matched lighting/perspective.
+- sketch-to-render — drawing/line art to photoreal render.
+
+## Shared prompt schema
+
+Use the following labeled spec as shared prompt scaffolding for both top-level modes:
+
+```text
+Use case: <taxonomy slug>
+Asset type: <where the asset will be used>
+Primary request: <user's main prompt>
+Input images: <Image 1: role; Image 2: role> (optional)
+Scene/backdrop: <environment>
+Subject: <main subject>
+Style/medium: <photo/illustration/3D/etc>
+Composition/framing: <wide/close/top-down; placement>
+Lighting/mood: <lighting + mood>
+Color palette: <palette notes>
+Materials/textures: <surface details>
+Text (verbatim): "<exact text>"
+Constraints: <must keep/must avoid>
+Avoid: <negative constraints>
+```
+
+Notes:
+- `Asset type` and `Input images` are prompt scaffolding, not dedicated CLI flags.
+- `Scene/backdrop` refers to the visual setting. It is not the same as the fallback CLI `background` parameter, which controls output transparency behavior.
+- Fallback-only execution notes such as `Quality:`, `Input fidelity:`, masks, output format, and output paths belong in the CLI path only. Do not treat them as built-in `image_gen` tool arguments.
+
+Augmentation rules:
+- Keep it short.
+- Add only the details needed to improve the prompt materially.
+- For edits, explicitly list invariants (`change only X; keep Y unchanged`).
+- If any critical detail is missing and blocks success, ask a question; otherwise proceed.
+
+## Examples
+
+### Generation example (hero image)
+```text
+Use case: product-mockup
+Asset type: landing page hero
+Primary request: a minimal hero image of a ceramic coffee mug
+Style/medium: clean product photography
+Composition/framing: wide composition with usable negative space for page copy if needed
+Lighting/mood: soft studio lighting
+Constraints: no logos, no text, no watermark
+```
+
+### Edit example (invariants)
+```text
+Use case: precise-object-edit
+Asset type: product photo background replacement
+Primary request: replace only the background with a warm sunset gradient
+Constraints: change only the background; keep the product and its edges unchanged; no text; no watermark
+```
+
+## Prompting best practices
+- Structure prompt as scene/backdrop -> subject -> details -> constraints.
+- Include intended use (ad, UI mock, infographic) to set the mode and polish level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+## Guidance by asset type
+Asset-type templates (website assets, game assets, wireframes, logo) are consolidated in `references/sample-prompts.md`.
+
+## gpt-image-2 guidance for CLI fallback
+
+The fallback CLI defaults to `gpt-image-2`.
+
+- Use `gpt-image-2` for new CLI/API workflows unless the user confirms a different model.
+- CLI `gpt-image-2` does not support `background=transparent`; ask before using `gpt-image-1.5` unless the user explicitly requested that model.
+- `gpt-image-2` always uses high fidelity for image inputs; do not set `input_fidelity` with this model.
+- `gpt-image-2` supports `quality` values `low`, `medium`, `high`, and `auto`.
+- Use `quality low` for fast drafts, thumbnails, and quick iterations. Use `medium`, `high`, or `auto` for final assets, dense text, diagrams, identity-sensitive edits, or high-resolution outputs.
+- Square images are typically fastest to generate. Use `1024x1024` for fast square drafts.
+- If the user asks for 4K-style output, use `3840x2160` for landscape or `2160x3840` for portrait.
+- `gpt-image-2` size may be `auto` or `WIDTHxHEIGHT` if all constraints hold: max edge `<= 3840px`, both edges multiples of `16px`, long-to-short ratio `<= 3:1`, total pixels between `655,360` and `8,294,400`.
+
+Popular `gpt-image-2` sizes:
+- `1024x1024` square
+- `1536x1024` landscape
+- `1024x1536` portrait
+- `2048x2048` 2K square
+- `2048x1152` 2K landscape
+- `3840x2160` 4K landscape
+- `2160x3840` 4K portrait
+- `auto`
+
+## Fallback CLI mode only
+
+### Temp and output conventions
+These conventions apply only to the CLI fallback. They do not describe built-in `image_gen` output behavior.
+- Use `tmp/imagegen/` for intermediate files (for example JSONL batches); delete them when done.
+- Write final artifacts under `output/imagegen/`.
+- Use `--out` or `--out-dir` to control output paths; keep filenames stable and descriptive.
+
+### Dependencies
+Prefer `uv` for dependency management in this repo.
+
+Required Python package:
+```bash
+uv pip install openai
+```
+
+Optional for image inspection and downscaling:
+```bash
+uv pip install pillow
+```
+
+Portability note:
+- If you are using the installed skill outside this repo, install dependencies into that environment with its package manager.
+- In uv-managed environments, `uv pip install ...` remains the preferred path.
+
+### Environment
+- `OPENAI_API_KEY` must be set for live API calls.
+- Do not ask the user for `OPENAI_API_KEY` when using the built-in `image_gen` tool.
+- Never ask the user to paste the full key in chat. Ask them to set it locally and confirm when ready.
+
+If the key is missing, give the user these steps:
+1. Create an API key in the OpenAI platform UI: https://platform.openai.com/api-keys
+2. Set `OPENAI_API_KEY` as an environment variable in their system.
+3. Offer to guide them through setting the environment variable for their OS/shell if needed.
+
+If installation is not possible in this environment, tell the user which dependency is missing and how to install it into their active environment.
+
+### Script-mode notes
+- CLI commands + examples: `references/cli.md`
+- API parameter quick reference: `references/image-api.md`
+- Network approvals / sandbox settings for CLI mode: `references/codex-network.md`
+
+## Reference map
+- `references/prompting.md`: shared prompting principles for both modes.
+- `references/sample-prompts.md`: shared copy/paste prompt recipes for both modes.
+- `references/cli.md`: fallback-only CLI usage via `scripts/image_gen.py`.
+- `references/image-api.md`: fallback-only API/CLI parameter reference.
+- `references/codex-network.md`: fallback-only network/sandbox troubleshooting for CLI mode.
+- `scripts/image_gen.py`: fallback-only CLI implementation. Use only when the user explicitly chooses or confirms CLI mode.
+
+exec
+/usr/bin/bash -lc "ls -la && find . -maxdepth 4 -type f -print | sort && cat BRIEFING.md && if [ -f STATUS.md ]; then cat STATUS.md; else echo 'STATUS.md AUSENTE'; fi" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+total 12
+drwxr-xr-x 1 icaro icaro   88 Oct 30 16:29 .
+drwxr-xr-x 1 icaro icaro  304 Oct 30 16:29 ..
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .agents
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .codex
+dr-xr-xr-x 2 icaro icaro   40 Oct 30 16:29 .git
+-rw-r--r-- 1 icaro icaro 9003 Oct 30 16:29 BRIEFING.md
+drwxr-xr-x 1 icaro icaro   88 Oct 30 16:29 registros
+drwxr-xr-x 1 icaro icaro    0 Oct 30 16:29 revisao
+./BRIEFING.md
+./registros/cena-doca.png
+./registros/cena-galpao.png
+./registros/codex-etapa1.log
+# Briefing de produção — elenco da Sala 2 (B-Side, Fase 1)
+
+Você é o artista técnico responsável pelos sprites novos do jogo *B-Side* (Assembly x86-64 + Raylib, isométrico).
+Leia este briefing inteiro antes de gerar qualquer imagem. Trabalhe **somente** dentro de
+`/home/icaro/Documentos/AOC/sprites/elenco-sala2/`. Não altere nada fora desta pasta.
+
+## 1. Contexto
+
+A Sala 2 se passa num galpão abandonado e numa doca, de noite, com névoa. Os sprites de Ícaro e Eva já
+existem e definem o padrão de arte do jogo. Os personagens novos precisam parecer do mesmo jogo, lado a lado
+com Ícaro, na mesma escala e com o mesmo acabamento. No jogo, cada quadro 384 × 512 é reduzido para cerca de
+36 × 48 px, então **silhueta e manchas de cor legíveis importam mais que detalhe fino**.
+
+## 2. Referência de arte obrigatória
+
+Antes de qualquer geração, abra e estude (view_image) estas imagens:
+
+- `../bases/icaro/sul.png`, `../bases/icaro/leste.png`, `../bases/icaro/norte.png`, `../bases/icaro/sudeste.png`
+- `../bases/eva/sul.png`, `../bases/eva/leste.png`, `../bases/eva/norte.png`, `../bases/eva/sudeste.png`
+- `../tarefas/sul/icaro/01.png` e `../tarefas/leste/eva/03.png` (quadros de caminhada aprovados)
+- `../ficha-visual.md`, `../contrato.json`, `../licoes-da-primeira-onda.md`
+- Para contexto de cena: `registros/cena-galpao.png` e `registros/cena-doca.png` (o jogo rodando, com os sprites provisórios que você vai substituir)
+
+Toda chamada de `image_gen` deve receber **pelo menos uma base de Ícaro ou Eva como imagem de referência de
+estilo**, além das referências do próprio personagem. Copie do padrão existente:
+
+- pixel art com blocos definidos e contorno muito escuro; luz difusa vinda de cima; sem nova fonte de luz;
+- mesma câmera das bases (vista isométrica levemente de cima, a mesma inclinação de Ícaro em cada direção);
+- mesma proporção estilizada de cabeça/corpo de Ícaro e Eva;
+- fundo transparente real (alpha zero), sem quadriculado pintado, sem sombra de chão, sem halo, sem texto.
+
+Não copie a roupa, o rosto nem as cores de Ícaro/Eva para os personagens novos: a referência é **de estilo**.
+
+## 3. Personagens e entregáveis
+
+### 3.1 Agente carmesim (prioridade 1)
+
+Agente de campo da Ordem da Casa Carmesim. Gênero não identificável: o rosto fica inteiro coberto.
+- Veste preta longa até o tornozelo, com capuz, mangas largas e detalhes vermelho-carmesim: barra, faixa da
+  cintura e uma linha vertical no fecho. Luvas claras.
+- Máscara de porcelana branca que cobre o rosto todo, com dois olhos azuis pintados e um risco carmesim vertical.
+- Postura perfeita, ereta, quase militar. Botas pretas.
+- Proporções: **mesma altura e silhueta corporal da base da Eva** (é ela sob a máscara; segredo de roteiro,
+  então nenhum traço dela pode aparecer: nem cabelo, nem olhos, nem pele do rosto).
+
+Entregáveis:
+1. `agente/referencia-8-vistas.png` (1536 × 1024): folha de identidade com 8 vistas em 4 colunas × 2 linhas, no
+   mesmo layout de `/home/icaro/Documentos/AOC/Ícaro.png` e `eva.png` (abra os dois e siga a ordem das vistas).
+2. `agente/bases/<direcao>.png`: 8 bases paradas 384 × 512 (norte, nordeste, leste, sudeste, sul, sudoeste,
+   oeste, noroeste), com âncora (192, 480), eixo x = 192 e altura corporal igual à da base da Eva na mesma direção.
+3. `agente/sentado-ferido/01.png` e `02.png` (384 × 512, vista sul): sentado no chão encostado em caixotes
+   (sem desenhar os caixotes), joelhos dobrados, mão esquerda segurando o ombro direito, mancha de sangue escuro
+   no ombro, cabeça um pouco baixa. O quadro 02 difere só pela respiração (tronco 1 a 2 px mais alto). As solas
+   e o quadril ficam apoiados perto de y = 480.
+
+### 3.2 Anjo (prioridade 1)
+
+Criatura "falsa" e cega: magra demais, humana demais, pele de porcelana pálida e rachada. **Sem olhos**: só
+depressões. A mandíbula é alongada e tem dentes no lugar dos lábios, num sorriso contínuo de orelha a orelha.
+Uma coroa de espinhos metálicos escuros flutua e gira em volta do crânio. Juntas finas, que dobram de jeito
+errado. Não pode parecer robô nem zumbi: é uma estátua de porcelana viva.
+
+Entregáveis (vista sul/frente, 384 × 512, âncora 192,480):
+1. `anjo/referencia.png` (1536 × 1024): frente, três quartos e perfil, mais um detalhe do rosto.
+2. `anjo/pousado/01.png` a `04.png`: agachado como aranha, mãos e pés no chão, cabeça inclinada escutando. Os
+   4 quadros são **iguais**, exceto pelos espinhos da coroa, que giram 1/4 de volta ao longo do ciclo.
+3. `anjo/voo/01.png` e `02.png`: corpo esticado no ar, braços para trás, coroa girando rápido (borrão de pixels
+   permitido só nos espinhos).
+4. `anjo/grito/01.png` e `02.png`: mandíbula escancarada além do humano, coroa em auréola, corpo tenso.
+
+### 3.3 Hank (prioridade 2, só depois de 3.1 e 3.2 aprovados)
+
+Dono da loja B-Side, 63 anos, ex-agente de uma organização paramilitar. Alto, grisalho, barba cheia e branca,
+chapéu de aba larga gasto, casaco verde-oliva por cima de camisa clara, cinto de couro, calça marrom escura,
+botas. Aliança dourada na mão esquerda. Expressão seca. É **mais alto que Ícaro**: topo do chapéu perto de y = 24.
+
+Entregáveis:
+1. `hank/referencia-8-vistas.png` (1536 × 1024, mesmo layout dos originais).
+2. `hank/bases/<direcao>.png`: 8 bases paradas 384 × 512, âncora (192, 480).
+3. `hank/falando/01.png` (vista sul): mão direita erguida na altura do peito, palma aberta.
+
+### Fora de escopo nesta rodada
+
+Ciclos de caminhada de qualquer personagem, Kami, Ford, Eva sem máscara, retratos de diálogo e cutscenes.
+
+## 4. Processo e portões de aprovação
+
+**Etapa 1 — identidade.** Gere `agente/referencia-8-vistas.png`, `anjo/referencia.png` e
+`hank/referencia-8-vistas.png`. Monte `revisao/etapa1-prancha.png`: as três folhas e, ao lado, as bases
+sul de Ícaro e Eva na mesma escala, para comparar estilo e altura. Escreva `STATUS.md` e **pare**. Não avance
+sem aprovação do usuário; ela virá numa retomada desta sessão.
+
+**Etapa 2 — prioridade 1.** Gere as bases e poses do agente e do anjo (3.1 e 3.2). Ordem do agente: sul,
+norte, leste, oeste, depois as diagonais; depois o sentado. Cada chamada recebe a referência aprovada do
+personagem, a base do Ícaro ou da Eva **na mesma direção** como referência de câmera e escala, e, quando
+houver, a base vizinha já aprovada do próprio personagem. Monte `revisao/etapa2-prancha.png` e pare de novo.
+
+**Etapa 3 — Hank.** Só depois de aprovado o que foi feito na etapa 2.
+
+Regras de geração (são as mesmas que funcionaram para Ícaro e Eva):
+- Uma imagem por chamada, um personagem por imagem, uma pose por imagem. Nunca gere grade de poses para
+  recortar depois (a folha de referência da etapa 1 é a única exceção).
+- Prompt no molde: "Produza somente [personagem], direção [direção], [pose]. As imagens de referência de
+  Ícaro/Eva definem estilo de pixel art, câmera, escala e acabamento; a referência do personagem define a
+  identidade. Corpo inteiro, PNG 384 × 512 com transparência real, âncora de chão (192,480), eixo x192, sem
+  texto, sem objetos, sem sombra de chão, sem suavização nova."
+- Nada de espelhar oeste a partir de leste, nem deformar membros por código. A única pós-produção permitida é
+  o enquadramento de `../scripts/normalizar.py` (escala uniforme por vizinho mais próximo e remoção de ruído
+  com alfa < 8). Registre a transformação em JSON ao lado do PNG.
+- Copie cada imagem gerada para esta pasta; não dependa de `~/.codex/generated_images`.
+- Registre em `registros/<arquivo>.prompt.txt` o prompt integral, as referências usadas e o resultado.
+- Depois de 3 tentativas que falharem no mesmo defeito, registre o diagnóstico em `STATUS.md` e siga para o
+  próximo item; não insista na mesma abordagem.
+
+## 5. Critérios de aceite (verifique e registre em `revisao/<personagem>.json`)
+
+- Arquivo RGBA no tamanho pedido, alfa zero fora da figura, sem resíduo de fundo (verifique sobre claro e escuro).
+- Âncora: solas em y ≈ 480, eixo do corpo em x ≈ 192; altura dentro de ±8 px da meta.
+- Mesma câmera da base de Ícaro na mesma direção; não pode ficar mais frontal nem mais de cima.
+- Identidade estável entre direções: cores, acessórios, lado anatômico da aliança de Hank e do ombro ferido do agente.
+- Legibilidade reduzida: gere `revisao/escala-jogo.png` com cada sprite reduzido a 36 × 48 (área) ao lado do
+  Ícaro reduzido igual. Os personagens precisam ser reconhecíveis nessa escala.
+- Estilo: colocados lado a lado com as bases de Ícaro e Eva, os sprites não podem parecer de outro jogo.
+
+Só marque `"aprovado": true` se tudo foi conferido de fato. A aprovação final é do usuário.
+
+## 6. STATUS.md
+
+Mantenha sempre atualizado: etapa atual, o que está pronto, o que foi rejeitado e por quê, pendências e
+o próximo passo. Ao parar num portão, termine a resposta com um resumo curto do que o usuário deve revisar.
+STATUS.md AUSENTE
+
+codex
+A skill `imagegen` se aplica a estes sprites, mas o gerador de imagens padrão não aparece entre as ferramentas desta sessão. A skill proíbe trocar automaticamente para a CLI/API; vou confirmar as referências e o estado do projeto, sem registrar imagens fictícias como concluídas.
+
+exec
+/usr/bin/bash -lc "find .. -maxdepth 3 -type f \\( -path '../bases/*' -o -path '../tarefas/*' -o -name 'ficha-visual.md' -o -name 'contrato.json' -o -name 'licoes-da-primeira-onda.md' -o -name 'Ícaro.png' -o -name 'eva.png' \\) -print | sort" in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+../bases/congeladas.json
+../bases/eva/leste.png
+../bases/eva/leste.transformacao.json
+../bases/eva/nordeste.png
+../bases/eva/nordeste.transformacao.json
+../bases/eva/noroeste.png
+../bases/eva/noroeste.transformacao.json
+../bases/eva/norte.png
+../bases/eva/norte.transformacao.json
+../bases/eva/oeste.png
+../bases/eva/oeste.transformacao.json
+../bases/eva/sudeste.png
+../bases/eva/sudeste.transformacao.json
+../bases/eva/sudoeste.png
+../bases/eva/sudoeste.transformacao.json
+../bases/eva/sul.png
+../bases/eva/sul.transformacao.json
+../bases/icaro/leste.png
+../bases/icaro/leste.transformacao.json
+../bases/icaro/nordeste.png
+../bases/icaro/nordeste.transformacao.json
+../bases/icaro/noroeste.png
+../bases/icaro/noroeste.transformacao.json
+../bases/icaro/norte.png
+../bases/icaro/norte.transformacao.json
+../bases/icaro/oeste.png
+../bases/icaro/oeste.transformacao.json
+../bases/icaro/sudeste.png
+../bases/icaro/sudeste.transformacao.json
+../bases/icaro/sudoeste.png
+../bases/icaro/sudoeste.transformacao.json
+../bases/icaro/sul.png
+../bases/icaro/sul.transformacao.json
+../bases/paletas-medidas.json
+../contrato.json
+../ficha-visual.md
+../licoes-da-primeira-onda.md
+../tarefas/leste/LEIA-ME.md
+../tarefas/leste/atualizar_evidencias.py
+../tarefas/leste/candidato-eva-02-apoio-x.png
+../tarefas/leste/candidato-eva-03-cintura-x.png
+../tarefas/leste/candidato-eva-04-apoio-x.png
+../tarefas/leste/candidato-eva-06-apoio-x.png
+../tarefas/leste/candidato-eva-07-cintura-x.png
+../tarefas/leste/candidato-icaro-02-apoio-x.png
+../tarefas/leste/candidato-icaro-03-cintura-x.png
+../tarefas/leste/candidato-icaro-04-apoio-x.png
+../tarefas/leste/candidato-icaro-06-apoio-x.png
+../tarefas/leste/candidato-icaro-07-cintura-x.png
+../tarefas/leste/chao_teste.py
+../tarefas/leste/eva-07-corte-ampliado.png
+../tarefas/leste/eva-07-grade.png
+../tarefas/leste/eva-chao-teste-lento.gif
+../tarefas/leste/eva-chao-teste.gif
+../tarefas/leste/eva-inspecao-claro.png
+../tarefas/leste/eva-inspecao-escuro.png
+../tarefas/leste/eva-inspecao-raw.png
+../tarefas/leste/eva-lento.gif
+../tarefas/leste/eva-loop.gif
+../tarefas/leste/eva-rastreamento-grade.png
+../tarefas/leste/exportar.py
+../tarefas/leste/icaro-07-corte-ampliado.png
+../tarefas/leste/icaro-07-grade.png
+../tarefas/leste/icaro-chao-teste-lento.gif
+../tarefas/leste/icaro-chao-teste.gif
+../tarefas/leste/icaro-inspecao-claro.png
+../tarefas/leste/icaro-inspecao-escuro.png
+../tarefas/leste/icaro-inspecao-raw.png
+../tarefas/leste/icaro-lento.gif
+../tarefas/leste/icaro-loop.gif
+../tarefas/leste/icaro-rastreamento-grade.png
+../tarefas/leste/previa-revisao.html
+../tarefas/leste/registrar_revisao.py
+../tarefas/leste/selecionados.json
+../tarefas/nordeste/LEIA-ME.md
+../tarefas/nordeste/enquadrar.py
+../tarefas/nordeste/eva-01-prompt.json
+../tarefas/nordeste/eva-01-tentativa2-prompt.json
+../tarefas/nordeste/eva-02-prompt.json
+../tarefas/nordeste/eva-03-prompt.json
+../tarefas/nordeste/eva-04-prompt.json
+../tarefas/nordeste/eva-05-prompt.json
+../tarefas/nordeste/eva-05-tentativa2-prompt.json
+../tarefas/nordeste/eva-05-tentativa3-prompt.json
+../tarefas/nordeste/eva-06-prompt.json
+../tarefas/nordeste/eva-07-prompt.json
+../tarefas/nordeste/eva-08-prompt.json
+../tarefas/nordeste/eva-chao-prancha.png
+../tarefas/nordeste/eva-lento-chao.gif
+../tarefas/nordeste/eva-lento.gif
+../tarefas/nordeste/eva-normal-chao.gif
+../tarefas/nordeste/eva-normal.gif
+../tarefas/nordeste/eva-prancha-claro.png
+../tarefas/nordeste/eva-prancha-escuro.png
+../tarefas/nordeste/icaro-01-prompt.json
+../tarefas/nordeste/icaro-01-tentativa2-prompt.json
+../tarefas/nordeste/icaro-02-prompt.json
+../tarefas/nordeste/icaro-03-prompt.json
+../tarefas/nordeste/icaro-04-prompt.json
+../tarefas/nordeste/icaro-05-prompt.json
+../tarefas/nordeste/icaro-05-tentativa2-prompt.json
+../tarefas/nordeste/icaro-05-tentativa3-prompt.json
+../tarefas/nordeste/icaro-06-prompt.json
+../tarefas/nordeste/icaro-07-prompt.json
+../tarefas/nordeste/icaro-08-prompt.json
+../tarefas/nordeste/icaro-chao-prancha.png
+../tarefas/nordeste/icaro-lento-chao.gif
+../tarefas/nordeste/icaro-lento.gif
+../tarefas/nordeste/icaro-normal-chao.gif
+../tarefas/nordeste/icaro-normal.gif
+../tarefas/nordeste/icaro-prancha-claro.png
+../tarefas/nordeste/icaro-prancha-escuro.png
+../tarefas/nordeste/revisar.py
+../tarefas/noroeste/atualizar-qa.py
+../tarefas/noroeste/base-icaro-corrigida.png
+../tarefas/noroeste/corrigir-pulseira.py
+../tarefas/noroeste/eva-100ms.gif
+../tarefas/noroeste/eva-400ms.gif
+../tarefas/noroeste/eva-claro.png
+../tarefas/noroeste/eva-escuro.png
+../tarefas/noroeste/exportar.py
+../tarefas/noroeste/gerar-previa-chao.py
+../tarefas/noroeste/icaro-100ms.gif
+../tarefas/noroeste/icaro-400ms.gif
+../tarefas/noroeste/icaro-claro.png
+../tarefas/noroeste/icaro-escuro.png
+../tarefas/noroeste/registrar-diagnostico.py
+../tarefas/noroeste/selecionados.json
+../tarefas/noroeste/tecnica.json
+../tarefas/norte/LEIA-ME.md
+../tarefas/norte/editar_apoios.py
+../tarefas/norte/eva-prancha.png
+../tarefas/norte/icaro-prancha.png
+../tarefas/norte/publicar_correcao.py
+../tarefas/norte/registro-edicao.json
+../tarefas/norte/verificacao-pos-edicao.json
+../tarefas/norte/verificar_candidatos.py
+../tarefas/oeste/aproximar_passagens.py
+../tarefas/oeste/corrigir_contato.py
+../tarefas/oeste/enquadrar.py
+../tarefas/oeste/eva-prancha-correcao.png
+../tarefas/oeste/eva-prancha-corrigida.png
+../tarefas/oeste/eva-prancha.png
+../tarefas/oeste/icaro-prancha-correcao.png
+../tarefas/oeste/icaro-prancha-corrigida.png
+../tarefas/oeste/icaro-prancha.png
+../tarefas/oeste/recompor_passagens.py
+../tarefas/oeste/registrar_recuperados.py
+../tarefas/oeste/revisar.py
+../tarefas/oeste/revisar_edicoes.py
+../tarefas/oeste/selecionar_eva07.py
+../tarefas/oeste/verificar_passagens_t1.py
+../tarefas/sudeste/LEIA-ME.md
+../tarefas/sudeste/aplicar_apoio_02.py
+../tarefas/sudeste/aplicar_recuo_06_07.py
+../tarefas/sudeste/aplicar_solo.py
+../tarefas/sudeste/atualizar_registros_correcao.py
+../tarefas/sudeste/candidato-eva-03-t2.png
+../tarefas/sudeste/candidato-eva-03-t2.transformacao.json
+../tarefas/sudeste/candidato-eva-03-t3.png
+../tarefas/sudeste/candidato-eva-03-t3.transformacao.json
+../tarefas/sudeste/candidato-eva-03-t4.png
+../tarefas/sudeste/candidato-eva-03-t4.transformacao.json
+../tarefas/sudeste/candidato-eva-03-t5.png
+../tarefas/sudeste/candidato-eva-03-t5.transformacao.json
+../tarefas/sudeste/candidato-eva-07-t4.png
+../tarefas/sudeste/candidato-eva-07-t4.transformacao.json
+../tarefas/sudeste/candidato-icaro-02-apoio-x.png
+../tarefas/sudeste/candidato-icaro-02-t2.png
+../tarefas/sudeste/candidato-icaro-02-t2.transformacao.json
+../tarefas/sudeste/candidato-icaro-07-t2.png
+../tarefas/sudeste/candidato-icaro-07-t2.transformacao.json
+../tarefas/sudeste/candidato_eva03_passagem.py
+../tarefas/sudeste/candidato_eva07_joelho.py
+../tarefas/sudeste/candidatos_apoio_02.py
+../tarefas/sudeste/candidatos_solo.py
+../tarefas/sudeste/comparacao-eva-02-03t4-04.png
+../tarefas/sudeste/correcao-apoio02.json
+../tarefas/sudeste/correcao-joelho07.json
+../tarefas/sudeste/correcao-solo.json
+../tarefas/sudeste/enquadrar.py
+../tarefas/sudeste/eva-claro-solo.png
+../tarefas/sudeste/eva-claro.png
+../tarefas/sudeste/eva-escuro-solo.png
+../tarefas/sudeste/eva-escuro.png
+../tarefas/sudeste/eva-lento.gif
+../tarefas/sudeste/eva-normal.gif
+../tarefas/sudeste/geracoes-correcao.json
+../tarefas/sudeste/icaro-claro-solo.png
+../tarefas/sudeste/icaro-claro.png
+../tarefas/sudeste/icaro-escuro-solo.png
+../tarefas/sudeste/icaro-escuro.png
+../tarefas/sudeste/icaro-lento.gif
+../tarefas/sudeste/icaro-normal.gif
+../tarefas/sudeste/reautoria-eva03-2026-10-24.json
+../tarefas/sudeste/recuo-06-07-adotado.json
+../tarefas/sudeste/registrar_solo.py
+../tarefas/sudeste/revisar.py
+../tarefas/sudeste/selecionados.json
+../tarefas/sudeste/testar_recuo_06_07.py
+../tarefas/sudeste/validar_saida.py
+../tarefas/sudoeste/REVISAO.md
+../tarefas/sudoeste/eva-loop-100ms.gif
+../tarefas/sudoeste/eva-loop-400ms.gif
+../tarefas/sudoeste/eva-prancha-claro.png
+../tarefas/sudoeste/eva-prancha-escuro.png
+../tarefas/sudoeste/exportar.py
+../tarefas/sudoeste/icaro-loop-100ms.gif
+../tarefas/sudoeste/icaro-loop-400ms.gif
+../tarefas/sudoeste/icaro-prancha-claro.png
+../tarefas/sudoeste/icaro-prancha-escuro.png
+../tarefas/sudoeste/revisar.py
+../tarefas/sudoeste/selecionados.json
+../tarefas/sudoeste/tecnica.json
+../tarefas/sudoeste/teste-chao.json
+../tarefas/sul/ENTREGA.md
+../tarefas/sul/atualizar_pranchas.py
+../tarefas/sul/chaves.png
+../tarefas/sul/corrigir_apoio.py
+../tarefas/sul/eva-ciclo.png
+../tarefas/sul/eva-lento.gif
+../tarefas/sul/eva-normal.gif
+../tarefas/sul/icaro-ciclo.png
+../tarefas/sul/icaro-lento.gif
+../tarefas/sul/icaro-normal.gif
+../tarefas/sul/previa-revisao.html
+../tarefas/sul/rastreamento.json
+../tarefas/sul/revisao-chaves.md
+../tarefas/sul/tecnica.json
+../tarefas/sul/validar.py
+
+exec
+/usr/bin/bash -lc 'cat ../ficha-visual.md && cat ../contrato.json && cat ../licoes-da-primeira-onda.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+# Ficha visual comum
+
+Estado: 16 bases revisadas e congeladas em bases/congeladas.json. Animação liberada. Altura visual das bases: 424px; âncora comum (192,480). Correções aplicadas: lateral anatômica da pulseira no leste e no noroeste de Ícaro; câmera noroeste revisada. A base noroeste anterior está preservada em registros/geracoes/.
+
+Os originais têm 1536 × 1024, oito vistas em quatro colunas e duas linhas. Os recortes preservam RGBA e pixels sem alterações. Não são fases consecutivas de um ciclo.
+
+## Identidade
+
+- Ícaro: cabelo branco quente com sombras cinza/lilás, pele quente, olhos castanho/dourado; regata violeta escura, símbolo dourado na frente, calça grafite larga e tênis escuros com detalhes amarelos e sola clara.
+- Pulseira do Ícaro: **pulso esquerdo anatômico**. Na vista frontal aparece à direita da tela; na traseira aparece à esquerda. Não espelhar as vistas.
+- Eva: cabelo quase preto com sombras frias e rabo de cavalo longo; olhos azuis, pele clara quente, brinco vermelho visível nas vistas laterais; blusa branca curta, mangas compridas e capuz, calça cinza larga, tênis escuros com sola clara.
+- As vistas não estabelecem de forma inequívoca se o brinco de Eva é unilateral. Preservar a visibilidade da vista correspondente, sem inventar bijuterias nas regiões ocultas.
+- Ambos têm altura corporal semelhante nas referências. A altura nominal das bases será 424 pixels, com eixo no x192 e chão y480; cabelos e roupas mantêm suas diferenças de volume.
+- Contorno muito escuro, blocos de pixels definidos e luz difusa superior; sem nova fonte de luz. Sem sombra de chão ou halo luminoso. A pulseira mantém o amarelo emissivo dentro do acessório, sem halo externo.
+
+## Exportação
+
+384 × 512 por quadro. Quadro 00 parado, quadros 01–08 de caminhada. Âncora (192,480). Não espelhar, deformar partes ou usar interpolação suave. Se a geração vier maior, apenas escala uniforme da figura inteira por vizinho mais próximo, registrada no JSON da transformação. Remover apenas ruído quase invisível alfa < 8/255; resíduos maiores exigem nova geração.
+
+Nenhuma referência isolada determina o lado anatômico por posição na tela. Usar o mapeamento frontal/traseiro e os guias. Não adicionar detalhes ocultos.
+{
+  "celula": {
+    "largura": 384,
+    "altura": 512
+  },
+  "spritesheet": {
+    "largura": 3456,
+    "altura": 4096,
+    "colunas": 9,
+    "linhas": 8
+  },
+  "ancora": {
+    "x": 192,
+    "y": 480
+  },
+  "direcoes": [
+    "norte",
+    "nordeste",
+    "leste",
+    "sudeste",
+    "sul",
+    "sudoeste",
+    "oeste",
+    "noroeste"
+  ],
+  "personagens": [
+    "icaro",
+    "eva"
+  ],
+  "duracao_quadro_ms": 100,
+  "loop": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "parado": 0,
+  "fases": [
+    "parado",
+    "contato esquerdo",
+    "recepção esquerda",
+    "passagem direita",
+    "avanço direito",
+    "contato direito",
+    "recepção direita",
+    "passagem esquerda",
+    "avanço esquerdo"
+  ],
+  "ordem_de_geracao": [
+    1,
+    5,
+    3,
+    7,
+    2,
+    6,
+    4,
+    8
+  ],
+  "onda_1": [
+    "leste",
+    "sul",
+    "norte"
+  ],
+  "onda_2": [
+    "oeste",
+    "sudeste",
+    "nordeste"
+  ],
+  "onda_3": [
+    "sudoeste",
+    "noroeste"
+  ],
+  "estado": "bases_revisadas_animacao_liberada"
+}
+# Correções que as próximas direções devem evitar
+
+Estas observações complementam o contrato; não alteram bases, ritmo ou câmera.
+
+1. O nome da fase não basta. Descreva qual perna está próxima da câmera, qual sustenta, onde passa o pé elevado e qual braço avança. A geração pode repetir a última pose mesmo com número diferente.
+2. Em03/07, o pé elevado passa perto da perna de apoio. Pé estendido muito à frente já sugere04/08; não aprovar isso como passagem. Inspecionar lado anatômico e tipo de pose são duas verificações separadas.
+3. Em02/06, conferir a flexão da perna de apoio e a saída do pé traseiro, além do contrabalanço dos braços. Roupa e bolso visível ajudam a rastrear o membro, mas não substituem anatomia.
+4. A âncora(192,480) é a posição do personagem no cenário. Alinhar toda sola mais baixa em480 apaga a projeção do recuo do apoio nas vistas frontal/traseira/diagonal. Fixar o eixo e a escala pela cabeça/torso e preservar os pisos projetados.
+5. Não usar boundingbox da pose inteira como eixo automático: braço e cabelo alteram a caixa. Não esticar membros nem usar escala diferente nos eixos.
+6. Pulseira de Ícaro é esquerda anatômica. A base leste já esconde a pulseira no braço distante; não recolocar no braço próximo. Sudeste/sudoeste/nordeste/noroeste exigem raciocinar pela lateral, não espelhar.
+7. Referências com todas as vistas podem induzir câmera errada. Usar como principais a base e o recorte exclusivo da direção; originais e vizinhas são apoio de identidade.
+8. Registro de rastreamento deve separar observação de estimativa. Joelho sob calça larga não é um ponto medido com precisão; documente a oclusão. A passada de teste deve vir do recuo observado do apoio.
+
+Cada direção exige revisão independente do coordenador após a revisão do agente. Não declarar final por ter todos os arquivos.
+
+exec
+/usr/bin/bash -lc 'for f in ../bases/icaro/sul.png ../bases/icaro/leste.png ../bases/icaro/norte.png ../bases/icaro/sudeste.png ../bases/eva/sul.png ../bases/eva/leste.png ../bases/eva/norte.png ../bases/eva/sudeste.png ../tarefas/sul/icaro/01.png ../tarefas/leste/eva/03.png ../ficha-visual.md ../contrato.json ../licoes-da-primeira-onda.md ../Ícaro.png ../eva.png; do if [ -e "$f" ]; then stat -c '"'%n %s bytes' \""'$f"; else echo "AUSENTE: $f"; fi; done' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+../bases/icaro/sul.png 88464 bytes
+../bases/icaro/leste.png 68993 bytes
+../bases/icaro/norte.png 83336 bytes
+../bases/icaro/sudeste.png 88193 bytes
+../bases/eva/sul.png 99331 bytes
+../bases/eva/leste.png 90319 bytes
+../bases/eva/norte.png 93670 bytes
+../bases/eva/sudeste.png 105356 bytes
+../tarefas/sul/icaro/01.png 80819 bytes
+../tarefas/leste/eva/03.png 107940 bytes
+../ficha-visual.md 2293 bytes
+../contrato.json 1027 bytes
+../licoes-da-primeira-onda.md 1906 bytes
+AUSENTE: ../Ícaro.png
+AUSENTE: ../eva.png
+
+exec
+/usr/bin/bash -lc 'for f in /home/icaro/Documentos/AOC/Ícaro.png /home/icaro/Documentos/AOC/eva.png registros/cena-galpao.png registros/cena-doca.png; do if [ -e "$f" ]; then stat -c '"'%n %s bytes' \""'$f"; else echo "AUSENTE: $f"; fi; done' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+/home/icaro/Documentos/AOC/Ícaro.png 1611724 bytes
+/home/icaro/Documentos/AOC/eva.png 1749387 bytes
+registros/cena-galpao.png 297742 bytes
+registros/cena-doca.png 330456 bytes
+
+apply patch
+patch: completed
+/home/icaro/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+diff --git a/Documentos/AOC/sprites/elenco-sala2/STATUS.md b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..e93097ee5d033b578f3f7ec5627d65c368d381ff
+--- /dev/null
++++ b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+@@ -0,0 +1,26 @@
++# Status — elenco da Sala 2
++
++## Etapa atual
++
++Etapa 1 — folhas de identidade. **Incompleta e bloqueada antes do portão de aprovação.**
++
++## Pronto
++
++- Briefing, ficha visual, contrato e lições da primeira onda lidos.
++- Bases sul, leste, norte e sudeste de Ícaro e Eva, quadros aprovados de caminhada, folhas originais e imagens de contexto abertas para referência visual.
++- As referências necessárias estão disponíveis no disco.
++
++## Entregáveis da Etapa 1
++
++- `agente/referencia-8-vistas.png` — não gerado.
++- `anjo/referencia.png` — não gerado.
++- `hank/referencia-8-vistas.png` — não gerado.
++- `revisao/etapa1-prancha.png` — não montada.
++
++Nenhuma imagem foi gerada ou rejeitada; nenhuma prancha foi apresentada para aprovação.
++
++## Bloqueio e próximo passo
++
++A ferramenta integrada `image_gen` não está disponível nesta sessão. A skill `imagegen` exige usá-la por padrão e proíbe mudar para a CLI/API sem confirmação explícita; por isso, nenhuma geração foi substituída por um fluxo alternativo.
++
++Próximo passo: disponibilizar `image_gen` nesta sessão ou confirmar explicitamente o modo CLI/API e configurar `OPENAI_API_KEY` localmente. Depois, gerar as três folhas com referências visuais de Ícaro **e** Eva em cada chamada, montar a prancha comparativa, registrar prompts e verificações e então parar para aprovação.
+
+diff --git a/Documentos/AOC/sprites/elenco-sala2/STATUS.md b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..e93097ee5d033b578f3f7ec5627d65c368d381ff
+--- /dev/null
++++ b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+@@ -0,0 +1,26 @@
++# Status — elenco da Sala 2
++
++## Etapa atual
++
++Etapa 1 — folhas de identidade. **Incompleta e bloqueada antes do portão de aprovação.**
++
++## Pronto
++
++- Briefing, ficha visual, contrato e lições da primeira onda lidos.
++- Bases sul, leste, norte e sudeste de Ícaro e Eva, quadros aprovados de caminhada, folhas originais e imagens de contexto abertas para referência visual.
++- As referências necessárias estão disponíveis no disco.
++
++## Entregáveis da Etapa 1
++
++- `agente/referencia-8-vistas.png` — não gerado.
++- `anjo/referencia.png` — não gerado.
++- `hank/referencia-8-vistas.png` — não gerado.
++- `revisao/etapa1-prancha.png` — não montada.
++
++Nenhuma imagem foi gerada ou rejeitada; nenhuma prancha foi apresentada para aprovação.
++
++## Bloqueio e próximo passo
++
++A ferramenta integrada `image_gen` não está disponível nesta sessão. A skill `imagegen` exige usá-la por padrão e proíbe mudar para a CLI/API sem confirmação explícita; por isso, nenhuma geração foi substituída por um fluxo alternativo.
++
++Próximo passo: disponibilizar `image_gen` nesta sessão ou confirmar explicitamente o modo CLI/API e configurar `OPENAI_API_KEY` localmente. Depois, gerar as três folhas com referências visuais de Ícaro **e** Eva em cada chamada, montar a prancha comparativa, registrar prompts e verificações e então parar para aprovação.
+
+exec
+/usr/bin/bash -lc 'cat STATUS.md' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ succeeded in 0ms:
+# Status — elenco da Sala 2
+
+## Etapa atual
+
+Etapa 1 — folhas de identidade. **Incompleta e bloqueada antes do portão de aprovação.**
+
+## Pronto
+
+- Briefing, ficha visual, contrato e lições da primeira onda lidos.
+- Bases sul, leste, norte e sudeste de Ícaro e Eva, quadros aprovados de caminhada, folhas originais e imagens de contexto abertas para referência visual.
+- As referências necessárias estão disponíveis no disco.
+
+## Entregáveis da Etapa 1
+
+- `agente/referencia-8-vistas.png` — não gerado.
+- `anjo/referencia.png` — não gerado.
+- `hank/referencia-8-vistas.png` — não gerado.
+- `revisao/etapa1-prancha.png` — não montada.
+
+Nenhuma imagem foi gerada ou rejeitada; nenhuma prancha foi apresentada para aprovação.
+
+## Bloqueio e próximo passo
+
+A ferramenta integrada `image_gen` não está disponível nesta sessão. A skill `imagegen` exige usá-la por padrão e proíbe mudar para a CLI/API sem confirmação explícita; por isso, nenhuma geração foi substituída por um fluxo alternativo.
+
+Próximo passo: disponibilizar `image_gen` nesta sessão ou confirmar explicitamente o modo CLI/API e configurar `OPENAI_API_KEY` localmente. Depois, gerar as três folhas com referências visuais de Ícaro **e** Eva em cada chamada, montar a prancha comparativa, registrar prompts e verificações e então parar para aprovação.
+
+exec
+/usr/bin/bash -lc 'git status --short' in /home/icaro/Documentos/AOC/sprites/elenco-sala2
+ exited 128 in 0ms:
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+diff --git a/Documentos/AOC/sprites/elenco-sala2/STATUS.md b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..e93097ee5d033b578f3f7ec5627d65c368d381ff
+--- /dev/null
++++ b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+@@ -0,0 +1,26 @@
++# Status — elenco da Sala 2
++
++## Etapa atual
++
++Etapa 1 — folhas de identidade. **Incompleta e bloqueada antes do portão de aprovação.**
++
++## Pronto
++
++- Briefing, ficha visual, contrato e lições da primeira onda lidos.
++- Bases sul, leste, norte e sudeste de Ícaro e Eva, quadros aprovados de caminhada, folhas originais e imagens de contexto abertas para referência visual.
++- As referências necessárias estão disponíveis no disco.
++
++## Entregáveis da Etapa 1
++
++- `agente/referencia-8-vistas.png` — não gerado.
++- `anjo/referencia.png` — não gerado.
++- `hank/referencia-8-vistas.png` — não gerado.
++- `revisao/etapa1-prancha.png` — não montada.
++
++Nenhuma imagem foi gerada ou rejeitada; nenhuma prancha foi apresentada para aprovação.
++
++## Bloqueio e próximo passo
++
++A ferramenta integrada `image_gen` não está disponível nesta sessão. A skill `imagegen` exige usá-la por padrão e proíbe mudar para a CLI/API sem confirmação explícita; por isso, nenhuma geração foi substituída por um fluxo alternativo.
++
++Próximo passo: disponibilizar `image_gen` nesta sessão ou confirmar explicitamente o modo CLI/API e configurar `OPENAI_API_KEY` localmente. Depois, gerar as três folhas com referências visuais de Ícaro **e** Eva em cada chamada, montar a prancha comparativa, registrar prompts e verificações e então parar para aprovação.
+
+codex
+Li o briefing e abri as referências de Ícaro e Eva, incluindo as folhas originais, os quadros aprovados e as cenas. Atualizei [STATUS.md](/home/icaro/Documentos/AOC/sprites/elenco-sala2/STATUS.md).
+
+A Etapa 1 ficou **incompleta**: não gerei as três folhas nem montei a prancha. A ferramenta `image_gen` não está disponível nesta sessão, e a skill `imagegen` exige confirmação explícita antes de usar a alternativa CLI/API.
+
+Para continuar, disponibilize `image_gen` ou confirme o uso da CLI/API e configure `OPENAI_API_KEY` localmente. Não envie a chave aqui. Depois, concluo as folhas e a prancha e paro para sua aprovação.
+diff --git a/Documentos/AOC/sprites/elenco-sala2/STATUS.md b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..e93097ee5d033b578f3f7ec5627d65c368d381ff
+--- /dev/null
++++ b/Documentos/AOC/sprites/elenco-sala2/STATUS.md
+@@ -0,0 +1,26 @@
++# Status — elenco da Sala 2
++
++## Etapa atual
++
++Etapa 1 — folhas de identidade. **Incompleta e bloqueada antes do portão de aprovação.**
++
++## Pronto
++
++- Briefing, ficha visual, contrato e lições da primeira onda lidos.
++- Bases sul, leste, norte e sudeste de Ícaro e Eva, quadros aprovados de caminhada, folhas originais e imagens de contexto abertas para referência visual.
++- As referências necessárias estão disponíveis no disco.
++
++## Entregáveis da Etapa 1
++
++- `agente/referencia-8-vistas.png` — não gerado.
++- `anjo/referencia.png` — não gerado.
++- `hank/referencia-8-vistas.png` — não gerado.
++- `revisao/etapa1-prancha.png` — não montada.
++
++Nenhuma imagem foi gerada ou rejeitada; nenhuma prancha foi apresentada para aprovação.
++
++## Bloqueio e próximo passo
++
++A ferramenta integrada `image_gen` não está disponível nesta sessão. A skill `imagegen` exige usá-la por padrão e proíbe mudar para a CLI/API sem confirmação explícita; por isso, nenhuma geração foi substituída por um fluxo alternativo.
++
++Próximo passo: disponibilizar `image_gen` nesta sessão ou confirmar explicitamente o modo CLI/API e configurar `OPENAI_API_KEY` localmente. Depois, gerar as três folhas com referências visuais de Ícaro **e** Eva em cada chamada, montar a prancha comparativa, registrar prompts e verificações e então parar para aprovação.
+
+tokens used
+76.372
+Li o briefing e abri as referências de Ícaro e Eva, incluindo as folhas originais, os quadros aprovados e as cenas. Atualizei [STATUS.md](/home/icaro/Documentos/AOC/sprites/elenco-sala2/STATUS.md).
+
+A Etapa 1 ficou **incompleta**: não gerei as três folhas nem montei a prancha. A ferramenta `image_gen` não está disponível nesta sessão, e a skill `imagegen` exige confirmação explícita antes de usar a alternativa CLI/API.
+
+Para continuar, disponibilize `image_gen` ou confirme o uso da CLI/API e configure `OPENAI_API_KEY` localmente. Não envie a chave aqui. Depois, concluo as folhas e a prancha e paro para sua aprovação.
+saida: 0

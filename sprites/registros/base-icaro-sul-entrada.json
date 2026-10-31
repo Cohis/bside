@@ -1,0 +1,10 @@
+{
+  "status": "solicitado",
+  "ferramenta": "image_gen",
+  "referencias": [
+    "sprites/referencias/icaro/sul.png",
+    "Ícaro.png"
+  ],
+  "fase": "00",
+  "direcao": "sul"
+}

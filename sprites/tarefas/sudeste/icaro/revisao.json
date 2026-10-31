@@ -1,0 +1,41 @@
+{
+  "aprovado": false,
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "Oito PNGs RGBA 384×512 por personagem, margens e transparência reais; contato inferior em y480 nos 16 quadros.",
+    "Pranchas claras/escuras e GIFs 100/400 ms com chão marcado regenerados; quadros inspecionados individualmente, loop temporal ainda sem aprovação.",
+    "Correção de solo por nearest abaixo do quadril registrada em correcao-solo.json; originais preservados em originais-pre-solo/.",
+    "Apoio esquerdo 02 recuado progressivamente em correcao-apoio02.json; versões anteriores preservadas.",
+    "Transições 04→05 e 08→01 comparadas estaticamente: o pé em balanço desce até o contato com deslocamento horizontal moderado, mas o ciclo inteiro ainda requer revisão.",
+    "Ícaro mantém pulseira no braço anatômico esquerdo; Eva mantém brinco vermelho e nenhum acessório de pulso.",
+    "Quadros 06/07 ajustados para recuo horizontal mais uniforme do apoio; backups e hashes em recuo-06-07-adotado.json."
+  ],
+  "pendencias": [
+    "02→03 altera extensão dos braços abruptamente; 07→08 muda a oclusão do braço distante.",
+    "Largura do tronco e proporção aparente das pernas oscilam entre gerações; confirmar continuidade em reprodução temporal.",
+    "Recuo horizontal estimado agora 34/48/47/43/43/42 px; confirmar com chão marcado e inspeção temporal antes de aprovar."
+  ],
+  "passada_teste_px_por_quadro": 43,
+  "recuo_local_estimado_transicoes_apoio": null,
+  "recuo_horizontal_estimado_transicoes_apoio": [
+    34,
+    48,
+    47,
+    43,
+    43,
+    42
+  ]
+}

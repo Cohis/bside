@@ -1,0 +1,19 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/eva/07-raw-t2.png",
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "posicao_imagem_inteira": [
+    3,
+    1
+  ],
+  "eixo_torso_original_estimado": 540,
+  "topo_cabeca_destino": 54,
+  "ancora": [
+    192,
+    480
+  ],
+  "criterio": "Variante t2 selecionada por passagem mais próxima do quadril, seguida de correção local de contato abaixo de y350",
+  "ruido_alfa_removido": "somente alfa <8",
+  "contato_inferior_antes_correcao": 479,
+  "registro_edicao": "edicoes/selecionar-eva07.json"
+}

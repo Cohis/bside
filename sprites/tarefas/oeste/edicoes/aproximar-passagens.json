@@ -1,0 +1,70 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "anterior": "edicoes/pos-contato/icaro/03.png",
+    "sha256_anterior": "e5808c8c16b42ad11b4e24c1779ec51a7c5c84af1664003df8ef8cbd3c330fdf",
+    "sha256_resultado": "34751808677fa88336b8d590951e7c4fbc7a1381f13905ec203331d137e4c434",
+    "divisao_px": 188,
+    "deslocamento_final_px": {
+      "esquerda": 38,
+      "direita": -6
+    },
+    "rampa_y_px": [
+      336,
+      450
+    ],
+    "metodo": "translação por linhas das duas metades inferiores; escala e paleta inalteradas; perna em balanço desenhada por cima"
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "anterior": "edicoes/pos-contato/icaro/07.png",
+    "sha256_anterior": "53642a02ad3573141eb5b861a533afa8a086215877a914fdcceb026b29dfc4ce",
+    "sha256_resultado": "fa7ce071b10d7126ea1919c17b1c34e704b2b5deea03310c667a212b1430ddb8",
+    "divisao_px": 186,
+    "deslocamento_final_px": {
+      "esquerda": 32,
+      "direita": -8
+    },
+    "rampa_y_px": [
+      336,
+      450
+    ],
+    "metodo": "translação por linhas das duas metades inferiores; escala e paleta inalteradas; perna em balanço desenhada por cima"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "anterior": "edicoes/pos-contato/eva/03.png",
+    "sha256_anterior": "f7e2000f33e53cd8e144c89e6871e35b6984fc706dfd3f3ef4da505dbaa952f0",
+    "sha256_resultado": "d9c376ab2da596714c45fa8aba13c006d142d847c444d1153cbf4f75109d1657",
+    "divisao_px": 195,
+    "deslocamento_final_px": {
+      "esquerda": 9,
+      "direita": -47
+    },
+    "rampa_y_px": [
+      336,
+      450
+    ],
+    "metodo": "translação por linhas das duas metades inferiores; escala e paleta inalteradas; perna em balanço desenhada por cima"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 7,
+    "anterior": "edicoes/pos-contato/eva/07.png",
+    "sha256_anterior": "a6b00feda5dbe6ae66c809133405a187b9dd2749f65a916bb3646f6c909ed348",
+    "sha256_resultado": "6e0c955198f4bf06e771c1be241506de75e487b9d576c4e2b696fccc21524290",
+    "divisao_px": 188,
+    "deslocamento_final_px": {
+      "esquerda": 38,
+      "direita": -8
+    },
+    "rampa_y_px": [
+      336,
+      450
+    ],
+    "metodo": "translação por linhas das duas metades inferiores; escala e paleta inalteradas; perna em balanço desenhada por cima"
+  }
+]

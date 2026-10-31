@@ -1,0 +1,54 @@
+{
+  "aprovado": false,
+  "estado": "ciclo produzido, reprovado na revisão de continuidade",
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "Oito imagens distintas produzidas com image_gen, uma por chamada.",
+    "Identidade e câmera norte preservadas; sem espelhamento.",
+    "Transparência real e margens verificadas em prancha clara.",
+    "Escala uniforme fixa; somente recorte/enquadramento, sem deformação de membros.",
+    "Revisão quadro a quadro realizada. Reprodução temporal e chão marcado devem ser revisados pelo coordenador; não registrados como aprovados."
+  ],
+  "validacao_tecnica_aprovada": true,
+  "passada_teste_px_por_quadro": 17.62,
+  "passada_teste_origem": "Ícaro: média (29+8)/6/0,35=17,62px locais/quadro, mas metades assimétricas. Eva: nenhuma velocidade constante válida; recuo observado inverte sentido.",
+  "apoio_observado_px": {
+    "esquerda_01_04": [
+      458,
+      482,
+      481,
+      487
+    ],
+    "direita_05_08": [
+      473,
+      483,
+      482,
+      481
+    ]
+  },
+  "pendencias": [
+    "A velocidade aparente de recuo do pé de apoio é irregular; não certificada ausência de patinação.",
+    "Recepções02/06 visualmente próximas das passagens03/07; flexão/queda de quadril insuficientemente distintas.",
+    "Contato esquerdo01 e direito05 diferem na projeção do apoio (458 versus473px); diferença de15px precisa de revisão artística.",
+    "Apoio05→08 avança somente8px, enquanto01→04 recua29px; caminhada ainda assimétrica."
+  ],
+  "rastreamento": "rastreamento.json",
+  "tentativas": {
+    "contato01": 2,
+    "contato05": 2,
+    "demais": 1
+  }
+}

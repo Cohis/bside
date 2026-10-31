@@ -1,0 +1,69 @@
+{
+  "aprovado": false,
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "01→02",
+    "02→03",
+    "03→04",
+    "04→05",
+    "05→06",
+    "06→07",
+    "07→08",
+    "08→01"
+  ],
+  "observacoes": [
+    "Correções locais autorizadas foram compostas de pixels de quadros do mesmo personagem/vista, com vizinho mais próximo, sem espelhar acessórios.",
+    "Todos os 8 PNGs têm RGBA384×512, margens, alfa real e hashes distintos; componentes espúrios das edições removidos.",
+    "Pranchas e loops 100/400ms com piso marcado a 13px/quadro permitem inspeção; essa velocidade é hipótese de teste, não calibração aprovada.",
+    "02 recebeu apoio esquerdo visível; 04/06 pulseira no pulso esquerdo anatômico; 07 pé de balanço aproximado da perna de apoio."
+  ],
+  "pendencias": [
+    "01 permanece com pé esquerdo aparente atrás/à esquerda e o outro pé suspenso, contrário ao contato esquerdo do guia.",
+    "08 mostra pés separados (~145/255px) em vez da passagem para contato (~200px); 08→01 salta e não fecha anatomicamente.",
+    "04/05 braços ainda não acompanham de forma inequívoca o avanço da perna oposta; comprimento aparente das pernas varia.",
+    "A passagem07 melhorou, mas 07→08 inverte projeção dos pés abruptamente; joelho e identidade anatômica seguem incertos.",
+    "Recuo do apoio e piso marcado não calibrados; há patinação/variação entre fases.",
+    "Reautorias image_gen de 01/08 ignoraram o guia; composição experimental criou corte na cintura e foi rejeitada.",
+    "Nova composição controlada 01/08 rejeitada: 01 afina/rompe o contorno das pernas e fragmenta calçado; 08 transplanta a fase 07 quase imóvel, com costura residual e sem fechar 08→01. Ativos preservados; hashes em correcoes/originais-01-08-2026-10-24/manifesto.json."
+  ],
+  "passada_teste_px_por_quadro": 13,
+  "calibracao": {
+    "validada": false,
+    "motivo": "Hipótese de 13px/quadro mostra patinação e transições 07→08/08→01 incompatíveis."
+  },
+  "limite_tentativas": {
+    "05": 3
+  },
+  "revisao_temporal_concluida": false,
+  "quadros_corrigidos": [
+    2,
+    4,
+    6,
+    7
+  ],
+  "evidencias": {
+    "pranchas": [
+      "icaro-prancha-claro.png",
+      "icaro-prancha-escuro.png",
+      "icaro-chao-prancha.png"
+    ],
+    "loops_100_400_ms": [
+      "icaro-normal.gif",
+      "icaro-lento.gif",
+      "icaro-normal-chao.gif",
+      "icaro-lento-chao.gif"
+    ],
+    "originais": "correcoes/*-antes.png",
+    "candidatos_rejeitados": "correcoes/reautoria-01-08.json",
+    "ensaios_controlados": "correcoes/originais-01-08-2026-10-24/manifesto.json"
+  }
+}

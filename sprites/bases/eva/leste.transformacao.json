@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-eva-leste-selecionada.png",
+  "caixa_original": [
+    268,
+    191,
+    768,
+    1372
+  ],
+  "escala_uniforme": 0.3590177815410669,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    79,
+    56
+  ],
+  "eixo_original": 581.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "data": "2026-10-23",
+  "estado": "rascunho corrigido; ciclos ainda pendentes",
+  "selecionados": {
+    "icaro": {
+      "02": "Joelho de recepção mais flexo, com sola plantada na mesma região e altura visual semelhante.",
+      "07": "Perna elevada composta com pixels de Ícaro; apoio original mantido. A ponta suspensa desceu aproximadamente 19 px."
+    },
+    "eva": {
+      "02": "Recepção mais flexa; cabeça e sola variam poucos pixels em relação ao quadro anterior.",
+      "03": "Reconstrução local da perna de balanço; sapato desceu aproximadamente 23 px sem espelhamento. Costura de um pixel retocada."
+    }
+  },
+  "rejeitados": {
+    "icaro-06": "Resultado encurta altura da figura em cerca de 23 px e altera câmera e chão.",
+    "eva-06": "Resultado encurta altura da figura em cerca de 12 px e desloca pé de apoio.",
+    "eva-03-imagemgerada-normalizada": "Primeiro resultado baixa o pé só cerca de 11 px; insuficiente para equalizar a passagem.",
+    "eva-03-recorte-normalizada": "Resultado após recorte ainda deixa o pé alto; usado somente como fonte para composição local.",
+    "icaro-08-candidato-normalizado": "Primeira tentativa move a sola posterior cerca de 18 px, insuficiente para a convergência do guia; não resolve a transição 07→08.",
+    "icaro-08-candidato2-normalizado": "Segunda tentativa a partir de proxy reposiciona pouco a sola após normalização e redesenha ambas as pernas; recuo e identidade de apoio continuam incertos.",
+    "eva-08-candidato-normalizado": "Primeira tentativa move a sola posterior cerca de 15 px, mas mantém dois sapatos aparentando contato; não resolve a fase.",
+    "eva-08-candidato2-normalizado": "Segunda tentativa a partir de proxy recoloca a sola perto da posição original e altera as duas pernas; não melhora o apoio de forma confiável."
+  },
+  "limites": [
+    "Os PNGs selecionados ainda precisam de teste de chão e revisão temporal do ciclo inteiro.",
+    "Rastreamento de juntas ocultas é estimativa visual; não constitui prova anatômica.",
+    "Nenhum ciclo foi aprovado para montagem final.",
+    "Na velocidade real da prévia, 03→04 recua 38/39 px versus 41 px esperados; apoio 04 preservado. Em 07→08 a identidade anatômica dos pés rastreados é incerta; não inferir patinação definitiva só da diferença numérica."
+  ]
+}

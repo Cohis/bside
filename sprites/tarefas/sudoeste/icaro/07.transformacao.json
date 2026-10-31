@@ -1,0 +1,11 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/icaro-07-composicao-v1.png",
+  "original_preservado": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/originais/icaro/07.png",
+  "interpolacao": "vizinho mais próximo",
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "composição localizada de pixels do próprio personagem",
+  "estado": "candidato selecionado para revisão; ciclo não aprovado"
+}

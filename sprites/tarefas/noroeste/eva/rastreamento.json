@@ -1,0 +1,372 @@
+{
+  "metodo": "Estimativa visual manual em PNGs normalizados; não ground truth anatômico. Roupa larga oclui joelhos; continuidade da perna em06 está incorreta.",
+  "quadros": [
+    {
+      "quadro": 1,
+      "quadril": [
+        198,
+        280
+      ],
+      "joelho_esquerdo": [
+        161,
+        372
+      ],
+      "tornozelo_esquerdo": [
+        143,
+        438
+      ],
+      "ponta_esquerda": [
+        107,
+        450
+      ],
+      "joelho_direito": [
+        248,
+        373
+      ],
+      "tornozelo_direito": [
+        268,
+        431
+      ],
+      "ponta_direita": [
+        245,
+        446
+      ],
+      "apoio_esperado": "esquerdo",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 2,
+      "quadril": [
+        193,
+        280
+      ],
+      "joelho_esquerdo": [
+        173,
+        376
+      ],
+      "tornozelo_esquerdo": [
+        177,
+        455
+      ],
+      "ponta_esquerda": [
+        141,
+        466
+      ],
+      "joelho_direito": [
+        239,
+        383
+      ],
+      "tornozelo_direito": [
+        266,
+        434
+      ],
+      "ponta_direita": [
+        252,
+        453
+      ],
+      "apoio_esperado": "esquerdo",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 3,
+      "quadril": [
+        195,
+        283
+      ],
+      "joelho_esquerdo": [
+        189,
+        373
+      ],
+      "tornozelo_esquerdo": [
+        191,
+        444
+      ],
+      "ponta_esquerda": [
+        158,
+        457
+      ],
+      "joelho_direito": [
+        230,
+        370
+      ],
+      "tornozelo_direito": [
+        244,
+        409
+      ],
+      "ponta_direita": [
+        234,
+        430
+      ],
+      "apoio_esperado": "esquerdo",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 4,
+      "quadril": [
+        195,
+        282
+      ],
+      "joelho_esquerdo": [
+        231,
+        374
+      ],
+      "tornozelo_esquerdo": [
+        247,
+        444
+      ],
+      "ponta_esquerda": [
+        220,
+        460
+      ],
+      "joelho_direito": [
+        152,
+        363
+      ],
+      "tornozelo_direito": [
+        134,
+        406
+      ],
+      "ponta_direita": [
+        106,
+        407
+      ],
+      "apoio_esperado": "esquerdo",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 5,
+      "quadril": [
+        194,
+        279
+      ],
+      "joelho_esquerdo": [
+        210,
+        371
+      ],
+      "tornozelo_esquerdo": [
+        229,
+        433
+      ],
+      "ponta_esquerda": [
+        221,
+        456
+      ],
+      "joelho_direito": [
+        174,
+        378
+      ],
+      "tornozelo_direito": [
+        162,
+        442
+      ],
+      "ponta_direita": [
+        135,
+        450
+      ],
+      "apoio_esperado": "direito",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 6,
+      "quadril": [
+        193,
+        282
+      ],
+      "joelho_esquerdo": [
+        157,
+        370
+      ],
+      "tornozelo_esquerdo": [
+        151,
+        446
+      ],
+      "ponta_esquerda": [
+        124,
+        459
+      ],
+      "joelho_direito": [
+        237,
+        381
+      ],
+      "tornozelo_direito": [
+        266,
+        433
+      ],
+      "ponta_direita": [
+        252,
+        450
+      ],
+      "apoio_esperado": "direito",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 7,
+      "quadril": [
+        195,
+        281
+      ],
+      "joelho_esquerdo": [
+        207,
+        377
+      ],
+      "tornozelo_esquerdo": [
+        230,
+        435
+      ],
+      "ponta_esquerda": [
+        218,
+        462
+      ],
+      "joelho_direito": [
+        188,
+        388
+      ],
+      "tornozelo_direito": [
+        175,
+        467
+      ],
+      "ponta_direita": [
+        151,
+        480
+      ],
+      "apoio_esperado": "direito",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    },
+    {
+      "quadro": 8,
+      "quadril": [
+        195,
+        265
+      ],
+      "joelho_esquerdo": [
+        150,
+        364
+      ],
+      "tornozelo_esquerdo": [
+        124,
+        420
+      ],
+      "ponta_esquerda": [
+        95,
+        421
+      ],
+      "joelho_direito": [
+        239,
+        375
+      ],
+      "tornozelo_direito": [
+        268,
+        433
+      ],
+      "ponta_direita": [
+        241,
+        444
+      ],
+      "apoio_esperado": "direito",
+      "origem": "estimativa visual na prancha; joelhos ocultos pela roupa",
+      "incerteza_px": {
+        "quadril": 6,
+        "joelhos": 15,
+        "tornozelos": 8,
+        "ponta": 5
+      }
+    }
+  ],
+  "recuos_apoio_esperado": [
+    {
+      "de": 1,
+      "para": 2,
+      "delta_tela": [
+        34,
+        16
+      ]
+    },
+    {
+      "de": 2,
+      "para": 3,
+      "delta_tela": [
+        17,
+        -9
+      ]
+    },
+    {
+      "de": 3,
+      "para": 4,
+      "delta_tela": [
+        62,
+        3
+      ]
+    },
+    {
+      "de": 5,
+      "para": 6,
+      "delta_tela": [
+        117,
+        0
+      ]
+    },
+    {
+      "de": 6,
+      "para": 7,
+      "delta_tela": [
+        -101,
+        30
+      ]
+    },
+    {
+      "de": 7,
+      "para": 8,
+      "delta_tela": [
+        90,
+        -36
+      ]
+    }
+  ],
+  "calibracao_chao": {
+    "aprovada": false,
+    "px_por_quadro": null,
+    "motivo": "Recuos não monotônicos e troca de apoio em06; nenhuma velocidade constante torna este ciclo fisicamente válido."
+  }
+}

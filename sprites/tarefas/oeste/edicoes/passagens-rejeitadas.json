@@ -1,0 +1,30 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "candidato": "edicoes/rejeitados/icaro/03-aproximado.png",
+    "motivo_rejeicao": "Cisalhamento criou bordas serrilhadas e pés fundidos na passagem; rejeitado na prancha.",
+    "resultado": "restaurado após correção de contato"
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "candidato": "edicoes/rejeitados/icaro/07-aproximado.png",
+    "motivo_rejeicao": "Cisalhamento criou bordas serrilhadas e pés fundidos na passagem; rejeitado na prancha.",
+    "resultado": "restaurado após correção de contato"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "candidato": "edicoes/rejeitados/eva/03-aproximado.png",
+    "motivo_rejeicao": "Cisalhamento criou bordas serrilhadas e pés fundidos na passagem; rejeitado na prancha.",
+    "resultado": "restaurado após correção de contato"
+  },
+  {
+    "personagem": "eva",
+    "quadro": 7,
+    "candidato": "edicoes/rejeitados/eva/07-aproximado.png",
+    "motivo_rejeicao": "Cisalhamento criou bordas serrilhadas e pés fundidos na passagem; rejeitado na prancha.",
+    "resultado": "restaurado após correção de contato"
+  }
+]

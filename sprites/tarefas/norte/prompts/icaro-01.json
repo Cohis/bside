@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: identity-preserve. Produza um único quadro pixel art de Ícaro, direção NORTE, costas perfeitamente retas para a câmera, fase 01 CONTATO ESQUERDO de caminhada lenta no lugar. Imagem 1 é a base fixa que define identidade, escala, câmera, roupa, paleta e pixels. Imagem 2 é somente guia anatômico: laranja perna esquerda, azul direita; NÃO renderize guia. Mantenha eixo da cabeça e quadril x192 no canvas 384x512, cabelo em y56, proporções exatas da base. Perna esquerda anatômica (lado ESQUERDO da tela) avança afastando-se da câmera: pé mais alto na imagem tocando chão em y470; direita atrás, pé mais baixo y495, calcanhar direito começando elevar, ponta ainda apoiada. Mostre leve profundidade por flexão e sola, não abrir pernas. Braço direito avança afastando-se da câmera, esquerdo recua em direção à câmera, pulseira amarela somente no pulso esquerdo lado ESQUERDO da tela. Regata roxa sem símbolo atrás. Modifique apenas pernas e balanço pequeno dos braços. Cabeça e tronco devem conservar aparência e tamanho da base. Corpo inteiro, alpha realmente transparente, sem sombra, texto, cenário, halo, objetos, mudança de perspectiva ou suavização; pixels duros.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/norte.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/norte/01.png"
+  ]
+}

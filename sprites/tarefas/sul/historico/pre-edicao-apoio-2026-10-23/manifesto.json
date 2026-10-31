@@ -1,0 +1,74 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 1,
+    "original": "historico/pre-edicao-apoio-2026-10-23/icaro/01.png",
+    "selecionado": "icaro/01.png",
+    "sha_original": "e53a8212704d0ec222ff4a2e04808ba46f6696c4eb193a5ef1c3e66d9aa896b0",
+    "sha_corrigido": "bcb9236bcbcbc66d85a469eb829c88575039820b3969176f65aabf310ed9e055",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 4,
+    "original": "historico/pre-edicao-apoio-2026-10-23/icaro/04.png",
+    "selecionado": "icaro/04.png",
+    "sha_original": "d6c412afa46b696f5ddc585652e706724ef939c8f53d22d25c073ab7b77d9f69",
+    "sha_corrigido": "94614fa845754f63f9f2884214a5fefe7b739364a116cfd47726a577ce8ec245",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 5,
+    "original": "historico/pre-edicao-apoio-2026-10-23/icaro/05.png",
+    "selecionado": "icaro/05.png",
+    "sha_original": "1cf43ab5a21a84d48ad2b5536363fd47e593448a293525ada5a95a6d8b178629",
+    "sha_corrigido": "893996c4b5a6bd9b298f0f0f6d70ea9be0f191046c9c938bccb2bf4ae76768ed",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "icaro",
+    "fase": 8,
+    "original": "historico/pre-edicao-apoio-2026-10-23/icaro/08.png",
+    "selecionado": "icaro/08.png",
+    "sha_original": "756c1268e5a8b5530863e76080701721dbb3a2703f924d025fc75c8c28d907d2",
+    "sha_corrigido": "7997c848f018ac7345050dd45258aa1db7c64654cbcd218ae5aabcf5c0809a54",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "eva",
+    "fase": 1,
+    "original": "historico/pre-edicao-apoio-2026-10-23/eva/01.png",
+    "selecionado": "eva/01.png",
+    "sha_original": "c5fb22a59a3536f40e15ab68ff52873e142107c6734d2ebf48e849961a561269",
+    "sha_corrigido": "ba943b0e2e1b555eed39e6d087ce7fa65d4ab995e47635af85d1ffca0218d548",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "eva",
+    "fase": 4,
+    "original": "historico/pre-edicao-apoio-2026-10-23/eva/04.png",
+    "selecionado": "eva/04.png",
+    "sha_original": "88436af122c19300edb645847fe390a2766f87d5f123ed964c1c43cf08602a60",
+    "sha_corrigido": "3b08dce4bb8df2fc23d435376221bcf6c5de434ee1f966cad6dad28c38c99835",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "eva",
+    "fase": 5,
+    "original": "historico/pre-edicao-apoio-2026-10-23/eva/05.png",
+    "selecionado": "eva/05.png",
+    "sha_original": "0c036aa14ae3a9ffc04111e1cae683ff278aee8a3b16a5b3a82c16b10811c092",
+    "sha_corrigido": "6f0ec2f2e543a76a7f172ab61476ccaebd429a8b86d42843a760951aad500d04",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  },
+  {
+    "personagem": "eva",
+    "fase": 8,
+    "original": "historico/pre-edicao-apoio-2026-10-23/eva/08.png",
+    "selecionado": "eva/08.png",
+    "sha_original": "6c62c2810e8aac2cc52ca933ce2faf57479fc07118594a70797e5bb13eae423f",
+    "sha_corrigido": "850b0dea06a623bb78c87454e8139b600f967e0e6e4a2f7176cc714b3a8388e7",
+    "metodo": "remapeamento vertical local do membro de apoio, vizinho mais próximo, tronco e membro oposto intactos"
+  }
+]

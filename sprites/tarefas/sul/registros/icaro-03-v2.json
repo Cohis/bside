@@ -1,0 +1,8 @@
+{
+  "prompt": "Create ONE icaro full body pixel sprite WALK PASSING POSE, strictly front camera. Image1 neutral sprite is FIXED appearance and dimensions. Image2 is pose guide. Critical pose: supporting leg on RIGHT side of image (anatomical LEFT) is planted DIRECTLY UNDER THE HIP, NOT extended forward toward viewer. The support shoe is therefore projected about 13pixels HIGHER than in the forward-contact frame at384x512 scale. Swing leg on LEFT side of image (anatomical RIGHT) is bending knee FORWARD, heel tucked back under knee, shoe raised24pixels, passing beside planted ankle. The feet must be NEAR EACH OTHER IN DEPTH, no long stride. Shorten projected support length relative neutral very slightly to show support receding; DO NOT grow the torso/head to compensate. Copy head width, shoulders, torso length, hip width exactly. Arms close to neutral. Camera/framing constant; only pose changes. Keep both feet visible, close under pelvis, no lateral leg spread, no running/jump. Hard crisp pixel art, palette, identity/accessories as base, no antialiasing. Gold bracelet stays anatomical LEFT wrist = screen RIGHT. Transparent alpha background, no ground shadow/text/guide. Single pose, no grid.",
+  "referenced_image_paths": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/sul.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/sul/03.png"
+  ],
+  "transparent_background": true
+}

@@ -1,0 +1,36 @@
+{
+  "data": "2026-10-23",
+  "direcao": "noroeste",
+  "personagem": "icaro",
+  "fase": 1,
+  "entradas": [
+    "sprites/tarefas/noroeste/icaro/01.png",
+    "sprites/bases/icaro/noroeste.png",
+    "sprites/guias/noroeste/01.png"
+  ],
+  "ensaios": [
+    {
+      "arquivo": "exec-9214223b-33e1-4aec-9fe1-1833a033517e.png",
+      "dimensoes": [
+        1086,
+        1448
+      ],
+      "modo": "RGBA",
+      "sha256": "e556bd19dda3f322a5ee1ecde4bf58226f6a36f6a43b4c7a2cd2fb143bd345ac",
+      "resultado": "reprovado",
+      "motivo": "Pulseira ainda no braço anatômico direito; contrabalanço não corrigido."
+    },
+    {
+      "arquivo": "exec-eb753c40-1f96-4a7a-b327-a62036996d7e.png",
+      "dimensoes": [
+        1086,
+        1448
+      ],
+      "modo": "RGBA",
+      "sha256": "0eced18456a83f1b7e64d3428c2fddf576bcfdbbd05277ccf1b35b428f1391b8",
+      "resultado": "reprovado",
+      "motivo": "Pulseira ainda no braço anatômico direito; contrabalanço não corrigido."
+    }
+  ],
+  "nota": "Após geração dirigida e composições locais rejeitadas, nenhum destes arquivos substituiu o quadro final. O original e a edição isolada da pulseira permanecem disponíveis."
+}

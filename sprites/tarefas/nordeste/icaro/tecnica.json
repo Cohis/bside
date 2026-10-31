@@ -1,0 +1,130 @@
+[
+  {
+    "quadro": 1,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      101,
+      56,
+      290,
+      474
+    ],
+    "transparente": true,
+    "sha256": "2b1e15ad52cc2f9e3cb285f3c8d872160c9cdb0d434452f17d346278d3ffb236"
+  },
+  {
+    "quadro": 2,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      104,
+      60,
+      280,
+      474
+    ],
+    "transparente": true,
+    "sha256": "6c2eba14bcb1822c58ca8a5efdf35cc903c537ced44532dd82c59d47c18970a7"
+  },
+  {
+    "quadro": 3,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      112,
+      56,
+      274,
+      486
+    ],
+    "transparente": true,
+    "sha256": "8d1e12da4244d8ea00997940ec31d2087d7c1809ec369a3bca7e540e01e2904a"
+  },
+  {
+    "quadro": 4,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      100,
+      53,
+      291,
+      481
+    ],
+    "transparente": true,
+    "sha256": "3ab8fa94955e2d8d82df95214c2c566993ad90dd14a96350c13e3ecacac8625f"
+  },
+  {
+    "quadro": 5,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      113,
+      56,
+      298,
+      482
+    ],
+    "transparente": true,
+    "sha256": "76419e26ff73135e41e87d1868b36b449ecd12b44e9bc962fa7c8f5c490958a4"
+  },
+  {
+    "quadro": 6,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      103,
+      59,
+      276,
+      479
+    ],
+    "transparente": true,
+    "sha256": "ccb3fde3ae95248ce06befe08f10b839b5313e762dd62dcdeec357b247165eac"
+  },
+  {
+    "quadro": 7,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      117,
+      55,
+      267,
+      484
+    ],
+    "transparente": true,
+    "sha256": "41bbc877825b0032f514d43e016667cf101e58fac3cf524732b9389deaeb143b"
+  },
+  {
+    "quadro": 8,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "modo": "RGBA",
+    "caixa": [
+      98,
+      54,
+      301,
+      470
+    ],
+    "transparente": true,
+    "sha256": "d3442b5df2cdb4dfc06025696bd1f6bd68b62c2e02ad3b8fd3a8d8f8204ea5ba"
+  }
+]

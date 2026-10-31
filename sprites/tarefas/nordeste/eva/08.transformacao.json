@@ -1,0 +1,27 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/eva-08.png",
+  "caixa_original": [
+    245,
+    151,
+    879,
+    1350
+  ],
+  "escala_uniforme": 0.34210526315789475,
+  "posicao": [
+    84,
+    54
+  ],
+  "eixo_original": 560,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    150,
+    530,
+    560
+  ],
+  "topo_alvo": 54
+}

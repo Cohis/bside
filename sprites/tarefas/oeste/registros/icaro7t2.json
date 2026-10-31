@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: precise-object-edit. Corrigir somente pernas na terceira imagem de icaro. Primeira imagem base fixa para identidade/câmera/proporções; segunda guia. A terceira está ERRADA: joelho alto demais, parece marcha militar. Faça caminhada casual discreta de perfil esquerdo OESTE. Fase 7: perna DIREITA distante sustenta; ESQUERDA próxima passa elevada. Pé em balanço deve ficar APENAS 20 pixels acima do piso numa célula de 512px, ao lado do tornozelo de apoio, NÃO na altura da canela ou joelho. Joelho flexiona só moderadamente à frente. Ambos tornozelos quase mesma coordenada horizontal SOB quadril. O pé elevado desenha pouca sola e aponta esquerda. Preserve resto da terceira imagem e comprimento dos membros. Não copiar a elevação exagerada. Braços quase verticais, pulseira exclusivamente esquerda próxima. Fundo alpha transparente sem chão ou sombra, pixel-art sem suavização.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/07.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/icaro/07-raw-t1.png"
+  ]
+}

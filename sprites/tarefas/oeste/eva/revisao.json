@@ -1,0 +1,47 @@
+{
+  "aprovado": false,
+  "observacoes": [
+    "Oito PNGs RGBA 384×512, transparência real, sem cortes ou duplicatas exatas.",
+    "Base, identidade, proporção e paleta preservadas dos próprios raws; correções de contato registradas.",
+    "Passagens 03/07 substituídas pelas variantes t1 próprias, sem compor pernas ou criar novos pixels; versões anteriores e hashes preservados em edicoes/passagens-t1-adotadas.json.",
+    "Prancha e GIFs 100/400 ms regenerados com chão marcado a 40 px/quadro. Os pés em balanço ficam visivelmente elevados.",
+    "Em 02/06, pé de apoio recebeu remapeamento localizado +20 px; originais preservados em edicoes/pre-apoiar-eva/.",
+    "Joelho de balanço em 03/07 baixado 20–22 px no pico por remapeamento nearest local, sem alterar enquadramento ou pé de apoio; originais preservados em edicoes/pre-baixar-joelho/.",
+    "Transições 04→05 e 08→01 comparadas na prancha de contato: ponta do pé em balanço cai até o contato sem salto horizontal grande.",
+    "Sola em balanço 03/07 baixada por remapeamento nearest local; pé de apoio preservado, anteriores e hashes em edicoes/pre-sola-baixa/ e edicoes/sola-baixa-adotada.json.",
+    "Chão de teste calibrado em 39 px/quadro com rastreamento visual; resíduos x em edicoes/avaliacao-apoio-24out.json.",
+    "Passagens 03/07 rearticuladas com remapeamento vertical progressivo por vizinho mais próximo: joelho de balanço ~30 px mais baixo em Ícaro, ~27 px em Eva. Tronco e sola de apoio idênticos pixel a pixel; backups e SHA-256 em edicoes/rearticulacao-passagens-adotada.json.",
+    "Prancha do ciclo e ampliações 3× comparadas com 02/04 e 06/08; GIFs a 100/400 ms e chão calibrado regenerados, mas a leitura temporal contínua ainda não foi certificada."
+  ],
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "pendencias": [
+    "O resíduo do pé de apoio contra chão móvel ainda chega a 15–18 px em alguns meios-ciclos, comparável à incerteza do rastreio; patinação não pode ser descartada.",
+    "Eva 02 parece variar de escala na prancha, embora largura medida da cabeça (190 px) esteja na faixa vizinha 181–192; não há base para redimensionamento uniforme.",
+    "Após baixar o membro em balanço inteiro em 03/07, o joelho parece menos alto em prancha, mas a naturalidade da passagem e a separação perceptiva da sola perto do apoio ainda precisam de validação em movimento contínuo.",
+    "Ensaio de abaixar ainda mais a coxa/joelho foi rejeitado: achatou e alongou a pantalona e aproximou o calçado do apoio; ver edicoes/avaliacao-coxa-baixa.json. Os quadros atuais continuam sem aprovação anatômica."
+  ],
+  "passada_teste_px_por_quadro": 39,
+  "alturas_bbox_inferior_px": {
+    "1": 480,
+    "2": 480,
+    "3": 480,
+    "4": 480,
+    "5": 480,
+    "6": 480,
+    "7": 480,
+    "8": 480
+  }
+}

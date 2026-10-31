@@ -1,0 +1,128 @@
+{
+  "ANALISE-CENARIO.md": {
+    "mtime": 1792800700.214477,
+    "seen": 1793143706.4223807,
+    "ast_hash": "19fc3ef723ff8382310e3fd40ef252fb",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792866960.5577471,
+    "seen": 1793143706.4223862,
+    "ast_hash": "0fc570f5328b6075e4179365c9e59ea7",
+    "semantic_hash": ""
+  },
+  "assets/b-side-sala-30graus.png": {
+    "mtime": 1792780192.7564404,
+    "seen": 1793143706.4223883,
+    "ast_hash": "abf88a491eae28a1926c04438f4a81ea",
+    "semantic_hash": ""
+  },
+  "assets/b-side-sala-camera-baixa.png": {
+    "mtime": 1792781260.3079915,
+    "seen": 1793143706.4223893,
+    "ast_hash": "862314b0df0a79339008fcf921e1d011",
+    "semantic_hash": ""
+  },
+  "assets/b-side-sala-sprites.png": {
+    "mtime": 1792781461.012489,
+    "seen": 1793143706.42239,
+    "ast_hash": "8c0efe02998a310eab16f8448ac955ef",
+    "semantic_hash": ""
+  },
+  "assets/b-side-sala.png": {
+    "mtime": 1792779826.4734073,
+    "seen": 1793143706.4223907,
+    "ast_hash": "dbd43d43cc724f9b762b9a88d08c8bee",
+    "semantic_hash": ""
+  },
+  "assets/capas-vinis.png": {
+    "mtime": 1792785194.122347,
+    "seen": 1793143706.4223914,
+    "ast_hash": "206eda2a709b3bed716819bbf3f507d5",
+    "semantic_hash": ""
+  },
+  "assets/eva-andar-rascunho.png": {
+    "mtime": 1792866960.6417465,
+    "seen": 1793143706.422392,
+    "ast_hash": "1643632e6a7634e8d37e7886869c9e34",
+    "semantic_hash": ""
+  },
+  "assets/icaro-andar-rascunho.png": {
+    "mtime": 1792866960.6407466,
+    "seen": 1793143706.4223926,
+    "ast_hash": "e6db561b389ec019f82088aee064a50b",
+    "semantic_hash": ""
+  },
+  "assets/textura-folhagem.png": {
+    "mtime": 1792783375.6425357,
+    "seen": 1793143706.4223933,
+    "ast_hash": "d113173415bb71d6077cd328f57f4f6e",
+    "semantic_hash": ""
+  },
+  "assets/textura-madeira.png": {
+    "mtime": 1792783375.6385355,
+    "seen": 1793143706.4223938,
+    "ast_hash": "5686a24fdbf2c2a7feda10d927703237",
+    "semantic_hash": ""
+  },
+  "assets/textura-metal.png": {
+    "mtime": 1792785084.7853522,
+    "seen": 1793143706.4223945,
+    "ast_hash": "091a2b5938525ae945c1c5d76312cb43",
+    "semantic_hash": ""
+  },
+  "assets/textura-papel-parede.png": {
+    "mtime": 1792785084.7203503,
+    "seen": 1793143706.4223955,
+    "ast_hash": "443eeb298e8f5d8391de431520200dc5",
+    "semantic_hash": ""
+  },
+  "assets/textura-pedra.png": {
+    "mtime": 1792785084.8213532,
+    "seen": 1793143706.422396,
+    "ast_hash": "1983f546e070d2f4e8c4ce91b171d8a2",
+    "semantic_hash": ""
+  },
+  "assets/textura-piso-pedra-pixel.png": {
+    "mtime": 1792785378.2972424,
+    "seen": 1793143706.4223967,
+    "ast_hash": "0e2c3c84c538db5568181cbcd189eff7",
+    "semantic_hash": ""
+  },
+  "assets/textura-piso.png": {
+    "mtime": 1792783929.0616949,
+    "seen": 1793143706.4223974,
+    "ast_hash": "e6ef2331e8590a2cb2ddebec590eef6f",
+    "semantic_hash": ""
+  },
+  "assets/textura-prateleira.png": {
+    "mtime": 1792783375.6385355,
+    "seen": 1793143706.4223979,
+    "ast_hash": "d19a261984de41e4db7f1ecb090ba729",
+    "semantic_hash": ""
+  },
+  "assets/textura-tapete.png": {
+    "mtime": 1792785084.6423483,
+    "seen": 1793143706.4223986,
+    "ast_hash": "65e5f3f7bc098351e24a0271f007867e",
+    "semantic_hash": ""
+  },
+  "assets/texturas-bside-atlas.png": {
+    "mtime": 1792783257.4712987,
+    "seen": 1793143706.422399,
+    "ast_hash": "6e79cc1c8c68fd0b5a066f5b4da19483",
+    "semantic_hash": ""
+  },
+  "captura-colisoes.png": {
+    "mtime": 1792784012.7609875,
+    "seen": 1793143706.4223998,
+    "ast_hash": "02ace6a21da294de743d42ea073e8644",
+    "semantic_hash": ""
+  },
+  "captura.png": {
+    "mtime": 1792800674.620229,
+    "seen": 1793143706.4224002,
+    "ast_hash": "0ba2a4252f66ff07cf1565acfbde0774",
+    "semantic_hash": ""
+  }
+}

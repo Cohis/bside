@@ -1,0 +1,10 @@
+{
+  "guia_local": {
+    "cabeca_topo": 54,
+    "quadril_y": 311,
+    "eixo": 192,
+    "apoio_esquerdo_sola_y": 460,
+    "balanco_direito_sola_y": 473
+  },
+  "observacao": "Correção localizada após diagnóstico de recuo excessivo. Candidato não aprovado automaticamente."
+}

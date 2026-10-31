@@ -1,0 +1,11 @@
+{
+  "prompt": "Edite somente esta pose parada de Ícaro em diagonal de costas voltado à esquerda; mova pulseira do pulso direito da tela para o esquerdo, preserve pose, identidade, fundo transparente.",
+  "referencia": [
+    "sprites/bases/icaro/noroeste.png antes da correção"
+  ],
+  "resultado_raw": "sprites/registros/geracoes/base-icaro-noroeste-pulseira-raw.png",
+  "resultado_normalizado": "sprites/bases/icaro/noroeste.png",
+  "base_anterior": "sprites/registros/geracoes/base-icaro-noroeste-pulseira-anterior.png",
+  "aprovado": true,
+  "revisao": "Corpo inteiro, costas à esquerda, ambos pés apoiados, pulseira somente no pulso esquerdo da tela, RGBA e margens conferidos."
+}

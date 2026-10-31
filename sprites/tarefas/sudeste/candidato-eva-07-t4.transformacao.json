@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudeste/raw/eva-07-t4.png",
+  "caixa_original": [
+    161,
+    157,
+    800,
+    1366
+  ],
+  "escala_uniforme": 0.3507030603804797,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    80,
+    56
+  ],
+  "eixo_original": 480.5,
+  "ancora": [
+    192,
+    480
+  ]
+}

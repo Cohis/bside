@@ -1,0 +1,38 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "anterior": "edicoes/pre-sola-baixa/icaro/03.png",
+    "candidato": "edicoes/novos-candidatos/icaro-03-sola-baixa.png",
+    "sha_antes": "fc8c189eaa321ed5f3cecf200b3c780c9df6a9668e14cbfbbca01820c99471a8",
+    "sha_depois": "758723f589d0585e65af10e0fb680b7c25489055440371e85c9d4215422b633f",
+    "metodo": "Remapeamento vertical local nearest na perna de balanço, máximo 15 px Ícaro / 11 px Eva na sola; zero no quadril e chão; pé de apoio intacto."
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "anterior": "edicoes/pre-sola-baixa/icaro/07.png",
+    "candidato": "edicoes/novos-candidatos/icaro-07-sola-baixa.png",
+    "sha_antes": "3647b382b19444ef899026cda24fd66cb7225f99dce5e33aae62156f94841ee0",
+    "sha_depois": "ed2a22e8e591dc5093d4a71638c839440e66f47e9a50db33a9f62bb4362c155a",
+    "metodo": "Remapeamento vertical local nearest na perna de balanço, máximo 15 px Ícaro / 11 px Eva na sola; zero no quadril e chão; pé de apoio intacto."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "anterior": "edicoes/pre-sola-baixa/eva/03.png",
+    "candidato": "edicoes/novos-candidatos/eva-03-sola-baixa.png",
+    "sha_antes": "6bd50d978d96d95abf347b62de6e79900ce211ec0e8fd8df124198688201e543",
+    "sha_depois": "b2ceda0802fc554df19b1a7371b5b230cfbb1035447a66b169ce9aa077fa9958",
+    "metodo": "Remapeamento vertical local nearest na perna de balanço, máximo 15 px Ícaro / 11 px Eva na sola; zero no quadril e chão; pé de apoio intacto."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 7,
+    "anterior": "edicoes/pre-sola-baixa/eva/07.png",
+    "candidato": "edicoes/novos-candidatos/eva-07-sola-baixa.png",
+    "sha_antes": "7cf4d5aeaab5f726f1e9a0e3959768c79c65ac5c5b2f625819618357b7171da6",
+    "sha_depois": "d8028d07d825325a7771022474f89018aaf7c994f262f0d3bf35253065cd35a9",
+    "metodo": "Remapeamento vertical local nearest na perna de balanço, máximo 15 px Ícaro / 11 px Eva na sola; zero no quadril e chão; pé de apoio intacto."
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/icaro-07.png",
+  "caixa_original": [
+    346,
+    168,
+    759,
+    1338
+  ],
+  "escala_uniforme": 0.36633663366336633,
+  "posicao": [
+    117,
+    55
+  ],
+  "eixo_original": 550,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    170,
+    574,
+    550
+  ],
+  "topo_alvo": 56,
+  "edicao_controlada": {
+    "tipo": "recomposicao_local_da_perna_em_passagem",
+    "fonte_original": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/correcoes/icaro-07-antes.png",
+    "fonte_dos_pixels": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/icaro/03.png",
+    "interpolacao": "vizinho mais próximo; sem espelho",
+    "resultado": "pé de balanço próximo à perna de apoio e suspenso; aprovação do ciclo depende de continuidade 06→07→08"
+  }
+}

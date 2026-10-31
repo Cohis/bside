@@ -1,0 +1,1072 @@
+{
+  "icaro": {
+    "metodo": "Bordas dos calçados medidas; juntas ocultas estimadas. Projeção sul y=local*.35. Não é captura biomecânica.",
+    "quadros": [
+      {
+        "fase": 1,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              423
+            ],
+            "ponta_pe": [
+              165,
+              450
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              452
+            ],
+            "ponta_pe": [
+              213,
+              479
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 2,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              319
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              401
+            ],
+            "ponta_pe": [
+              165,
+              428
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              319
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              445
+            ],
+            "ponta_pe": [
+              213,
+              472
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 3,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              399
+            ],
+            "ponta_pe": [
+              165,
+              426
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              439
+            ],
+            "ponta_pe": [
+              213,
+              466
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 4,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              313
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              447
+            ],
+            "ponta_pe": [
+              165,
+              474
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              313
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              431
+            ],
+            "ponta_pe": [
+              213,
+              458
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 5,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              452
+            ],
+            "ponta_pe": [
+              165,
+              479
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              423
+            ],
+            "ponta_pe": [
+              213,
+              450
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 6,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              319
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              446
+            ],
+            "ponta_pe": [
+              165,
+              473
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              319
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              414
+            ],
+            "ponta_pe": [
+              213,
+              441
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 7,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              439
+            ],
+            "ponta_pe": [
+              165,
+              466
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              412
+            ],
+            "ponta_pe": [
+              213,
+              439
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 8,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              313
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              431
+            ],
+            "ponta_pe": [
+              165,
+              458
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              313
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              447
+            ],
+            "ponta_pe": [
+              213,
+              474
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      }
+    ],
+    "intervalos_apoio": [
+      {
+        "de": 1,
+        "para": 2,
+        "apoio": "esquerda",
+        "y_atual": 479,
+        "y_seguinte": 472,
+        "recuo_px_projetados": 7,
+        "recuo_local_antes_projecao": 20.0
+      },
+      {
+        "de": 2,
+        "para": 3,
+        "apoio": "esquerda",
+        "y_atual": 472,
+        "y_seguinte": 466,
+        "recuo_px_projetados": 6,
+        "recuo_local_antes_projecao": 17.14
+      },
+      {
+        "de": 3,
+        "para": 4,
+        "apoio": "esquerda",
+        "y_atual": 466,
+        "y_seguinte": 458,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 4,
+        "para": 5,
+        "apoio": "esquerda",
+        "y_atual": 458,
+        "y_seguinte": 450,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 5,
+        "para": 6,
+        "apoio": "direita",
+        "y_atual": 479,
+        "y_seguinte": 473,
+        "recuo_px_projetados": 6,
+        "recuo_local_antes_projecao": 17.14
+      },
+      {
+        "de": 6,
+        "para": 7,
+        "apoio": "direita",
+        "y_atual": 473,
+        "y_seguinte": 466,
+        "recuo_px_projetados": 7,
+        "recuo_local_antes_projecao": 20.0
+      },
+      {
+        "de": 7,
+        "para": 8,
+        "apoio": "direita",
+        "y_atual": 466,
+        "y_seguinte": 458,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 8,
+        "para": 1,
+        "apoio": "direita",
+        "y_atual": 458,
+        "y_seguinte": 450,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      }
+    ]
+  },
+  "eva": {
+    "metodo": "Bordas dos calçados medidas; juntas ocultas estimadas. Projeção sul y=local*.35. Não é captura biomecânica.",
+    "quadros": [
+      {
+        "fase": 1,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              423
+            ],
+            "ponta_pe": [
+              165,
+              450
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              452
+            ],
+            "ponta_pe": [
+              213,
+              479
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 2,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              319
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              407
+            ],
+            "ponta_pe": [
+              165,
+              434
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              319
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              445
+            ],
+            "ponta_pe": [
+              213,
+              472
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 3,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              384
+            ],
+            "ponta_pe": [
+              165,
+              411
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              439
+            ],
+            "ponta_pe": [
+              213,
+              466
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 4,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              313
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              447
+            ],
+            "ponta_pe": [
+              165,
+              474
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              313
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              431
+            ],
+            "ponta_pe": [
+              213,
+              458
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 5,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              452
+            ],
+            "ponta_pe": [
+              165,
+              479
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              423
+            ],
+            "ponta_pe": [
+              213,
+              450
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 6,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              319
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              446
+            ],
+            "ponta_pe": [
+              165,
+              473
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              319
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              406
+            ],
+            "ponta_pe": [
+              213,
+              433
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 7,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              315
+            ],
+            "joelho": [
+              165,
+              397
+            ],
+            "tornozelo": [
+              165,
+              439
+            ],
+            "ponta_pe": [
+              165,
+              466
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              315
+            ],
+            "joelho": [
+              213,
+              380
+            ],
+            "tornozelo": [
+              213,
+              386
+            ],
+            "ponta_pe": [
+              213,
+              413
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      },
+      {
+        "fase": 8,
+        "juntas": {
+          "direita": {
+            "quadril": [
+              174,
+              313
+            ],
+            "joelho": [
+              165,
+              380
+            ],
+            "tornozelo": [
+              165,
+              431
+            ],
+            "ponta_pe": [
+              165,
+              458
+            ],
+            "contato_chao": true,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          },
+          "esquerda": {
+            "quadril": [
+              210,
+              313
+            ],
+            "joelho": [
+              213,
+              397
+            ],
+            "tornozelo": [
+              213,
+              447
+            ],
+            "ponta_pe": [
+              213,
+              474
+            ],
+            "contato_chao": false,
+            "oclusao": "Quadril, joelho e parte do tornozelo ocultos pela roupa; dois calçados visíveis.",
+            "metodo": {
+              "ponta_pe": "Borda inferior alpha na faixa central estreita do calçado; aproximação do ponto de apoio com incerteza ±3px.",
+              "tornozelo": "Estimativa27px acima da borda do calçado; não é medição anatômica.",
+              "joelho": "Estimativa visual sob calça larga.",
+              "quadril": "Estimativa visual sob roupa."
+            }
+          }
+        }
+      }
+    ],
+    "intervalos_apoio": [
+      {
+        "de": 1,
+        "para": 2,
+        "apoio": "esquerda",
+        "y_atual": 479,
+        "y_seguinte": 472,
+        "recuo_px_projetados": 7,
+        "recuo_local_antes_projecao": 20.0
+      },
+      {
+        "de": 2,
+        "para": 3,
+        "apoio": "esquerda",
+        "y_atual": 472,
+        "y_seguinte": 466,
+        "recuo_px_projetados": 6,
+        "recuo_local_antes_projecao": 17.14
+      },
+      {
+        "de": 3,
+        "para": 4,
+        "apoio": "esquerda",
+        "y_atual": 466,
+        "y_seguinte": 458,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 4,
+        "para": 5,
+        "apoio": "esquerda",
+        "y_atual": 458,
+        "y_seguinte": 450,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 5,
+        "para": 6,
+        "apoio": "direita",
+        "y_atual": 479,
+        "y_seguinte": 473,
+        "recuo_px_projetados": 6,
+        "recuo_local_antes_projecao": 17.14
+      },
+      {
+        "de": 6,
+        "para": 7,
+        "apoio": "direita",
+        "y_atual": 473,
+        "y_seguinte": 466,
+        "recuo_px_projetados": 7,
+        "recuo_local_antes_projecao": 20.0
+      },
+      {
+        "de": 7,
+        "para": 8,
+        "apoio": "direita",
+        "y_atual": 466,
+        "y_seguinte": 458,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      },
+      {
+        "de": 8,
+        "para": 1,
+        "apoio": "direita",
+        "y_atual": 458,
+        "y_seguinte": 450,
+        "recuo_px_projetados": 8,
+        "recuo_local_antes_projecao": 22.86
+      }
+    ]
+  }
+}

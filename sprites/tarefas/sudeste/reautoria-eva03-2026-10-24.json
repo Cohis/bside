@@ -1,0 +1,24 @@
+{
+  "personagem": "eva",
+  "direcao": "sudeste",
+  "fase": 3,
+  "ferramenta": "image_gen",
+  "fundo_transparente": true,
+  "resultado": "duas candidatas rejeitadas; célula ativa preservada",
+  "tentativas": [
+    {
+      "candidata": "candidato-eva-03-t4.png",
+      "raw": "raw/eva-03-t4.png",
+      "referencias": ["../../bases/eva/sudeste.png", "../../guias/sudeste/03.png", "eva/02.png", "eva/03.png", "eva/04.png"],
+      "instrucao": "Preservar base, identidade, cabeça, tronco, braços e escala. Apoio esquerdo plantado; perna direita em passagem suspensa perto do eixo, distinta dos quadros 02 e 04. Pixel art, alpha real, sem cenário, sombra, membros extras ou suavização.",
+      "rejeicao": "O apoio esquerdo mudou para a posição dianteira e quebrou o recuo 01→02→03→04."
+    },
+    {
+      "candidata": "candidato-eva-03-t5.png",
+      "raw": "raw/eva-03-t5.png",
+      "referencias": ["candidato-eva-03-t4.png", "../../guias/sudeste/03.png"],
+      "instrucao": "Editar somente a perna direita suspensa da candidata t4, aproximando joelho e calçado 20–25 px do tornozelo de apoio; manter cabeça, tronco, braços, pé plantado, câmera, pixels e alpha.",
+      "rejeicao": "Manteve a troca visual do apoio esquerdo e ainda causaria salto anatômico no ciclo."
+    }
+  ]
+}

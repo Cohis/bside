@@ -1,0 +1,16 @@
+{
+  "personagem": "icaro",
+  "direcao": "leste",
+  "fase": 7,
+  "metodo": "edicao_controlada_composicao_sem_espelhar",
+  "origem": [
+    "sprites/tarefas/leste/registros/edicoes/icaro-07-antes.png",
+    "sprites/tarefas/leste/icaro/03.png"
+  ],
+  "descricao": "Perna em balanco gerada atras do apoio foi retirada; perna flexionada do quadro 03 do mesmo personagem transplantada rigidamente atras da perna de apoio, sem escala nem interpolacao. Ilhas soltas ate 100 pixels eliminadas.",
+  "script": "sprites/tarefas/leste/candidatos/ajustar_07.py",
+  "sha256_antes": "2725ac36aefdceae20fb4f05ba32da8661ee70c04ba30bd157493ddac101dc5a",
+  "sha256_depois": "8495c114ee13aa60599013a08ba8d416bd4670a648210b8692b5fbe379d2cdf2",
+  "alfa_real": true,
+  "estado": "substituido_apos_inspecao_060708; ciclo_inteiro_ainda_em_revisao"
+}

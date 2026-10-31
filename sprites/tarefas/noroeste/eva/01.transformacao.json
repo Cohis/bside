@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/noroeste/raw/eva-01-t3.png",
+  "caixa_original": [
+    274,
+    163,
+    889,
+    1354
+  ],
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    97,
+    56
+  ],
+  "eixo_original": 545.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

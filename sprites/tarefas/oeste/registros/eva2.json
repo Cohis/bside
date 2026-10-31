@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente eva, direção OESTE perfil olhando esquerda. Fase 02: RECEPÇÃO ESQUERDA: perna esquerda próxima à câmera, com bolso, suporta peso à frente à esquerda, JOELHO flexiona discretamente para absorver. Pé de apoio inteiro no chão 20px à frente do quadril, perna direita distante atrás começando a sair do chão. Braço esquerdo próximo recua à direita. Quadril desce 5px.. Primeira imagem base fixa define identidade/escala/paleta/câmera; segunda aparência; terceira guia anatômico. Medidas em referência célula512px. Preserve cabeça, comprimento de membros, roupa ampla. Rabo de cavalo longo, mangas brancas longas, calça cinza. Movimento casual baixo, nunca marcha militar, corrida ou salto. Braços em contrabalanço pequeno. Corpo inteiro, fundo alpha transparente, sem chão, sombra, halo, texto, suavização ou cenário.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/eva/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/02.png"
+  ]
+}

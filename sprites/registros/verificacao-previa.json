@@ -1,0 +1,27 @@
+{
+  "imagens_carregadas": 144,
+  "quadros_loop": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "verificacoes": [
+    "carregamento PNG",
+    "parado fora do loop",
+    "avanço 0→1",
+    "retorno 1→8",
+    "pausa",
+    "ciclo com 8 fases",
+    "velocidade lenta",
+    "troca de personagem/direção",
+    "deslocamento no chão",
+    "rastreamento estimado do sul",
+    "pendências visíveis"
+  ],
+  "erros_javascript": []
+}

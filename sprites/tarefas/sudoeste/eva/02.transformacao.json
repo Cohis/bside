@@ -1,0 +1,11 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/eva-02-imagemgerada-normalizada.png",
+  "original_preservado": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/originais/eva/02.png",
+  "interpolacao": "vizinho mais próximo",
+  "ancora": [
+    192,
+    480
+  ],
+  "metodo": "edição guiada, normalizada na célula por vizinho mais próximo",
+  "estado": "candidato selecionado para revisão; ciclo não aprovado"
+}

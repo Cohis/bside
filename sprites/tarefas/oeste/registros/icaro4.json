@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente icaro, direção OESTE perfil olhando esquerda. Fase 04: AVANÇO DIREITO: esquerda próxima apoia atrás à direita da tela (20px atrás do quadril), direita distante avança 20px à esquerda do quadril com joelho moderadamente flexionado e calcanhar 15px acima do chão preparando contato. Braço esquerdo próximo avança à esquerda. Quadril sobe só 3px.. Primeira imagem base fixa define identidade/escala/paleta/câmera; segunda aparência; terceira guia anatômico. Medidas em referência célula512px. Preserve cabeça, comprimento de membros, roupa ampla. Pulseira somente esquerda próxima à câmera. Movimento casual baixo, nunca marcha militar, corrida ou salto. Braços em contrabalanço pequeno. Corpo inteiro, fundo alpha transparente, sem chão, sombra, halo, texto, suavização ou cenário.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/04.png"
+  ]
+}

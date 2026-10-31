@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case identity-preserve. Edit image1 neutral Eva sprite into RIGHT FOOT FORWARD walking contact, exactly frontal camera. VERY IMPORTANT: the SHOE ON THE LEFT SIDE OF THIS IMAGE must be the LOWER SHOE, closest to viewer, extended below the other shoe. The SHOE ON THE RIGHT SIDE OF THIS IMAGE must be HIGHER, farther from viewer, rear foot on toe. Image2 pose guide blue=anatomical right=screen left, orange=anatomical left=screen right. This is a single walking contact pose, NOT the neutral pose. Her LEFT arm, the arm ON RIGHT SIDE OF IMAGE, swings FORWARD with bent elbow and hand near waist; right arm ON LEFT recedes. Lock face, hair, eyes, proportions, clothes, pixelated style and frontal camera of image1. No leg opening sideways, no perspective change, no extra limbs, no mirror. Whole character on real transparent alpha background, no floor/shadow/glow/text. Output ONE pose only.",
+  "referenced_image_paths": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/sul.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/sul/05.png"
+  ]
+}

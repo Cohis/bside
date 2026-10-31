@@ -1,0 +1,22 @@
+{
+  "icaro": {
+    "1": "icaro-01-t3.png",
+    "2": "icaro-02-t1.png",
+    "3": "icaro-03-t1.png",
+    "4": "icaro-04-t1.png",
+    "5": "icaro-05-t1.png",
+    "6": "icaro-06-t1.png",
+    "7": "icaro-07-t1.png",
+    "8": "icaro-08-t1.png"
+  },
+  "eva": {
+    "1": "eva-01-t3.png",
+    "2": "eva-02-t1.png",
+    "3": "eva-03-t1.png",
+    "4": "eva-04-t1.png",
+    "5": "eva-05-t1.png",
+    "6": "eva-06-t1.png",
+    "7": "eva-07-t1.png",
+    "8": "eva-08-t1.png"
+  }
+}

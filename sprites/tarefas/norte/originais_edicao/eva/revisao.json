@@ -1,0 +1,55 @@
+{
+  "aprovado": false,
+  "estado": "ciclo produzido, reprovado na revisão de continuidade",
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "Oito imagens distintas produzidas com image_gen, uma por chamada.",
+    "Identidade e câmera norte preservadas; sem espelhamento.",
+    "Transparência real e margens verificadas em prancha clara.",
+    "Escala uniforme fixa; somente recorte/enquadramento, sem deformação de membros.",
+    "Revisão quadro a quadro realizada. Reprodução temporal e chão marcado devem ser revisados pelo coordenador; não registrados como aprovados."
+  ],
+  "validacao_tecnica_aprovada": true,
+  "passada_teste_px_por_quadro": null,
+  "passada_teste_origem": "Ícaro: média (29+8)/6/0,35=17,62px locais/quadro, mas metades assimétricas. Eva: nenhuma velocidade constante válida; recuo observado inverte sentido.",
+  "apoio_observado_px": {
+    "esquerda_01_04": [
+      471,
+      486,
+      479,
+      476
+    ],
+    "direita_05_08": [
+      480,
+      502,
+      494,
+      476
+    ]
+  },
+  "pendencias": [
+    "A velocidade aparente de recuo do pé de apoio é irregular; não certificada ausência de patinação.",
+    "Recepções02/06 visualmente próximas das passagens03/07; flexão/queda de quadril insuficientemente distintas.",
+    "Contato01 tem os pés quase no mesmo plano em vez de separação de profundidade.",
+    "As pernas/projeção vertical variam entre metades do ciclo; apoio06→07 avança 8px em vez de recuar.",
+    "Terceira tentativa01 corrigiu contrabalanço mas exagerou encurtamento projetado; alternativa salva raw eva-01-correcao-final.png, não adotada."
+  ],
+  "rastreamento": "rastreamento.json",
+  "tentativas": {
+    "contato01": 3,
+    "contato05": 2,
+    "demais": 1
+  }
+}

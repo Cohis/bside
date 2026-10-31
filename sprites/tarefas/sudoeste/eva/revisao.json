@@ -1,0 +1,39 @@
+{
+  "aprovado": false,
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "observacoes": [
+    "16 PNGs RGBA384×512 verificados: alpha real, margens válidas e oito fases distintas por personagem.",
+    "Pranchas clara/escura e GIFs100/400ms atualizados após seleção de quatro correções locais; GIFs têm oito quadros e durações corretas.",
+    "Originais dos quatro quadros substituídos preservados em correcoes/originais, com transformações anteriores.",
+    "Pulseira de Ícaro permanece no pulso esquerdo; Eva sem pulseira. Imagens não foram espelhadas.",
+    "Reprodução contínua dos GIFs em navegador não verificada; abertura local bloqueada por política de URL.",
+    "Teste estático de chão projetado em teste-chao.json; o rastreamento de juntas ocultas é visual e aproximado.",
+    "Teste de chão atualizado para comparar o passo do guia e a velocidade efetiva da prévia; ponto de apoio 07→08 tem identidade anatômica incerta.",
+    "Candidato 08 ensaiado em GIFs100/400ms estruturalmente válidos e prancha com piso; reprodução temporal real não realizada. Evidências e hashes em correcoes/teste-candidato3.json."
+  ],
+  "pendencias": [
+    "Eva03: composição baixou o pé de balanço cerca de23px; diferença residual de elevação em relação07 é aproximadamente14px e requer revisão temporal.",
+    "Recepção02 tem flexão melhor;06 permaneceu original porque candidato alterou escala/chão. Proporção da perna02 e extensão08 ainda variam.",
+    "Na prévia atual, apoio 03→04 recua 39 px em x versus cerca de 41 px esperados; manter 04. O apoio aparente 07→08 diverge do guia, mas o rastreamento pode trocar a identidade das solas; duas tentativas localizadas de 08 rejeitadas por não resolverem a postura.",
+    "Teste de chão permanece reprovado: a variação das amostras em x/y e a incerteza de apoio exigem revisão temporal real e nova construção anatômica da passagem 07→08.",
+    "Terceira reautoria 08 rejeitada após prancha 07→08→01 com chão e GIFs de ensaio: ambas as solas continuam baixas/separadas, apoio direito não é inequívoco e balanço esquerdo não se eleva. Limite de três tentativas atingido; ativos preservados."
+  ],
+  "passada_teste_px_por_quadro": 57.75,
+  "calibracao_aprovada": false,
+  "validacao_temporal_realizada": false,
+  "teste_chao": "teste-chao.json",
+  "limite_tentativas_08": 3
+}

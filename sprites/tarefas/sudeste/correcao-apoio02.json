@@ -1,0 +1,22 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 2,
+    "dx_pe_apoio": -23,
+    "anterior": "originais-pre-apoio02/icaro/02.png",
+    "candidato": "candidatos-apoio/icaro-02-apoio.png",
+    "sha_antes": "8eef5d96d90c67688151cc90ed0fcb6d3e66cdcc62fe7bb793f5033e40d74063",
+    "sha_depois": "404ebedd7bf33338a3cbe86f3443003f56c5bbd9f2f37be22c75c3964ac29eef",
+    "metodo": "Translação progressiva somente dos pixels da perna anatômica esquerda de apoio, 0 no quadril até deslocamento dx no calçado; paleta/contorno nearest preservados."
+  },
+  {
+    "personagem": "eva",
+    "fase": 2,
+    "dx_pe_apoio": -24,
+    "anterior": "originais-pre-apoio02/eva/02.png",
+    "candidato": "candidatos-apoio/eva-02-apoio.png",
+    "sha_antes": "5354561771b9ef21d9d7af2a3c50ab2f26e410edebb2d9ab9ab7f13fa2ea6386",
+    "sha_depois": "190571a46ad7ea053d5805c417042ec7fadb5848aac28db9d73b14da7eadeb94",
+    "metodo": "Translação progressiva somente dos pixels da perna anatômica esquerda de apoio, 0 no quadril até deslocamento dx no calçado; paleta/contorno nearest preservados."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/icaro-05.png",
+  "caixa_original": [
+    339,
+    169,
+    844,
+    1336
+  ],
+  "escala_uniforme": 0.3654320987654321,
+  "posicao": [
+    113,
+    56
+  ],
+  "eixo_original": 555,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    170,
+    575,
+    555
+  ],
+  "topo_alvo": 56
+}

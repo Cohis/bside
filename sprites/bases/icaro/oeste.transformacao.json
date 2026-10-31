@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-icaro-oeste-selecionada.png",
+  "caixa_original": [
+    312,
+    155,
+    760,
+    1341
+  ],
+  "escala_uniforme": 0.357504215851602,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    113,
+    56
+  ],
+  "eixo_original": 532.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

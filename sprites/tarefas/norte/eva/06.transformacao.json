@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/norte/raws/eva-06-selecionada.png",
+  "caixa_original": [
+    344,
+    128,
+    823,
+    1395
+  ],
+  "escala_uniforme": 0.35,
+  "interpolacao": "vizinho mais próximo",
+  "posicao": [
+    116,
+    61
+  ],
+  "eixo_original": 560,
+  "ancora": [
+    192,
+    480
+  ],
+  "criterio_alinhamento": "Topo da cabeça e eixo corporal; sola não alinhada automaticamente. Bob 0,+5,0,-4. Escala fixa no ciclo."
+}

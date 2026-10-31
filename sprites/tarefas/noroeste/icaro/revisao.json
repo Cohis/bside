@@ -1,0 +1,41 @@
+{
+  "aprovado": false,
+  "observacoes": [
+    "16 células da direção exportadas, oito por personagem, 384×512 RGBA.",
+    "Inspeção visual estática em fundos claro/escuro realizada; não há fundo quadriculado pintado, corte ou halo de chão evidente.",
+    "01/03/05/07 inspecionados antes de fases restantes. Nenhuma fase defeituosa foi usada para derivar outra.",
+    "Escala uniforme0,35 por vizinho mais próximo e eixo da cintura, sem alterar membros; topo varia56/60/54 conforme fase.",
+    "23/10/2026: pulseira recomposta em 01 e 08 no pulso esquerdo anatômico com pixels da fase 05; pranchas claras/escuras verificadas.",
+    "24/10/2026: pranchas com chão marcado inspecionadas; 04→05/08→01 e apoio seguem reprovados. GIFs de 100/400 ms e hashes registrados em registros/diagnostico-2026-10-24.json; nenhum PNG de produção alterado nesta retomada."
+  ],
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "04→05",
+    "08→01"
+  ],
+  "tipo_revisao_transicoes": "comparação estática, ambas reprovadas",
+  "pendencias": [
+    "01/08: lateral anatômica da pulseira corrigida, mas ambos os braços ainda avançam no mesmo sentido da perna próxima; contrabalanço reprovado.",
+    "01: braço próximo avança junto com perna próxima; três tentativas, requer novo diagnóstico antes de outra geração.",
+    "03/07: pé em balanço permanece atrás; passagem sob quadril não alcançada.",
+    "06: perna próxima continua à frente, não sustenta com a direita conforme fase requerida.",
+    "08: braço próximo continua avançado junto da perna próxima.",
+    "Apoio e comprimento aparente variam, particularmente04→05 e07→08.",
+    "Escala fixa pelo topo/cabeça preserva pixels mas revela variação residual de volume e altura gerada; verificar em comparação com base.",
+    "Loop contínuo e chão marcado ainda não aprovados; GIFs são recursos de inspeção, não prova de aprovação.",
+    "Reconstruções locais de 03/07 e 06 foram rejeitadas: geraram sobreposição, pé oculto ou corte de cintura/contorno. PNGs originais dessas fases preservados."
+  ],
+  "passada_teste_px_por_quadro": null,
+  "calibracao_aprovada": false,
+  "revisao_loop_continuo": false,
+  "revisao_chao_marcado": "reprovada em prancha; reprodução temporal contínua ainda não aprovada"
+}

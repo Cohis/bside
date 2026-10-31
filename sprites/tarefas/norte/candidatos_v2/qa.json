@@ -1,0 +1,256 @@
+{
+  "estado": "candidatos não publicados",
+  "direcao": "norte",
+  "personagens": {
+    "icaro": {
+      "quadros": [
+        {
+          "quadro": 1,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 467,
+          "ponta_balanco_y": 496,
+          "caixa": [
+            109,
+            56,
+            265,
+            497
+          ],
+          "sha256": "36e72f00bd10618eecd8d14d0ea3b63d7026ec2d2ba94ef6d76c61878bfe5a0d"
+        },
+        {
+          "quadro": 2,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 473,
+          "ponta_balanco_y": 459,
+          "caixa": [
+            116,
+            61,
+            264,
+            477
+          ],
+          "sha256": "1c22cd99115d540d54cee2f5171cd5d1958201b8e6329847b34b180b933ed6a2"
+        },
+        {
+          "quadro": 3,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 479,
+          "ponta_balanco_y": 450,
+          "caixa": [
+            116,
+            56,
+            265,
+            481
+          ],
+          "sha256": "546b6501b64decf6118e72d2a78b349d25de88d71ac64c05f04c554fc123d806"
+        },
+        {
+          "quadro": 4,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 485,
+          "ponta_balanco_y": 455,
+          "caixa": [
+            118,
+            52,
+            272,
+            486
+          ],
+          "sha256": "66b53861ee7c27d3ff1b19d06f9d047c8ca44f5e7c751a200b846fbb871b10b1"
+        },
+        {
+          "quadro": 5,
+          "apoio": "direita",
+          "ponta_apoio_y": 467,
+          "ponta_balanco_y": 500,
+          "caixa": [
+            116,
+            56,
+            273,
+            501
+          ],
+          "sha256": "57b2924f3e37622e5a68241fc3620bebb5d7ebf8bd56055218e359378b68647d"
+        },
+        {
+          "quadro": 6,
+          "apoio": "direita",
+          "ponta_apoio_y": 473,
+          "ponta_balanco_y": 456,
+          "caixa": [
+            116,
+            61,
+            272,
+            478
+          ],
+          "sha256": "75950da559a16d33e5a62a81991e1501518ee0b70021e7141d4008bac60189bf"
+        },
+        {
+          "quadro": 7,
+          "apoio": "direita",
+          "ponta_apoio_y": 479,
+          "ponta_balanco_y": 445,
+          "caixa": [
+            117,
+            56,
+            270,
+            481
+          ],
+          "sha256": "4b913d772c8182488016b5210a9914bc2ce07f8cba0d57a8499b5a401df0d9c6"
+        },
+        {
+          "quadro": 8,
+          "apoio": "direita",
+          "ponta_apoio_y": 485,
+          "ponta_balanco_y": 455,
+          "caixa": [
+            115,
+            52,
+            263,
+            486
+          ],
+          "sha256": "1092240481afee5db86a2549684a9db9bd56fe50ebe3de9bd2f02427b01ef5e1"
+        }
+      ],
+      "apoios_esquerda": [
+        467,
+        473,
+        479,
+        485
+      ],
+      "apoios_direita": [
+        467,
+        473,
+        479,
+        485
+      ],
+      "paleta_somente_original": true,
+      "previews": [
+        "icaro-chao-100ms.gif",
+        "icaro-chao-400ms.gif"
+      ]
+    },
+    "eva": {
+      "quadros": [
+        {
+          "quadro": 1,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 475,
+          "ponta_balanco_y": 489,
+          "caixa": [
+            109,
+            56,
+            256,
+            490
+          ],
+          "sha256": "e0c13b57919fd6f94349ce827d125c3b29604b2f42d02a9486618aa487cb393f"
+        },
+        {
+          "quadro": 2,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 480,
+          "ponta_balanco_y": 457,
+          "caixa": [
+            109,
+            61,
+            265,
+            483
+          ],
+          "sha256": "fb87c9509004a87c4af1392673d13ed67aa58f465512d200210ea14ba0fbcded"
+        },
+        {
+          "quadro": 3,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 486,
+          "ponta_balanco_y": 438,
+          "caixa": [
+            108,
+            56,
+            266,
+            487
+          ],
+          "sha256": "698c75d04bc0655890971bdb9a49c995ad246db3d3a9498665d5110bd7748875"
+        },
+        {
+          "quadro": 4,
+          "apoio": "esquerda",
+          "ponta_apoio_y": 492,
+          "ponta_balanco_y": 455,
+          "caixa": [
+            123,
+            52,
+            275,
+            493
+          ],
+          "sha256": "50cc748f9b3af66d5d4675b4fd0d978bf264778e58a638427cb759ffa16619a0"
+        },
+        {
+          "quadro": 5,
+          "apoio": "direita",
+          "ponta_apoio_y": 474,
+          "ponta_balanco_y": 489,
+          "caixa": [
+            118,
+            56,
+            277,
+            490
+          ],
+          "sha256": "c13cf00acbcb63c2b4110fd2614fb3b9ed38086ff3734b031e87ab3325f680c2"
+        },
+        {
+          "quadro": 6,
+          "apoio": "direita",
+          "ponta_apoio_y": 480,
+          "ponta_balanco_y": 469,
+          "caixa": [
+            117,
+            61,
+            283,
+            484
+          ],
+          "sha256": "96b918f12bdd82c0e05676b0074ce545b6907223bafa3a715c280a80dfddcdfd"
+        },
+        {
+          "quadro": 7,
+          "apoio": "direita",
+          "ponta_apoio_y": 486,
+          "ponta_balanco_y": 446,
+          "caixa": [
+            117,
+            56,
+            280,
+            489
+          ],
+          "sha256": "cac1e09c9708f15c853e061d7b90d77a7e75de3e30fbe5fcd96beba0c7ba1dc0"
+        },
+        {
+          "quadro": 8,
+          "apoio": "direita",
+          "ponta_apoio_y": 492,
+          "ponta_balanco_y": 456,
+          "caixa": [
+            110,
+            52,
+            256,
+            493
+          ],
+          "sha256": "d450c1324838d0a15ed01d4a3a0eef5a64f0c0b16591f4a1c487f0eb95943379"
+        }
+      ],
+      "apoios_esquerda": [
+        475,
+        480,
+        486,
+        492
+      ],
+      "apoios_direita": [
+        474,
+        480,
+        486,
+        492
+      ],
+      "paleta_somente_original": true,
+      "previews": [
+        "eva-chao-100ms.gif",
+        "eva-chao-400ms.gif"
+      ]
+    }
+  }
+}

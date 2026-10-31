@@ -1,0 +1,23 @@
+{
+  "data": "2026-10-24",
+  "metodo": "image_gen, uma célula transparente por chamada, terceira tentativa do defeito 08 por personagem",
+  "base_do_ensaio": "ativos 07/08, bases congeladas e guia 08; nenhum PNG ativo substituído",
+  "icaro": {
+    "referencias": ["sprites/bases/icaro/sudoeste.png", "sprites/guias/sudoeste/08.png", "sprites/tarefas/sudoeste/icaro/07.png", "sprites/tarefas/sudoeste/icaro/08.png"],
+    "prompt_integral": "Produce ONE transparent pixel-art sprite: Ícaro southwest walking cycle, phase 08. Reference 1 fixes character identity, palette, silhouette, scale and camera. Reference 2 is a schematic of PHASE 08 only: orange = anatomical left leg swinging forward, blue = anatomical right leg supporting. Reference 3 is approved adjacent phase 07 and defines the supporting RIGHT leg and its shoe, which must continue from its screen-left floor contact around x153,y480 to the next floor contact around x190-200,y480 without a jump to the screen-right shoe. Reference 4 is the defective current 08 for head/torso/accessory continuity; REDRAW BOTH COMPLETE LEGS from hips to shoes rather than repositioning a shoe fragment. Right leg is planted near center, knee naturally bent, shoe fully connected; left leg swings through center with toe slightly raised near x200-215,y450 and does not touch ground. The two shoes are close but distinct. Keep head, hair, face, tank, shoulders, arms and yellow watch as near reference 4 as possible. No body shift, no scaling, no mirror, no extra limb, no blur, no painted floor or shadow. Hard pixel edges, full body in RGBA cell 384x512 with anchor (192,480).",
+    "gerado": "correcoes/icaro-08-candidato3-gerado.png",
+    "normalizado": "correcoes/icaro-08-candidato3-normalizado.png",
+    "comparacao": "correcoes/icaro-08-candidato3-comparacao.png",
+    "decisao": "rejeitado: reproduziu a abertura das pernas, com duas solas baixas; apoio direito e balanço esquerdo não seguem o guia nem a continuidade 07→08"
+  },
+  "eva": {
+    "referencias": ["sprites/bases/eva/sudoeste.png", "sprites/guias/sudoeste/08.png", "sprites/tarefas/sudoeste/eva/07.png", "sprites/tarefas/sudoeste/eva/08.png"],
+    "prompt_integral": "Produce ONE transparent pixel-art sprite: Eva southwest walking cycle, phase 08. Reference 1 fixes character identity, palette, silhouette, scale and camera. Reference 2 is a schematic of PHASE 08 only: orange = anatomical left leg swinging forward, blue = anatomical right leg supporting. Reference 3 is approved adjacent phase 07 and defines the supporting RIGHT leg and its shoe, which must continue from its screen-left floor contact around x164,y480 to the next floor contact around x195-205,y480 without jumping to the screen-right shoe. Reference 4 is the defective current 08 for head/torso/earring continuity; REDRAW BOTH COMPLETE LEGS from hips to shoes rather than repositioning a shoe fragment. Right leg is planted near center, knee naturally bent, shoe fully connected; left leg swings through center with toe slightly raised near x205-215,y450 and does not touch ground. The two shoes are close but distinct. Keep head, ponytail, face, cropped hoodie, shoulders, arms and red earring as near reference 4 as possible. No body shift, no scaling, no mirror, no extra limb, no blur, no painted floor or shadow. Hard pixel edges, full body in RGBA cell 384x512 with anchor (192,480).",
+    "gerado": "correcoes/eva-08-candidato3-gerado.png",
+    "normalizado": "correcoes/eva-08-candidato3-normalizado.png",
+    "comparacao": "correcoes/eva-08-candidato3-comparacao.png",
+    "decisao": "rejeitado: duas solas continuam baixas e abertas; a esquerda não está suspensa e o apoio 07→08 não é contínuo"
+  },
+  "teste": "correcoes/teste-candidato3.json",
+  "limite": "Três tentativas malsucedidas por personagem neste defeito; parar geração e manter pendência conforme contrato-agentes.md."
+}

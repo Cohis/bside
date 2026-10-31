@@ -1,0 +1,78 @@
+{
+  "celula": {
+    "largura": 384,
+    "altura": 512
+  },
+  "spritesheet": {
+    "largura": 3456,
+    "altura": 4096,
+    "colunas": 9,
+    "linhas": 8
+  },
+  "ancora": {
+    "x": 192,
+    "y": 480
+  },
+  "direcoes": [
+    "norte",
+    "nordeste",
+    "leste",
+    "sudeste",
+    "sul",
+    "sudoeste",
+    "oeste",
+    "noroeste"
+  ],
+  "personagens": [
+    "icaro",
+    "eva"
+  ],
+  "duracao_quadro_ms": 100,
+  "loop": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "parado": 0,
+  "fases": [
+    "parado",
+    "contato esquerdo",
+    "recepção esquerda",
+    "passagem direita",
+    "avanço direito",
+    "contato direito",
+    "recepção direita",
+    "passagem esquerda",
+    "avanço esquerdo"
+  ],
+  "ordem_de_geracao": [
+    1,
+    5,
+    3,
+    7,
+    2,
+    6,
+    4,
+    8
+  ],
+  "onda_1": [
+    "leste",
+    "sul",
+    "norte"
+  ],
+  "onda_2": [
+    "oeste",
+    "sudeste",
+    "nordeste"
+  ],
+  "onda_3": [
+    "sudoeste",
+    "noroeste"
+  ],
+  "estado": "bases_revisadas_animacao_liberada"
+}

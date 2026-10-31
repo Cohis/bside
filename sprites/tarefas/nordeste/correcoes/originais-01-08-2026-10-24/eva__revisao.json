@@ -1,0 +1,67 @@
+{
+  "aprovado": false,
+  "quadros_revisados": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "transicoes_revisadas": [
+    "01→02",
+    "02→03",
+    "03→04",
+    "04→05",
+    "05→06",
+    "06→07",
+    "07→08",
+    "08→01"
+  ],
+  "observacoes": [
+    "Correções locais autorizadas foram compostas de pixels de quadros do mesmo personagem/vista, com vizinho mais próximo, sem espelhar acessórios.",
+    "Todos os 8 PNGs têm RGBA384×512, margens, alfa real e hashes distintos; componentes espúrios das edições removidos.",
+    "Pranchas e loops 100/400ms com piso marcado a 13px/quadro permitem inspeção; essa velocidade é hipótese de teste, não calibração aprovada.",
+    "04–06 receberam manga próxima contínua e mão visível; 07 recebeu pé de balanço próximo ao apoio."
+  ],
+  "pendencias": [
+    "01 ainda põe perna esquerda aparente atrás/à esquerda do contato projetado no guia; 08→01 troca a posição dos pés abruptamente.",
+    "08 mantém pés muito separados e identidade do apoio incerta; candidato image_gen de 08 sobrepôs pés sem apoio legível.",
+    "O braço distante de 04–06 e o contrabalanço com a perna oposta ainda não foram validados.",
+    "07 melhorou como passagem, mas 07→08 tem salto na projeção e possível fusão visual da calça.",
+    "Recuo do apoio e piso marcado não calibrados; há patinação/variação entre fases.",
+    "Reautorias image_gen de 01/08 não resolveram o lado anatômico do contato."
+  ],
+  "passada_teste_px_por_quadro": 13,
+  "calibracao": {
+    "validada": false,
+    "motivo": "Hipótese de 13px/quadro mostra patinação e transições 07→08/08→01 incompatíveis."
+  },
+  "limite_tentativas": {
+    "05": 3
+  },
+  "revisao_temporal_concluida": false,
+  "quadros_corrigidos": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "evidencias": {
+    "pranchas": [
+      "eva-prancha-claro.png",
+      "eva-prancha-escuro.png",
+      "eva-chao-prancha.png"
+    ],
+    "loops_100_400_ms": [
+      "eva-normal.gif",
+      "eva-lento.gif",
+      "eva-normal-chao.gif",
+      "eva-lento-chao.gif"
+    ],
+    "originais": "correcoes/*-antes.png",
+    "candidatos_rejeitados": "correcoes/reautoria-01-08.json"
+  }
+}

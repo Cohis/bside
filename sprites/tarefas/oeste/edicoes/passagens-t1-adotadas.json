@@ -1,0 +1,42 @@
+[
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "fonte": "edicoes/novos-candidatos/icaro-03-t1-contato.png",
+    "raw_original": "icaro/03-raw-t1.png",
+    "versao_anterior": "edicoes/pre-t1-passagem/icaro/03.png",
+    "sha_antes": "6425785344155b41a7525dc1d578b1337ada71c1ebb1dce112f75f3b42737ab3",
+    "sha_depois": "bd2422edabace1a74a45ffcdd00f36e12e7e57e6f05f0c3d3837413797587fd1",
+    "metodo": "Normalização existente dos raws t1, alfa<8 removido, redimensionamento nearest .35 e contato inferior ajustado por vizinho mais próximo. Sem composição das pernas ou interpolação."
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "fonte": "edicoes/novos-candidatos/icaro-07-t1-contato.png",
+    "raw_original": "icaro/07-raw-t1.png",
+    "versao_anterior": "edicoes/pre-t1-passagem/icaro/07.png",
+    "sha_antes": "6a58546685ed5fcf23256c9ff99a7624cff713fbf701e5f30616f9c9327e6a5c",
+    "sha_depois": "fdf03a21b0f8126c6b1bbfd3bf551f025ee3b92a4186455bfde363ba4cc6e45a",
+    "metodo": "Normalização existente dos raws t1, alfa<8 removido, redimensionamento nearest .35 e contato inferior ajustado por vizinho mais próximo. Sem composição das pernas ou interpolação."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "fonte": "edicoes/novos-candidatos/eva-03-t1-contato.png",
+    "raw_original": "eva/03-raw-t1.png",
+    "versao_anterior": "edicoes/pre-t1-passagem/eva/03.png",
+    "sha_antes": "6adba5cf07ae7b59e6494a093538f0174b1718f1233003f3673329c1614f4595",
+    "sha_depois": "e6eab293b60bad953ab3346bd06f97db7511de02cdce59d3e97f50886dbcd517",
+    "metodo": "Normalização existente dos raws t1, alfa<8 removido, redimensionamento nearest .35 e contato inferior ajustado por vizinho mais próximo. Sem composição das pernas ou interpolação."
+  },
+  {
+    "personagem": "eva",
+    "quadro": 7,
+    "fonte": "edicoes/novos-candidatos/eva-07-t1-contato.png",
+    "raw_original": "eva/07-raw-t1.png",
+    "versao_anterior": "edicoes/pre-t1-passagem/eva/07.png",
+    "sha_antes": "8c06cb5677c44cfd42a921d56f17c9d8dfe4f90eec13afeffc28b1330ea9c42c",
+    "sha_depois": "328f83e2a6eef29c22e095fc987b1c67490386fcb2b7b7d6edb85dc960aeda26",
+    "metodo": "Normalização existente dos raws t1, alfa<8 removido, redimensionamento nearest .35 e contato inferior ajustado por vizinho mais próximo. Sem composição das pernas ou interpolação."
+  }
+]

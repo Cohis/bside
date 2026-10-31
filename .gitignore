@@ -1,4 +1,11 @@
-/bside
-/bside.o
-core
-core.*
+# Cópias de segurança locais
+/.backups/
+
+# Python
+__pycache__/
+venv/
+.venv/
+
+# Build e saídas de teste (cada jogo tem também o próprio .gitignore)
+*.o
+/jogo-isometrico/captura.png

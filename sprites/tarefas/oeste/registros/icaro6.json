@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente icaro, direção OESTE perfil olhando esquerda. Fase 06: RECEPÇÃO DIREITA: perna direita distante suporta peso à frente à esquerda, JOELHO flexiona discretamente. Pé inteiro no chão 20px à frente do quadril; perna esquerda próxima com bolso atrás começando a sair do chão. Braço esquerdo avança à esquerda. Quadril desce 5px.. Primeira imagem base fixa define identidade/escala/paleta/câmera; segunda aparência; terceira guia anatômico. Medidas em referência célula512px. Preserve cabeça, comprimento de membros, roupa ampla. Pulseira somente esquerda próxima à câmera. Movimento casual baixo, nunca marcha militar, corrida ou salto. Braços em contrabalanço pequeno. Corpo inteiro, fundo alpha transparente, sem chão, sombra, halo, texto, suavização ou cenário.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/06.png"
+  ]
+}

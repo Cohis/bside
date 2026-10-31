@@ -1,0 +1,12 @@
+{
+  "prompt": "Use case: precise-object-edit. Corrija a terceira imagem icaro, oeste perfil esquerdo. Está com lados anatômicos TROCADOS. Base fixa primeira imagem preserva identidade, guia segunda. O braço PRÓXIMO COM PULSEIRA deve ir para TRÁS (direita tela), mão direita distante avança esquerda. A perna PRÓXIMA COM BOLSO avança esquerda com calcanhar elevado, perna direita distante apoia atrás à direita. AVANÇO ESQUERDO: direita distante apoia atrás à direita da tela (20px atrás do quadril), esquerda próxima avança 20px à esquerda do quadril com joelho moderadamente flexionado e calcanhar 15px acima do chão preparando contato. Braço esquerdo próximo recua à direita. Quadril sobe só 3px. Trocar a sobreposição das pernas e posição dos braços é a única mudança; não espelhe o personagem. Mesma identidade, escala, roupa, cabelo, corpo inteiro pixelart e alpha transparente sem sombra ou texto.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/08.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/icaro/08-raw.png"
+  ],
+  "saida_local": "/home/icaro/Documentos/AOC/sprites/tarefas/oeste/icaro/08-raw-t2.png",
+  "ferramenta": "image_gen embutido",
+  "transparent_background": true,
+  "nota": "Registro recuperado da chamada anterior após retomada; raw anterior preservado."
+}

@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produce ONLY one whole-body pixel-art sprite, due NORTH walking AWAY, straight back camera exactly as reference1 base. Reference1 defines immutable identity, sizes, proportions, palette, camera and pixels. Reference2 is anatomical pose guide ONLY, do not render it. Reference3 if present is approved phase for appearance. Keep crown y56, body axis x192, nominal height424 in384x512. Legs stay hip-width, depth shown by flexion/overlap/foot soles; never spread sideways. At least one foot grounded, no running. Keep limb lengths and head/torso sizes, only necessary motion. Transparent ALPHA background, no shadow/halo/scenery/text/guides, sharp pixels with no added smoothing.\nEVA: long black ponytail, white cropped long-sleeved hoodie, gray baggy cargo trousers, dark shoes light soles. Keep hair silhouette and dark/red earrings as base.\nPhase05 RIGHT HEEL CONTACT: RIGHT leg SCREEN RIGHT reaches forward AWAY from viewer, right shoe heel at y465. LEFT leg SCREEN LEFT trails TOWARD VIEWER, left toe y495 and heel lifted to reveal sole. Arms counterbalance: screen RIGHT hand swings BACK towards viewer, visible lower at y350; screen LEFT hand swings FORWARD away from viewer, partly hidden high by torso at y300. NO mirroring the image or accessories. Clearly readable walk, not standing.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/norte.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/norte/05.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/norte/raws/eva-01-selecionada.png"
+  ]
+}

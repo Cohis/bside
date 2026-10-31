@@ -1,0 +1,33 @@
+{
+  "data": "2026-10-24",
+  "quadros_avaliados": [
+    "icaro/03",
+    "icaro/07",
+    "eva/07"
+  ],
+  "variantes": [
+    {
+      "nome": "coxa-baixa",
+      "metodo": "remapeamento vertical nearest com pico 49 px Ícaro/45 px Eva e deslocamento da sola ~7–8 px",
+      "resultado": "rejeitada",
+      "motivo": "Pantalona se alonga em tubo quase reto, reduz leitura de joelho e aproxima demais o calçado suspenso do apoio; continuidade 02→03→04 e 06→07→08 fica artificial."
+    },
+    {
+      "nome": "coxa-diagonal",
+      "metodo": "mesmo rebaixamento vertical acrescido de deslocamento horizontal da coxa 17–18 px",
+      "resultado": "rejeitada",
+      "motivo": "Aparece dobra angular aguda no joelho e afunilamento do tecido; nas ampliações 3× o remapeamento fica visível. Calçado de balanço se aproxima do apoio."
+    }
+  ],
+  "evidencias": [
+    "edicoes/novos-candidatos/coxa-variantes-comparacao-3x.png",
+    "edicoes/novos-candidatos/icaro-03-coxa-baixa-prancha.png",
+    "edicoes/novos-candidatos/icaro-07-coxa-baixa-prancha.png",
+    "edicoes/novos-candidatos/eva-07-coxa-baixa-prancha.png",
+    "edicoes/novos-candidatos/icaro-03-coxa-diagonal-prancha.png",
+    "edicoes/novos-candidatos/icaro-07-coxa-diagonal-prancha.png",
+    "edicoes/novos-candidatos/eva-07-coxa-diagonal-prancha.png"
+  ],
+  "producao_alterada": false,
+  "conclusao": "Os PNGs de produção mantêm a rearticulação moderada adotada anteriormente; a anatomia ainda não foi aprovada. Correção adicional requer redesenho controlado da coxa, joelho, panturrilha e calçado, não aumento cego do remapeamento."
+}

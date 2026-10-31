@@ -1,0 +1,463 @@
+{
+  "tipo": "teste estático de chão com pontos de pé estimados visualmente",
+  "deslocamento_guia_por_quadro": [
+    -12.728,
+    4.455
+  ],
+  "limite": "sem tolerância formal de aprovação no contrato",
+  "interpretacao": "O guia usa passada de 18 px/quadro. A prévia usa a passada_teste_px_por_quadro de cada personagem; ambos os cenários são mostrados separadamente.",
+  "personagens": {
+    "icaro": {
+      "cenarios": {
+        "guia_18": {
+          "deslocamento_personagem_por_quadro": [
+            -12.728,
+            4.455
+          ],
+          "metades": [
+            {
+              "apoio": "esquerda",
+              "amostras": [
+                {
+                  "fase": 1,
+                  "ponta_celula": [
+                    139,
+                    488
+                  ],
+                  "ponta_mundo": [
+                    139.0,
+                    488.0
+                  ]
+                },
+                {
+                  "fase": 2,
+                  "ponta_celula": [
+                    164,
+                    479
+                  ],
+                  "ponta_mundo": [
+                    151.27,
+                    483.45
+                  ]
+                },
+                {
+                  "fase": 3,
+                  "ponta_celula": [
+                    221,
+                    484
+                  ],
+                  "ponta_mundo": [
+                    195.54,
+                    492.91
+                  ]
+                },
+                {
+                  "fase": 4,
+                  "ponta_celula": [
+                    259,
+                    475
+                  ],
+                  "ponta_mundo": [
+                    220.82,
+                    488.37
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 81.82,
+              "amplitude_y_mundo_px": 9.46
+            },
+            {
+              "apoio": "direita",
+              "amostras": [
+                {
+                  "fase": 5,
+                  "ponta_celula": [
+                    120,
+                    481
+                  ],
+                  "ponta_mundo": [
+                    120.0,
+                    481.0
+                  ]
+                },
+                {
+                  "fase": 6,
+                  "ponta_celula": [
+                    137,
+                    480
+                  ],
+                  "ponta_mundo": [
+                    124.27,
+                    484.45
+                  ]
+                },
+                {
+                  "fase": 7,
+                  "ponta_celula": [
+                    153,
+                    485
+                  ],
+                  "ponta_mundo": [
+                    127.54,
+                    493.91
+                  ]
+                },
+                {
+                  "fase": 8,
+                  "ponta_celula": [
+                    249,
+                    466
+                  ],
+                  "ponta_mundo": [
+                    210.82,
+                    479.37
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 90.82,
+              "amplitude_y_mundo_px": 14.54
+            }
+          ]
+        },
+        "previa_atual": {
+          "deslocamento_personagem_por_quadro": [
+            -41.5,
+            14.525
+          ],
+          "metades": [
+            {
+              "apoio": "esquerda",
+              "amostras": [
+                {
+                  "fase": 1,
+                  "ponta_celula": [
+                    139,
+                    488
+                  ],
+                  "ponta_mundo": [
+                    139.0,
+                    488.0
+                  ]
+                },
+                {
+                  "fase": 2,
+                  "ponta_celula": [
+                    164,
+                    479
+                  ],
+                  "ponta_mundo": [
+                    122.5,
+                    493.52
+                  ]
+                },
+                {
+                  "fase": 3,
+                  "ponta_celula": [
+                    221,
+                    484
+                  ],
+                  "ponta_mundo": [
+                    138.0,
+                    513.05
+                  ]
+                },
+                {
+                  "fase": 4,
+                  "ponta_celula": [
+                    259,
+                    475
+                  ],
+                  "ponta_mundo": [
+                    134.5,
+                    518.58
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 16.5,
+              "amplitude_y_mundo_px": 30.58
+            },
+            {
+              "apoio": "direita",
+              "amostras": [
+                {
+                  "fase": 5,
+                  "ponta_celula": [
+                    120,
+                    481
+                  ],
+                  "ponta_mundo": [
+                    120.0,
+                    481.0
+                  ]
+                },
+                {
+                  "fase": 6,
+                  "ponta_celula": [
+                    137,
+                    480
+                  ],
+                  "ponta_mundo": [
+                    95.5,
+                    494.52
+                  ]
+                },
+                {
+                  "fase": 7,
+                  "ponta_celula": [
+                    153,
+                    485
+                  ],
+                  "ponta_mundo": [
+                    70.0,
+                    514.05
+                  ]
+                },
+                {
+                  "fase": 8,
+                  "ponta_celula": [
+                    249,
+                    466
+                  ],
+                  "ponta_mundo": [
+                    124.5,
+                    509.57
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 54.5,
+              "amplitude_y_mundo_px": 33.05
+            }
+          ]
+        }
+      },
+      "chao_aprovado": false,
+      "motivo": "Na velocidade da prévia, a segunda metade ainda desliza muito em x; em y nenhum cenário sustenta contato constante nas duas metades. A ponta e a identidade das juntas são estimativas visuais."
+    },
+    "eva": {
+      "cenarios": {
+        "guia_18": {
+          "deslocamento_personagem_por_quadro": [
+            -12.728,
+            4.455
+          ],
+          "metades": [
+            {
+              "apoio": "esquerda",
+              "amostras": [
+                {
+                  "fase": 1,
+                  "ponta_celula": [
+                    140,
+                    480
+                  ],
+                  "ponta_mundo": [
+                    140.0,
+                    480.0
+                  ]
+                },
+                {
+                  "fase": 2,
+                  "ponta_celula": [
+                    155,
+                    494
+                  ],
+                  "ponta_mundo": [
+                    142.27,
+                    498.45
+                  ]
+                },
+                {
+                  "fase": 3,
+                  "ponta_celula": [
+                    224,
+                    488
+                  ],
+                  "ponta_mundo": [
+                    198.54,
+                    496.91
+                  ]
+                },
+                {
+                  "fase": 4,
+                  "ponta_celula": [
+                    263,
+                    489
+                  ],
+                  "ponta_mundo": [
+                    224.82,
+                    502.37
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 84.82,
+              "amplitude_y_mundo_px": 22.37
+            },
+            {
+              "apoio": "direita",
+              "amostras": [
+                {
+                  "fase": 5,
+                  "ponta_celula": [
+                    125,
+                    490
+                  ],
+                  "ponta_mundo": [
+                    125.0,
+                    490.0
+                  ]
+                },
+                {
+                  "fase": 6,
+                  "ponta_celula": [
+                    140,
+                    490
+                  ],
+                  "ponta_mundo": [
+                    127.27,
+                    494.45
+                  ]
+                },
+                {
+                  "fase": 7,
+                  "ponta_celula": [
+                    164,
+                    489
+                  ],
+                  "ponta_mundo": [
+                    138.54,
+                    497.91
+                  ]
+                },
+                {
+                  "fase": 8,
+                  "ponta_celula": [
+                    247,
+                    476
+                  ],
+                  "ponta_mundo": [
+                    208.82,
+                    489.37
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 83.82,
+              "amplitude_y_mundo_px": 8.54
+            }
+          ]
+        },
+        "previa_atual": {
+          "deslocamento_personagem_por_quadro": [
+            -40.835,
+            14.292
+          ],
+          "metades": [
+            {
+              "apoio": "esquerda",
+              "amostras": [
+                {
+                  "fase": 1,
+                  "ponta_celula": [
+                    140,
+                    480
+                  ],
+                  "ponta_mundo": [
+                    140.0,
+                    480.0
+                  ]
+                },
+                {
+                  "fase": 2,
+                  "ponta_celula": [
+                    155,
+                    494
+                  ],
+                  "ponta_mundo": [
+                    114.16,
+                    508.29
+                  ]
+                },
+                {
+                  "fase": 3,
+                  "ponta_celula": [
+                    224,
+                    488
+                  ],
+                  "ponta_mundo": [
+                    142.33,
+                    516.58
+                  ]
+                },
+                {
+                  "fase": 4,
+                  "ponta_celula": [
+                    263,
+                    489
+                  ],
+                  "ponta_mundo": [
+                    140.5,
+                    531.88
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 28.17,
+              "amplitude_y_mundo_px": 51.88
+            },
+            {
+              "apoio": "direita",
+              "amostras": [
+                {
+                  "fase": 5,
+                  "ponta_celula": [
+                    125,
+                    490
+                  ],
+                  "ponta_mundo": [
+                    125.0,
+                    490.0
+                  ]
+                },
+                {
+                  "fase": 6,
+                  "ponta_celula": [
+                    140,
+                    490
+                  ],
+                  "ponta_mundo": [
+                    99.16,
+                    504.29
+                  ]
+                },
+                {
+                  "fase": 7,
+                  "ponta_celula": [
+                    164,
+                    489
+                  ],
+                  "ponta_mundo": [
+                    82.33,
+                    517.58
+                  ]
+                },
+                {
+                  "fase": 8,
+                  "ponta_celula": [
+                    247,
+                    476
+                  ],
+                  "ponta_mundo": [
+                    124.5,
+                    518.88
+                  ]
+                }
+              ],
+              "amplitude_x_mundo_px": 42.67,
+              "amplitude_y_mundo_px": 28.88
+            }
+          ]
+        }
+      },
+      "chao_aprovado": false,
+      "motivo": "Na velocidade da prévia, a segunda metade ainda desliza muito em x; em y nenhum cenário sustenta contato constante nas duas metades. A ponta e a identidade das juntas são estimativas visuais."
+    }
+  }
+}

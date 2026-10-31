@@ -1,0 +1,34 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/icaro-02.png",
+  "caixa_original": [
+    315,
+    228,
+    815,
+    1347
+  ],
+  "escala_uniforme": 0.3654320987654321,
+  "posicao": [
+    97,
+    59
+  ],
+  "eixo_original": 575,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    230,
+    635,
+    575
+  ],
+  "topo_alvo": 60,
+  "edicao_controlada": {
+    "tipo": "correcao_de_apoio_esquerdo",
+    "fonte_original": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/correcoes/icaro-02-antes.png",
+    "fonte_dos_pixels": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/icaro/01.png",
+    "operacao": "recomposição das pernas e recuo de 8 px do apoio no fim da perna, interpolação vizinho mais próximo",
+    "observacao": "quadro de recepção agora sustenta com o pé esquerdo; continuidade do ciclo ainda pendente"
+  }
+}

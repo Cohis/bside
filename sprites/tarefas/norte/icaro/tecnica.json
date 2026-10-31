@@ -1,0 +1,154 @@
+[
+  {
+    "quadro": 1,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      109,
+      56,
+      265,
+      497
+    ],
+    "sha256": "36e72f00bd10618eecd8d14d0ea3b63d7026ec2d2ba94ef6d76c61878bfe5a0d",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/01.png"
+  },
+  {
+    "quadro": 2,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      116,
+      61,
+      264,
+      477
+    ],
+    "sha256": "1c22cd99115d540d54cee2f5171cd5d1958201b8e6329847b34b180b933ed6a2",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/02.png"
+  },
+  {
+    "quadro": 3,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      116,
+      56,
+      265,
+      481
+    ],
+    "sha256": "546b6501b64decf6118e72d2a78b349d25de88d71ac64c05f04c554fc123d806",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/03.png"
+  },
+  {
+    "quadro": 4,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      118,
+      52,
+      272,
+      486
+    ],
+    "sha256": "66b53861ee7c27d3ff1b19d06f9d047c8ca44f5e7c751a200b846fbb871b10b1",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/04.png"
+  },
+  {
+    "quadro": 5,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      116,
+      56,
+      273,
+      501
+    ],
+    "sha256": "57b2924f3e37622e5a68241fc3620bebb5d7ebf8bd56055218e359378b68647d",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/05.png"
+  },
+  {
+    "quadro": 6,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      116,
+      61,
+      272,
+      478
+    ],
+    "sha256": "75950da559a16d33e5a62a81991e1501518ee0b70021e7141d4008bac60189bf",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/06.png"
+  },
+  {
+    "quadro": 7,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      117,
+      56,
+      270,
+      481
+    ],
+    "sha256": "4b913d772c8182488016b5210a9914bc2ce07f8cba0d57a8499b5a401df0d9c6",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/07.png"
+  },
+  {
+    "quadro": 8,
+    "dimensoes": [
+      384,
+      512
+    ],
+    "caixa": [
+      115,
+      52,
+      263,
+      486
+    ],
+    "sha256": "1092240481afee5db86a2549684a9db9bd56fe50ebe3de9bd2f02427b01ef5e1",
+    "alfa_extremos": [
+      0,
+      255
+    ],
+    "origem_edicao": "originais_edicao/icaro/08.png"
+  }
+]

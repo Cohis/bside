@@ -1,0 +1,175 @@
+{
+  "quadros": [
+    {
+      "quadro": 1,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        76,
+        56,
+        312,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "364ec14f7299fc2e63b775f074e3fe3496e2e17192a9499128f20d5209c81ee4"
+    },
+    {
+      "quadro": 2,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        105,
+        61,
+        315,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "113c4f2dca2972c3299f219ccc34040fc837cf34fb5f0a4c9e0bcfe901539d64"
+    },
+    {
+      "quadro": 3,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        109,
+        54,
+        268,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "68444c9bc7ae3de226e16120820d708e43765060c3f1df9df125320370ff55a2"
+    },
+    {
+      "quadro": 4,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        82,
+        53,
+        284,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "a11be5374b1183c0d8cc0d8c0229ce520f5f7a564330de75a45fef28b14283d0"
+    },
+    {
+      "quadro": 5,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        77,
+        56,
+        290,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "10c8b549e8605d7e28119dd5620917a66fcb79ca52452ee4201e7e33bb4eebfb"
+    },
+    {
+      "quadro": 6,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        108,
+        61,
+        315,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "7ac6dad4fc2b7618a0f6543b899248c09dc261bd641b72b4d6d4dc566bc443b5"
+    },
+    {
+      "quadro": 7,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        104,
+        54,
+        261,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "25a30f8e1102ac000aad5b4331df6053677213e78a3a413d08f5ceefcdcfd164"
+    },
+    {
+      "quadro": 8,
+      "dimensoes": [
+        384,
+        512
+      ],
+      "modo": "RGBA",
+      "bbox": [
+        87,
+        53,
+        286,
+        480
+      ],
+      "alfa_extremos": [
+        0,
+        255
+      ],
+      "margem_minima": 32,
+      "sha256_pixels": "b5728099dc39c1eca32c60f32eac1ed4f5d255ef1ecc71ddde6183ab2ba823be"
+    }
+  ],
+  "duplicados_exatos": false,
+  "edicao": "Apoio Eva 02/06; variantes t1 03/07; joelhos, solas e membro em balanco 03/07 reduzidos por remapeamento local nearest, sem nova suavizacao.",
+  "referencias_log": [
+    "edicoes/correcao-contato.json",
+    "edicoes/apoios-eva-02-06.json",
+    "edicoes/passagens-t1-adotadas.json",
+    "edicoes/joelho-baixo-adotado.json",
+    "edicoes/sola-baixa-adotada.json",
+    "edicoes/rearticulacao-passagens-adotada.json"
+  ],
+  "chao_teste": "43 px/quadro à direita, calibrado pela média do recuo estimado nos dois apoios; não certifica ausência de patinação."
+}

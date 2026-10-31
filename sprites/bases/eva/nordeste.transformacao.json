@@ -1,0 +1,21 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/registros/geracoes/base-eva-nordeste-selecionada.png",
+  "caixa_original": [
+    260,
+    194,
+    770,
+    1380
+  ],
+  "escala_uniforme": 0.357504215851602,
+  "interpolacao": "vizinho mais próximo",
+  "ruido_alfa_removido": "somente valores menores que 8/255",
+  "posicao": [
+    87,
+    56
+  ],
+  "eixo_original": 554.0,
+  "ancora": [
+    192,
+    480
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: identity-preserve. Uma única pose de sprite pixel art para jogo. A imagem 1 é a BASE FIXA: preserve exatamente identidade, perfil olhando à direita, câmera, escala relativa de cabeça/tronco/membros, paleta, contorno e iluminação. A imagem 2 é somente guia da pose: laranja=esquerda anatômica DISTANTE, azul=direita anatômica PRÓXIMA; não desenhar guia nem adotar seus tamanhos de cabeça. Demais imagens são fases aprovadas, se presentes. Corpo inteiro, caminhada no lugar com passada moderada. Sempre pelo menos um pé no chão, sem fase de corrida. Modifique só os membros e a mínima flexão de tronco exigida pela fase. Fundo realmente transparente alpha, sem sombra de chão, halo, texto, chão, cenário, quadriculado, objetos adicionais, suavização ou mudança de perspectiva. Uma única imagem, um único personagem, sem grade. Eva: cabelo escuro em rabo de cavalo longo, olho azul, brinco vermelho, moletom branco curto com capuz, mangas longas, barriga levemente exposta, calça cinza cargo larga, tênis escuros com sola clara. Direção LESTE.  A perna próxima direita possui bolso cargo visível; a distante esquerda não mostra bolso. Fase 06, RECEPÇÃO DIREITA: pé DIREITO PRÓXIMO apoiado um pouco à frente (direita da tela) mas recuando desde05, joelho direito flexiona para receber peso; pé ESQUERDO DISTANTE atrás começa a sair do chão, calcanhar levantado e joelho flexionando. Quadril desce discretamente. Braço esquerdo distante ainda à frente, direito próximo atrás. Apenas direito em apoio firme. Não transformar em contato nem passagem.",
+  "referencias": [
+    "/home/icaro/Documentos/AOC/sprites/bases/eva/leste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/leste/06.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/eva-05.png",
+    "/home/icaro/Documentos/AOC/sprites/tarefas/leste/raws/eva-07-tentativa2-rejeitada.png"
+  ],
+  "raw": "sprites/tarefas/leste/raws/eva-06.png",
+  "origem": "/home/icaro/.codex/generated_images/01a15bca-e531-7cf1-82c6-8e2e72208ca2/exec-5522859e-62a5-460b-b749-5b4ebf08d14b.png"
+}

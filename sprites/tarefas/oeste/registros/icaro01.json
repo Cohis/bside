@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: identity-preserve. Produza somente Ícaro, direção OESTE perfil exato voltado para esquerda da tela, fase 01 contato esquerdo: perna ESQUERDA próxima à câmera à frente (esquerda da tela), calcanhar tocando chão; direita distante atrás à direita, ponta impulsionando. Braço esquerdo com pulseira vai para trás à direita; braço direito avança à esquerda.. Imagem 1 base fixa define identidade, escala, câmera, paleta e acabamento pixel-art; imagem 2 referência de identidade exclusivamente; imagem 3 guia de pose esquemático. Preserve comprimentos dos membros e cabeça grande, roupa larga e acessórios. Pulseira APENAS no braço esquerdo próximo. Passada moderada, ambos pés em contato. Figura inteira, fundo alpha transparente verdadeiro, sem sombra, halo, texto, guia, objetos adicionais ou suavização. Canvas retrato, corpo centrado pelo torso, topo da cabeça e escala iguais à base. Modifique apenas pose.",
+  "refs": [
+    "/home/icaro/Documentos/AOC/sprites/bases/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/referencias/icaro/oeste.png",
+    "/home/icaro/Documentos/AOC/sprites/guias/oeste/01.png"
+  ]
+}

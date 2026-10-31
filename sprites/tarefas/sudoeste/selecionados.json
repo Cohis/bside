@@ -1,0 +1,22 @@
+{
+  "icaro": {
+    "1": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-01.png",
+    "2": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/icaro-02-imagemgerada-normalizada.png",
+    "3": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-03.png",
+    "4": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-04.png",
+    "5": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-05.png",
+    "6": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-06.png",
+    "7": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/icaro-07-composicao-v1.png",
+    "8": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/icaro-08.png"
+  },
+  "eva": {
+    "1": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-01.png",
+    "2": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/eva-02-imagemgerada-normalizada.png",
+    "3": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/correcoes/eva-03-composicao-v2.png",
+    "4": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-04-v2.png",
+    "5": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-05-v2.png",
+    "6": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-06.png",
+    "7": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-07.png",
+    "8": "/home/icaro/Documentos/AOC/sprites/tarefas/sudoeste/raws/eva-08.png"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "aprovado": false,
+  "resultado": "icaro-leste-07-diagnostico-resultado.png",
+  "observacoes": [
+    "O guia explícito levou a perna esquerda para a frente, mas elevou o pé excessivamente e deixou o tornozelo à frente do quadril.",
+    "Braços continuam em contrabalanço amplo, sem a passagem intermediária solicitada.",
+    "Preservado o PNG anterior selecionado; este candidato não entra na montagem."
+  ],
+  "proximo_passo": "Não repetir geração do mesmo defeito sem novo diagnóstico; comparar proporção de flexão e posicionamento do guia à anatomia real."
+}

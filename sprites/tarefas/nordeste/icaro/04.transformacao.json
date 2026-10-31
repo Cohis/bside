@@ -1,0 +1,37 @@
+{
+  "entrada": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/raw/icaro-04.png",
+  "caixa_original": [
+    310,
+    163,
+    816,
+    1321
+  ],
+  "escala_uniforme": 0.37,
+  "posicao": [
+    100,
+    53
+  ],
+  "eixo_original": 560,
+  "ancora": [
+    192,
+    480
+  ],
+  "interpolacao": "vizinho mais próximo",
+  "calibracao": "estimativa visual da altura cabelo-pescoço, não altura da passada",
+  "marcos_raw": [
+    165,
+    565,
+    560
+  ],
+  "topo_alvo": 54,
+  "edicao_controlada": {
+    "tipo": "correcao_local_de_pulseira",
+    "fonte_original": "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/correcoes/icaro-04-antes.png",
+    "fontes_de_pixeis": [
+      "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/icaro/03.png",
+      "/home/icaro/Documentos/AOC/sprites/tarefas/nordeste/icaro/08.png"
+    ],
+    "interpolacao": "nenhuma; pixels existentes da mesma vista",
+    "revisao_visual": "pulseira movida do pulso direito para o esquerdo anatômico; aprovação do ciclo ainda pendente"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "personagem": "icaro",
+    "fase": 2,
+    "raw": "raw/icaro-02-t2.png",
+    "resultado": "selecionado: torso e perna de apoio recuperaram comprimento; apoio chega ao solo",
+    "referencias": ["icaro/02.png antes da substituicao", "../../bases/icaro/sudeste.png", "../../guias/sudeste/02.png"],
+    "prompt_integral": "Edit only the FIRST image: a single pixel-art RGBA walking sprite of Ícaro, southeast three-quarter camera, frame 02 left-foot weight reception. The second image fixes character identity, head/body proportions, colors, outfit, and watch on anatomical LEFT wrist; the third schematic fixes pose (orange left support leg forward, blue right swing leg behind lifting). Keep the exact 384x512 transparent canvas and head placement near x190,y56. Correct the compressed torso/short body: restore torso length and hip height/leg proportions like base, with a modest natural dip for reception, overall feet near ground y480. Left planted foot carries weight ahead/right of screen; right foot just lifts behind. Right arm should still be swung forward opposite supporting left leg, left watch arm back/near side following motion, without mirroring the watch. Preserve crisp hard pixel boundaries, near-black outlines, no anti-aliasing, no shadow or halo, no text. Change only pose/anatomy necessary, preserve character design."
+  },
+  {
+    "personagem": "icaro",
+    "fase": 7,
+    "raw": "raw/icaro-07-t2.png",
+    "resultado": "selecionado: pe em balanco mais proximo da passagem sob o quadril",
+    "referencias": ["icaro/07.png antes da substituicao", "../../bases/icaro/sudeste.png", "../../guias/sudeste/07.png"],
+    "prompt_integral": "Edit the FIRST image only, a single pixel-art Ícaro sprite facing SOUTHEAST, phase 07 passage of anatomical LEFT leg. The second image locks identity, camera, colors, clothing and LEFT-wrist golden bracelet. The third image is only a skeletal pose guide. Keep head and torso scale/placement, 384x512 transparent canvas, no text or extra objects. Fix the walking action: anatomical RIGHT foot is planted under the body at ground y480 and is receding relative to torso; anatomical LEFT leg is bent and its raised foot passes directly beside/slightly ahead of the planted leg, knee moderately raised, not a backward withdrawal, leading into frame08's forward extension. Both full legs are anatomically connected under loose charcoal pants. Opposite arm swing consistent with frame06/08; bracelet remains on anatomical left wrist, no mirroring. Keep exact crisp pixel-art palette and near-black outlines, no anti-alias blur, no ground shadow."
+  },
+  {
+    "personagem": "eva",
+    "fase": 3,
+    "raw": "raw/eva-03-t2.png",
+    "resultado": "rejeitado: pe ainda mais adiantado",
+    "referencias": ["eva/03.png antes da substituicao", "../../bases/eva/sudeste.png", "../../guias/sudeste/03.png"],
+    "prompt_integral": "Edit FIRST image only: Eva pixel-art southeast walking sprite, phase03 passage of anatomical RIGHT leg. Second image is fixed identity/proportion/camera/style; third schematic is pose guide. Correct the current frame because the raised right foot is too far forward, already like phase04. Plant anatomical LEFT foot under the hip at y480, receding relative to body. Move anatomical RIGHT swing foot under the pelvis and only slightly ahead of supporting foot; knee modestly bent, toe clearly clear of floor, leading naturally into frame04. Keep balanced torso, long dark ponytail, blue eyes, visible red earring, cropped white hoodie, wide gray pants, black shoes. No jewelry on wrist, no mirroring. Full figure on transparent RGBA, preserve 384x512 composition and head near top y56, crisp hard pixel clusters and outlines, no antialias or shadow, no text."
+  },
+  {
+    "personagem": "eva",
+    "fase": 7,
+    "raw": "raw/eva-07-t4.png",
+    "resultado": "rejeitado: retornou pose de avanco, inverteu o ritmo de passagem",
+    "referencias": ["eva/07.png", "../../bases/eva/sudeste.png", "../../guias/sudeste/07.png", "eva/03.png"],
+    "prompt_integral": "Modify only the FIRST image, Eva southeast pixel-art walking frame07. Second image locks identity, third is skeletal guide, fourth is same-character frame03 for comparable swing-foot height. The phase07 anatomical LEFT foot must pass under the hips with low/moderate knee lift, clearly off floor, not the current high knee pose. Anatomical RIGHT support foot remains planted under torso y480, receding naturally. Frame07 should be a left-leg passage mirror in timing of phase03's right-leg passage, but DO NOT mirror Eva's face, hair, earring or clothing; retain southeast camera, red earring visible, ponytail flowing back, blue eyes, white cropped hoodie, loose gray pants, black shoes, no wrist accessory. Keep body height and head at x~190 y56 consistent with other phases. Crisp original pixel-art colors and outlines, transparent background, single full-body sprite, no text, shadow, halo, soft blur."
+  },
+  {
+    "personagem": "eva",
+    "fase": 3,
+    "raw": "raw/eva-03-t3.png",
+    "resultado": "selecionado como melhora parcial: pe recuou, mas permanece proximo demais da pose 04",
+    "referencias": ["eva/03.png antes da substituicao", "eva/02.png", "eva/04.png", "../../bases/eva/sudeste.png"],
+    "prompt_integral": "Make ONE edited Eva pixel-art frame03 from FIRST image; images 2 and 3 show frame02 before and frame04 after, image4 fixes design. Edit the walking pose, keep design and same southeast camera. On final 384x512 canvas, the right-swing shoe in frame03 must be only just forward of the support shoe, center of raised shoe around (210,420), NOT at x245-280. It is mid-passage beneath hips. Anatomical left planted/support shoe centered around (175,468), sole at y480. Lift right foot around 20-30 pixels off floor, modestly bent knee, both legs anatomically connected under loose gray pants. Frame03 movement between 02 and 04 must be unmistakable. Preserve head at y56 and x~180-190, face and ponytail, red earring, blue eyes, white hoodie, no bracelet. Transparent RGBA, hard pixel edges, no texture blur, no ground shadow, no lettering."
+  }
+]

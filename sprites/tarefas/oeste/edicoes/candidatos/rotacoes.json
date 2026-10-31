@@ -1,0 +1,183 @@
+[
+  {
+    "personagem": "eva",
+    "quadro": 3,
+    "origem": "edicoes/pre-composicao/eva/03.png",
+    "sha256_origem": "f7e2000f33e53cd8e144c89e6871e35b6984fc706dfd3f3ef4da505dbaa952f0",
+    "candidato": "edicoes/candidatos/eva-03-rotacao.png",
+    "sha256_candidato": "6adba5cf07ae7b59e6494a093538f0174b1718f1233003f3673329c1614f4595",
+    "pivo": [
+      213,
+      346
+    ],
+    "graus": 18,
+    "poligono": [
+      [
+        207,
+        339
+      ],
+      [
+        248,
+        340
+      ],
+      [
+        255,
+        359
+      ],
+      [
+        278,
+        375
+      ],
+      [
+        289,
+        398
+      ],
+      [
+        298,
+        424
+      ],
+      [
+        300,
+        468
+      ],
+      [
+        245,
+        475
+      ],
+      [
+        231,
+        439
+      ],
+      [
+        232,
+        414
+      ],
+      [
+        217,
+        391
+      ],
+      [
+        211,
+        365
+      ]
+    ],
+    "estado": "aguarda revisão visual; produção não alterada"
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 3,
+    "origem": "edicoes/pre-composicao/icaro/03.png",
+    "sha256_origem": "e5808c8c16b42ad11b4e24c1779ec51a7c5c84af1664003df8ef8cbd3c330fdf",
+    "candidato": "edicoes/candidatos/icaro-03-rotacao.png",
+    "sha256_candidato": "6425785344155b41a7525dc1d578b1337ada71c1ebb1dce112f75f3b42737ab3",
+    "pivo": [
+      166,
+      350
+    ],
+    "graus": -18,
+    "poligono": [
+      [
+        137,
+        349
+      ],
+      [
+        183,
+        349
+      ],
+      [
+        183,
+        369
+      ],
+      [
+        185,
+        397
+      ],
+      [
+        176,
+        426
+      ],
+      [
+        175,
+        457
+      ],
+      [
+        100,
+        457
+      ],
+      [
+        100,
+        418
+      ],
+      [
+        126,
+        410
+      ],
+      [
+        130,
+        390
+      ],
+      [
+        132,
+        360
+      ]
+    ],
+    "costura_cintura": true,
+    "estado": "aguarda revisão visual; produção não alterada"
+  },
+  {
+    "personagem": "icaro",
+    "quadro": 7,
+    "origem": "edicoes/pre-composicao/icaro/07.png",
+    "sha256_origem": "53642a02ad3573141eb5b861a533afa8a086215877a914fdcceb026b29dfc4ce",
+    "candidato": "edicoes/candidatos/icaro-07-rotacao.png",
+    "sha256_candidato": "6a58546685ed5fcf23256c9ff99a7624cff713fbf701e5f30616f9c9327e6a5c",
+    "pivo": [
+      165,
+      340
+    ],
+    "graus": -12,
+    "poligono": [
+      [
+        141,
+        334
+      ],
+      [
+        187,
+        334
+      ],
+      [
+        188,
+        390
+      ],
+      [
+        194,
+        420
+      ],
+      [
+        202,
+        449
+      ],
+      [
+        202,
+        479
+      ],
+      [
+        100,
+        479
+      ],
+      [
+        100,
+        430
+      ],
+      [
+        124,
+        410
+      ],
+      [
+        128,
+        370
+      ]
+    ],
+    "estado": "aguarda revisão visual; produção não alterada"
+  }
+]
