@@ -1,11 +1,12 @@
 .intel_syntax noprefix
 
-# Fase 1, sala 2: o galpão de Hank e a doca. Só dados: plantas, móveis, luzes,
-# poses do elenco, interações, os três pontos da fuga e a sequência da fase,
-# que começa no enigma da loja (sala 1): o bilhete do balcão, a melodia D-C-G
-# no depósito e a caixa com o endereço do galpão.
+# Fase 1, sala 2: o galpão de Hank e a fuga dos anjos. Só dados: planta, móveis
+# e luzes do galpão, poses do elenco, interações e a sequência da fase, que
+# começa no enigma da loja (sala 1): o bilhete do balcão, a melodia D-C-G no
+# depósito e a caixa com o endereço do galpão. Os trechos da fuga vêm de
+# doca_dados.inc e doca_roteiro.inc (ferramentas/gerar_doca.py).
 # Coordenadas em px do mundo (TILE = 16 px). Andares: 0 cima e 1 térreo da
-# B-Side (fase1.s), 2 galpão, 3 doca.
+# B-Side (fase1.s), 2 galpão, 3 doca, 4 pátio de contêineres, 5 quebra-mar.
 
 .include "estruturas.inc"
 .include "tileset.inc"
@@ -73,7 +74,6 @@
 .equ FL_SAIU, 1
 .equ FL_DISCO, 2
 .equ FL_AGENTE, 3
-.equ FL_NA_DOCA, 4
 .equ FL_BILHETE, 5
 .equ FL_MELODIA, 6
 .equ FL_ENDERECO, 7
@@ -159,10 +159,7 @@ conj_AGENTE:
     .quad pose_AGENTE_HD_S, pose_AGENTE_HD_L, pose_AGENTE_HD_N, pose_AGENTE_HD_O
 
 nome_galpao:    .asciz "GALPÃO DE HANK"
-nome_doca:      .asciz "DOCA"
 nome_estantes:  .asciz "ESTANTES"
-nome_cais:      .asciz "CAIS"
-nome_pier:      .asciz "PÍER"
 
 # --------------------------------------------------------------- galpão
 #
@@ -194,53 +191,16 @@ mapa_galpao:
     LINHA "#GGGGGGGGGGGGGGGGGGGG#"    # 20
     LINHA "################PP####"    # 21  portão dos fundos
 
-# --------------------------------------------------------------- doca
-#
-# Cais de concreto ao norte, junto ao galpão; píer de tábuas descendo pelo meio,
-# passarela para o cais leste e o portão do porto ao sul. O resto é água.
-
-mapa_doca:
-    LINHA "XXXXPPXXXXXXXXXXXXXXXX"    #  0  fundos do galpão; o portão é a saída
-    LINHA "#QQQQQQQQQQQQQQQQQQQQ#"    #  1  cais
-    LINHA "#QQQQQQQQQQQQQQQQQQQQ#"    #  2
-    LINHA "#QQQQQQQQQQQQQQQQQQQQ#"    #  3
-    LINHA "#QQQQQQQQQQQQQQQQQQQQ#"    #  4
-    LINHA "#~TT~~~~~TTTT~~~~QQQQ#"    #  5  píer oeste | píer | cais leste
-    LINHA "#~TT~~~~~TTTT~~~~QQQQ#"    #  6
-    LINHA "#~TT~~~~~TTTT~~~~QQQQ#"    #  7
-    LINHA "#~TT~~~~~TTTT~~~~QQQQ#"    #  8
-    LINHA "#~TT~~~~~TTTTTTTTQQQQ#"    #  9  passarela
-    LINHA "#~TT~~~~~TTTTTTTTQQQQ#"    # 10
-    LINHA "#~TT~~~~~TTTTTTTTQQQQ#"    # 11
-    LINHA "#~~~~~~~~TTTT~~~~QQQQ#"    # 12
-    LINHA "#~~~~~~~~TTTT~~~~QQQQ#"    # 13
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 14
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 15
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 16
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 17
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 18
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 19
-    LINHA "#~~~~~~~~~~~~~~~~QQQQ#"    # 20
-    LINHA "##################QQ##"    # 21  portão do porto
-
 .align 8
 comodos_galpao:
     COMODO 1, 1, 20, 20, nome_estantes
 comodos_galpao_fim:
 
-comodos_doca:
-    COMODO 1, 1, 20, 4, nome_cais
-    COMODO 9, 5, 12, 13, nome_pier
-comodos_doca_fim:
 
 transicoes_galpao:
 transicoes_galpao_fim:
-transicoes_doca:
-transicoes_doca_fim:
 decalques_galpao:
 decalques_galpao_fim:
-decalques_doca:
-decalques_doca_fim:
 
 luzes_galpao:
     LUZ 64, 92, 50, 110, 220, 186, 132, OS_ROTEIRO        # lâmpadas sobre os corredores
@@ -254,14 +214,6 @@ luzes_galpao:
     LUZ 274, 44, 24, 80, 150, 180, 255, OS_ESTATICA       # a TV chiando
 luzes_galpao_fim:
 
-luzes_doca:
-    LUZ 80, 22, 30, 70, 230, 178, 110                     # lâmpada do portão do galpão
-    LUZ 132, 74, 56, 100, 255, 170, 90                    # postes de vapor de sódio
-    LUZ 216, 150, 56, 100, 255, 170, 90, OS_FALHA
-    LUZ 282, 202, 56, 100, 255, 170, 90
-    LUZ 58, 140, 56, 90, 255, 170, 90, OS_ROTEIRO
-    LUZ 304, 330, 30, 80, 220, 120, 90                    # luz do portão do porto
-luzes_doca_fim:
 
 .section .data
 .align 8
@@ -292,59 +244,11 @@ objetos_galpao:
     MOVEL3 CAIXOTES_GALPAO, 200, 300
 objetos_galpao_fim:
 
-objetos_doca:
-    MOVEL4 CONTAINER_VERMELHO, 272, 20
-    MOVEL4 CONTAINER_AZUL, 224, 52
-    MOVEL CABECO, 108, 68
-    MOVEL CABECO, 144, 68
-    MOVEL CABECO, 136, 116
-    MOVEL CABECO, 210, 96
-    MOVEL CABECO, 248, 132
-    MOVEL CABECO, 324, 210
-    MOVEL CABECO, 272, 226
-    MOVEL POSTE, 128, 72
-    MOVEL POSTE, 212, 148
-    MOVEL POSTE, 278, 198
-    MOVEL POSTE, 54, 138
-    # alto-falantes: o centro de cada um está na tabela alto_falantes
-    MOVEL ALTO_FALANTE, 45, 164
-    MOVEL ALTO_FALANTE, 307, 62
-    MOVEL ALTO_FALANTE, 173, 208
-    MOVEL ALTO_FALANTE, 45, 100
-    MOVEL ALTO_FALANTE, 313, 276
-    BLOQUEIO 288, 336, 32, 16        # ninguém sai pelo portão do porto
-objetos_doca_fim:
 
-.global alto_falantes
-.align 4
-# x, y (centro, mundo), altura da corneta, nota (0..3).
-alto_falantes:
-    .long 48, 168, 30, 0             # 0: píer oeste, longe do caminho do cais
-    .long 310, 66, 30, 2             # 1: cais leste, diante do contêiner
-    .long 176, 212, 30, 1            # 2: ponta do píer (isca do ponto 2)
-    .long 48, 104, 30, 3             # 3: píer oeste, mais ao norte
-    .long 316, 280, 30, 0            # 4: junto ao portão do porto (isca do ponto 3)
-
-# Poleiros dos anjos de cada ponto: x, y, z.
-poleiros_1: .long 112, 72, 8,  148, 72, 8
-poleiros_2: .long 140, 120, 8,  214, 100, 8
-poleiros_3: .long 252, 136, 8,  328, 214, 8,  276, 230, 8
-
-.macro PONTO ix, iy, fx, fy, bpm, janela, certo, isca, anjo0, n, poleiros, agx, agy
-    .long \ix, \iy, \fx, \fy, \bpm, \janela, \certo, \isca, \anjo0, \n
-    .quad \poleiros
-    .long \agx, \agy, 0, 0
-.endm
-
-.align 8
-ponto_1: PONTO 80, 32, 184, 40, 80, 3500, 0, -1, ATOR_ANJO, 2, poleiros_1, 200, 30
-ponto_2: PONTO 184, 40, 176, 168, 96, 3800, 1, 2, ATOR_ANJO + 2, 2, poleiros_2, 194, 160
-ponto_3: PONTO 176, 168, 300, 250, 110, 5000, 3, 4, ATOR_ANJO + 4, 3, poleiros_3, 320, 244
 
 .section .bss
 .align 16
 itens_galpao: .skip MAX_ITENS * IT_TAM
-itens_doca:   .skip MAX_ITENS * IT_TAM
 
 .section .data
 .global andares
@@ -361,20 +265,13 @@ andar_galpao:
     .quad decalques_galpao, 0
     .quad itens_galpao, 0
     .quad 0, 0
-andar_doca:
-    .quad mapa_doca
-    .quad objetos_doca, (objetos_doca_fim - objetos_doca) / OBJ_TAM
-    .quad luzes_doca, (luzes_doca_fim - luzes_doca) / LUZ_TAM
-    .quad comodos_doca, (comodos_doca_fim - comodos_doca) / COM_TAM
-    .quad transicoes_doca, 0
-    .quad nome_doca
-    .quad 0xff40281c                                  # ambiente: noite de névoa
-    .quad decalques_doca, 0
-    .quad itens_doca, 0
-    .quad 0, 0
 andares:
-    .quad andar_cima, andar_terreo, andar_galpao, andar_doca
-n_andares: .quad 4
+    .quad andar_cima, andar_terreo, andar_galpao, andar_doca, andar_patio, andar_quebramar
+n_andares: .quad 6
+
+# Fuga dos anjos: doca, pátio e quebra-mar (andares 3 a 5), seus alto-falantes,
+# poleiros, pontos e arrumação, gerados por ferramentas/gerar_doca.py.
+.include "doca_dados.inc"
 
 # --------------------------------------------------------- interações
 
@@ -571,39 +468,8 @@ loja_jogo:
     CMD OP_TREME, 500
     CMD OP_ESCURECE
 
-    # ---- Doca: três pontos, anjos pousados escutando.
-    ROTULO "doca"
-    CMD OP_TRAVA
-    CMD OP_ESCURECE
-    CMD OP_ANDAR, 3, 80, 32, D_S
-    ATOR ATOR_AGENTE, 3, 62, 38, conj_AGENTE, AF_SOMBRA|AF_HD
-    CMD OP_CHAMA, p=prepara_doca
-    CMD OP_CLAREIA
-    MSG "Toque a nota do alto-falante no 4º pulso (teclas 1-4 ou MIDI).\nOs anjos vão atrás do som: corra até a próxima marca verde."
-    CMD OP_DOCA, p=ponto_1
-
-    ROTULO "doca2"
-    CMD OP_SE_FLAG, FL_NA_DOCA, p=doca2_jogo
-    CMD OP_TRAVA
-    CMD OP_ESCURECE
-    CMD OP_ANDAR, 3, 184, 40, D_S
-    ATOR ATOR_AGENTE, 3, 200, 30, conj_AGENTE, AF_SOMBRA|AF_HD
-    CMD OP_CHAMA, p=prepara_doca
-    CMD OP_CLAREIA
-doca2_jogo:
-    MSG "Dois alto-falantes: um deles chama os anjos para o seu caminho."
-    CMD OP_DOCA, p=ponto_2
-
-    ROTULO "doca3"
-    CMD OP_SE_FLAG, FL_NA_DOCA, p=doca3_jogo
-    CMD OP_TRAVA
-    CMD OP_ESCURECE
-    CMD OP_ANDAR, 3, 176, 168, D_S
-    ATOR ATOR_AGENTE, 3, 194, 160, conj_AGENTE, AF_SOMBRA|AF_HD
-    CMD OP_CHAMA, p=prepara_doca
-    CMD OP_CLAREIA
-doca3_jogo:
-    CMD OP_DOCA, p=ponto_3
+    # ---- Fuga: doca, pátio e quebra-mar, ponto a ponto (ferramentas/gerar_doca.py).
+    .include "doca_roteiro.inc"
 
     CMD OP_TRAVA
     CMD OP_OBJETIVO
@@ -611,23 +477,5 @@ doca3_jogo:
     CMD OP_LIBERA
     CMD OP_FIM
 
-# Arrumação comum dos pontos da doca: anjos nos poleiros, clima e flag.
-prepara_doca:
-    ESCONDE ATOR_MAEL
-    FIXO ATOR_ANJO, 3, 112, 72, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 1, 3, 148, 72, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 2, 3, 140, 120, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 3, 3, 214, 100, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 4, 3, 252, 136, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 5, 3, 328, 214, 8, ANJO_POUSADO, AF_HD
-    FIXO ATOR_ANJO + 6, 3, 276, 230, 8, ANJO_POUSADO, AF_HD
-    CMD OP_MUSICA, 0
-    CMD OP_ZUMBIDO, 70
-    CMD OP_NEVOA, 45
-    CMD OP_PERTURBA, 1
-    CMD OP_INTERACOES
-    OBJETIVO "Atravesse a doca"
-    CMD OP_FLAG, FL_NA_DOCA
-    CMD OP_VOLTA
 
 .section .note.GNU-stack,"",@progbits

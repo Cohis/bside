@@ -11,7 +11,7 @@ make run
 
 `make arte` regera os atlas, a névoa e os sons (Python 3 + Pillow + NumPy): `assets/tileset-iso.png` e `tileset.inc` (cenário), `assets/personagens.png` e `personagens.inc` (elenco e interface), `assets/elenco-hd.png` (agente carmesim e anjo, em células 384 × 512 como o Ícaro), `assets/nevoa.png` e `assets/sons/`. O gerador isométrico reaproveita as texturas de `ferramentas/gerar_tileset.py`, copiado da versão top-down.
 
-`make teste` roda a fase com um robô no lugar do teclado (`ferramentas/teste_auto.c`, ligado com `--wrap`): o primeiro percurso resolve o enigma da loja (tenta a porta antes da hora, pega o bilhete, erra uma nota e toca D-C-G no depósito, lê a etiqueta e sai); o segundo pega o disco e fala com o agente; o terceiro atravessa a doca, errando de propósito uma vez no 2º ponto. As capturas ficam em `teste/`.
+`make teste` roda a fase com um robô no lugar do teclado (`ferramentas/teste_auto.c`, ligado com `--wrap`): o primeiro percurso resolve o enigma da loja (tenta a porta antes da hora, pega o bilhete, erra uma nota e toca D-C-G no depósito, lê a etiqueta e sai); o segundo pega o disco e fala com o agente; o terceiro atravessa a fuga inteira com as soluções do gerador, tocando antes uma armadilha de propósito no 2º ponto. As capturas ficam em `teste/`.
 
 ## Sala 1 — o pedido do Anderson
 
@@ -20,11 +20,11 @@ make run
 3. **Depósito** (térreo, abaixo da escada): a lista está presa na estante oeste; a caixa do pedido, no alto da estante leste. Diante dela, tocar **D, C, G** (teclas **2, 1, 4** ou MIDI), sem metrônomo. Nota errada recomeça a sequência.
 4. A caixa cai; a etiqueta tem o endereço do galpão do Hank. Só então a porta da rua leva à Sala 2.
 
-## Sala 2 — galpão e doca
+## Sala 2 — galpão e fuga dos anjos
 
 1. **Loja**: depois do enigma da Sala 1, a porta da rua, no térreo, leva ao galpão (**E**).
 2. **Galpão**: oito estantes numeradas no chão; a prancheta perto da bancada diz qual caixa é. Pegar o disco faz os aparelhos chiarem, as luzes falharem, a névoa entrar e Mael aparecer na janela do fundo. O agente carmesim, marcado pelos anjos, espera de pé junto ao portão; falar com ele leva à doca.
-3. **Doca**: três pontos. Em cada um, Ícaro espera na marca verde enquanto os anjos escutam. O metrônomo marca 4 pulsos; no 4º, toque a nota do alto-falante certo (teclas **1-4** ou teclado MIDI). Os anjos gritam, levantam voo até ele e a barra "CORRA!" mostra quanto tempo resta para chegar à próxima marca. Nos pontos 2 e 3 há um alto-falante isca no caminho. Nota errada, fora do pulso, sair da marca antes da hora ou tempo esgotado: o anjo grita e só aquele ponto recomeça. O agente reaparece em cada marca alcançada com um clarão azul.
+3. **Fuga dos anjos**: dez pontos em três trechos: **doca**, **pátio de contêineres** (labirinto, anjos agachados em cima dos contêineres) e **quebra-mar** (tábuas de uma passada só), até o farol. Em cada ponto, Ícaro espera na marca verde enquanto os anjos escutam. O metrônomo marca 4 pulsos; no 4º, toque a nota de um dos alto-falantes acesos (teclas **1-4** ou teclado MIDI). Os anjos daquele ponto voam em linha reta até ele e pousam em volta; a barra "CORRA!" mostra quanto tempo resta para chegar à próxima marca. Qualquer anjo a menos de 16 px pega Ícaro: voando, pousado ou ainda escutando, e os que pousaram antes continuam onde ficaram. Só um alto-falante por ponto deixa passar; os outros pousam os anjos no caminho ou os fazem voar por cima de você, e às vezes é preciso esperar eles passarem. Nota errada, fora do pulso, sair da marca antes da hora, chegar perto de um anjo ou tempo esgotado: o anjo grita e só aquele ponto recomeça. O agente reaparece em cada marca alcançada com um clarão azul.
 
 O teclado MIDI é lido de `/dev/snd/midiC0D0` a `midiC3D0`, sem bloquear; vale a classe da nota (Dó, Ré, Mi, Sol em qualquer oitava, tabela `notas_midi` em `ritmo.s`).
 
@@ -48,19 +48,20 @@ O teclado MIDI é lido de `/dev/snd/midiC0D0` a `midiC3D0`, sem bloquear; vale a
 
 - `BSIDE_CAPTURE=1 ./bside`: salva `captura.png` no 45º quadro e fecha.
 - `BSIDE_COLISOES=1 ./bside`: contorna paredes (magenta), móveis (ciano) e gatilhos de escada (amarelo) no chão isométrico.
-- `BSIDE_PONTO="andar x y"`: começa no andar `0` (de cima), `1` (térreo), `2` (galpão) ou `3` (doca), no tile `(x, y)`, em passeio livre (sem a sequência da fase).
+- `BSIDE_PONTO="andar x y"`: começa no andar `0` (de cima), `1` (térreo), `2` (galpão), `3` (doca), `4` (pátio) ou `5` (quebra-mar), no tile `(x, y)`, em passeio livre (sem a sequência da fase).
 - `BSIDE_CENA=loja`: começa no térreo, já no enigma da Sala 1.
-- `BSIDE_SALA=2` ou `BSIDE_CENA=galpao`: começa no galpão. `BSIDE_CENA=doca`, `doca2` ou `doca3` começa no ponto correspondente da doca.
+- `BSIDE_SALA=2` ou `BSIDE_CENA=galpao`: começa no galpão. `BSIDE_CENA=doca`, `patio` ou `quebramar` começa no trecho correspondente da fuga.
 
 ## Arquivos
 
 - `bside.s`: motor isométrico (projeção, lista de profundidade, paredes que ficam transparentes, luz, HUD, música).
 - `fase1.s`: B-Side: plantas 22 × 22, papéis de parede, móveis, decalques de parede, luzes, cômodos e escadas; a legenda dos tiles serve aos quatro andares.
-- `sala2.s`: galpão e doca: plantas, móveis, luzes, poses do elenco, interações, os três pontos da doca e a sequência da fase, que começa no enigma da loja (bilhete, melodia do depósito, caixa com o endereço).
+- `sala2.s`: galpão: planta, móveis, luzes, poses do elenco, interações e a sequência da fase (os trechos da fuga vêm de `doca_dados.inc` e `doca_roteiro.inc`), que começa no enigma da loja (bilhete, melodia do depósito, caixa com o endereço).
 - `atores.s`: agente, anjos, Mael e clarões na lista de profundidade, com animação e movimento.
 - `roteiro.s`: interpretador da sequência da fase, interações com E, melodias a tocar num lugar certo, mensagens, objetivo, névoa, foco e tremor da câmera.
 - `ritmo.s`: teclado MIDI, teclas 1-4, sons, metrônomo e a validação única de nota e pulso.
-- `doca.s`: os três pontos da fuga (áreas seguras, alto-falantes, anjos, janela de corrida).
+- `doca.s`: a fuga (áreas seguras, alto-falantes, voo dos anjos, quem pega Ícaro, janela de corrida).
+- `ferramentas/gerar_doca.py` (`make doca`): descreve os três trechos e gera `doca_dados.inc`, `doca_roteiro.inc` e `ferramentas/doca_solucoes.h`. Antes de gerar, resolve cada ponto simulando o voo dos anjos e buscando o caminho de Ícaro no espaço e no tempo: põe os alto-falantes de modo que só um funcione (com folga visível em volta dos anjos pousados) e os outros matem até quem joga perfeito, e calcula a janela. Mapas vistos de cima com as soluções em `../sprites/elenco-sala2/doca/`; `--explorar trecho:ponto` desenha o mapa de calor de onde um alto-falante funcionaria.
 - `cenario.inc`: macros de dados de cenário usadas por `fase1.s` e `sala2.s`.
 - `ferramentas/gerar_agente.py`: o agente carmesim parado nas 8 direções, repintado das bases da Eva (`../sprites/bases/eva/`): farda preta com cinto, gola e punhos vermelhos e máscara preta só com os olhos azuis. Grava as bases em `../sprites/elenco-sala2/agente/` e a coluna 384 × 4096 do jogo (`assets/agente-parado.png`). Aparece parado no galpão e na doca; andando, ainda desliza na pose parada. Medidas de cada direção (elipse da máscara, gola, cinto, costas, manga) ficam no topo do script.
 - `ferramentas/gerar_anjo.py`: o anjo a partir de duas folhas em `../sprites/elenco-sala2/anjo/`: `folha-original.png` (8 vistas, baixada pelo usuário) e `poses-chatgpt.png` (pousado escutando, grito e voo, geradas no ChatGPT a partir da primeira). Tira o fundo preto, põe contorno de 3 px, leva todas à mesma escala e aos pés em (192, 480); o voo à esquerda é o da direita espelhado.
