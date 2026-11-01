@@ -1,0 +1,55 @@
+CC = gcc
+RAYLIB_CFLAGS ?=
+RAYLIB_LIBS ?= -lraylib -lopengl32 -lgdi32 -lwinmm
+
+ASMFLAGS := -c -x assembler-with-cpp -masm=intel
+BRIDGEFLAGS := -std=c11 -O2 $(RAYLIB_CFLAGS)
+OBJETOS := bside.o fase1.o sala2.o atores.o roteiro.o ritmo.o doca.o win32_bridge.o
+INCLUDES := estruturas.inc tileset.inc personagens.inc cenario.inc
+
+# Renomeia as funções externas para wrappers SysV implementados em C.
+ABI_DEFS := \
+  -Dmain=bside_main_sysv \
+  -DInitWindow=sysv_InitWindow -DCloseWindow=sysv_CloseWindow \
+  -DIsWindowReady=sysv_IsWindowReady -DWindowShouldClose=sysv_WindowShouldClose \
+  -DSetTargetFPS=sysv_SetTargetFPS -DGetFrameTime=sysv_GetFrameTime -DGetTime=sysv_GetTime \
+  -DIsKeyDown=sysv_IsKeyDown -DIsKeyPressed=sysv_IsKeyPressed \
+  -DToggleBorderlessWindowed=sysv_ToggleBorderlessWindowed \
+  -DGetScreenWidth=sysv_GetScreenWidth -DGetScreenHeight=sysv_GetScreenHeight \
+  -DLoadTexture=sysv_LoadTexture -DUnloadTexture=sysv_UnloadTexture -DFileExists=sysv_FileExists \
+  -DGenTextureMipmaps=sysv_GenTextureMipmaps -DSetTextureFilter=sysv_SetTextureFilter \
+  -DLoadRenderTexture=sysv_LoadRenderTexture -DUnloadRenderTexture=sysv_UnloadRenderTexture \
+  -DBeginTextureMode=sysv_BeginTextureMode -DEndTextureMode=sysv_EndTextureMode \
+  -DBeginDrawing=sysv_BeginDrawing -DEndDrawing=sysv_EndDrawing -DClearBackground=sysv_ClearBackground \
+  -DDrawTexturePro=sysv_DrawTexturePro -DDrawRectangle=sysv_DrawRectangle \
+  -DDrawRectangleLines=sysv_DrawRectangleLines -DDrawLine=sysv_DrawLine -DDrawText=sysv_DrawText \
+  -DMeasureText=sysv_MeasureText -DTakeScreenshot=sysv_TakeScreenshot \
+  -DBeginBlendMode=sysv_BeginBlendMode -DEndBlendMode=sysv_EndBlendMode \
+  -DrlDrawRenderBatchActive=sysv_rlDrawRenderBatchActive -DrlPushMatrix=sysv_rlPushMatrix \
+  -DrlPopMatrix=sysv_rlPopMatrix -DrlTranslatef=sysv_rlTranslatef -DrlScalef=sysv_rlScalef \
+  -DInitAudioDevice=sysv_InitAudioDevice -DCloseAudioDevice=sysv_CloseAudioDevice \
+  -DIsAudioDeviceReady=sysv_IsAudioDeviceReady -DLoadMusicStream=sysv_LoadMusicStream \
+  -DUnloadMusicStream=sysv_UnloadMusicStream -DPlayMusicStream=sysv_PlayMusicStream \
+  -DUpdateMusicStream=sysv_UpdateMusicStream -DSetMusicVolume=sysv_SetMusicVolume \
+  -DLoadSound=sysv_LoadSound -DUnloadSound=sysv_UnloadSound \
+  -DPlaySound=sysv_PlaySound -DSetSoundVolume=sysv_SetSoundVolume \
+  -Dgetenv=sysv_getenv -Dputs=sysv_puts -Dsscanf=sysv_sscanf -Dstrcmp=sysv_strcmp \
+  -Dsinf=sysv_sinf -Dcosf=sysv_cosf -Dopen=sysv_open -Dread=sysv_read -Dclose=sysv_close
+
+.PHONY: all run clean
+all: bside.exe
+
+bside.exe: $(OBJETOS)
+	$(CC) -o $@ $(OBJETOS) $(RAYLIB_LIBS) -lm
+
+%.o: %.s $(INCLUDES)
+	$(CC) $(ASMFLAGS) $(ABI_DEFS) $< -o $@
+
+win32_bridge.o: win32_bridge.c
+	$(CC) $(BRIDGEFLAGS) -c $< -o $@
+
+run: bside.exe
+	./bside.exe
+
+clean:
+	rm -f $(OBJETOS) bside.exe

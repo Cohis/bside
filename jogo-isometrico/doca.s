@@ -1,13 +1,10 @@
 .intel_syntax noprefix
 
-# Fuga dos anjos: pontos em sequência pelos trechos (doca, pátio, quebra-mar),
-# gerados por ferramentas/gerar_doca.py. Em cada um, Ícaro espera na área segura
-# enquanto os anjos escutam; no 4º pulso do metrônomo, a nota de qualquer um dos
-# alto-falantes à mostra o faz berrar, os anjos do ponto voam em linha reta até
-# ele e abre-se uma janela para correr até a próxima área. Qualquer anjo a menos
-# de RAIO_PEGA px (voando, pousado ou ainda escutando) pega Ícaro; escolher o
-# alto-falante é escolher por onde eles passam e onde ficam. Qualquer erro
-# reinicia só o ponto atual.
+# Fuga pela doca: três pontos na mesma tela. Em cada um, Ícaro espera na área
+# segura enquanto os anjos escutam; no 4º pulso do metrônomo, a nota do
+# alto-falante certo o faz berrar, os anjos voam até ele e abre-se uma janela
+# para correr até a próxima área. O alto-falante isca leva os anjos para o
+# caminho. Qualquer erro reinicia só o ponto atual.
 
 .include "estruturas.inc"
 .include "personagens.inc"
@@ -16,6 +13,7 @@
 .equ D_ESCUTANDO, 1
 .equ D_ATRAINDO, 2
 .equ D_FALHA, 3
+.equ D_ISCA, 4
 .equ D_SUCESSO, 5
 .equ D_FIM, 6
 
@@ -23,7 +21,7 @@
 .align 4
 mil_d:          .float 1000.0
 tempo_falha:    .float 1.6
-raio_pega_2:    .float 256.0         # RAIO_PEGA²
+tempo_isca:     .float 0.9
 tempo_sucesso:  .float 1.1
 vel_anjo:       .float 170.0
 meio_d:         .float 0.5
@@ -57,7 +55,6 @@ doca_concluida: .skip 4
 .global desenhar_doca_tela
 
 .extern alto_falantes
-.extern atores
 .extern icaro
 .extern andar_indice
 .extern delta_quadro
@@ -306,6 +303,8 @@ atualizar_doca:
     je .atraindo
     cmp eax, D_FALHA
     je .em_falha
+    cmp eax, D_ISCA
+    je .em_isca
     cmp eax, D_SUCESSO
     je .em_sucesso
     jmp .fim_doca
@@ -318,23 +317,13 @@ atualizar_doca:
     jz .falha_agora                  # um passo fora da hora: eles escutam
     cmp dword ptr [rip + nota_evento], 0
     jl .fim_doca
-    # a nota (no pulso certo) de qualquer alto-falante do ponto o faz berrar
-    mov r12d, dword ptr [rbx + DP_FALANTE0]
-.qual_falante:
-    mov eax, dword ptr [rbx + DP_FALANTE0]
-    add eax, dword ptr [rbx + DP_N_FALANTES]
-    cmp r12d, eax
-    jge .falha_agora                 # nota de nenhum deles, ou fora do pulso
-    mov edi, r12d
+    mov edi, dword ptr [rbx + DP_CERTO]
     call falante
     mov edi, dword ptr [rax + FAL_NOTA]
     call nota_valida
     test eax, eax
-    jnz .berra
-    inc r12d
-    jmp .qual_falante
-.berra:
-    mov edi, r12d
+    jz .tentar_isca
+    mov edi, dword ptr [rbx + DP_CERTO]
     call atrair
     mov dword ptr [rip + doca_estado], D_ATRAINDO
     cvtsi2ss xmm0, dword ptr [rbx + DP_JANELA]
@@ -342,15 +331,28 @@ atualizar_doca:
     movss dword ptr [rip + doca_t], xmm0
     movss dword ptr [rip + doca_janela], xmm0
     jmp .fim_doca
+.tentar_isca:
+    mov edi, dword ptr [rbx + DP_ISCA]
+    test edi, edi
+    js .falha_agora
+    call falante
+    mov edi, dword ptr [rax + FAL_NOTA]
+    call nota_valida
+    test eax, eax
+    jz .falha_agora
+    mov edi, dword ptr [rbx + DP_ISCA]
+    call atrair
+    mov dword ptr [rip + doca_estado], D_ISCA
+    movss xmm0, dword ptr [rip + tempo_isca]
+    movss dword ptr [rip + doca_t], xmm0
+    mov dword ptr [rip + controle_jogador], 0
+    jmp .fim_doca
 .falha_agora:
     call falhar
     jmp .fim_doca
 
 .atraindo:
     call pousar_anjos
-    call anjo_perto
-    test eax, eax
-    jnz .falha_agora
     mov edi, dword ptr [rbx + DP_FIM_X]
     mov esi, dword ptr [rbx + DP_FIM_Y]
     call icaro_na_area
@@ -380,6 +382,13 @@ atualizar_doca:
     call reiniciar_ponto
     jmp .fim_doca
 
+.em_isca:
+    call contar_tempo
+    test eax, eax
+    jz .fim_doca
+    call falhar
+    jmp .fim_doca
+
 .em_sucesso:
     call pousar_anjos
     call contar_tempo
@@ -392,34 +401,6 @@ atualizar_doca:
     add rsp, 8
     pop r12
     pop rbx
-    ret
-
-# eax = 1 se algum anjo deste andar está a menos de RAIO_PEGA px dos pés de Ícaro.
-anjo_perto:
-    lea rcx, [rip + atores]
-    add rcx, ATOR_ANJO * AT_TAM
-    mov edx, N_ANJOS
-    mov r8d, dword ptr [rip + andar_indice]
-    xor eax, eax
-.anjo_perto:
-    cmp dword ptr [rcx + AT_ANDAR], r8d
-    jne .proximo_perto
-    movss xmm0, dword ptr [rcx + AT_X]
-    subss xmm0, dword ptr [rip + icaro]
-    mulss xmm0, xmm0
-    movss xmm1, dword ptr [rcx + AT_Y]
-    subss xmm1, dword ptr [rip + icaro + 4]
-    mulss xmm1, xmm1
-    addss xmm0, xmm1
-    ucomiss xmm0, dword ptr [rip + raio_pega_2]
-    jb .pegou
-.proximo_perto:
-    add rcx, AT_TAM
-    dec edx
-    jnz .anjo_perto
-    ret
-.pegou:
-    mov eax, 1
     ret
 
 # eax = 1 quando doca_t chega a zero.
@@ -440,7 +421,7 @@ doca_em_jogo:
     mov ecx, dword ptr [rip + doca_estado]
     cmp ecx, D_ESCUTANDO
     jb .fora_jogo
-    cmp ecx, D_FALHA
+    cmp ecx, D_ISCA
     ja .fora_jogo
     mov eax, 1
 .fora_jogo:
@@ -490,18 +471,16 @@ desenhar_doca_mundo:
     ja .simbolos
     mov r14d, 1
 .simbolos:
-    mov r12d, dword ptr [rbx + DP_FALANTE0]
-.cada_falante:
-    mov eax, dword ptr [rbx + DP_FALANTE0]
-    add eax, dword ptr [rbx + DP_N_FALANTES]
-    cmp r12d, eax
-    jge .fim_mundo
-    mov edi, r12d
+    mov edi, dword ptr [rbx + DP_CERTO]
     mov esi, r13d
     mov edx, r14d
     call marca_falante
-    inc r12d
-    jmp .cada_falante
+    mov edi, dword ptr [rbx + DP_ISCA]
+    test edi, edi
+    js .fim_mundo
+    mov esi, r13d
+    mov edx, r14d
+    call marca_falante
 .fim_mundo:
     add rsp, 8
     pop r14

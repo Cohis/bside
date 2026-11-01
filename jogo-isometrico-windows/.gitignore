@@ -1,0 +1,7 @@
+/bside
+*.o
+core
+core.*
+/bside-teste
+/teste/
+ferramentas/__pycache__/
