@@ -177,7 +177,7 @@
 .equ AT_MOVENDO, 56
 .equ AT_FLAGS, 60
 .equ AT_TAM, 64
-.equ MAX_ATORES, 20
+.equ MAX_ATORES, 28
 .equ AF_SOMBRA, 1
 .equ AF_EMISSIVO, 2                  # desenhado depois da luz
 .equ AF_UMA_VEZ, 4                   # some ao fim da animação
@@ -271,15 +271,15 @@
 .equ FAL_NOTA, 12
 .equ FAL_TAM, 16
 
-# Ponto da doca (64 bytes).
+# Ponto da fuga (64 bytes), gerado por ferramentas/gerar_doca.py.
 .equ DP_INI_X, 0                     # centro da área segura de partida
 .equ DP_INI_Y, 4
 .equ DP_FIM_X, 8                     # centro da área segura de chegada
 .equ DP_FIM_Y, 12
 .equ DP_BPM, 16
-.equ DP_JANELA, 20                   # ms para chegar depois do berro
-.equ DP_CERTO, 24                    # índice do alto-falante que afasta os anjos
-.equ DP_ISCA, 28                     # índice do que os traz para o caminho (-1 nenhum)
+.equ DP_JANELA, 20                   # ms para chegar depois da nota
+.equ DP_FALANTE0, 24                 # primeiro alto-falante do ponto (os outros vêm em seguida)
+.equ DP_N_FALANTES, 28
 .equ DP_ANJO0, 32                    # primeiro ator-anjo do ponto
 .equ DP_N_ANJOS, 36
 .equ DP_POLEIROS, 40                 # ponteiro: x, y, z (long) por anjo
@@ -287,18 +287,20 @@
 .equ DP_AGENTE_Y, 52
 .equ DP_TAM, 64
 .equ RAIO_AREA, 14                   # px: Ícaro está na área se |dx| e |dy| <= isto
+.equ RAIO_PEGA, 16                   # px: anjo a menos disso pega Ícaro
 .equ N_FLAGS, 64
 
 # Atores fixos da Sala 2.
 .equ ATOR_HANK, 0
 .equ ATOR_AGENTE, 3
 .equ ATOR_MAEL, 4
-.equ ATOR_ANJO, 5                    # 5..13: anjos
-.equ ATOR_CLARAO_A, 14
-.equ ATOR_CLARAO_B, 15
-.equ ATOR_BILHETE, 16                # Sala 1: bilhete no balcão, lista e caixa do depósito
-.equ ATOR_LISTA, 17
-.equ ATOR_CAIXA, 18
+.equ ATOR_ANJO, 5                    # 5..20: anjos (os de um trecho da fuga)
+.equ N_ANJOS, 16
+.equ ATOR_CLARAO_A, 21
+.equ ATOR_CLARAO_B, 22
+.equ ATOR_BILHETE, 23                # Sala 1: bilhete no balcão, lista e caixa do depósito
+.equ ATOR_LISTA, 24
+.equ ATOR_CAIXA, 25
 
 # Melodia (36 bytes): notas a tocar dentro de um retângulo para acender uma flag.
 .equ MEL_ANDAR, 0

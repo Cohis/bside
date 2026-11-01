@@ -1058,8 +1058,8 @@ def mesa_prancheta():
     ], 18, 12, 14)
 
 
-def container(nome, c, semente):
-    """Contêiner de 64 x 28 x 40, com nervuras."""
+def container(nome, c, semente, ao_longo_de_y=False):
+    """Contêiner de 64 x 28 x 40 (ou 28 x 64, deitado ao longo de y), com nervuras."""
     def lado(t):
         t.ret(0, 0, t.w - 1, t.h - 1, c)
         for x in range(0, t.w, 3):
@@ -1074,6 +1074,8 @@ def container(nome, c, semente):
         t.ret(0, 0, t.w - 1, t.h - 1, mult(c, 1.15))
         for y in range(2, t.h, 4):
             t.hlin(1, t.w - 2, y, mult(c, 1.0))
+    if ao_longo_de_y:
+        return segmentar(nome, [Caixa(0, 0, 0, 28, 64, 40, topo=topo, sul=lado, leste=lado)], 28, 64, 40, eixo="y")
     return segmentar(nome, [Caixa(0, 0, 0, 64, 28, 40, topo=topo, sul=lado, leste=lado)], 64, 28, 40)
 
 
@@ -1227,6 +1229,7 @@ def montar():
                     bancada_radios, caixotes_galpao, mesa_prancheta,
                     lambda: container("CONTAINER_VERMELHO", cor("7a2a24"), 1),
                     lambda: container("CONTAINER_AZUL", cor("2a4a6a"), 2),
+                    lambda: container("CONTAINER_VERDE", cor("2e5a3a"), 3, ao_longo_de_y=True),
                     cabeco, poste, alto_falante, grade_portao,
                     *[(lambda n=n: numero_chao(n)) for n in range(1, 9)]):
         pecas.extend(gerador())
